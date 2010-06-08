@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>An Open Source Platform for Complex-Network Analysis and Visualization</title>
+
+	<!-- Main CSS for all pages. -->
+	<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="css/smoothness/jquery-ui-1.8.1.custom.css" type="text/css" rel="stylesheet" media="screen">
+
+	<!-- Get jquery from google api -->
+	<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/menu_generator.js"></script>
+	<script type="text/javascript" src="js/rss_feed.js"></script>
+	<script type="text/javascript" src="js/jquery-galleryview-1.1/jquery.galleryview-1.1.js"></script>
+	<script type="text/javascript" src="js/jquery-galleryview-1.1/jquery.timers-1.1.2.js"></script>
+
+	<!-- Big Picture plugin -->
+	<script type="text/javascript" src="js/bigPicture/jquery.bigPicture.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/bigPicture/css/core.css" />
+	<link rel="stylesheet" type="text/css" href="js/bigPicture/css/skin.css" />
+	<script type="text/javascript"> 
+	$(document).ready(function(){		
+		$('#slides').galleryView({
+			panel_width: 700,
+			panel_height: 400,
+			frame_width: 70,
+			frame_height: 40,
+			transition_speed: 1200,
+			overlay_opacity:0.3,
+			overlay_height: 100,
+			overlay_text_color: '#eee',
+			border: 'none'
+			
+			
+		});
+		
+		// Big Picture
+		$('.panel a').bigPicture({
+			'enableInfo': true,
+  			'infoPosition': 'bottom'
+		});
+	});
+</script>
+	<script type="text/javascript">
+	$(function() {
+		$(".guide").accordion({
+			aughtHeight: false,
+			header: "h1"		});
+	});
+	</script>
+	</head>
+
+	<body>
+    <div id="container"> 
+      <script src="js/header.js"></script>
+      
+      <div id="slides" class="galleryview">
+        <div class="panel"> <a name="desc-01" title="Module Finders" href="images/top_slides/network1.png"> <img src="images/top_slides/network1.png" width="700px" /> </a>
+          <div class="panel-overlay">
+            <h2>Module Finders</h2>
+            <div id="desc-01">Module Finders.  Click image to view full-size image</div>
+          </div>
+        </div>
+        <div class="panel"> <a name="desc-02" title="Human Interactome" href="images/top_slides/humanInteractome1.png"> <img src="images/top_slides/humanInteractome1.png" width="700px"/> </a>
+          <div class="panel-overlay">
+            <h2>Human Interactome</h2>
+            <div id="desc-02">Test 2.  Click image to view full-size image</div>
+          </div>
+        </div>
+        <div class="panel"> <a name="desc-03" title="Custom Graphics" href="images/top_slides/customGraphics1.png"> <img src="images/top_slides/customGraphics1.png" width="700px" /> </a>
+          <div class="panel-overlay">
+            <h2>Custom Graphics Mapping</h2>
+            <div id="desc-03">Custom Graphics function.  Click image for full size view.</div>
+          </div>
+        </div>
+        <ul class="filmstrip">
+          <li><img src="images/top_slides/network1.png" width="70" height="40" alt="Module Finders" title="Module Finders" /></li>
+          <li><img src="images/top_slides/humanInteractome1.png" width="70" height="40" alt="Human Interactome" title="Human Interactome" /></li>
+          <li><img src="images/top_slides/customGraphics1.png" width="70" height="40" alt="Custom Graphics" title="Custom Graphics" /></li>
+        </ul>
+      </div>
+      <div class="introbox">
+        <h3>Network Data Integration, Analysis, and Visualization in a Box</h3>
+        <p> Cytoscape is an open source software platform for visualizing complex-networks and integrating these networks with any type of attribute data.  A lot of <a href="plugins.html">plugins</a> are available for various kinds of problem domains, especially for bioinformatics and systems biology. </p>
+        <p> <a href="what_is_cytoscape.html">Learn More...</a> </p>
+        <a href="download.html">
+        <button class="button blue">Download Cytoscape v2.7.0</button>
+        </a>
+        <ul>
+          <li><a href="#">Release Note</a></li>
+          <li><a href="#">System Requirments</a></li>
+        </ul>
+      </div>
+      
+      <!-- News -->
+      <div class="news">
+        <h3>Latest News &nbsp; &nbsp;<a href="http://cytoscape.tumblr.com/"><img src="images/icon/tumblr.png"/></a></h3>
+        <script type="text/javascript" src="http://cytoscape.tumblr.com/api/read/json"></script> 
+        <script type="text/javascript" src="js/tumblr_feed.js"></script>
+      </div>
+      <div class="startnav">
+        <h2>Where to Start?</h2>
+        <div class="guide">
+          <h1><a href="#">Biologists</a></h1>
+          <div>
+            <h4>With Cytoscape, you can...</h4>
+            <ul>
+              <li>Load Protein-Protein interaction data sets in various formats</li>
+              <li>Integrate annotation data, such as Gene Ontology, to the network</li>
+              <li>Analyze your network with plugins</li>
+            </ul>
+            <a href="http://www.cytoscape.org/" target="_new">
+            <button class="button blue">Quick Start Guide</button>
+            </a> </div>
+          <h1><a href="#">Social Scientists</a></h1>
+          <div>
+            <ul>
+              <li>Build Cytoscape from source code</li>
+              <li>Develop a plugin</li>
+              <li>Learn Cytoscape API</li>
+            </ul>
+            <a href="http://www.cytoscape.org/" target="_new">
+            <button class="button gray">Developers Tutorial</button>
+            </a> </div>
+          <h1><a href="#">Computer Scientists</a></h1>
+          <div>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+          <h1><a href="#">Plugin Developers</a></h1>
+          <div>
+            <p>Plugin Developer start guide</p>
+          </div>
+        </div>
+      </div>
+      <div class="feed">
+        <h2>Aggregated Cytoscape News by <a href="http://friendfeed.com/cytoscape">FriendFeed</a></h2>
+        <script type="text/javascript" src="http://friendfeed.com/embed/widget/cytoscape?v=3&amp;num=10&amp;hide_logo=1&amp;width=900"></script>
+        <noscript>
+        <a href="http://friendfeed.com/cytoscape"><img alt="View my FriendFeed" style="border:none;" src="http://friendfeed.com/embed/widget/cytoscape?v=3&amp;num=10&amp;hide_logo=1&amp;width=900&amp;format=png"/></a>
+        </noscript>
+      </div>
+      <script src="js/footer.js"></script> 
+    </div>
+</body>
+</html>

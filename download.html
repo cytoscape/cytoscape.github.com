@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
+<title>Download Cytoscape</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/menu_generator.js"></script>
+
+<!-- Validator -->
+<link rel="stylesheet" href="js/formValidator/css/validationEngine.jquery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="js/formValidator/css/template.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<script src="js/formValidator/js/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="js/formValidator/js/jquery.validationEngine.js" type="text/javascript"></script>
+<script>
+	// Edit this number when you release new version.
+	var cytoscapeVersion ="2.7.0";
+	
+	$(document).ready(function() {			
+		$("#downloadForm").validationEngine()
+	});
+	
+	
+</script>
+</head>
+
+<body>
+<div id="container"> 
+  <script src="js/header.js"></script>
+  <div id="titleimage"> <img src="images/icon/Downloads-128.png" />
+    <h1>Download Cytoscape <script>document.write(cytoscapeVersion)</script></h1>
+  </div>
+  
+  <div id="downleft" class="blockleft">
+  	<h2>License Agreement</h2>
+    <p> Cytoscape is available as a platform-independent open-source Java application, released under the
+      terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>. 
+      To obtain Cytoscape, you must: </p>
+    <ul>
+      <li> Read the license agreement that follows and make sure you agree with its terms. </li>
+      <li> If so, fill in the application form. <strong><u>This information is used to understand the Cytoscape user base and 
+        will not be used for other purposes.</u></strong> </li>
+      <li> Click the Proceed button to be transferred to the download page. </li>
+    </ul>
+    <form>
+      <textarea wrap="1" cols="53" rows="8" name="license agreement">
+      This is a test.
+	</textarea>
+    </form>
+  </div>
+  
+  <div id="downright" class="blockright">
+    <form id="downloadForm" class="formular" method="post" action="download.php">
+      <input type="hidden" name="file" value="cyto2_7_0">
+      <fieldset>
+        <legend>Your information</legend>
+        <label> <span>Name : </span>
+          <input value=""  class="validate[required,length[1,100]] text-input" type="text" id="name" name="name"  />
+        </label>
+        <label> <span>Organization : </span>
+          <input value=""  class="validate[required, length[1,100]] text-input" type="text" name="org"  id="org" />
+        </label>
+        <label> <span>Email address : </span>
+          <input value=""  class="validate[required,custom[email]] text-input" type="text" name="email" id="email"  />
+        </label>
+        <label> <span>Confirm email address : </span>
+          <input value="" class="validate[required,confirm[email]] text-input" type="text" name="email2"  id="email2" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Conditions</legend>
+        <div class="infos">Checking this box indicates that you accept terms of use (Required): </div>
+        <label> <span class="checkbox">I accept terms of use : </span>
+          <input class="validate[required] checkbox" type="checkbox"  id="agree"  name="agree"/>
+        </label>
+        <label> <span class="checkbox"> Join our mailing list? (Optional): </span>
+          <input class="checkbox" type="checkbox"  id="contact"  name="contact"/>
+        </label>
+      </fieldset>
+      <input class="submit" type="submit" name="submit" value="Proceed to Download"/>
+      <hr/>
+    </form>
+  </div>
+  <script src="js/footer.js"></script> 
+</div>
+</body>
+</html>

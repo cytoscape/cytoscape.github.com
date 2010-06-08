@@ -1,0 +1,138 @@
+#bp .bp-mask {
+	background: #666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+#bp .bp-main {
+	background: #F6F6F6 none;
+	border: 10px solid #F6F6F6;
+}
+
+#bp .loading {
+	background: #FFF url(../images/ajax-loader.gif) no-repeat center center;
+}
+
+#bp .bp-nav a {
+	color: #818181;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#bp .bp-nav a:visited {
+	color: #818181;
+}
+
+#bp .bp-nav a:hover {
+	color: #414141;
+}
+
+#bp .bp-nav span {
+	margin-top: 20px;
+	padding: 8px 10px; 
+	display: block;
+	width: 40px;
+	background-color: #f6f6f6;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#bp .bp-prev-link span {
+	margin-right: auto;
+	margin-left: 0;
+	border-left: 0;
+	text-align: left;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;	
+}
+
+#bp .bp-next-link span {
+	margin-right: 0;
+	margin-left: auto;
+	border-right: 0;
+	text-align: right;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+
+#bp .bp-info-wrap {
+	background-color: #333;
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+
+#bp .bp-info-wrap .bp-info {
+	background-color: transparent;
+	padding: 8px 12px;
+	color: #FFF;
+	text-align: left;
+}
+
+#bp .bp-info-wrap .bp-info .bp-count {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+#bp .bp-info-wrap .bp-info h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#bp .bp-info-wrap .bp-info a {
+	color: #ff8080;
+}
+
+#bp .bp-info-wrap .bp-info p {
+	margin: 8px 0;
+	font-size: 0.9em;
+}
+
+#bp .bp-bbar {
+	padding-top: 6px;
+	background-color: #F6F6F6;
+}
+
+#bp .bp-bbar a {
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#bp .bp-bbar a:visited {
+	color: #666;
+}
+
+#bp .bp-bbar a:hover {
+	color: #333;
+}
+
+#bp .bp-info-link a {
+	background: transparent url(../images/tag.png) no-repeat left 0;
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+
+#bp .bp-info-link a.active {
+	background-image: url(../images/tag_hi.png);
+	color: #000;
+}
+
+#bp .bp-hide-link a {
+	background: transparent url(../images/close.png) no-repeat right 2px;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#bp .bp-hide-link a:hover {
+	background-image: url(../images/close_hi.png);
+}
+
+#bp .bp-bbar .bp-clear {
+	background-color: #F6F6F6;
+}

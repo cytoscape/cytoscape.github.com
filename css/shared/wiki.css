@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* This is a hack.  Override image by blank string */
+a.www:before {content:""; margin: 0 0.2em;}
+a.http:before {content:""; margin: 0 0.2em;}
+a.https:before {content: ""; margin: 0 0.2em;}
+
+body {
+	width: 960px; /* This is the overall width of pages */
+	padding: 3px 20px 20px 20px;
+	margin: 0px auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	line-height: 100%;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #ffffff;
+	font-size:14px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:link:hover, a:link:active {
+	text-decoration: none;
+	color:#06F;
+}
+
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited:hover {
+	text-decoration: none;
+	color: red;
+}
+
+input {
+	background:#FFF;
+	color:#555;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: solid 1px #666;
+}
+
+#userhome, #userprefs, #logout, .backlink, #pagetrail a {
+	color:#eee;
+	text-decoration:none;
+}
+
+#header {
+	color:#fff;
+	margin: 0px auto;
+	padding: 10px 10px 5px 10px;
+	background: no-repeat url(http://chianti.ucsd.edu/~kono/cytoscape/images/title.png) #000;
+	line-height: 100%;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: solid 1px #666;
+}
+
+
+
+#logo {
+	position:relative;
+	float:left;
+	margin:0 0 40px 10px;
+	color:#fff;
+	font:Arial, Helvetica, sans-serif;
+	font-size:24px;
+}
+#logo a {
+	padding:0 0 0 0;
+	color:#fff;
+}
+
+#locationline {
+	position:relative;
+	float:left;
+	
+	margin:20px 0 10px -185px;
+}
+
+#pagetrail li, #pagetrail a{	
+	margin:120px 0 10px 0px;
+	color:#39F;
+}
+
+
+#pageline {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	border:none;
+}
+
+#navibar {
+	background-color:transparent;
+	clear: both;  /* problem: clear: right; aligns nicely right of logo,
+                    but lets it float high in the header, disconnected from ground */
+	display: block;
+	margin: 0px auto;
+	padding: 0 10px;
+	font-size: 0.82em;
+	zoom: 1; /* for avoiding a gap between navibar and pageline on IE */
+}
+
+
+#navibar li {
+    float: left;
+    display: inline;
+    margin: 0 2px;
+    padding: 2px 5px;
+    border-bottom: none;
+    white-space: nowrap;
+	
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+*[dir="rtl"] #navibar li {
+    float: right;
+}
+
+#navibar li.wikilink {
+    background: #999; /*url(../img/tab-wiki.png) repeat-x;*/
+}
+
+#navibar li.userlink {
+    background: #E6EAF0; /*url(../img/tab-user.png) repeat-x;*/
+}
+
+#navibar a, #navibar a:visited {
+    color: black;
+    text-decoration: none;    
+}
+
+#navibar li.current a {
+    font-weight: bold;
+}
+
+#navibar li:hover {
+    background: #CCCCCC;
+}
+
+#navibar li.current, #navibar li.current:hover {
+	background:#fff;
+}
+
+.editbar {
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0 8px;
+	white-space: nowrap;
+	background-color:transparent;
+	font-size: 0.8em;
+	color:#FFF;
+}
+
+.editbar a, .editbar a:visited {
+	color: #fff;
+}
+
+#header .editbar {
+	border:none;
+}
+
+#footer {
+	margin: 10px 0 5px 0;
+	background: #ffffff;
+	
+}
+
+#footer .editbar {
+	background:#FFF;
+	border:none;
+}
+
+#footer .editbar a {
+	color:#555;
+}
+
+#page {
+	margin:5px 0 3px 0;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+	
+	color:#444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:150%;
+	
+}
+
+#page a {
+	text-decoration:none;
+	color:#39F;
+}
+
+#message {
+    clear: both;
+    margin: 0;
+    padding: 5px 10px;
+    background-color:transparent;
+	border:none;
+	
+	color:#FFF;
+}
+
+#message .info {
+	background-color:transparent;
+}
+
+/* TableOfContents macro */
+div.table-of-contents {
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #e1e1e1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cdcdcd));
+	background: -moz-linear-gradient(top, #fff, #cdcdcd);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cdcdcd'); /* ie7 */
+ -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cdcdcd'); /* ie8 */
+}
+
+#credits {
+	font-size:9px;
+	color:#666;
+}
+
+
+

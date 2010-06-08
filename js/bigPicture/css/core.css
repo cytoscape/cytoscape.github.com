@@ -1,0 +1,115 @@
+#bp {
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+#bp .bp-mask {
+	top: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	display: none;
+}
+
+#bp .bp-wrap {
+	left: 0;
+	top: 0;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	z-index: 10000;
+	background: transparent none;
+	text-align: center;
+	display: none;
+}
+
+#bp .bp-main {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+
+#bp .bp-view {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#bp .bp-view img {
+	margin: 0;
+	padding: 0;
+	display: block;
+	border: none;
+}
+
+#bp .bp-view .bp-nav {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	z-index: 10001;	
+	display: none;
+	background-color: transparent;
+}
+
+#bp .bp-view .bp-prev-link {
+	left: 0;
+}
+
+#bp .bp-view .bp-next-link {
+	right: 0;
+}
+
+#bp .bp-view .bp-nav a {
+	display: block;
+	text-decoration: none;
+}
+
+#bp .bp-view .bp-info-wrap {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10003;
+	display: none;
+}
+
+#bp .bp-view .bp-info-wrap .bp-info {
+	margin: 0;
+	background-color: transparent;
+}
+
+#bp .bp-bbar {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	z-index: 10004;
+	width: 100%;
+	display: none;
+}
+
+#bp .bp-bbar .bp-info-link {
+	float: left;
+}
+
+#bp .bp-bbar .bp-hide-link {
+	float: right;
+}
+
+.bp-clear {
+	clear: both;
+	visibility: hidden;
+	height: 0px;
+	background-color: transparent;
+	border: none;
+}

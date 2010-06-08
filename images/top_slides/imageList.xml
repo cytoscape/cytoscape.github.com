@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<image src="images/top_slides/network1.png" title="Multilingual">
+		<description>Cytoscape supports languages other than English, including East Asian languages.</description>
+	</image>
+	<image src="images/top_slides/customGraphics1.png" title="Custom Graphics">
+		<description>You can add any type of bitmap images on the nodes.</description>
+	</image>
+	<image src="images/top_slides/humanInteractome1.png" title="Scalable">
+		<description>Cytoscape can load and visualize large scale network data.</description>
+	</image>
+	<image src="images/top_slides/network2.png" title="Alpha Blending">
+		<description>Transparency is supported for all graph objects.</description>
+	</image>
+	<image src="images/top_slides/network3.png" title="VizMapper">
+		<description>You can easily map attribute values to visual properties, such as colors or size.</description>
+	</image>
+	<image src="images/top_slides/network3.png" title="Many Plugins">
+		<description>Lots of plugins are developed by 3rd party.</description>
+	</image>
+</images>

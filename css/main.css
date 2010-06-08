@@ -1,0 +1,677 @@
+@charset "UTF-8";
+@import url("button.css");
+@import url("navigation.css");
+@import url("slide_show.css");
+@import url("rss.css");
+
+/*
+	Cytoscape Main CSS
+	
+	Designed by Keiichiro Ono (http://www.keiono.net/)
+	
+	Menu & Search section is designed by 
+
+*/
+
+
+body {
+	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background:#F2F2F2;
+	font-size:12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height:18px;
+}
+
+a {
+	text-decoration:none;
+	color:#08C;
+}
+
+/*
+	Remove border around linked images.
+*/
+a img {
+	border-style:none;
+}
+
+/*
+	Main Components
+*/
+#container {
+	width: 960px; /* This is the overall width of pages */
+	padding: 0 0;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* Title for all pages. */
+#header {
+	color:#fff;
+	height:100px;
+	margin: 3px auto;
+	padding: 10px 10px 5px 10px;
+	background-image:url(../images/cytoscape_title.png);
+	line-height: 100%;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: solid 1px #555;
+}
+
+#header .title {
+	float:left;
+	position:relative;
+}
+
+#header .title a {
+	color:#fff;
+	text-decoration:none;
+}
+
+#header h4 {
+	margin:20px 0px 0px 20px;
+}
+
+#footer {
+	padding: 10px 10px;
+	margin: 10px 0 10px 0;
+	text-align:center;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;
+	line-height: 100%;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: solid 1px #DDD;
+	background:#F2F2F2;
+}
+
+/* general content box: Full width */
+.blockfull {
+	display:block;
+	float:left;
+	margin:5px auto;
+	padding:5px 10px 5px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #FFF;
+}
+
+.blockfull p {
+	margin:10px 10px;
+	padding:5px 10px;
+	line-height:20px;
+}
+
+.blockfull h3 {
+	margin:0px;
+}
+
+.blockleft, .blockright {
+	width:456px;
+	margin:5px 0;
+	padding:0px 10px 15px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #fff;
+}
+
+.blockleft h4, .blockright h4 {
+	margin-left:18px;
+	matgin-top:0;
+	padding-top:0;
+}
+
+.blockleft {
+	float:left !important;
+}
+
+.blockleft img, .blockright img, .blockfull img {
+	float:right;
+	margin:5px 5px;
+	padding: 10px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #f1f1f1;
+}
+
+.blockright {
+	font-size:12px;
+	float:right !important;
+}
+
+.blockleft li, .blockright li {
+	list-style:none;
+	line-height:150%;
+	font-size:14px;
+}
+
+.feeds {
+	height:400px;
+	background-color:#fff;
+	margin: 5px 0px;
+	padding: 10px 10px 10px 10px;
+	line-height: 100%;
+	line-height: 100%;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+.introbox {
+	display:block;
+	float:right;
+	width:224px;
+	height:450px;
+	background-color:#FFF;
+	margin: 0 0;
+	padding: 0px 15px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border:#DDD 1px solid;
+}
+
+.introbox p {
+	font-size:12px;
+	line-height:18px;
+	margin:10px 5px;
+}
+
+.introbox h3 {
+	color:#333;
+	font-size:14px;
+	line-height:180%;
+}
+
+.introbox ul {
+	margin:65px 0px !important;
+	padding:0;
+}
+
+.introbox li {
+	list-style-type:none;
+	margin:10px auto;
+	list-style: none;
+}
+
+.introbox .button {
+	margin:20px auto;
+	padding:auto 5px !important;
+	float:left;
+	font-size:14px !important;
+	line-height:20px !important;
+}
+
+/* News Feed box by Tumblr */
+.news, .startnav, .feed {
+	float:left;
+	display:block;
+	height:550px;
+	width:425px;
+	margin: 10px 0;
+	padding: 5px 10px;
+	background: #FFF; /* for non-css3 browsers */
+	line-height: 100%;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+.news h3, .news h4, .news h5, .news p {
+	margin:15px 20px;
+	
+}
+
+.news .entry img {
+	margin:5px 5px;
+}
+
+.news h5 {
+	color:#FFF;
+	background:#999;
+	padding:5px 10px;
+}
+
+/* Accordion box */
+.startnav {
+	float:right;
+	width:490px;
+}
+
+.startnav h2 {
+	margin: 15px 15px;
+}
+
+/* Link icons for social media */
+#linkIcons li {
+	margin:60px 0px 0px 0px;
+	padding:0px 5px 5px 5px;
+	float: right;
+	position:relative;
+	left:23%;
+	list-style: none;
+}
+
+#slides {
+	display:block;
+	float:left;
+	margin: 20px auto;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #FFF;
+}
+
+.feed {
+	width:940px !important;
+	height:auto;
+	float:left;
+	margin-top:0;
+}
+
+.feed h2 {
+	line-height:25px;
+	margin:15px 0 0 25px;
+}
+
+#friendfeed {
+	width:auto !important;
+	margin:0 auto !important;
+	border:none !important;
+}
+
+#friendfeed .feed {
+	width:inherit;
+	border:none !important;
+}
+
+#friendfeed .entry {
+	border:none !important;
+	width:auto !important;
+	margin:15px auto !important;
+}
+
+#friendfeed .body {
+	border:none !important;
+}
+
+#friendfeed .bottom {
+	background:#fff !important;
+	border:none !important;
+	text-align:center !important;
+	margin:0 50px !important;
+}
+
+#tumblr {
+	color:#444;
+	margin: 0px auto;
+	padding: 10px 10px 5px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#tumblr ul {
+	list-style:none;
+}
+
+#tumblr #posts li {
+	background:#fff;
+	padding:3px 3px 3px 30px;
+	line-height: 100%;
+	margin:0 0 15px -40px;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+#tumblr #posts .post-body text-post {
+	border:none;
+}
+
+#tumblr img {
+	display:block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#tumblr .caption {
+	font-size:16px;
+	text-align:center;
+}
+
+#bottom {
+	height:20px;
+	background:#fff;
+}
+
+#titleimage {
+	color:#fff;
+	position:relative;
+	margin:5px auto;
+	padding:7px 10px;
+	text-align:center;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #000;
+}
+
+#introtop {
+	margin:0 0;
+	padding:0 0;
+	background: #000;
+}
+
+.blockabout {
+	line-height:150%;
+	margin:auto 5px;
+	padding:10px 10px;
+	font-size:14px;
+	float:left;
+	width:46%;
+}
+
+#license {
+	line-height:150%;
+	font-size:14px;
+	width:46%;
+	float:left;
+	padding:10px 10px;
+	margin:5px 5px;
+	background: #fff;
+}
+
+.screenshots {
+	margin:20px auto;
+}
+
+.screenshots h2 {
+	margin:20px 20px;
+}
+
+.screenshots .imagepanel img {
+	font-size:12px;
+	width:200px;
+	float:left;
+	padding:10px 10px;
+	margin:10px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #f1f1f1;
+}
+
+#downleft, #downright{
+	height:510px;
+}
+
+#downleft li {
+	list-style:decimal;
+	line-height:30px;
+}
+
+
+#download ul li {
+	font-size:14px;
+	padding-left: 70px;
+	padding-top:28px;
+	background: url(../images/icon/Download-32.png) no-repeat 32px;
+	list-style: none;
+	height:36px;
+}
+
+#download .blockleft, #download .blockright {
+	height:700px;
+}
+
+#people {
+	margin-bottom:10px;
+}
+
+#people h1, h2, h3 {
+	margin:20px 15px;
+}
+
+#people h3 {
+	margin:20px 15px 10px 15px;
+}
+
+#people .blockfull {
+	width:98%;
+	padding:10px 10px;
+	margin:5px 0px 5px 0px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #fff;
+	float:left;
+}
+
+#people .blockfull .group {
+	float:left !important;
+	margin-top:20px;
+	width:95%;
+}
+
+#people .blockfull .column {
+	width:33%;
+	height:520px;
+	position:relative;
+	float:left;
+}
+
+#people .institute {
+	position:relative;
+	float:left !important;
+	margin:3px 15px;
+	vertical-align:50%;
+}
+
+#people .institute img {
+	vertical-align:middle;
+	width:250px;
+	padding:5px 5px;
+	margin:3px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #fff;
+}
+
+#people .person {
+	float:left;
+	margin:10px 9px;
+}
+
+#people .name {
+	position:relative;
+	text-align:center;
+}
+
+#people img {
+	width:110px;
+	float:left;
+	padding:15px 15px;
+	margin:10px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #f1f1f1;
+}
+
+#people li {
+	list-style:none;
+	float:left;
+	margin:10px 10px;
+}
+
+#community h1, #community h2, #community h3, #documents h1, #documents h2, #documents h3, #documents h4 {
+	margin:10px 15px;
+}
+
+#community .blockfull, #documents .blockfull {
+	width:98%;
+	padding:10px 10px;
+	margin:10px 0px 10px 0px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #fff;
+	float:left;
+}
+
+#community .blockfull .titletext {
+	font-size:36px;
+	width:80% !important;
+	vertical-align:middle;
+	height:58px;
+	margin-top:33px;
+	margin-left:-30px;
+	position:relative;
+	float:left;
+}
+
+#community .blockfull .titleimage img {
+	float:left !important;
+	margin-left:10px !important;
+}
+
+#community .site, #community .mailinglist, #documents .filetype {
+	width:28%;
+	height: 300px;
+	float:left;
+	padding:15px 15px;
+	margin:10px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #f5f5f5;
+}
+
+#community img {
+	text-align:center;
+	margin:10px 59px !important;
+	background-color:#fff;
+	border:none;
+	float:none !important;
+}
+
+#community .mailinglist {
+	height:200px;
+	padding:5px 15px;
+}
+
+#community .mailinglist p {
+	line-height:150%;
+}
+
+#community form {
+	margin:15px 15px;
+	line-height:140%;
+}
+
+.pub {
+	width:97%;
+	float:left;
+	padding:15px 15px;
+	margin:10px 10px 10px 0;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #f5f5f5;
+}
+
+.pub .author {
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:5px 5px;
+}
+
+.pub .title {
+	font-weight:bold;
+	font-size:18px;
+	margin:10px 5px;
+}
+
+.pub .source {
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:5px 5px;
+	font-style:italic;
+}
+
+.pub a {
+	margin:5px 5px;
+	float:left;
+}
+
+#documents .blockleft, #documents .blockright {
+	height:320px;
+}
+
+#documents .blockleft img, #documents .blockright img {
+	border:none !important;
+	background:#FFF;
+}
+
+p {
+	font-size:14px;
+	margin:auto 15px;
+	line-height:140%;
+}
+
+.important {
+	padding:10px 10px;
+	margin:10px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #ebebeb; /* for non-css3 browsers */
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dadada'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#dadada)); /* for webkit browsers */
+	background: -moz-linear-gradient(top, #f9f9f9, #dadada); /* for firefox 3.6+ */
+	border: solid 1px #9d9d9d;
+}

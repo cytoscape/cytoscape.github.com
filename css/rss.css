@@ -1,0 +1,113 @@
+
+#feedWidget1 {
+	line-height:150%;
+	word-wrap:break-word;
+	width:45%;
+	float:left;
+	background-color:#fff;
+	margin:10px 0px 10px 0px;
+	padding:5px, 3px, 5px 3px;
+	/* Remains hidden if JS is not enabled: */
+	display:none;
+	z-index:20;
+}
+
+#feedWidget1 img {
+	position:relative;
+	margin:0px 0px 0px 8px;
+}
+
+#feedWidget1 a {
+	color:#555;
+}
+
+#feedWidget2 {
+
+	word-wrap:break-word;
+	width:280px;
+	
+	background-color:#fff;
+	margin:10px 10px 10px 0px;
+	padding:5px, 5px, 5px 5px;
+	/* Remains hidden if JS is not enabled: */
+	display:none;
+	z-index:20;
+	
+	line-height: 100%;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	
+	
+}
+
+
+
+#activeTab1, .dropDownList div {
+	color:#666;
+	cursor:pointer;
+	font-size:18px;
+	margin:0px 5px 5px 5px;
+	padding:5px;
+}
+
+#activeTab2, .dropDownList div {
+	color:#666;
+	cursor:pointer;
+	font-size:18px;
+	margin:5px 5px 5px 5px;
+	padding:5px;
+}
+
+.line {
+	height:1px;
+	overflow:hidden;
+	border-bottom:1px solid #687581;
+	margin:10px 0;
+}
+
+
+
+#tabContent1 div {
+	line-height:150%;
+	background-color:#EEEEEE;
+	color:#555555;
+	font-size:12px;
+	margin:10px;
+	padding:5px;
+	position:relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow:0 2px 2px black;
+	-webkit-box-shadow:0 2px 2px black;
+	box-shadow:0 2px 2px black;
+	
+}
+
+#tabContent1 div a {
+	color:#1DCCEF;;
+}
+
+#tabContent2 div {
+	line-height:150%;
+	/* The feed entry divs */
+	background-color:#EEEEEE;
+	color:#555555;
+	font-size:14px;
+	margin:10px;
+	padding:5px;
+	position:relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow:0 2px 2px black;
+	-webkit-box-shadow:0 2px 2px black;
+	box-shadow:0 2px 2px black;
+}
+
+#tabContent2 div a {
+	color:#1DCCEF;;
+}

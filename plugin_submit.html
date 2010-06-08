@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
+<title>Submit Your Plugin</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/menu_generator.js"></script>
+</head>
+
+<body>
+<div id="container"> 
+  <script src="js/header.js"></script>
+  <div id="titleimage"> <img src="images/icon/earth_upload-128.png"/>
+    <h1>Submit New Plugin</h1>
+  </div>
+  <div id="documents">
+    <div class="blockfull">
+      <h1>Choose Your Plugin File Type</h1>
+      <div class="filetype"> <a href="pluginsubmit.php"><img src="images/icon/File-jar-128.png" /></a>
+        <h3>JAR File</h3>
+        <p>A single <a href="http://www.cytoscape.org/cgi-bin/moin.cgi/Cytoscape_Plugin_Tutorial"> properly formatted plugin jar</a>. We will read (and validate) the plugin metadata (name, description, version, etc.) from the jar.</p>
+      </div>
+      <div class="filetype"> <a href="pluginsubmitzip.php"><img src="images/icon/Zip-gold-blue-128.png"/></a>
+        <h3>ZIP File</h3>
+        <p>A file with extension .zip, which should contain the plugin jar and any other necessary data.  The file will be loaded as is and you will need to enter the plugin metadata.</p>
+      </div>
+      
+      <div class="filetype"><a href="pluginsubmiturl.php"><img src="images/icon/Global-network-128.png" /></a>
+      <h3>URL</h3>
+      <p>Plugin information with project URL. Since Cytoscape does not host the Zip/Jar file, they will not appear at the Cytoscape plugin manager. Users should download them manualy by following the project URLs, if they are interested. </p>
+       </div>
+    </div>
+  </div>
+  <script src="js/footer.js"></script> 
+</div>
+</body>
+</html>
