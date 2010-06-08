@@ -229,7 +229,7 @@ a img {
 	float:left;
 	display:block;
 	height:550px;
-	width:425px;
+	width:426px;
 	margin: 10px 0;
 	padding: 5px 10px;
 	background: #FFF; /* for non-css3 browsers */
@@ -239,6 +239,7 @@ a img {
 	-moz-border-radius: 0.7em;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background:#FFF;
 }
 
 .news h3, .news h4, .news h5, .news p {
@@ -247,12 +248,11 @@ a img {
 }
 
 .news .entry img {
-	margin:5px 5px;
+	margin:15px 6px;
 }
 
 .news h5 {
 	color:#FFF;
-	background:#999;
 	padding:5px 10px;
 }
 
@@ -325,23 +325,42 @@ a img {
 	margin:0 50px !important;
 }
 
+/* For Tumblar News site */
 #tumblr {
-	color:#444;
-	margin: 0px auto;
-	padding: 10px 10px 5px 10px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
+	margin: 0px auto 10px 0;
+	padding: 0 0;
+
 }
 
-#tumblr ul {
+#tumblr #posts {
 	list-style:none;
+	margin:0 0;
 }
 
-#tumblr #posts li {
+/* one entry */
+#tumblr #posts .post {
 	background:#fff;
-	padding:3px 3px 3px 30px;
-	line-height: 100%;
-	margin:0 0 15px -40px;
+	display:block;
+	width:100%;
+
+	padding:15px 0;
+	margin:0 0 10px 0;
+	border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border:solid 1px #666;
+}
+
+
+
+#tumblr img, #tumblr #bottom {
+	display:block;
+	margin: 10px auto;
+	text-align: center;
+	padding:10px 10px;
+	background:#F2F2F2;
 	border-radius: 0.7em;
 	-webkit-border-radius: 0.7em;
 	-moz-border-radius: 0.7em;
@@ -349,24 +368,16 @@ a img {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 }
 
-#tumblr #posts .post-body text-post {
-	border:none;
-}
-
-#tumblr img {
-	display:block;
-	margin: 0 auto;
-	text-align: center;
-}
-
 #tumblr .caption {
 	font-size:16px;
 	text-align:center;
 }
 
-#bottom {
+#tumblr #bottom {
 	height:20px;
-	background:#fff;
+	font-size:16px;
+	background:#FFF;
+	border:none;
 }
 
 #titleimage {
