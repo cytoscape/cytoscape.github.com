@@ -54,6 +54,7 @@ function appendIconLinks() {
 
 
 function appendMainMenuItems() {
+	$("#nav").append("<li id=\"homeMenu\"><a href=\"http://www.cytoscape.org/\">Home</a></li>");
 	$("#nav").append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>");
 	$("#nav").append("<li id=\"downloadMenu\"><a href=\"" + baseURL +"download.html\">Download</a></li>");
 	$("#nav").append("<li id=\"pluginMenu\"><a href=\"#\">Plugins</a></li>");
