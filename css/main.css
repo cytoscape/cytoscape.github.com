@@ -52,7 +52,7 @@ a img {
 #header {
 	color:#fff;
 	height:100px;
-	margin: 3px auto;
+	margin: 3px auto 0px auto;
 	padding: 10px 10px 5px 10px;
 	background-image:url(../images/cytoscape_title.png);
 	line-height: 100%;
@@ -92,6 +92,11 @@ a img {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	border: solid 1px #DDD;
 	background:#F2F2F2;
+}
+
+#footer p {
+	font-size:10px;
+	margin: 5px 0 5px 0;
 }
 
 /* general content box: Full width */
@@ -217,11 +222,11 @@ a img {
 }
 
 .introbox .button {
-	margin:20px auto;
+	margin:5px auto;
+	width:225px;
 	padding:auto 5px !important;
-	float:left;
-	font-size:14px !important;
-	line-height:20px !important;
+	font-size:18px !important;
+	line-height:22px !important;
 }
 
 /* News Feed box by Tumblr */
@@ -244,7 +249,6 @@ a img {
 
 .news h3, .news h4, .news h5, .news p {
 	margin:15px 20px;
-	
 }
 
 .news .entry img {
@@ -256,6 +260,7 @@ a img {
 	padding:5px 10px;
 }
 
+
 /* Accordion box */
 .startnav {
 	float:right;
@@ -265,6 +270,10 @@ a img {
 .startnav h2 {
 	margin: 15px 15px;
 }
+
+
+
+
 
 /* Link icons for social media */
 #linkIcons li {
@@ -286,10 +295,11 @@ a img {
 }
 
 .feed {
-	width:940px !important;
+	width:370px !important;
 	height:auto;
-	float:left;
-	margin-top:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
 }
 
 .feed h2 {
@@ -329,7 +339,6 @@ a img {
 #tumblr {
 	margin: 0px auto 10px 0;
 	padding: 0 0;
-
 }
 
 #tumblr #posts {
@@ -342,7 +351,6 @@ a img {
 	background:#fff;
 	display:block;
 	width:100%;
-
 	padding:15px 0;
 	margin:0 0 10px 0;
 	border-radius: 0.7em;
@@ -352,8 +360,6 @@ a img {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	border:solid 1px #666;
 }
-
-
 
 #tumblr img, #tumblr #bottom {
 	display:block;
@@ -441,7 +447,7 @@ a img {
 	background: #f1f1f1;
 }
 
-#downleft, #downright{
+#downleft, #downright {
 	height:510px;
 }
 
@@ -449,7 +455,6 @@ a img {
 	list-style:decimal;
 	line-height:30px;
 }
-
 
 #download ul li {
 	font-size:14px;
@@ -497,7 +502,7 @@ a img {
 
 #people .blockfull .column {
 	width:33%;
-	height:520px;
+	height:360px;
 	position:relative;
 	float:left;
 }
@@ -552,7 +557,7 @@ a img {
 }
 
 #community h1, #community h2, #community h3, #documents h1, #documents h2, #documents h3, #documents h4 {
-	margin:10px 15px;
+	margin:15px 15px 15px 10px ;
 }
 
 #community .blockfull, #documents .blockfull {
@@ -607,7 +612,7 @@ a img {
 }
 
 #community .mailinglist {
-	height:200px;
+	height:230px;
 	padding:5px 15px;
 }
 
@@ -658,7 +663,7 @@ a img {
 }
 
 #documents .blockleft, #documents .blockright {
-	height:320px;
+	height:340px;
 }
 
 #documents .blockleft img, #documents .blockright img {
@@ -685,4 +690,13 @@ p {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#dadada)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #f9f9f9, #dadada); /* for firefox 3.6+ */
 	border: solid 1px #9d9d9d;
+}
+
+.guide p {
+	margin:20px auto;
+}
+
+.guide .button {
+	margin:5px auto;
+	float:right;
 }
