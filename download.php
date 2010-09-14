@@ -101,8 +101,8 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <hr />
         <h2>Development Versions</h2>
         <ul>
-          <li><a href="#">Beta Version: </a></li>
-          <li><a href="#">Nightly Build</a></li>
+          <li><a href="<?=$beta_2x?>">Beta Version: Cytoscape 2.8</a></li>
+          <li>Nightly Build</li>
         </ul>
     </div>
   </div>

@@ -510,7 +510,7 @@ a img {
 }
 
 #downleft, #downright {
-	height:510px;
+	height:auto;
 }
 
 #downleft li {

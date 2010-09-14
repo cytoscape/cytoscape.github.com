@@ -27,4 +27,8 @@ $latest_linux = $chianti_base."Cyto-2_7_0/Cytoscape_2_7_0_unix.sh";
 
 # Older versions
 
+# Beta and Development versions
+
+$beta_2x = $chianti_base."Cyto-2_8-beta";
+
 ?>
