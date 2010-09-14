@@ -18,7 +18,7 @@ document.write("<div id=\"header\">" +
   		"</form>" + 
 		
     	"<div class=\"title\">" + 
-			"<a href=\"http://chianti.ucsd.edu/~kono/cytoscape/\"><h1>Cytoscape</h1></a>" + 
+			"<a href=\"http://www.cytoscape.org/\"><h1>Cytoscape</h1></a>" + 
 			"<h4>" + document.title +"</h4>" + 
 		"</div>" + "<ul id=\"linkIcons\"></ul>" +
   		"</div>" + 

@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 
 // root URL
-var baseURL = "http://chianti.ucsd.edu/~kono/cytoscape/";
+var baseURL = "http://www.cytoscape.org/";
 var pluginSiteURL = "http://chianti.ucsd.edu/cyto_web/plugins_new/";
 var latestVersion = "2.7.0";
 
