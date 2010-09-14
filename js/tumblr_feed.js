@@ -9,10 +9,9 @@ for(var i=0; i<2; i++) {
 	
 	if(tumblr_api_read.posts[i]['type'] == "photo") {
     	document.write(
-			
-				tumblr_api_read.posts[i]['photo-caption'] + 
-		"<a href=\""+ tumblr_api_read.posts[i]['url'] +"\" target=\"_top\">" +
-		'<img src="' + tumblr_api_read.posts[i]['photo-url-400'] + '" /></a></div>'
+			tumblr_api_read.posts[i]['photo-caption'] + 
+			"<a href=\""+ tumblr_api_read.posts[i]['url'] +"\" target=\"_top\">" +
+			"<img src=\"" + tumblr_api_read.posts[i]['photo-url-400'] + '" /></a></div>'
 		
 	
     	);

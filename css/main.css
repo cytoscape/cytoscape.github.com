@@ -51,9 +51,9 @@ a img {
 /* Title for all pages. */
 #header {
 	color:#fff;
-	height:100px;
+	height:55px;
 	margin: 3px auto 0px auto;
-	padding: 10px 10px 5px 10px;
+	padding: 5px 10px 5px 10px;
 	background-image:url(../images/cytoscape_title.png);
 	line-height: 100%;
 	border-radius: 0.5em;
@@ -67,6 +67,12 @@ a img {
 #header .title {
 	float:left;
 	position:relative;
+	
+	
+}
+
+#header .title h1 {
+	margin:8px 15px 8px;
 }
 
 #header .title a {
@@ -74,8 +80,10 @@ a img {
 	text-decoration:none;
 }
 
+
+
 #header h4 {
-	margin:20px 0px 0px 20px;
+	margin:15px 0px 0px 20px;
 }
 
 #footer {
@@ -98,6 +106,8 @@ a img {
 	font-size:10px;
 	margin: 5px 0 5px 0;
 }
+
+
 
 /* general content box: Full width */
 .blockfull {
@@ -222,11 +232,11 @@ a img {
 }
 
 .introbox .button {
-	margin:5px auto;
+	margin:20px auto 0 auto;
 	width:225px;
 	padding:auto 5px !important;
 	font-size:18px !important;
-	line-height:22px !important;
+	line-height:24px !important;
 }
 
 /* News Feed box by Tumblr */
@@ -235,7 +245,7 @@ a img {
 	display:block;
 	height:550px;
 	width:426px;
-	margin: 10px 0;
+	margin: 5px 0;
 	padding: 5px 10px;
 	background: #FFF; /* for non-css3 browsers */
 	line-height: 100%;
@@ -247,13 +257,79 @@ a img {
 	background:#FFF;
 }
 
-.news h3, .news h4, .news h5, .news p {
+
+/* Accordion box */
+.startnav {
+	float:right;
+	width:695px;
+	height:750px;
+	margin-top:5px;
+}
+
+
+.startnav ul li{
+	margin:10px auto;
+}
+
+.startnav .category {
+	height:440px !important;
+}
+
+.startnav .category .text {
+	float:left;
+	margin:0;
+	padding:0;
+	width:230px;
+}
+
+.startnav .category .text a {
+	text-decoration:none;
+	color:#08C !important;
+}
+
+.startnav .category .images {
+	float:right;
+	margin-top:10px;
+	margin-left:15px;
+	padding:0;
+}
+
+.startnav .category .images .panel {
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:0;
+}
+
+.startnav h2 {
+	margin: 15px 15px;
+}
+
+.startnav button {
+	float:right;
+	margin:15px 10px 0 0;
+}
+
+
+/*
+	News internal frame
+*/
+.news {
+	width:695px;
+	height:660px;
+	margin-top:0;
+	float:right;
+}
+
+.news h3 img {
+	vertical-align:baseline;
+	margin:0 20px;
+}
+
+.news h4, .news h5, .news p {
 	margin:15px 20px;
 }
 
-.news .entry img {
-	margin:15px 6px;
-}
+
 
 .news h5 {
 	color:#FFF;
@@ -261,23 +337,9 @@ a img {
 }
 
 
-/* Accordion box */
-.startnav {
-	float:right;
-	width:490px;
-}
-
-.startnav h2 {
-	margin: 15px 15px;
-}
-
-
-
-
-
 /* Link icons for social media */
 #linkIcons li {
-	margin:60px 0px 0px 0px;
+	margin:21px 0px 0px 0px;
 	padding:0px 5px 5px 5px;
 	float: right;
 	position:relative;
@@ -295,7 +357,7 @@ a img {
 }
 
 .feed {
-	width:370px !important;
+	width:660px !important;
 	height:auto;
 	margin-top:10px;
 	margin-bottom:10px;
@@ -309,7 +371,7 @@ a img {
 
 #friendfeed {
 	width:auto !important;
-	margin:0 auto !important;
+	margin:0 5px !important;
 	border:none !important;
 }
 
@@ -700,3 +762,61 @@ p {
 	margin:5px auto;
 	float:right;
 }
+
+.blockfull .plugintree {
+	margin:auto 30px;
+}
+
+/*
+
+	Top page components: citation funcing agencies
+
+*/
+#cite, #funding {
+	float:left;
+	width:220px;
+	margin:5px 0 2px 0;
+	padding:0px 10px 15px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #fff;
+}
+
+#cite strong {
+	color:#F00;
+}
+
+#cite p {
+	line-height:23px;
+	margin:5px auto;
+	padding:auto 6px;
+	font-size:14px;
+	
+}
+
+#cite .pub {
+	width:192px;	
+}
+
+#cite .pub .author {
+	font-size:9px !important;
+}
+
+#cite .pub .title {
+	line-height::110%;
+	font-size:14px !important;
+}
+
+#funding .institute {
+	margin:25px 10px 15px;
+}
+
+#funding .title {
+	font-size:16px;
+	line-height:25px;
+	margin:15px 20px;
+}
+

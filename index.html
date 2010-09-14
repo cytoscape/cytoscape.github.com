@@ -8,7 +8,7 @@
 		microarray analysis, clustering, pathways, integration, algorithm, 
 		statistical analysis, gene regulation, complex networks, social networks"/>
 
-	<title>An Open Source Platform for Complex-Network Analysis and Visualization</title>
+	<title>Cytoscape: An Open Source Platform for Complex-Network Analysis and Visualization</title>
 
 	<!-- Main CSS for all pages. -->
 	<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
@@ -50,19 +50,24 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   			'infoPosition': 'bottom'
 		});
 	});
-</script>
+	</script>
 	<script type="text/javascript">
 	$(function() {
 		$(".guide").accordion({
-			aughtHeight: false,
-			header: "h1"		});
+			aughtHeight: true,
+			clearStyle: true,
+			header: "h1"
+					
+		});
 	});
 	</script>
 	</head>
 
 	<body>
+    
     <div id="container"> 
       <script src="js/header.js"></script>
+      
       <div id="slides" class="galleryview">
       	
         <div class="panel"> <a name="desc-00" title="Cytoscape 2.8.0" href="images/top_slides/cytoscapeDesktop1.png"> <img src="images/top_slides/cytoscapeDesktop1.png" width="700px" /> </a>
@@ -108,22 +113,22 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <div class="introbox">
         <h3>Network Data Integration, Analysis, and Visualization in a Box</h3>
         <p> Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data.  A lot of <a href="plugins.html">plugins</a> are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web. </p>
-        <p> <a href="what_is_cytoscape.html">Learn More...</a> </p>
         
         <a href="download.html">
         	<button class="button medium blue">Download Cytoscape Now</button>
         </a>
         
-        <a href="#start">
-        	<button class="button medium green">Where to Start?</button>
+        <a href="what_is_cytoscape.html">
+        	<button class="button medium green">Learn More</button>
         </a>
         
       </div>
       
       <!-- Support Cytoscape -->
-      <div class="blockfull">
-      	<h2>How to Cite Cytoscape</h2>
-        <p><strong>Cytoscape project needs your support!</strong>  Please cite either of the following papers when you use Cytoscape in your publications.  It is very important to make the Cytoscape project sustainable.</p>
+      <div id="cite">
+      	<h3>How to Cite Cytoscape</h3>
+        <p><strong>Cytoscape project needs your support!</strong>  
+        Please cite either of the following papers when you use Cytoscape in your publications, which is very important to sustain our federal funding.</p>
         <div class="pub">
           <div class="author"> Melissa S Cline, Michael Smoot, Ethan Cerami,
             Allan Kuchinsky, Nerius Landys, Chris Workman, Rowan Christmas, Iliana
@@ -147,127 +152,192 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
           <a href="http://www.genome.org/cgi/content/full/13/11/2498"> [Abstract] </a> <a href="http://www.genome.org/cgi/reprint/13/11/2498"> [PDF] </a> <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgicmd=Retrieve&amp;db=PubMed&amp;list_uids=14597658&amp;dopt=Abstract"> [PubMed entry]</a> </div>
       </div>
       
-      <!-- News -->
-      <div class="news">
-        <iframe id="frame" src="news.html" height="545" width="428" frameborder="0" scrolling="auto"> </iframe>
-      </div>
+     
       
       <!-- Where to start -->
       <div class="startnav" id="start">
-        <h2>Where to Start?</h2>
+        <h2>What Can You Do With Cytoscape?</h2>
         <div class="guide">
           <h1><a href="#">Biology</a></h1>
-          <div>
-            <p>Cytoscape was developed for biological researches, and it supports a lot of usecases including:</p>
-            <ul>
-              <li>Load protein-protein interaction data sets in various formats</li>
-              <li>Integrate annotation data, such as Gene Ontology, to the network</li>
-              <li>Analyze protein-protein/genetic interaction network with plugins</li>
-              <li>Map experimental data (e.g. microarray) to your network data sets and visualize it</li>
-              <li>Visualize and analyze human-curated pathway datasets such as KEGG.</li>
-            </ul>
-            
-            <p>
-            <div class="panel">
-            	<a name="vizmap" title="Visual Mapping" href="images/screenshots/visualMapping1.png">
-                	<img src="images/screenshots/visualMapping1.png" width="420px"/>
-                </a>
+          <div class="category">
+          	<div class="text">
+                <p>Cytoscape supports many use cases in molecular and systems biology, genomics, and proteomics:</p>
+                <ul>
+                  <li>Load molecular and genetic <a href="http://www.imexconsortium.org/">
+                  interaction data sets</a> in <a href="http://cytoscape.org/manual/Cytoscape2_7Manual.html#Supported%20Network%20File%20Formats">many formats</a></li>
+                  <li>Project and integrate global datasets and functional annotations</li>
+                  <li>Establish powerful visual mappings across these data</li>
+                  <li>Perform advanced analysis and modeling using <a href="http://chianti.ucsd.edu/cyto_web/plugins_new/">Cytoscape plugins</a></li>
+                  <li>Visualize and analyze human-curated pathway datasets such as 
+                  <a href="http://www.reactome.org/">Reactome</a> or <a href="http://www.genome.jp/kegg/pathway.html">KEGG</a>.</li>
+                </ul>
             </div>
-            </p>
             
-            <p>
-            <div class="panel">
-            	<a name="kegg" title="KEGG Data Import" href="images/screenshots/kegg1.png">
-                	<img src="images/screenshots/kegg1.png" width="420px"/>
-                </a>
+            <div class="images">
+                <div class="panel">
+                    <a name="vizmap" title="Visual Mapping" href="images/screenshots/visualMapping1.png">
+                        <img src="images/screenshots/visualMapping1.png" width="380px"/>
+                    </a>
+                </div>
+                <div class="panel">
+                    <a name="kegg" title="KEGG Data Import" href="images/screenshots/kegg1.png">
+                        <img src="images/screenshots/kegg1.png" width="380px"/>
+                    </a>
+                </div>
             </div>
-            </p>
             
-            <p>
-            <a href="http://cytoscape.wodaklab.org/wiki/Presentations" target="_new">
-            <button class="button green">Online Tutorial</button>
-            </a> 
-          	</p>
           </div>
             
           <h1><a href="#">Social Science</a></h1>
-          <div>
-          	<p>You can analyze and visualize network of people interactively on Cytoscape:</p>
-            <ul>
-              <li>Import your network data from spreadsheet</li>
-              <li>Write your own web crawler in scripting languages within Cytoscape</li>
-              <li>Calculate network statistics using plugins</li>
-            </ul>
-            
-          	<div class="panel">
-            	<a name="twitter" title="Twitter Social Network Visualization" href="images/screenshots/twitterVisualization1.png">
-                	<img src="images/screenshots/twitterVisualization1.png" width="420px"/>
-                </a>
+          <div class="category">
+          	<div class="text">
+                Cytoscape is used by social scientists to:
+                <ul>
+                  <li>Visualize and analyze large social networks of interpersonal relationships</li>
+                  <li>Assemble social networks from tables and forms</li>
+                  <li>Gather social interactions from the web by variety of <a href="http://code.google.com/intl/en/apis/socialgraph/">web service API</a> and <a href="http://cytoscape.wodaklab.org/wiki/ScriptingPlugins">scripted web crawlers within Cytoscape</a></li>
+                  <li>Calculate network statistics using plugins</li>
+                  <li>Use with other tools, such as <a href="http://www.r-project.org/">R</a> with 
+                  <a href="http://erzuli.ss.uci.edu/R.stuff/">sna</a>/<a href="http://igraph.sourceforge.net/">
+                  igraph</a> package, for more advanced analysis</li>
+                </ul>
             </div>
-            <p>
-            <a href="http://cytoscape.wodaklab.org/wiki/Presentations" target="_new">
-            <button class="button green">Online Tutorial</button>
-            </a> </p>
             
+            <div class="images">
+                <div class="panel">
+                    <a name="twitter" title="Twitter Social Network Visualization" href="images/screenshots/twitterVisualization1.png">
+                        <img src="images/screenshots/twitterVisualization1.png" width="380px"/>
+                    </a>
+                </div>
+            </div>
           </div>
+          
           <h1><a href="#">Semantic Web</a></h1>
-          <div>
-          	Since semantic web data sets are esentially graphs, you can use Cytoscape as a workbench for RDF data:
-            <ul>
-              <li>Load and visualize RDF</li>
-              <li>Reasoning by plugins</li>
-              <li>Use as a platform to develop your own semantic web applicaitons</li>
-            </ul>
-            
-            <p>
-            <div class="panel">
-            	<a name="rdf" title="RDF Data Visualization" href="images/screenshots/rdf1.png">
-                	<img src="images/screenshots/rdf1.png" width="420px"/>
-                </a>
-       
+          <div class="category">
+          	<div class="text">
+                Cytoscape is also a tool of choice for the semantic web community, since the semantic web is encoded and viewed as a network of knowledge and resources.
+                <ul>
+                  <li>Load and visualize <a href="http://www.w3.org/RDF/">Resource Description Framework (RDF)</a> data as networks</li>
+                  <li>Import data from <a href="http://en.wikipedia.org/wiki/Triplestore">Triplestore</a> through simple text table or 
+                  <a href="http://www.w3.org/TR/REC-rdf-syntax/">XML-RDF</a></li>
+                  <li>Query RDF data by <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL</a></li>
+                  <li>Perform reasoning by <a href="http://www.bioinformatics.org/rdfscape/wiki/Main/HomePage">plugins</a></li>
+                  <li>Platform to develop custom semantic web applications with other semantic web frameworks including 
+                  <a href="http://jena.sourceforge.net/">Jena</a> and <a href="http://www.openrdf.org/">Sesame</a></li>
+                </ul>
             </div>
-            </p>
-            <p>
-            <a href="http://cytoscape.wodaklab.org/wiki/Presentations" target="_new">
-            <button class="button green">Online Tutorial</button>
-            </a>
-            </p>
+            
+            <div class="images">
+                <div class="panel">
+                    <a name="rdf" title="Visualization of publically available biological Linked Data" href="images/screenshots/rdf1.png">
+                        <img src="images/screenshots/rdf1.png" width="380px"/>
+                    </a>
+           
+                </div>
+			</div>            
             
           </div>
           
           <h1><a href="#">General Complex Network Analysis</a></h1>
-          <div>
-          	<p>Cytoscape is a domain-independent platform, and you can use it as a powerful tool for complex network analysis in general.</p>
-            <ul>
-              <li>Calculate statistics for networks</li>
-              <li>Import data files from other network analysis tools such as igraph, pajek, or graphviz (by standard file formats like GML)</li>
-            </ul>
+          <div class="category">
+          	<div class="text">
+                Cytoscape is domain-independent and therefore is a powerful tool for complex network analysis in general.
+                <ul>
+                  <li>Calculate statistics for networks by plugins such as 
+                  <a href="http://med.bioinf.mpi-inf.mpg.de/netanalyzer/">NetworkAnalyzer</a> or 
+                  <a href="http://profs.sci.univr.it/~scardoni/centiscape/centiscapepage.php">CentiScaPe</a></li>
+                  <li>Find shortest path</li>
+                  <li><a href="http://www.cgl.ucsf.edu/cytoscape/cluster/clusterMaker.html">Find clusters by various kinds of algorithms</a></li>
+                  <li>Use with other tools for more advanced analysis</li>
+                  <li>Import data files from other popular network analysis tools, including 
+                  <a href="http://igraph.sourceforge.net/">igraph</a>, 
+                  <a href="http://vlado.fmf.uni-lj.si/pub/networks/pajek/">Pajek</a>, 
+                  and <a href="http://www.graphviz.org/">GraphViz</a> 
+                  (by standard file formats like <a href="http://www.infosun.fim.uni-passau.de/Graphlet/GML/">GML</a>)</li>
+                </ul>
+            </div>
             
-            <p>
+            <div class="images">
+                <div class="panel">
+                    <a name="networkAnalyzer" title="Analyze network with NetworkAnalyzer Plugin" href="images/screenshots/networkAnalyzer1.png">
+                        <img src="images/screenshots/networkAnalyzer1.png" width="380px"/>
+                    </a>
+           
+                </div>
+			</div>
+            
+          </div>
+          
+          <h1><a href="#">Plugin Development</a></h1>
+          <div class="category">
+              <div class="text">
+              	Cytoscape is expandable and extensible. Cytoscape has a vibrant plugin developer community 
+                and over a hundred plugins developed by third parties.
+                
+                <ul>
+                  <li>Build Cytoscape from <a href="http://chianti.ucsd.edu/svn/">source code</a></li>
+                  <li>Develop simple and complex plugins in <a href="">Java</a></li>
+                  <li>Rich Cytoscape Application Programming Interface (<a href="http://chianti.ucsd.edu/Cyto-2_7_0/javadoc/">API</a>)</li>
+                  <li><a href="http://groups.google.com/group/cytoscape-discuss">Active developer community</a></li>
+                  <li>Write simple functions with scripting languages, including 
+                  <a href="http://jruby.org/">Ruby</a>, <a href="http://www.jython.org/">Python</a>, 
+                  <a href="http://groovy.codehaus.org/">Groovy</a>, and <a href="http://www.mozilla.org/rhino/">JavaScript</a></li>
+                </ul>
+              </div>
+              <div class="images">
+              	<div class="panel">
+                    <a name="development" title="Cytoscape Development" href="images/screenshots/pluginDevelopment1.png">
+                        <img src="images/screenshots/pluginDevelopment1.png"/>
+                    </a>
+           
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        
+        <p>
+        	<a href="http://cytoscape.wodaklab.org/wiki/cytoscape_developer_tutorial" target="_new">
+            <button class="button gray">Plugin Developers Tutorial</button>
+            </a>
             <a href="http://cytoscape.wodaklab.org/wiki/Presentations" target="_new">
             <button class="button green">Online Tutorial</button>
             </a>
-            </p>
-          </div>
-          <h1><a href="#">Plugin Development</a></h1>
-          <div>
-            <p>Cytoscape is an expandable platform.  You can write your own plugins to implement new features for Cytoscape.</p>
             
-            <ul>
-              <li>Build Cytoscape from source code</li>
-              <li>Develop a plugin</li>
-              <li>Cytoscape API</li>
-            </ul>
-            
-            <p>
-            <a href="http://cytoscape.wodaklab.org/wiki/cytoscape_developer_tutorial" target="_new">
-            <button class="button gray">Plugin Developers Tutorial</button>
-            </a>
-            </p>
-          </div>
-        </div>
+        </p>
       </div>
       
+      
+      
+      <!-- News 1: Tumblr -->
+      <div class="news">
+      	<h3>Featured News<a href="http://cytoscape.tumblr.com/" target="_top"><img src="images/icon/tumblr.png"/></a></h3>
+      	
+        <iframe id="frame" src="news_tumblr.html" height="590" width="700" frameborder="0" scrolling="auto"> </iframe>
+      </div>
+      
+      
+      <!-- Funding Agency -->
+      <div id="funding">
+      	<div class="title">Consortium Members and Funding Agencies</div>
+        <div class="institute"><a href="http://www.home.agilent.com"><img width="200" src="images/logo/agilent_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.utoronto.ca/"><img width="200" src="images/logo/toronto_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.ucsf.edu/"><img width="200" src="images/logo/ucsf_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.pasteur.fr"><img width="200" src="images/logo/pasteur_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.mskcc.org"><img width="200" src="images/logo/mskcc_logo_web.png" /></a></div>
+      	<div class="institute"><a href="http://www.ucsd.edu/"><img width="200" src="images/logo/ucsd_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.systemsbiology.org/"><img width="200" src="images/logo/isb_logo_web.png" /></a></div>
+        <div class="institute"><a href="http://www.ncrr.nih.gov/index.asp"><img width="200" src="http://www.ncrr.nih.gov/images/home/top_banner.gif" /></a></div>
+        <div class="institute"><a href="http://www.nigms.nih.gov/"><img width="200" src="https://workshop.nigms.nih.gov/images/nigms_logo.gif" /></a></div>      
+	  </div>
+      
+      <div class="news">
+      	<h2>Cytoscape News Feeds by <a href="http://friendfeed.com/cytoscape">FriendFeed</a></h2>
+        
+        <script type="text/javascript" src="http://friendfeed.com/embed/widget/cytoscape?v=3&amp;hide_logo=1&amp;num=7&amp;hide_comments_likes=1&amp;width=700"></script>
+        <noscript><a href="http://friendfeed.com/cytoscape">
+        <img alt="View my FriendFeed" style="border:none;" src="http://friendfeed.com/embed/widget/cytoscape?v=3&amp;hide_logo=1&amp;hide_comments_likes=1&amp;num=7&amp;width=700&amp;format=png"/></a></noscript>
+      </div>
       <script src="js/footer.js"></script> 
     </div>
 </body>

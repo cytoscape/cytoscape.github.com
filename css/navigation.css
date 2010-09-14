@@ -10,9 +10,9 @@
 
 #nav {
 	z-index:1000;
-	margin:3px 0 4px 0;
-	height:36px;
-	padding: 0px 6px 0;
+	margin:3px 0 5px 0;
+	height:37px;
+	padding: 0 6px 0 6px;
 	line-height: 100%;
 	border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
@@ -42,7 +42,7 @@
 	color: #e7e5e5;
 	text-decoration: none;
 	display: block;
-	padding:  8px 10px;
+	padding:  9px 10px;
 	margin-top: 2px;
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
@@ -52,7 +52,7 @@
 /* main level link hover */
 #nav .current a, #nav li:hover > a {
 	background: #d1d1d1; /* for non-css3 browsers */
- filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#a1a1a1'); /* for IE */
+ 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#a1a1a1'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#a1a1a1)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #ebebeb, #a1a1a1); /* for firefox 3.6+ */
 	color: #444;

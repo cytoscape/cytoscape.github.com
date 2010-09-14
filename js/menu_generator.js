@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 // root URL
 var baseURL = "http://chianti.ucsd.edu/~kono/cytoscape/";
+var pluginSiteURL = "http://chianti.ucsd.edu/cyto_web/plugins_new/";
 var latestVersion = "2.7.0";
 
 
@@ -90,7 +91,7 @@ function appendIntro() {
 
 function appendPlugin() {
 	$("#pluginMenu").append("<ul>" + 
-		"<li><a href=\"plugins/index.php\">List of Plugins</a></li>" +
+		"<li><a href=\"" + pluginSiteURL + "\">List of Plugins</a></li>" +
 		"<li><a href=\"" + baseURL + "plugin_submit.html\">Submit Your Plugin</a></li></ul>"
 	);
 }
