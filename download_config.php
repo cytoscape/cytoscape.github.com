@@ -5,7 +5,7 @@ $cbio_base = "http://www.cbio.mskcc.org/cytoscape/release/";
 $chianti_base = "http://chianti.ucsd.edu/";
 
 # Logging
-$download_log = "log/download_log.txt";
+$download_log = "/home/groups/c/cy/cytoscape/persistent/data/cyto_data.txt";
 
 #
 $latest_version = "2.7.0";
