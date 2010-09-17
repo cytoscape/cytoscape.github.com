@@ -91,7 +91,7 @@ function appendIntro() {
 
 function appendPlugin() {
 	$("#pluginMenu").append("<ul>" + 
-		"<li><a href=\"" + pluginSiteURL + "\">List of Plugins</a></li>" +
+		"<li><a href=\"plugins.html\">List of Plugins</a></li>" +
 		"<li><a href=\"" + baseURL + "plugin_submit.html\">Submit Your Plugin</a></li></ul>"
 	);
 }
