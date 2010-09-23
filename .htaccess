@@ -1,3 +1,8 @@
 AddType application/x-java-jnlp-file .jnlp
 AddType application/x-java-archive-diff .jardiff
 Redirect 301 /plugins/plugins.xml http://chianti.ucsd.edu/cyto_web/plugins/plugins.xml
+Redirect 301 /datasets/HPRD.sif http://chianti.ucsd.edu/cytoscape-data/HPRD.sif
+Redirect 301 /datasets/ptacek.sif http://chianti.ucsd.edu/cytoscape-data/ptacek.sif
+Redirect 301 /datasets/stelzl.sif http://chianti.ucsd.edu/cytoscape-data/stelzl.sif
+Redirect 301 /datasets/rual.sif http://chianti.ucsd.edu/cytoscape-data/rual.sif
+Redirect 301 /tut/getting.started/RUAL.subset.sif http://chianti.ucsd.edu/cytoscape-data/RUAL.subset.sif
