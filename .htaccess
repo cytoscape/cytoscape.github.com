@@ -6,4 +6,4 @@ Redirect 301 /datasets/ptacek.sif http://chianti.ucsd.edu/cytoscape-data/ptacek.
 Redirect 301 /datasets/stelzl.sif http://chianti.ucsd.edu/cytoscape-data/stelzl.sif
 Redirect 301 /datasets/rual.sif http://chianti.ucsd.edu/cytoscape-data/rual.sif
 Redirect 301 /tut/getting.started/RUAL.subset.sif http://chianti.ucsd.edu/cytoscape-data/RUAL.subset.sif
-Redirect 301 /ISBM2002 http://prosecco.ucsd.edu/ISBM2002
+Redirect 301 /ISMB2002 http://prosecco.ucsd.edu/ISMB2002
