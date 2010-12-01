@@ -12,7 +12,7 @@ $latest_version = "2.7.0";
 $latest_version_underscore = "2_7_0";
 $latest_version_doc_prefix = "2_7";
 
-# Beta and Development versions
+# Beta and Development versions.  Use empty string when beta is not available.
 $beta_2x = $chianti_base."Cyto-2_8-beta";
 
 $latest_version_url = $chianti_base."Cyto-".$latest_version_underscore."/";
@@ -33,5 +33,24 @@ $latest_mac = $latest_version_url."Cytoscape_".$latest_version_underscore."_maco
 $latest_windows_32 = $latest_version_url."Cytoscape_".$latest_version_underscore."_windows_32bit.exe";
 $latest_windows_64 = $latest_version_url."Cytoscape_".$latest_version_underscore."_windows_64bit.exe";
 $latest_linux = $latest_version_url."Cytoscape_".$latest_version_underscore."_unix.sh";
+
+# Older versions
+
+$older_versions = array(
+	"2.1" => "http://chianti.ucsd.edu/Cyto2.1/",
+	"2.2" => "http://chianti.ucsd.edu/Cyto-2_2/",
+	"2.3.0" => "http://chianti.ucsd.edu/Cyto-2_3/",
+	"2.3.1" => "http://chianti.ucsd.edu/Cyto-2_3_1/",
+	"2.3.2" => "http://chianti.ucsd.edu/Cyto-2_3_2/",
+	"2.4.0" => "http://chianti.ucsd.edu/Cyto-2_4/",
+	"2.4.1" => "http://chianti.ucsd.edu/Cyto-2_4_1/",
+	"2.5.0" => "http://chianti.ucsd.edu/Cyto-2_5/",
+	"2.5.1" => "http://chianti.ucsd.edu/Cyto-2_5_1/",
+	"2.5.2" => "http://chianti.ucsd.edu/Cyto-2_5_2/",
+	"2.6.0" => "http://chianti.ucsd.edu/Cyto-2_6_0/",
+	"2.6.1" => "http://chianti.ucsd.edu/Cyto-2_6_1/",
+	"2.6.2" => "http://chianti.ucsd.edu/Cyto-2_6_2/",
+	"2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/"
+);
 
 ?>

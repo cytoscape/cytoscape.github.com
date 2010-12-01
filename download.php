@@ -41,6 +41,12 @@
 		$files["win32"] = $latest_windows_32;
 		$files["win64"] = $latest_windows_64; 
 		$files["linux"] = $latest_linux; 
+		
+		if(strlen($beta_2x) == 0) {
+			$beta_link = "";
+		} else {
+			$beta_link = "<li><a href=".$beta_2x.">Beta Version</a></li>";
+		}
 	} else {
 		echo "cannot process";
 	}
@@ -96,27 +102,18 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <div class="blockright">
     	<h2>Older Versions</h2>
         <ul>
-            <li><a href="http://chianti.ucsd.edu/Cyto2.1/">2.1</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_2/">2.2</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_3/">2.3.0</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_3_1/">2.3.1</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_3_2/">2.3.2</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_4/">2.4.0</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_4_1/">2.4.1</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_5/">2.5.0</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_5_1/">2.5.1</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_5_2/">2.5.2</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_6_0/">2.6.0</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_6_1/">2.6.1</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_6_2/">2.6.2</a></li>
-            <li><a href="http://chianti.ucsd.edu/Cyto-2_6_3/">2.6.3</a></li>
+        	<?
+				while(list($tKey,$tValue)=each($older_versions)) {
+					print '<li><a href="'.$tValue.'">'.$tKey.'</a></li>';
+				}
+			?>
       	</ul>
         
         
         <hr />
         <h2>Development Versions</h2>
         <ul>
-          <li><a href="<?=$beta_2x?>">Beta Version: Cytoscape 2.8</a></li>
+          <?=$beta_link?>
           <li>Nightly Build</li>
         </ul>
     </div>

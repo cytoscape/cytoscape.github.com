@@ -10,7 +10,3 @@ var javadocURL = "http://chianti.ucsd.edu/Cyto-" + latestVersion_underscore +"/j
 
 var manualURL = "http://cytoscape.org/manual/Cytoscape" + latestVersion_prefix + "Manual.html";
 var manualPDFURL = "http://cytoscape.org/manual/Cytoscape" + latestVersion_prefix + "Manual.pdf";
-
-
-var betaVersionURL = "http://chianti.ucsd.edu/Cyto-2_8-beta/";
-
