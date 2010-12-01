@@ -55,6 +55,7 @@
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/global_variables.js"></script>
 <script type="text/javascript" src="js/menu_generator.js"></script>
 </head>
 
@@ -65,7 +66,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <div class="blockleft">
       <h2>Download Latest Version:
         <?=$latest_version?>
-      </h2>
+      </h2>  
       <ol>
         <li>
           <h3>Platform Specific Installers</h3>

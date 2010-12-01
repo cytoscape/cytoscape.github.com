@@ -7,6 +7,8 @@
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/global_variables.js"></script>
 <script type="text/javascript" src="js/menu_generator.js"></script>
 </head>
 
@@ -22,7 +24,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <li>Essential Documents
         <ul>
           <li><a href="http://cytoscape.wodaklab.org/wiki/plugin_developer_tutorial">Plugin Developer Cookbook</a></li>
-          <li><a href="http://chianti.ucsd.edu/Cyto-2_7_0/javadoc/">Javadoc API (2.7.0)</a></li>
+          <li><script>document.write('<a href="' + javadocURL + '">')</script>Javadoc API (<script>document.write(latestVersion)</script>)</a></li>
         </ul>
       </li>
     </ul>

@@ -13,12 +13,6 @@ $(document).ready(function(){
 	appendCommunity();
 });
 
-// root URL
-var baseURL = "http://www.cytoscape.org/";
-var pluginSiteURL = "http://chianti.ucsd.edu/cyto_web/plugins/";
-var latestVersion = "2.7.0";
-var betaVersionURL = "http://chianti.ucsd.edu/Cyto-2_8-beta/";
-
 
 function insertSearchBox() {
 	$("#header").prepend(
@@ -102,6 +96,7 @@ function appendDocument() {
 	$("#documentMenu").append("<ul>" + 
 		"<li><a href=\"" + baseURL + "documentation_users.html\">for Users</a></li>" +
 		"<li><a href=\"" + baseURL + "documentation_developers.html\">for Developers</a></li>" +
+		"<li><a href=\"" + baseURL + "release_notes_" + latestVersion_underscore + ".html\">" + latestVersion + " Release Notes</a></li>" +
 		"<li><a href=\"http://cytoscape.wodaklab.org/wiki/\">Cytoscape Wiki</a></li></ul>"
 	);
 }

@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
 <title>Download Cytoscape</title>
+
+<script type="text/javascript" src="js/global_variables.js"></script>
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
@@ -15,13 +17,10 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="js/formValidator/js/jquery.validationEngine-en.js" type="text/javascript"></script>
 <script src="js/formValidator/js/jquery.validationEngine.js" type="text/javascript"></script>
 <script>
-	// Edit this number when you release new version.
-	var cytoscapeVersion ="2.7.0";
 	
 	$(document).ready(function() {			
 		$("#downloadForm").validationEngine()
 	});
-	
 	
 </script>
 </head>
@@ -506,7 +505,7 @@ DAMAGES.
   </div>
   <div id="downright" class="blockright">
     <form id="downloadForm" class="formular" method="post" action="download.php">
-      <input type="hidden" name="file" value="cyto2_7_0">
+      <input type="hidden" name="file" value="cyto_latest">
       <fieldset>
         <legend>Your information</legend>
         <label> <span>Name : </span>

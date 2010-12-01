@@ -7,6 +7,8 @@
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/global_variables.js"></script>
 <script type="text/javascript" src="js/menu_generator.js"></script>
 </head>
 
@@ -39,8 +41,8 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <br />
       <h3>User Manual for the latest version of Cytoscape</h3>
       <ul>
-        <li><a href="http://cytoscape.org/manual/Cytoscape2_7Manual.html">HTML Version</a></li>
-        <li><a href="http://cytoscape.org/manual/Cytoscape2_7Manual.pdf">Download PDF version</a></li>
+        <li><script>document.write('<a href="' + manualURL + '">')</script>HTML Version</a></li>
+        <li><script>document.write('<a href="' + manualPDFURL + '">')</script>Download PDF version</a></li>
       </ul>
       <h4><a href="manual">Manuals for older versions</a></h4>
       <h3>Other Official Documents</h3>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet"
+	media="screen">
+<title>Cytoscape Release Notes</title>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/global_variables.js"></script>
+<script type="text/javascript" src="js/menu_generator.js"></script>
+</head>
+
+<body>
+<div id="container"><script src="js/header.js"></script>
+<div id="documents">
+
+<p>
+<h1>New Features in Cytoscape 2.7.0</h1>
+</p>
+
+
+<p>
+<h3>Nested Networks</h3>
+<p>
+A node may now have a reference to another Network, which allows us to
+capture the relationships between networks in networks themselves. This
+feature includes a new file format (NNF) for nested network I/O and
+direct nested network editing via the Editor and Right-click menu. A
+Visual Property has been added to provide control of the visualization
+of the nested network.
+</p>
+
+<h3>New Edge Types</h3>
+<p>
+Several new edge types between solid and dashed have been added.
+</p>
+
+<h3>Newlines and list editing in attribute browser</h3>
+<p>
+The attribute browser has been updated to allow newline characters to be
+added by pressing the "Enter" key. List editing is now also enabled.
+</p>
+
+<h3>Automatic label wrap</h3>
+<p>
+A new visual property has been added that sets the width of a label. Any
+label extending beyond this width will be automatically wrapped.
+</p>
+
+<h3>Arrow color optionally locked to edge color</h3>
+<p>
+Arrow color may now be bound to the edge color by checking a box in the
+Dependencies pane of the Default Appearance Browser in the VizMapper,
+which avoids the necessity of creating separate-yet-identical mappings
+for edge, source, and target arrows.
+</p>
+
+<h3>CyCommandHandlers</h3>
+<p>
+Addition of a mechanism to the core to provide inter-plugin
+communication
+</p>
+
+<h3>BioPAX Level 3 support</h3>
+
+</p>
+</div>
+<script src="js/footer.js"></script></div>
+</body>
+</html>
