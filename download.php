@@ -36,7 +36,6 @@
 		ProcessSuccess($download_log);
 		$files["gz"] = $latest_dist_gz;
 		$files["zip"] = $latest_dist_zip;
-		$files["source"] = $latest_dist_source;
 		$files["mac"] = $latest_mac; 
 		$files["win32"] = $latest_windows_32;
 		$files["win64"] = $latest_windows_64; 
@@ -88,12 +87,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
           <ul>
           	<li><a href="<?=$files["zip"]?>">Zip Archive ( for Windows )</a></li>
           	<li><a href="<?=$files["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3>Source Distributions</h3>
-          <ul>
-          	<li><a href="<?=$files["source"]?>">Zipped Source Archive</a></li>
           </ul>
         </li>
       </ol>

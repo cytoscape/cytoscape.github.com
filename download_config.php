@@ -45,9 +45,8 @@ $latest_manual_html = "manual/Cytoscape".$latest_version_doc_prefix."Manual.html
 $latest_javadoc = $latest_version_url."/javadoc/";
 
 # Distribution files
-$latest_dist_gz = $latest_version_url."cytoscape-v".$latest_version.".tar.gz";
-$latest_dist_zip = $latest_version_url."cytoscape-v".$latest_version.".zip";
-$latest_dist_source = $latest_version_url."cytoscapeSource-v".$latest_version.".tar.gz";
+$latest_dist_gz = $latest_version_url."cytoscape-".$latest_version.".tar.gz";
+$latest_dist_zip = $latest_version_url."cytoscape-".$latest_version.".zip";
 
 $latest_mac = $latest_version_url."Cytoscape_".$latest_version_underscore."_macos.dmg";
 $latest_windows_32 = $latest_version_url."Cytoscape_".$latest_version_underscore."_windows_32bit.exe";
