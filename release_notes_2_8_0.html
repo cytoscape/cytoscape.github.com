@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet"
+	media="screen">
+<title>Cytoscape Release Notes</title>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/global_variables.js"></script>
+<script type="text/javascript" src="js/menu_generator.js"></script>
+</head>
+
+<body>
+<div id="container"><script src="js/header.js"></script>
+<div id="documents">
+
+<p>
+<h1>New Features in Cytoscape 2.8.0</h1>
+</p>
+
+
+<p>
+<h3>Custom Graphics</h3>
+<p>
+We've added the ability to associate images and other custom graphics with nodes. Images
+can be loaded manually with our image browser or specified as URLs in attributes.  Programmers
+may also use the CyCustomGraphics interface to create images dynamically within plugins.
+
+To connect these images to nodes, the VizMapper provides visual properties that allow up to nine 
+images to be mapped independently onto nodes. Users can control both the size and placement of
+the image with respect to the node.
+</p>
+
+<h3>Equations</h3>
+<p>
+We've had many requests over the years to provide spreadsheet like functionality in the
+attribute browser, and now we have!  Cells in the attribute browser now accept a subset
+of Excel-like functions which dynamically compute values as attributes.  We've provided
+an equation editor to help users understand the functions that are available as well as
+how to properly specify the arguments to a command.  Equations are not meant for heavy
+data analysis, but rather as a simple way to manipulate attribute values within Cytoscape.
+</p>
+
+<h3>Network Analyzer</h3>
+<p>
+Mario Albrecht and his team at the Max-Planck Institute for Informatics have graciously
+provided their Network Analyzer plugin to Cytoscape as a core plugin.  This means that
+Cytoscape now has a full suite of network analysis and graphing routines available right
+out of the box!
+</p>
+
+<h3>Bug Fixes</h3>
+<p>
+We've fixed many bugs in the latest version of Cytoscape. We hope the changes will
+make the Cytoscape user experience more pleasant and consisten.
+</p>
+
+
+</p>
+</div>
+<script src="js/footer.js"></script></div>
+</body>
+</html>

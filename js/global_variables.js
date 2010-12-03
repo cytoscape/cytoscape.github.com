@@ -1,7 +1,7 @@
 // Modify this number when you release newer version.
-var latestVersion ="2.7.0";
-var latestVersion_underscore = "2_7_0";
-var latestVersion_prefix = "2_7";
+var latestVersion ="2.8.0";
+var latestVersion_underscore = "2_8_0";
+var latestVersion_prefix = "2_8";
 
 //root URL
 var baseURL = "http://www.cytoscape.org/";
