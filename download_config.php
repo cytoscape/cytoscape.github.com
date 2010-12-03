@@ -31,7 +31,7 @@ $older_versions = array(
 	"2.6.0" => "http://chianti.ucsd.edu/Cyto-2_6_0/",
 	"2.6.1" => "http://chianti.ucsd.edu/Cyto-2_6_1/",
 	"2.6.2" => "http://chianti.ucsd.edu/Cyto-2_6_2/",
-	"2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/"
+	"2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/",
 	"2.7.0" => "http://chianti.ucsd.edu/Cyto-2_7_0/"
 );
 
