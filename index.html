@@ -30,25 +30,25 @@
 	<link rel="stylesheet" type="text/css" href="js/bigPicture/css/core.css" />
 	<link rel="stylesheet" type="text/css" href="js/bigPicture/css/skin.css" />
 	<script type="text/javascript"> 
-	$(document).ready(function(){		
-		$('#slides').galleryView({
-			panel_width: 700,
-			panel_height: 400,
-			frame_width: 70,
-			frame_height: 40,
-			transition_speed: 1200,
-			overlay_opacity:0.3,
-			overlay_height: 100,
-			overlay_text_color: '#eee',
-			border: 'none'
+		$(document).ready(function(){		
+			$('#slides').galleryView({
+				panel_width: 700,
+				panel_height: 400,
+				frame_width: 70,
+				frame_height: 40,
+				transition_speed: 1200,
+				overlay_opacity:0.3,
+				overlay_height: 100,
+				overlay_text_color: '#eee',
+				border: 'none'
+			});
+			
+			// Big Picture
+			$('.panel a').bigPicture({
+				'enableInfo': true,
+	  			'infoPosition': 'bottom'
+			});
 		});
-		
-		// Big Picture
-		$('.panel a').bigPicture({
-			'enableInfo': true,
-  			'infoPosition': 'bottom'
-		});
-	});
 	</script>
 	<script type="text/javascript">
 	$(function() {
@@ -317,6 +317,9 @@
       
       <!-- Funding Agency -->
       <div id="funding">
+      	<div class="title">Cytoscape Project is a Member of <strong>National Resource for Network Biology</strong></div>
+      	<div class="institute"><a href="http://nrnb.org/"><img src="images/logo/nrnb_logo.png" /></a></div>
+      	
       	<div class="title">Consortium Members and Funding Agencies</div>
         <div class="institute"><a href="http://www.home.agilent.com"><img width="200" src="images/logo/agilent_logo_web.png" /></a></div>
         <div class="institute"><a href="http://www.utoronto.ca/"><img width="200" src="images/logo/toronto_logo_web.png" /></a></div>

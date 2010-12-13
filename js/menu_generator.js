@@ -102,8 +102,12 @@ function appendDocument() {
 }
 
 function appendCommunity() {
-	$("#communityMenu").append("<ul>" + 
-		"<li><a href=\"" + baseURL + "development_team.html\">Developer Team</a></li>" + 
-    	"<li><a href=\"" + baseURL + "community.html\">Social Media</a></li></ul>"
+	$("#communityMenu").append(
+		"<ul>" + 
+			"<li><a href=\"" + baseURL + "development_team.html\">Developer Team</a></li>" + 
+    			"<li><a href=\"" + baseURL + "community.html\">Social Media</a></li>" +
+    			"<li><a href=\"http://cytoscape.wodaklab.org/wiki/Conferences\">Conferences</a></li>" +
+    			"<li><a href=\"http://nrnb.org/training.html\">Training</a></li>" +
+    		"</ul>"
 	);
 }
