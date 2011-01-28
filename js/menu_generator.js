@@ -57,6 +57,7 @@ function appendMainMenuItems() {
 	$("#nav").append("<li id=\"documentMenu\"><a href=\"#\">Documentation</a></li>");
 	$("#nav").append("<li id=\"communityMenu\"><a href=\"#\">Community</a></li>");
 	$("#nav").append("<li id=\"bugMenu\"><a href=\"http://cbio.mskcc.org/cytoscape/bugs/my_view_page.php\">Report a Bug</a></li>");
+	$("#nav").append("<li id=\"helpMenu\"><a href=\"http://www.cytoscape.org/community.html\">Getting Help</a></li>");
 }
 
 function appendIntro() {

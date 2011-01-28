@@ -67,8 +67,6 @@ a img {
 #header .title {
 	float:left;
 	position:relative;
-	
-	
 }
 
 #header .title h1 {
@@ -314,6 +312,7 @@ a img {
 	News internal frame
 */
 .news {
+	float:right !important;
 	width:695px;
 	height:660px;
 	margin-top:0;
@@ -770,7 +769,7 @@ p {
 	Top page components: citation funcing agencies
 
 */
-#cite, #funding {
+#cite, #members, #funding, #help {
 	float:left;
 	width:220px;
 	margin:5px 0 2px 0;
@@ -808,13 +807,13 @@ p {
 	font-size:14px !important;
 }
 
-#funding .institute {
+#funding .institute, #members .institute {
 	margin:25px 10px 15px;
+	float:none;
 }
 
-#funding .title {
+#funding .title, #members .title, #help .title {
 	font-size:16px;
 	line-height:25px;
 	margin:15px 20px;
 }
-

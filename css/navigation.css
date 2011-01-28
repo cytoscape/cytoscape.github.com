@@ -36,6 +36,8 @@
 }
 
 
+
+
 /* main level link */
 #nav a {
 	font-weight: bold;
@@ -119,6 +121,10 @@
 #nav ul a {
 	font-weight: normal;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+}
+
+#nav #helpMenu a {
+	color:#F00 !important;
 }
 
 /* level 3+ list */
