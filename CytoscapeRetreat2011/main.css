@@ -73,7 +73,8 @@ small {
 }
 
 a {
-	color:#111;
+	color:#51F;
+	text-decoration:underline;
 }
 
 .clear {
@@ -192,6 +193,12 @@ a {
 
 #nav div.inactive {
 	color:#CCC;
+}
+
+#nav a {
+	color:#111;
+	outline: none;
+	text-decoration:none;
 }
 
 #footer small {
