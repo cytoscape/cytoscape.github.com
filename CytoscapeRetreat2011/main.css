@@ -1,0 +1,210 @@
+
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+	margin:0;
+	padding:0
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+strong {
+	font-weight:bold;
+}
+
+ul, li {
+	list-style:none;
+}
+
+em {
+	font-style:italic;
+}
+
+img {
+	border:none;
+}
+
+a {
+	outline: none;
+	text-decoration:none;
+}
+
+html {
+	overflow-y:scroll;
+}
+
+body {
+	font-family: "minion-pro-1", "minion-pro-2", "Times New Roman", Georgia, serif;
+	margin:0;
+	color:#111;
+	font-size:16px;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size:60px;
+}
+
+h2 {
+	font-size:48px;
+}
+
+h3 {
+	font-size:28px;
+}
+
+h4 {
+	font-size:20px;
+}
+
+p {
+	font-size:16px;
+	line-height:24px;
+}
+
+ul {
+	font-size:16px;
+	line-height:24px;
+}
+
+small {
+	font-size:14px;
+}
+
+a {
+	color:#111;
+}
+
+.clear {
+	clear:both;
+}
+
+.gap {
+	height:30px;
+}
+
+.lucida {
+	font-family: "Lucida Grande", Tahoma;
+	color:#CCC;
+}
+
+#wrap {
+	margin:0 auto;
+	min-width:920px;
+	max-width:1100px;
+	padding:20px 40px 0 40px;
+}
+
+#content {
+	margin:16px auto 0 auto;
+	min-width:920px;
+	max-width:1100px;
+	padding:20px 40px;
+	background-color:#EEE;
+}
+
+#background {
+	display:none;
+	background-color:#EEE;
+}
+
+.nowrap {
+	white-space:nowrap;
+}
+
+.menu_item {
+	width:22%;
+	float:left;
+	margin-right:4%;
+}
+
+.menu_item_last {
+	width:22%;
+	float:left;
+	margin-right:0;
+}
+
+.entry {
+	width:100%;
+	margin-top:20px;
+}
+
+/* HEADER */
+#header {
+	text-align:center;
+	margin-top:10px;
+}
+
+#header img {
+	text-align:left;
+}
+
+#header h1 {
+	letter-spacing:-2px;
+	word-spacing:10px;
+	margin:10px 0 30px 0;
+	line-height:1;
+}
+
+#header h1 span {
+	letter-spacing:-0.13em;
+	padding-right:0.06em;
+}
+
+#header h4 {
+	padding:18px 0;
+	border-top:4px double #CCC;
+	border-bottom:4px double #CCC;
+}
+
+#header h4 span {
+	letter-spacing:-0.06em;
+	padding-right:0.03em;
+}
+
+/* NAVIGATION */
+#nav {
+	margin:43px 0 0 0;
+}
+
+#nav h3 {
+	font-size:18px;
+	background-color:#EEE;
+	margin:0 0 13px 0;
+}
+
+#nav div.hover h3 {
+	color:#F00;
+}
+
+#nav div.hover p {
+	color:#111;
+}
+
+#nav div.hover .lucida {
+	color:#FFBFBE;
+}
+
+#nav div.hover {
+	cursor:pointer;
+}
+
+#nav div.inactive {
+	color:#CCC;
+}
+
+#footer small {
+	font:12px/24px "Lucida Grande", Verdana, Tahoma;
+}
+
+#footer {
+	margin:60px 0 10px 0;
+	text-align:center;
+	color:#777;
+}
+
+#content #footer {
+	color:#CCC;
+	margin:0;
+}
