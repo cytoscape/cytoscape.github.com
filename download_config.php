@@ -8,8 +8,8 @@ $chianti_base = "http://chianti.ucsd.edu/";
 $download_log = "/home/groups/c/cy/cytoscape/persistent/data/cyto_data.txt";
 
 #
-$latest_version = "2.8.0";
-$latest_version_underscore = "2_8_0";
+$latest_version = "2.8.1";
+$latest_version_underscore = "2_8_1";
 $latest_version_doc_prefix = "2_8";
 
 # Beta and Development versions.  Use empty string when beta is not available.
@@ -33,6 +33,7 @@ $older_versions = array(
 	"2.6.2" => "http://chianti.ucsd.edu/Cyto-2_6_2/",
 	"2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/",
 	"2.7.0" => "http://chianti.ucsd.edu/Cyto-2_7_0/"
+	"2.8.0" => "http://chianti.ucsd.edu/Cyto-2_8_0/"
 );
 
 $latest_version_url = $chianti_base."Cyto-".$latest_version_underscore."/";
