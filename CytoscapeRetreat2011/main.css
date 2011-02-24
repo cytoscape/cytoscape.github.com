@@ -14,7 +14,9 @@ strong {
 }
 
 ul, li {
-	list-style:none;
+	list-style:circle;
+	list-style-position: inside;
+
 }
 
 em {
@@ -215,3 +217,4 @@ a {
 	color:#CCC;
 	margin:0;
 }
+
