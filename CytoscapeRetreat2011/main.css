@@ -14,7 +14,7 @@ strong {
 }
 
 ul, li {
-	list-style:circle;
+	list-style:none;
 	list-style-position: inside;
 
 }
@@ -29,7 +29,8 @@ img {
 
 a {
 	outline: none;
-	text-decoration:none;
+	text-decoration:none !important;
+	color:#09C !important;
 }
 
 html {
@@ -45,7 +46,7 @@ body {
 
 h1 {
 	font-family: sans-serif;
-	font-size:60px;
+	font-size:50px;
 }
 
 h2 {
@@ -54,6 +55,7 @@ h2 {
 
 h3 {
 	font-size:28px;
+	margin: 15px;
 }
 
 h4 {
@@ -68,6 +70,7 @@ p {
 ul {
 	font-size:16px;
 	line-height:24px;
+	margin-left:50px;
 }
 
 small {
@@ -136,7 +139,13 @@ a {
 /* HEADER */
 #header {
 	text-align:center;
-	margin-top:10px;
+	margin-top:0;
+}
+
+#header h5 {
+	font-size:16px;
+	text-align:center;
+	margin: 5px;
 }
 
 #header img {
@@ -146,7 +155,7 @@ a {
 #header h1 {
 	letter-spacing:-2px;
 	word-spacing:10px;
-	margin:10px 0 30px 0;
+	margin:10px 0 10px 0;
 	line-height:1;
 }
 
@@ -168,14 +177,22 @@ a {
 
 /* NAVIGATION */
 #nav {
-	margin:43px 0 0 0;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 #nav h3 {
-	font-size:18px;
-	background-color:#EEE;
-	margin:0 0 13px 0;
+	font-size:22px;
+	background-color:#FFF;
+	margin-left: 10px !important;
 }
+
+#nav p {
+	font-size:14px;
+	margin-top:5px !important;
+	margin-left: 10px !important;
+}
+
 
 #nav div.hover h3 {
 	color:#F00;
@@ -198,9 +215,7 @@ a {
 }
 
 #nav a {
-	color:#111;
-	outline: none;
-	text-decoration:none;
+	color:#111 !important;
 }
 
 #footer small {
@@ -208,13 +223,67 @@ a {
 }
 
 #footer {
-	margin:60px 0 10px 0;
+	margin:10px 0 10px 0;
 	text-align:center;
 	color:#777;
+	background:F1F1F1;
 }
 
 #content #footer {
 	color:#CCC;
 	margin:0;
+}
+
+#main_contents {
+	background:#F1F1F1 !important;
+	margin-top: 10px;
+	padding:20px;
+}
+
+#main_contents h4 {
+	text-align:center;
+}
+
+#main_contents h4 a {
+	text-decoration:none;
+}
+
+#main_contents iframe,  #main_contents .text{
+	margin-left:50px;
+}
+
+#main_contents h5 {
+	margin-left: 40px;
+	margin-bottom: 10px;
+	margin-top:10px;
+}
+
+
+
+#program .item ul li{
+	list-style-type:none;
+	
+}
+
+#program h3 {
+	text-align:center;
+}
+
+#program .item {
+	margin-left: 100px;
+	font-size:18px;
+	margin-bottom: 30px;
+}
+
+#program .item p {
+	margin-left: 50px;
+	font-size:14px;
+	padding: 10px;
+}
+
+#program .item h4 {
+	text-align:left;
+	font-size:18px;
+	margin-bottom: 20px;
 }
 
