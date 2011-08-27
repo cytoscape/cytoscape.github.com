@@ -23,7 +23,6 @@
 </p>
 
 
-<p>
 <h3>Custom Graphics</h3>
 <p>
 We've added the ability to associate images and other custom graphics with nodes. Images
@@ -60,7 +59,39 @@ make the Cytoscape user experience more pleasant and consisten.
 </p>
 
 
+<p>
+<h1>Updates in Cytoscape 2.8.1</h1>
 </p>
+
+
+<p>
+<h3>Bug Fixes</h3>
+<ul>
+<li>"Select All Attributes" button on the data panel selects the attributes in a sorted order.</li>
+<li>Added the ability to load a plugin from a local file</li>
+<li>Changed internal structures for group viewers to allow group viewer information about a group to be tracked before the group viewer is actually registered</li>
+<li>Added a "discrete layout" setting for ForceDirected so that the force directed layout will now always give the same answer</li>
+<li>Cleaned up XGMML group reading and writing</li>
+<li>Several fixes to group handling</li>
+<li>Minor fixes to tunable presentations</li>
+</ul>
+
+<p>
+<h1>Updates in Cytoscape 2.8.2</h1>
+</p>
+
+<h3>Bug Fixes</h3>
+<p>This is mainly a bug fix release. We hope the changes will make the Cytoscape user experience more pleasant and consistent.
+<h3>Improved Memory Allocation</h3>
+<p>We have improved the memory detection and allocation process that occurs when Cytoscape is first installed and launched. The process attempts to optimize memory settings based on your hardware. The new process avoids system crashes that were occurring with 2.8.1.
+<h3>New Gradient Editor</h3>
+<p>We've overhauled the user interfaces controlling the mapping of continuous values to visual styles, like Node Size and Node Color, to provide more intuitive and consistent controls.
+<h3>Well-Behaved CytoPanels</h3>
+<p>We revamped the behavior of CytoPanels so that each plugins preferred panel size will be automatically fit when the user switches to them. A global minimum size is set for all panels so that users can manually resize no matter which panel they are viewing.
+<h3>Error Console Feature</h3>
+<p>If your Cytoscape session starts acting funny, go to Help > Error Console. You can now Save the console output as a single html file and attach it to your helpdesk and discussion list posts.
+
+
 </div>
 <script src="js/footer.js"></script></div>
 </body>
