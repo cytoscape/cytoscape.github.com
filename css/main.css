@@ -314,7 +314,7 @@ a img {
 .news {
 	float:right !important;
 	width:695px;
-	height:660px;
+	height:auto; 
 	margin-top:0;
 	float:right;
 }
@@ -330,7 +330,7 @@ a img {
 
 
 
-.news h5 {
+.news h5, .news2 h5 {
 	color:#FFF;
 	padding:5px 10px;
 }
