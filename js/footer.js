@@ -7,7 +7,7 @@ document.write(
 	' and the U.S. <a href="http://www.nigms.nih.gov">National Institute of General Medical Sciences (NIGMS)</a> ' +
 	'of the <a href="http://www.nih.gov">National Institutes of Health (NIH)</a> under award ' +
 	'number GM070743.</p>' +
-	'<p>&copy;2001-2010 Cytoscape Consotrium</p></div>' +
+	'<p>&copy;2001-2010 Cytoscape Consortium</p></div>' +
 
 	'<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>' +
 	'<script type="text/javascript">' +
