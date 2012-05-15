@@ -124,7 +124,11 @@
 }
 
 #nav #helpMenu a {
-	color:#F00 !important;
+	color:#faa !important;
+}
+
+#nav #threePointOhMenu a {
+	color:#bff !important;
 }
 
 /* level 3+ list */
