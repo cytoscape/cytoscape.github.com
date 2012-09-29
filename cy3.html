@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/main.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="css/slides.css" type="text/css" rel="stylesheet" media="screen" />
+
+		<title>Welcome to Cytoscape 3</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/global_variables.js"></script>
+		<script type="text/javascript" src="js/menu_generator.js"></script>
+
+		<script src="js/slides.min.jquery.js"></script>
+		<script>
+			$(function() {
+				// Set starting slide to 1
+				var startSlide = 1;
+				// Get slide number if it exists
+				if (window.location.hash) {
+					startSlide = window.location.hash.replace('#', '');
+				}
+				// Initialize Slides
+				$('#slides').slides({
+					preload : true,
+					preloadImage : 'images/slides/loading.gif',
+					generatePagination : true,
+					play : 5000,
+					pause : 2500,
+					hoverPause : true,
+					// Get the starting slide
+					start : startSlide,
+					animationComplete : function(current) {
+						// Set the slide number as a hash
+						window.location.hash = '#' + current;
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<script src="js/header.js"></script>
+
+			<div id="documents">
+				<div class="blockfull">
+					<h2>Welcome to Cytoscape 3.0 Beta!</h2>
+
+					<div id="container2">
+						<div id="example">
+							<div id="slides">
+								<div class="slides_container">
+									<div class="slide">
+										<div class="text">
+										<h1>Simple Workflow</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+										</p>
+										<p>
+											<a href="#5" class="link">Check out the fifth slide &rsaquo;</a>
+										</p>
+										</div>
+										<img src="images/slides/title1.png" />
+									</div>
+									<div class="slide">
+										<div class="text">
+										<h1>Edge Bundling</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+										</p>
+										<p>
+											<a href="#5" class="link">Check out the fifth slide &rsaquo;</a>
+										</p>
+										</div>
+										<img src="images/slides/title2.png" />
+									</div>
+									<div class="slide">
+										<h1>New Feature: ?</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+										</p>
+										<p>
+											<a href="#5" class="link">Check out the fifth slide &rsaquo;</a>
+										</p>
+									</div>
+									<div class="slide">
+										<h1>Develper Info</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+										</p>
+										<p>
+											<a href="#4" class="link">Check out the fourth slide &rsaquo;</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div id="frame"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="blockleft">
+					<h2>What is Cytoscape 3.0?</h2>
+					<p>
+						Learn about the <a href="http://wiki.cytoscape.org/Cytoscape_3/CoreDevelopment">Architecture, Backward Compatibility, and API</a> of Cytoscape 3.0.
+					</p>
+					<h3>What are 3.0 apps?</h3>
+					<p>
+						Primary documentation for Cytoscape 3.0 <a href="http://wiki.cytoscape.org/Cytoscape_3/AppDeveloper">app development</a>.
+					</p>
+					<br />
+					<p>
+						All Cytoscape 3.0 <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">app development tutorials</a>.
+					</p>
+				</div>
+
+				<div class="blockright">
+					<h2>Download Cytoscape 3 Beta</h2>
+					<h4><a href="http://chianti.ucsd.edu/cytoscape-3.0.0-beta1">Cytoscape 3.0.0 User Beta</a></h4>
+					
+					<h2>For App Developers</h2>
+					<h4><a href="http://chianti.ucsd.edu/cytoscape-3.0.0-beta1/API">Cytoscape API 3.0.0-beta3 JavaDocs</a></h4>
+					<h4><a href="http://chianti.ucsd.edu/cytoscape-3.0.0-beta1/cytoscape-swing-app-api-3.0.0-beta3.jar">API JAR beta3</a></h4>
+					<h4><a href="http://chianti.ucsd.edu/svn/core3/app-developer/tags/cytoscape-3.0.0-M5">App Developer Project Tag</a></h4>
+				</div>
+				
+				<script src="js/footer.js"></script>
+			</div>
+		</div>
+	</body>
+</html>

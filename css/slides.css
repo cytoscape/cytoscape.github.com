@@ -1,0 +1,159 @@
+#container2 {
+	font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+	letter-spacing:0;
+	color:#434343;
+	background:#ffffff;
+	padding:20px 0;
+	position:relative;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:920px;
+	height:390px;
+	top:-3px;
+	left:-80px;
+}
+
+#example {
+	width:920px;
+	height:390px;
+	position:relative;
+}
+
+#slides {
+	position:absolute;
+	top:-29px;
+	left:0px;
+	z-index:100;
+	background:#FFFFFF;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	If height not specified height will be set by the slide content
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:900px;
+	height:340px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	margin:10px;
+
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	Offeset for the 20px of padding
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+#slides .slide {
+	width:900px;
+	display:block;
+}
+
+#slides .slide .text {
+	width:310px;
+	float:left;
+}
+
+#slides .slide img {
+	border:2px;
+	width:560px;
+	height:310px;
+	float:right;
+}
+
+/*
+	Next/prev buttons
+*/
+#slides .next,#slides .prev {
+	position:absolute;
+	top:10px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	padding:0px 0px 20px 0px;
+	margin:6px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/slides/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+
+/*
+	Type and anchors
+*/
+
+a:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+
+h1 {
+	font-size:2em;
+}
+
+p {
+	font-size:1.3em;
+}
+
+#slides .link {
+	display:block;
+	margin-top:10px;
+	font-weight:800;
+}

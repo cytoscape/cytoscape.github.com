@@ -25,6 +25,7 @@ body {
 	font-variant: normal;
 	font-weight: normal;
 	line-height:18px;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {
