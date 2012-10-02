@@ -88,9 +88,7 @@ function appendIntro() {
 
 function appendPlugin() {
 	$("#pluginMenu").append("<ul>" + 
-		"<li><a href=\"http://apps.cytoscape.org\">Cytoscape App Store</a></li>" +
-		"<li><a href=\"http://chianti.ucsd.edu/cyto_web/plugins/plugindownloadstatistics.php\">View Download Activities</a></li>" +
-		"<li><a href=\"" + baseURL + "plugin_submit.html\">Submit Your Plugin</a></li></ul>"
+		"<li><a href=\"http://apps.cytoscape.org\">Cytoscape App Store</a></li></ul>"
 	);
 }
 
