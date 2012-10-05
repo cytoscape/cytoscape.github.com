@@ -195,6 +195,66 @@ a img {
 	font-size:14px;
 }
 
+/*
+ * For Cytoscape 3 Web pages
+ */
+
+.blockfull3 {
+	display:block;
+	float:left;
+	margin:5px auto;
+	padding:5px 10px 5px 10px;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #FFF;
+	
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.blockfull3 .section {
+	display:inline-block;
+	margin:10px 10px;
+	padding:5px 10px;
+	line-height:24px;
+}
+
+.blockfull3 p {
+	margin:10px 10px;
+	padding:5px 10px;
+	line-height:30px;
+}
+
+.blockfull3 .textright {
+	padding:5px 10px;
+	line-height:24px;
+}
+
+.blockfull3 .textright ul{
+	float:left;
+	padding-left:50px;
+	margin-bottom:20px;
+	line-height:24px;
+}
+
+.blockfull3 img {
+	border-style:none;
+}
+
+.blockfull3 .leftimg img {
+	float:left;
+}
+
+.blockfull3 .rightimg img {
+	float:right;
+}
+
+
 .feeds {
 	height:400px;
 	background-color:#fff;

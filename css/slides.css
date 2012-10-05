@@ -1,5 +1,5 @@
 #container2 {
-	font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+	font:normal 82.5%/1.5 Helvetica, Arial, sans-serif;
 	letter-spacing:0;
 	color:#434343;
 	background:#ffffff;
@@ -76,9 +76,12 @@
 
 #slides .slide img {
 	border:2px;
-	width:560px;
-	height:310px;
 	float:right;
+}
+
+#slides .slide .fullimg img {
+	border:2px;
+	width:900px;
 }
 
 /*
