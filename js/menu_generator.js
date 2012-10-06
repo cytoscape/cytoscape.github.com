@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	appendMainMenuItems();
 	appendIntro();
-	appendPlugin();
+//	appendPlugin();
 	appendDocument();
 	appendCommunity();
 });
@@ -53,7 +53,7 @@ function appendMainMenuItems() {
 	$("#nav").append("<li id=\"homeMenu\"><a href=\"http://www.cytoscape.org/\">Home</a></li>");
 	$("#nav").append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>");
 	$("#nav").append("<li id=\"downloadMenu\"><a href=\"" + baseURL +"download.html\">Download</a></li>");
-	$("#nav").append("<li id=\"pluginMenu\"><a href=\"#\">Plugins</a></li>");
+	$("#nav").append("<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\">Apps</a></li>");
 	$("#nav").append("<li id=\"documentMenu\"><a href=\"#\">Documentation</a></li>");
 	$("#nav").append("<li id=\"communityMenu\"><a href=\"#\">Community</a></li>");
 	$("#nav").append("<li id=\"bugMenu\"><a href=\"http://cbio.mskcc.org/cytoscape/bugs/my_view_page.php\">Report a Bug</a></li>");
@@ -86,11 +86,11 @@ function appendIntro() {
 
 
 
-function appendPlugin() {
-	$("#pluginMenu").append("<ul>" + 
-		"<li><a href=\"http://apps.cytoscape.org\">Cytoscape App Store</a></li></ul>"
-	);
-}
+//function appendPlugin() {
+//	$("#pluginMenu").append("<ul>" + 
+//		"<li><a href=\"http://apps.cytoscape.org\">Cytoscape App Store</a></li></ul>"
+//	);
+//}
 
 
 function appendDocument() {
