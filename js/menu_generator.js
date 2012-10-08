@@ -2,115 +2,141 @@
 // Menu bar generator
 //	Dynamically generate menu for each page.
 
-$(document).ready(function(){
-	
+$(document).ready(function() {
+
 	appendIconLinks();
-	
 	appendMainMenuItems();
 	appendIntro();
-//	appendPlugin();
+	// appendPlugin();
 	appendDocument();
 	appendCommunity();
 });
 
-
 function insertSearchBox() {
-	$("#header").prepend(
-		"<form class=\"searchform\">" + 
-		
-		"<input class=\"searchfield\" type=\"text\" value=\"Search...\"" +
-		" onfocus=\"if (this.value == 'Search...') {this.value = '';}\"" +
-		" onblur=\"if (this.value == '') {this.value = 'Search...';}\" />" +
-      	"<input class=\"searchbutton\" type=\"button\" value=\"Go\" />" + 
-		
-		"</form>"
-	);
+	$("#header")
+			.prepend(
+					"<form class=\"searchform\">"
+							+
+							"<input class=\"searchfield\" type=\"text\" value=\"Search...\""
+							+ " onfocus=\"if (this.value == 'Search...') {this.value = '';}\""
+							+ " onblur=\"if (this.value == '') {this.value = 'Search...';}\" />"
+							+ "<input class=\"searchbutton\" type=\"button\" value=\"Go\" />"
+							+
+							"</form>");
 }
 
-
 var iconLocation = baseURL + "images/icon/";
+
 var icons = new Array(
-		["youtube.png", "http://www.youtube.com/user/cytoscapeconsortium", "Subscribe RSS"],
-		["delicious.png", "http://delicious.com/cytoscape", "Bookmarks"],
-		["flickr.png", "http://www.flickr.com/photos/cytoscape/", "Flickr"],
-		["twitter.png", "http://twitter.com/cytoscape", "Follow us on Twitter"],
-		["rss.png", "http://groups.google.com/group/cytoscape-announce/feed/rss_v2_0_msgs.xml", "RSS News Feed"]
-	);
-
-
+		[ "youtube.png", "http://www.youtube.com/user/cytoscapeconsortium",
+				"Subscribe RSS" ],
+		[ "delicious.png", "http://delicious.com/cytoscape", "Bookmarks" ],
+		[ "flickr.png", "http://www.flickr.com/photos/cytoscape/", "Flickr" ],
+		[ "twitter.png", "http://twitter.com/cytoscape", "Follow us on Twitter" ],
+		[
+				"rss.png",
+				"http://groups.google.com/group/cytoscape-announce/feed/rss_v2_0_msgs.xml",
+				"RSS News Feed" ]);
 
 function appendIconLinks() {
-	
-	for(var i=0; i<icons.length; i++) {
-		$("#linkIcons").append("<li><a href=\"" + icons[i][1] + "\" target=\"_new\">" + 
-								"<img src=\"" + 
-								iconLocation + icons[i][0] + "\" /></a></li>");
+
+	for ( var i = 0; i < icons.length; i++) {
+		$("#linkIcons").append(
+				"<li><a href=\"" + icons[i][1] + "\" target=\"_new\">"
+						+ "<img src=\"" + iconLocation + icons[i][0]
+						+ "\" /></a></li>");
 	}
 }
 
-
 function appendMainMenuItems() {
-	$("#nav").append("<li id=\"homeMenu\"><a href=\"http://www.cytoscape.org/\">Home</a></li>");
-	$("#nav").append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>");
-	$("#nav").append("<li id=\"downloadMenu\"><a href=\"" + baseURL +"download.html\">Download</a></li>");
-	$("#nav").append("<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\">Apps</a></li>");
-	$("#nav").append("<li id=\"documentMenu\"><a href=\"#\">Documentation</a></li>");
-	$("#nav").append("<li id=\"communityMenu\"><a href=\"#\">Community</a></li>");
-	$("#nav").append("<li id=\"bugMenu\"><a href=\"http://cbio.mskcc.org/cytoscape/bugs/my_view_page.php\">Report a Bug</a></li>");
-	$("#nav").append("<li id=\"helpMenu\"><a href=\"http://www.cytoscape.org/community.html\">Getting Help</a></li>");
-	$("#nav").append("<li id=\"threePointOhMenu\"><a href=\"http://www.cytoscape.org/documentation_cy3_dev.html\">3.0!</a></li>");
+	$("#nav")
+			.append(
+					"<li id=\"homeMenu\"><a href=\"http://www.cytoscape.org/\">Home</a></li>");
+	$("#nav")
+			.append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>");
+	$("#nav").append(
+			"<li id=\"downloadMenu\"><a href=\"" + baseURL
+					+ "download.html\">Download</a></li>");
+	$("#nav")
+			.append(
+					"<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\">Apps</a></li>");
+	$("#nav").append(
+			"<li id=\"documentMenu\"><a href=\"#\">Documentation</a></li>");
+	$("#nav").append(
+			"<li id=\"communityMenu\"><a href=\"#\">Community</a></li>");
+	$("#nav")
+			.append(
+					"<li id=\"bugMenu\"><a href=\"http://cbio.mskcc.org/cytoscape/bugs/my_view_page.php\">Report a Bug</a></li>");
+	$("#nav")
+			.append(
+					"<li id=\"helpMenu\"><a href=\"http://www.cytoscape.org/community.html\">Getting Help</a></li>");
+	$("#nav")
+			.append(
+					"<li id=\"threePointOhMenu\"><a href=\"http://www.cytoscape.org/cy3.html\">3.0!</a></li>");
 }
 
 function appendIntro() {
-	$("#introMenu").append(
-		"<ul>" + 
-			"<li><a href=\"" + baseURL + "what_is_cytoscape.html\">What is Cytoscape?</a></li>" +
-			"<li><a href=\"" + baseURL + "who_is_using.html\">Who is Using Cytoscape?</a></li>" + 
-			"<li><a href=\"http://cytoscape.wodaklab.org/wiki/FAQ\">FAQ</a></li>" + 
-			"<li><a href=\"#\">Gallery</a>" +
-				"<ul>" +
-					"<li><a href=\"" + baseURL + "screenshots.html\">Screenshots</a></li>" +
-					"<li><a href=\"" + baseURL + "movies.html\">Movies</a></li>" + 
-					"<li><a href=\"#\">User-Generated</a>" + 
-						"<ul>" + 
-							"<li><a href=\"http://www.flickr.com/search/?q=cytoscape\">Cytoscape Images at Flickr</a></li>" + 
-							"<li><a href=\"http://www.youtube.com/results?search_query=cytoscape\">Cytoscape Movies at YouTube</a></li>" + 
-						"</ul>" +
-					"</li>" + 
-				"</ul>" + 
-			"</li>" +
-		"</ul>"
-		
-	);
+	$("#introMenu")
+			.append(
+					"<ul>" + "<li><a href=\""
+							+ baseURL
+							+ "what_is_cytoscape.html\">What is Cytoscape?</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "who_is_using.html\">Who is Using Cytoscape?</a></li>"
+							+ "<li><a href=\"http://cytoscape.wodaklab.org/wiki/FAQ\">FAQ</a></li>"
+							+ "<li><a href=\"#\">Gallery</a>"
+							+ "<ul>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "screenshots.html\">Screenshots</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "movies.html\">Movies</a></li>"
+							+ "<li><a href=\"#\">User-Generated</a>"
+							+ "<ul>"
+							+ "<li><a href=\"http://www.flickr.com/search/?q=cytoscape\">Cytoscape Images at Flickr</a></li>"
+							+ "<li><a href=\"http://www.youtube.com/results?search_query=cytoscape\">Cytoscape Movies at YouTube</a></li>"
+							+ "</ul>" + "</li>" + "</ul>" + "</li>" + "</ul>"
+
+			);
 }
 
-
-
-//function appendPlugin() {
-//	$("#pluginMenu").append("<ul>" + 
-//		"<li><a href=\"http://apps.cytoscape.org\">Cytoscape App Store</a></li></ul>"
-//	);
-//}
-
-
 function appendDocument() {
-	$("#documentMenu").append("<ul>" + 
-		"<li><a href=\"" + baseURL + "documentation_users.html\">for Users</a></li>" +
-		"<li><a href=\"" + baseURL + "documentation_developers.html\">for Developers</a></li>" +
-		"<li><a href=\"" + baseURL + "release_notes_" + latestVersion_underscore + ".html\">" + latestVersion + " Release Notes</a></li>" +
-		"<li><a href=\"" + baseURL + "documentation_cy3_dev.html\">3.0 app development</a></li>" +
-		"<li><a href=\"http://cytoscape.wodaklab.org/wiki/\">Cytoscape Wiki</a></li>" +
-		"<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape\">Cytoscape at Open Tutorials</a></li></ul>"
-	);
+	$("#documentMenu")
+			.append(
+					"<ul>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "documentation_users.html\">for Users</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "documentation_developers.html\">for Developers</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "release_notes_"
+							+ latestVersion_underscore
+							+ ".html\">"
+							+ latestVersion
+							+ " Release Notes</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "documentation_cy3_dev.html\">3.0 app development</a></li>"
+							+ "<li><a href=\"http://cytoscape.wodaklab.org/wiki/\">Cytoscape Wiki</a></li>"
+							+ "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape\">Cytoscape at Open Tutorials</a></li></ul>");
 }
 
 function appendCommunity() {
-	$("#communityMenu").append(
-		"<ul>" + 
-			"<li><a href=\"" + baseURL + "development_team.html\">Developer Team</a></li>" + 
-    			"<li><a href=\"" + baseURL + "community.html\">Social Media</a></li>" +
-    			"<li><a href=\"http://cytoscape.wodaklab.org/wiki/Conferences\">Conferences</a></li>" +
-    			"<li><a href=\"http://nrnb.org/training.html\">Training</a></li>" +
-    		"</ul>"
-	);
+	$("#communityMenu")
+			.append(
+					"<ul>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "development_team.html\">Developer Team</a></li>"
+							+ "<li><a href=\""
+							+ baseURL
+							+ "community.html\">Social Media</a></li>"
+							+ "<li><a href=\"http://cytoscape.wodaklab.org/wiki/Conferences\">Conferences</a></li>"
+							+ "<li><a href=\"http://nrnb.org/training.html\">Training</a></li>"
+							+ "</ul>");
 }
