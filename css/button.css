@@ -36,6 +36,15 @@
 	-moz-border-radius: 2em;
 	border-radius: 2em;
 }
+
+.bigrounded2 {
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+
 .medium {
 	font-size: 12px;
 	padding: .4em 1.5em .42em;
