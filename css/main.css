@@ -235,6 +235,12 @@ a img {
 	line-height:24px;
 }
 
+.blockfull3 .textleft {
+	float:left;
+	padding:5px 10px;
+	line-height:24px;
+}
+
 .blockfull3 .textright ul{
 	float:left;
 	padding-left:50px;
