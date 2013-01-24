@@ -31,6 +31,24 @@
 	top: 1px;
 }
  
+.hugerounded {
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	font-size: 24px;
+	padding: 1.8em 0.8em 1.84em;
+	width:305px;
+}
+
+.hugenarrow {
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	font-size: 14px;
+	padding: .8em 0.8em .84em;
+	width:305px;
+}
+
 .bigrounded {
 	-webkit-border-radius: 2em;
 	-moz-border-radius: 2em;

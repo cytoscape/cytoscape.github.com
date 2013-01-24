@@ -41,6 +41,13 @@
 		$files["win64"] = $latest_windows_64; 
 		$files["linux"] = $latest_linux; 
 		
+		$files3x["gz"] = $latest_3x_dist_gz;
+		$files3x["zip"] = $latest_3x_dist_zip;
+		$files3x["mac"] = $latest_3x_mac; 
+		$files3x["win32"] = $latest_3x_windows_32;
+		$files3x["win64"] = $latest_3x_windows_64; 
+		$files3x["linux"] = $latest_3x_linux; 
+		
 		if(strlen($beta_2x) == 0) {
 			$beta_link = "";
 		} else {
@@ -69,7 +76,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="js/header.js"></script>
   <div id="download">
     <div class="blockleft">
-      <h2>Download Latest Version:
+      <h2>Download Latest Production Version:
         <?=$latest_version?>
       </h2>  
       <ol>
@@ -89,6 +96,30 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
           	<li><a href="<?=$files["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
           </ul>
         </li>
+			</ol>
+
+
+			<!-- 3.x Series Download -->
+      <h2>Download New 3.x Series:
+        <?=$latest_3x_version?>
+      </h2>  
+      <ol>
+        <li>
+          <h3>Platform Specific Installers</h3>
+        </li>
+        <ul>
+          <li><a href="<?=$files3x["mac"]?>">Mac OS X</a></li>
+          <li><a href="<?=$files3x["win32"]?>">Windows 32bit</a></li>
+          <li><a href="<?=$files3x["win64"]?>">Windows 64bit</a></li>
+          <li><a href="<?=$files3x["linux"]?>">Linux</a></li>
+        </ul>
+        <li>
+          <h3>Archived Distribution Files</h3>
+          <ul>
+          	<li><a href="<?=$files3x["zip"]?>">Zip Archive ( for Windows )</a></li>
+          	<li><a href="<?=$files3x["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
+          </ul>
+        </li>
       </ol>
     </div>
     
@@ -101,7 +132,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 				}
 			?>
       	</ul>
-        
         
         <hr />
         <h2>Development Versions</h2>

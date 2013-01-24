@@ -218,7 +218,7 @@ a img {
 
 
 .blockfull3 .section {
-	display:inline-block;
+	display:block;
 	margin:10px 10px;
 	padding:5px 10px;
 	line-height:24px;
@@ -231,6 +231,7 @@ a img {
 }
 
 .blockfull3 .textright {
+	float:right;
 	padding:5px 10px;
 	line-height:24px;
 }
@@ -239,6 +240,18 @@ a img {
 	float:left;
 	padding:5px 10px;
 	line-height:24px;
+}
+
+.blockfull3 .textleft ul{
+	float:left;
+	list-style:none;
+	margin-top:0;
+	padding-left:10px;
+	margin-bottom:15px;
+}
+
+.blockfull3 .textleft li {
+	margin-bottom:14px;
 }
 
 .blockfull3 .textright ul{

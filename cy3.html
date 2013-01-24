@@ -6,8 +6,8 @@
 		<link href="css/slides.css" type="text/css" rel="stylesheet" media="screen" />
 
 		<title>Welcome to Cytoscape 3</title>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/global_variables.js"></script>
 		<script type="text/javascript" src="js/menu_generator.js"></script>
 
@@ -44,7 +44,6 @@
 			<script src="js/header.js"></script>
 			<div id="documents">
 				<div class="blockfull3">
-					<h2>Cytoscape 3.0</h2>
 					<div id="container2">
 						<div id="example">
 							<div id="slides">
@@ -53,12 +52,14 @@
 										<div class="text">
 											<h1>Welcome!</h1>
 											<p>
-												Cytoscape 3.0 is a cleaner and modular new generation of Cytoscape for future expansions.  It
-												benefits both users and developers.
+												Cytoscape 3.0 is a cleaner and modular new generation 
+												of Cytoscape for future expansions.  It benefits both 
+												users and developers.
 											</p>
-
 										</div>
-										<img src="images/slides/title0.png" />
+										<a href="images/slides/title0.png" title="Cytoscape 3 Desktop Version">
+											<img src="images/slides/title0.png" />
+										</a>
 									</div>
 									<div class="slide">
 										<div class="text">
@@ -87,7 +88,9 @@
 												<a href="release_notes_3_0_0.html">Learn more about new features &rsaquo;</a>
 											</p>
 										</div>
-										<img src="images/slides/new_features.png" />
+										<a href="images/slides/new_features.png" title="New Features">
+											<img src="images/slides/new_features.png" />
+										</a>
 									</div>
 									<div class="slide">
 										<div class="text">
@@ -99,12 +102,9 @@
 												<a href="http://apps.cytoscape.org/">Visit Cytoscape App Store &rsaquo;</a>
 											</p>
 										</div>
-										<img src="images/slides/appstore.png" />
-									</div>
-									<div class="slide">
-										<div class="fullimg">
-											<img src="images/cytoscape3_logo.png" />
-										</div>
+										<a href="images/slides/appstore.png" title="App Store">
+											<img src="images/slides/appstore.png" />
+										</a>
 									</div>
 								</div>
 							</div>
@@ -112,11 +112,55 @@
 						</div>
 					</div>
 
-					<div class="leftimg">
+					<div class="textleft">
+						<ul>
+							<li>
+								<a href="download.html">
+								<button class="button hugerounded orange">
+									Download Cytoscape 3.0
+								</button> </a>
+							</li>
+							<li>
+								<a href="cy3_welcome.html">
+								<button class="button hugenarrow green">
+									Welcome
+								</button> </a>
+							</li>
+							<li>
+								<a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
+								<button class="button hugenarrow blue">
+									User Manual
+								</button> </a>
+							</li>
+							<li>
+								<a href="release_notes_3_0_0.html">
+								<button class="button hugenarrow blue">
+									Release Notes
+								</button> </a>
+							</li>
+							<li>
+								<a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">
+								<button class="button hugenarrow blue">
+									Tutorials
+								</button> </a>
+							</li>
+							<li>
+								<a href="cy3_bugs.html">
+								<button class="button hugenarrow red">
+									Bounty for Bugs!
+								</button> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="blockfull3">
+					<h2>What is Cytoscape 3.0?</h2>
+					<div class="rightimg">
 						<img src="images/cytoscape_logo_left.png" />
 					</div>
 
-					<div class="textright">
+					<div class="section">
 						Cytoscape 3.0 is the latest version of Cytoscape, which introduces a whole new architecture,
 						developer API and set of user controls. Cytoscape 3.0 represents a major redesign from the
 						ground up, toward the goal of provide a stable, extensible, high-performance platform for
@@ -154,22 +198,6 @@
 						</ul>
 					</div>
 
-					<div class="leftimg">
-						<a href="http://chianti.ucsd.edu/cytoscape-3.0.0/">
-						<button class="button bigrounded orange">
-							Download Cytoscape 3.0
-						</button> </a>
-
-						<a href="release_notes_3_0_0.html">
-						<button class="button bigrounded2 blue">
-							Release Notes
-						</button> </a>
-						<a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
-						<button class="button bigrounded2 green">
-							User Manual
-						</button> </a>
-					</div>
-
 					<div class="textleft">
 						<h2>Apps for Cytoscape 3.0</h2>
 						<p>
@@ -187,7 +215,10 @@
 									Report a Bug
 								</button> </a>
 							</p>
-						</p>
+							</p>
+						</div>
+
+					<div class="section">
 
 						<h2>Developer Documents</h2>
 						<ul>
