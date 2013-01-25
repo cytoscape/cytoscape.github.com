@@ -280,6 +280,31 @@ Main Components
 	float:right;
 }
 
+.blockfull3 .feature {
+	clear:both;
+}
+
+.blockfull3 .feature h3 {
+	font-size:28px;
+	font-weight:400;
+	padding-top:2em;
+	padding-bottom:2em;
+	line-height:2em;
+}
+
+.blockfull3 .feature img {
+	float:left;
+	margin-right:1em;
+	margin-top:1em;
+}
+
+.blockfull3 .feature .text {
+	font-weight:200;
+	font-size:20px;
+	line-height:2em;
+}
+
+
 
 .feeds {
 	height:400px;
