@@ -1,9 +1,7 @@
 #container2 {
-	font:normal 82.5%/1.5 Helvetica, Arial, sans-serif;
 	letter-spacing:0;
-	color:#434343;
 	background:#ffffff;
-	padding:20px 0;
+	padding:10px 0;
 	position:relative;
 	text-shadow:0 1px 0 rgba(255,255,255,.8);
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -14,19 +12,18 @@
 	float:left;
 }
 
-
 #frame {
 	position:absolute;
 	z-index:0;
 	width:580px;
-	height:390px;
+	height:520px;
 	top:-3px;
 	left:-80px;
 }
 
 #example {
 	width:580px;
-	height:390px;
+	height:520px;
 	position:relative;
 }
 
@@ -48,12 +45,11 @@
 
 .slides_container {
 	width:580px;
-	height:340px;
+	height:480px;
 	overflow:hidden;
 	position:relative;
 	display:none;
 	margin:10px;
-
 }
 
 /*
@@ -66,18 +62,29 @@
 */
 
 #slides .slide {
-	width:900px;
+	width:580px;
 	display:block;
 }
 
 #slides .slide .text {
-	width:310px;
+	width:580px;
 	float:left;
 	display:block;
+	font-size:11px;
+	font-weight:200;
+	
 }
+
+#slides .slide .text h1 {
+	font-size:32px;
+	font-weight:200;
+}
+
+
 
 #slides .slide img {
 	border:2px;
+margin-left: 10px;
 	float:left;
 }
 
