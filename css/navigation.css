@@ -24,6 +24,7 @@
 	background: -webkit-gradient(linear, left top, left bottom, from(#a9a9a9), to(#7a7a7a)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #a9a9a9, #7a7a7a); /* for firefox 3.6+ */
 	border: solid 1px #9d9d9d;
+	width:946px;
 }
 
 #nav li {

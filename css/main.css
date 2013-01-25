@@ -5,13 +5,13 @@
 @import url("rss.css");
 
 /*
-	Cytoscape Main CSS
-	
-	Designed by Keiichiro Ono (http://www.keiono.net/)
-	
-	Menu & Search section is designed by 
+Cytoscape Main CSS
 
-*/
+Designed by Keiichiro Ono (http://www.keiono.net/)
+
+Menu & Search section is designed by 
+
+ */
 
 
 body {
@@ -34,15 +34,15 @@ a {
 }
 
 /*
-	Remove border around linked images.
-*/
+Remove border around linked images.
+ */
 a img {
 	border-style:none;
 }
 
 /*
-	Main Components
-*/
+Main Components
+ */
 #container {
 	width: 960px; /* This is the overall width of pages */
 	padding: 0 0;
@@ -198,7 +198,6 @@ a img {
 /*
  * For Cytoscape 3 Web pages
  */
-
 .blockfull3 {
 	display:block;
 	float:left;
@@ -210,15 +209,23 @@ a img {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	background: #FFF;
-	
-	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color: #5a5a5a;
 	-webkit-font-smoothing: antialiased;
 }
 
+.blockfull3 h2 {
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
 
 .blockfull3 .section {
 	display:block;
+	font-size:18px;
+	font-weight:300;
 	margin:10px 10px;
 	padding:5px 10px;
 	line-height:24px;
@@ -407,8 +414,8 @@ a img {
 
 
 /*
-	News internal frame
-*/
+News internal frame
+ */
 .news {
 	float:right !important;
 	width:695px;
@@ -843,7 +850,7 @@ p {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	background: #ebebeb; /* for non-css3 browsers */
- filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dadada'); /* for IE */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dadada'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#dadada)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #f9f9f9, #dadada); /* for firefox 3.6+ */
 	border: solid 1px #9d9d9d;
@@ -864,9 +871,9 @@ p {
 
 /*
 
-	Top page components: citation funcing agencies
+Top page components: citation funcing agencies
 
-*/
+ */
 #cite, #members, #funding, #help {
 	float:left;
 	width:220px;
@@ -889,7 +896,7 @@ p {
 	margin:5px auto;
 	padding:auto 6px;
 	font-size:14px;
-	
+
 }
 
 #cite .pub {
