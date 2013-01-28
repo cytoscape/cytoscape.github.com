@@ -22,6 +22,6 @@ document
 				"<div class=\"title\">"
 				+ "<a href=\"http://www.cytoscape.org/\"><h1>Cytoscape</h1></a>"
 				+ "<h4>" + document.title + "</h4>" + "</div>"
-				+ "<ul id=\"linkIcons\"></ul>" + "</div>" +
+				+ "</div>" +
 
 				"<ul id=\"nav\"></ul>");

@@ -10,7 +10,7 @@
 
 #nav {
 	z-index:1000;
-	margin:3px 0 5px 0;
+	margin:3px 0 0px 0;
 	height:37px;
 	padding: 0 6px 0 6px;
 	line-height: 100%;
@@ -35,8 +35,6 @@
 	position: relative;
 	list-style: none;
 }
-
-
 
 
 /* main level link */

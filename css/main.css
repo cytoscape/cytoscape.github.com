@@ -15,7 +15,7 @@ Menu & Search section is designed by
 
 
 body {
-	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
 	color: #333;
@@ -51,7 +51,7 @@ Main Components
 
 /* Title for all pages. */
 #header {
-	color:#fff;
+	color:#333;
 	height:55px;
 	margin: 3px auto 0px auto;
 	padding: 5px 10px 5px 10px;
@@ -62,7 +62,7 @@ Main Components
 	-moz-border-radius: 0.5em;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	border: solid 1px #555;
+	border: solid 1px #aaa;
 }
 
 #header .title {
@@ -71,18 +71,22 @@ Main Components
 }
 
 #header .title h1 {
+	font-weight:400;
 	margin:8px 15px 8px;
 }
 
 #header .title a {
-	color:#fff;
 	text-decoration:none;
+	color:#666;
 }
 
-
-
 #header h4 {
-	margin:15px 0px 0px 20px;
+	color:#666;
+	margin:15px 0px 0px 30px;
+}
+
+#header form {
+	margin-top:12px;
 }
 
 #ccfooter {
@@ -304,6 +308,14 @@ Main Components
 	line-height:2em;
 }
 
+.blockfull3 table {
+	line-height:2em;
+}
+
+.blockfull3 table td {
+	padding:10px;
+	
+}
 
 
 .feeds {
