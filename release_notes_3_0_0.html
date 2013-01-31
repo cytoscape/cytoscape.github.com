@@ -116,11 +116,20 @@
 							Cytoscpae 3 supports up to 800M of memory for XP platforms.
 						</p>
 
-						<h3>Important Note for Mac Users</h3>
+						<h3>Installation Problem on Mac OS X Lion and Mountain Lion</h3>
 						<p>
-							If you run Cytoscape on Mac OS X 10.7.5+ and 10.8+, you need to disable Gatekeeper 
-							before running the installer.
+							From Mac OS X 10.7.5, default secutiry option is set to 
+							allow applications only from Apple's App Store.  If you try to install 
+							Cytoscape 3 with the default setting, you will see the following warning 
+							message:
 						</p>
+							<img src="images/cy3_mac_security_warning.png" alt="Mac Security Warning"/>
+						<p>
+							To avoid this problem, you need to change your system's secutiry setting.
+							From System Preferences, you need to change <i>Allow applications 
+								downloaded from</i> option to <strong>Anywhare</strong>
+						</p>
+						<img src="images/cy3_mac_change_security.png" alt="Mac change security"/>
 					</div>
 					
 					<h2>How to Report Bugs</h2>
