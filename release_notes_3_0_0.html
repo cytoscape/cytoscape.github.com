@@ -106,14 +106,21 @@
 					<div class="section">
 						<h3>Java Versions</h3>
 						<p>
-							You can run Cytoscape 3 on Java 6 or 7.  However, there are several problems if you use 
-							OpenJDK.  Please use Oracle JRE/JDK or Apple Java Virtual Machine. 
+						You can run Cytoscape 3 on Java 6 or 7.  However, there are 
+						several problems if you use OpenJDK.  Please use Oracle 
+						JRE/JDK or Apple Java Virtual Machine. 
 						</p>
 						
 						<h3>Windows XP Problems</h3>
 						<p>
-							You need to run <strong>gen_vmoptions.bat</strong> file before you run Cytoscape 3.
-							Cytoscpae 3 supports up to 800M of memory for XP platforms.
+							For Windows XP systems running on PCs having more than 1GB RAM, 
+							attempting to start Cytoscape may fail (as shown in the picture below).
+						</p>
+							<img src="images/cy3_win_xp_memory_problem.png" alt="Windows XP Warning"/>
+						<p>
+							To solve the problem, execute the <strong>gen_vmoptions.bat</strong> 
+							file to calibrate the memory allocation configured in the 
+							Cytoscape.vmoptions file so it does not exceed 800MB.
 						</p>
 
 						<h3>Installation Problem on Mac OS X Lion and Mountain Lion</h3>
@@ -127,7 +134,7 @@
 						<p>
 							To avoid this problem, you need to change your system's secutiry setting.
 							From System Preferences, you need to change <i>Allow applications 
-								downloaded from</i> option to <strong>Anywhare</strong>
+								downloaded from</i> option to <strong>Anywhere</strong>.
 						</p>
 						<img src="images/cy3_mac_change_security.png" alt="Mac change security"/>
 					</div>
