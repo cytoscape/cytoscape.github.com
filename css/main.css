@@ -5,17 +5,17 @@
 @import url("rss.css");
 
 /*
-	Cytoscape Main CSS
-	
-	Designed by Keiichiro Ono (http://www.keiono.net/)
-	
-	Menu & Search section is designed by 
+Cytoscape Main CSS
 
-*/
+Designed by Keiichiro Ono (http://www.keiono.net/)
+
+Menu & Search section is designed by 
+
+ */
 
 
 body {
-	font-family: 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, Verdana, sans-serif;
 	margin: 0;
 	padding: 0;
 	color: #333;
@@ -34,15 +34,15 @@ a {
 }
 
 /*
-	Remove border around linked images.
-*/
+Remove border around linked images.
+ */
 a img {
 	border-style:none;
 }
 
 /*
-	Main Components
-*/
+Main Components
+ */
 #container {
 	width: 960px; /* This is the overall width of pages */
 	padding: 0 0;
@@ -51,7 +51,7 @@ a img {
 
 /* Title for all pages. */
 #header {
-	color:#fff;
+	color:#333;
 	height:55px;
 	margin: 3px auto 0px auto;
 	padding: 5px 10px 5px 10px;
@@ -62,7 +62,7 @@ a img {
 	-moz-border-radius: 0.5em;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	border: solid 1px #555;
+	border: solid 1px #aaa;
 }
 
 #header .title {
@@ -71,18 +71,22 @@ a img {
 }
 
 #header .title h1 {
+	font-weight:400;
 	margin:8px 15px 8px;
 }
 
 #header .title a {
-	color:#fff;
 	text-decoration:none;
+	color:#666;
 }
 
-
-
 #header h4 {
-	margin:15px 0px 0px 20px;
+	color:#666;
+	margin:15px 0px 0px 30px;
+}
+
+#header form {
+	margin-top:12px;
 }
 
 #ccfooter {
@@ -198,7 +202,6 @@ a img {
 /*
  * For Cytoscape 3 Web pages
  */
-
 .blockfull3 {
 	display:block;
 	float:left;
@@ -210,15 +213,23 @@ a img {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	background: #FFF;
-	
-	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color: #5a5a5a;
 	-webkit-font-smoothing: antialiased;
 }
 
+.blockfull3 h2 {
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
 
 .blockfull3 .section {
-	display:inline-block;
+	display:block;
+	font-size:18px;
+	font-weight:300;
 	margin:10px 10px;
 	padding:5px 10px;
 	line-height:24px;
@@ -231,6 +242,7 @@ a img {
 }
 
 .blockfull3 .textright {
+	float:right;
 	padding:5px 10px;
 	line-height:24px;
 }
@@ -239,6 +251,18 @@ a img {
 	float:left;
 	padding:5px 10px;
 	line-height:24px;
+}
+
+.blockfull3 .textleft ul{
+	float:left;
+	list-style:none;
+	margin-top:0;
+	padding-left:10px;
+	margin-bottom:15px;
+}
+
+.blockfull3 .textleft li {
+	margin-bottom:14px;
 }
 
 .blockfull3 .textright ul{
@@ -258,6 +282,39 @@ a img {
 
 .blockfull3 .rightimg img {
 	float:right;
+}
+
+.blockfull3 .feature {
+	clear:both;
+}
+
+.blockfull3 .feature h3 {
+	font-size:28px;
+	font-weight:400;
+	padding-top:2em;
+	padding-bottom:2em;
+	line-height:2em;
+}
+
+.blockfull3 .feature img {
+	float:left;
+	margin-right:1em;
+	margin-top:1em;
+}
+
+.blockfull3 .feature .text {
+	font-weight:200;
+	font-size:20px;
+	line-height:2em;
+}
+
+.blockfull3 table {
+	line-height:2em;
+}
+
+.blockfull3 table td {
+	padding:10px;
+	
 }
 
 
@@ -394,8 +451,8 @@ a img {
 
 
 /*
-	News internal frame
-*/
+News internal frame
+ */
 .news {
 	float:right !important;
 	width:695px;
@@ -830,7 +887,7 @@ p {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	background: #ebebeb; /* for non-css3 browsers */
- filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dadada'); /* for IE */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dadada'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#dadada)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #f9f9f9, #dadada); /* for firefox 3.6+ */
 	border: solid 1px #9d9d9d;
@@ -851,9 +908,9 @@ p {
 
 /*
 
-	Top page components: citation funcing agencies
+Top page components: citation funcing agencies
 
-*/
+ */
 #cite, #members, #funding, #help {
 	float:left;
 	width:220px;
@@ -876,7 +933,7 @@ p {
 	margin:5px auto;
 	padding:auto 6px;
 	font-size:14px;
-	
+
 }
 
 #cite .pub {
