@@ -118,9 +118,6 @@ function appendDocument() {
 							+ ".html\">"
 							+ latestVersion
 							+ " Release Notes</a></li>"
-							+ "<li><a href=\""
-							+ baseURL
-							+ "documentation_cy3_dev.html\">3.0 app development</a></li>"
 							+ "<li><a href=\"http://cytoscape.wodaklab.org/wiki/\">Cytoscape Wiki</a></li>"
 							+ "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape\">Cytoscape at Open Tutorials</a></li></ul>");
 }
