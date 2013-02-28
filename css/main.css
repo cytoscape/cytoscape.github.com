@@ -776,6 +776,7 @@ News internal frame
 
 #community .blockfull .titletext {
 	font-size:36px;
+	font-weight:200;
 	width:80% !important;
 	vertical-align:middle;
 	height:58px;
@@ -792,7 +793,7 @@ News internal frame
 
 #community .site, #community .mailinglist, #documents .filetype {
 	width:28%;
-	height: 300px;
+	height: 330px;
 	float:left;
 	padding:15px 15px;
 	margin:10px 10px;
@@ -813,7 +814,7 @@ News internal frame
 }
 
 #community .mailinglist {
-	height:230px;
+	height:250px;
 	padding:5px 15px;
 }
 
