@@ -13,5 +13,5 @@ echo "Sourceforge username: "
 read name
 
 #  Issue rsync command
-rsync -c -av --delete --exclude ".git/" --exclude "deploy.sh" --exclude "deploy-test.sh" . $name,cytoscape@web.sourceforge.net:htdocs/
+rsync -c -av --delete --exclude ".idea/" --exclude ".git/" --exclude "deploy.sh" --exclude "deploy-test.sh" . $name,cytoscape@web.sourceforge.net:htdocs/
 
