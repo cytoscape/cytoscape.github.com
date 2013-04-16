@@ -1,240 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Welcome to Cytoscape 3</title>
+    <title>Welcome to Cytoscape 3</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Introduction to Cytoscape 3.">
-		<meta name="author" content="">
+    <meta name="description" content="Introduction to Cytoscape 3.">
+    <meta name="author" content="Keiichiro Ono">
 
-		<link href="css/main.css" rel="stylesheet" media="screen" />
-		<link href="css/slides.css" rel="stylesheet" media="screen" />
+    <link href="css/main.css" rel="stylesheet" media="screen"/>
+    <link href="css/slides.css" rel="stylesheet" media="screen"/>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
-		<script src="js/global_variables.js"></script>
-		<script src="js/menu_generator.js"></script>
-		<script src="js/slides.min.jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="js/global_variables.js"></script>
+    <script src="js/menu_generator.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
 
-		<script>
-			$(function() {
-				// Set starting slide to 1
-				var startSlide = 1;
-				// Get slide number if it exists
-				if (window.location.hash) {
-					startSlide = window.location.hash.replace('#', '');
-				}
-				// Initialize Slides
-				$('#slides').slides({
-					preload : true,
-					preloadImage : 'images/slides/loading.gif',
-					generatePagination : true,
-					play : 5000,
-					pause : 2500,
-					hoverPause : true,
-					// Get the starting slide
-					start : startSlide,
-					animationComplete : function(current) {
-						// Set the slide number as a hash
-						window.location.hash = '#' + current;
-					}
-				});
-			});
-		</script>
-	</head>
+    <script>
+        $(function () {
+            // Set starting slide to 1
+            var startSlide = 1;
+            // Get slide number if it exists
+            if (window.location.hash) {
+                startSlide = window.location.hash.replace('#', '');
+            }
+            // Initialize Slides
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'images/slides/loading.gif',
+                generatePagination: true,
+                play: 5000,
+                pause: 2500,
+                hoverPause: true,
+                // Get the starting slide
+                start: startSlide,
+                animationComplete: function (current) {
+                    // Set the slide number as a hash
+                    window.location.hash = '#' + current;
+                }
+            });
+        });
+    </script>
+</head>
 
-	<body>
-		<div id="container">
-			<script src="js/header.js"></script>
-			<div id="documents">
-				<div class="blockfull3">
-					<div id="container2">
-						<div id="example">
-							<div id="slides">
-								<div class="slides_container">
-									<div class="slide">
-										<div class="text">
-											<h1>Welcome!</h1>
-											<p>
-											Cytoscape 3.0 is a cleaner and modular new generation 
-											of Cytoscape for future expansions.  It benefits both 
-											users and developers.
-											</p>
-										</div>
-										<a href="images/slides/title0.png" title="Cytoscape 3 Desktop Version">
-											<img src="images/slides/title0.png" alt="Cytoscape 3 Desktop" />
-										</a>
-									</div>
-									<div class="slide">
-										<div class="text">
-											<h1>New Features</h1>
-											<p>
-											Cytoscape 3 has new features including: <strong>Edge Bundling, 
-												Network Collections, Visual Annotations, Advanced Search, 
-												and Improved Data Table Browser</strong>.
-											</p>
-											<p>
-											<a href="release_notes_3_0_0.html">Learn more about new features &rsaquo;</a>
-											</p>
-										</div>
-										<a href="images/slides/new_features.png" title="New Features">
-											<img src="images/slides/new_features.png" />
-										</a>
-									</div>
-									<div class="slide">
-										<div class="text">
-											<h1>App Store</h1>
-											<p>
-											You can install Apps directly from Cytoscape App Store.
-											</p>
-											<p>
-											<a href="http://apps.cytoscape.org/">Visit Cytoscape App Store &rsaquo;</a>
-											</p>
-										</div>
-										<a href="images/slides/appstore.png" title="App Store">
-											<img src="images/slides/appstore.png" />
-										</a>
-									</div>
-								</div>
-							</div>
-							<div id="frame"></div>
-						</div>
-					</div>
+<body>
+<div id="container">
+    <script src="js/header.js"></script>
+    <div id="documents">
+        <div class="blockfull3">
+            <div id="container2">
+                <div id="example">
+                    <div id="slides">
+                        <div class="slides_container">
+                            <div class="slide">
+                                <div class="text">
+                                    <h1>Welcome!</h1>
 
-					<div class="textleft">
-						<ul>
-							<li>
-							<a href="download.html">
-								<button class="button hugerounded orange">
-									Download Cytoscape 3.0
-							</button> </a>
-							</li>
-							<li>
-							<a href="cy3_welcome_letter_v5.pdf">
-								<button class="button hugenarrow green">
-									Download Welcome Letter
-							</button> </a>
-							</li>
-							<li>
-							<a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
-								<button class="button hugenarrow blue">
-									User Manual
-							</button> </a>
-							</li>
-							<li>
-							<a href="release_notes_3_0_0.html">
-								<button class="button hugenarrow blue">
-									Release Notes
-							</button> </a>
-							</li>
-							<li>
-							<a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">
-								<button class="button hugenarrow blue">
-									Tutorials
-							</button> </a>
-							</li>
-							<li>
-							<a href="cy3_bug_bounty.html">
-								<button class="button hugenarrow red">
-									February Bug Bounty
-							</button> </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="blockfull3">
-				<h2>What is Cytoscape 3.0?</h2>
-				<div class="rightimg">
-					<img src="images/cytoscape_logo_left.png" />
-				</div>
+                                    <p>
+                                        Cytoscape 3.0 is a cleaner and modular new generation
+                                        of Cytoscape for future expansions. It benefits both
+                                        users and developers.
+                                    </p>
+                                </div>
+                                <a href="images/slides/title0.png" title="Cytoscape 3 Desktop Version">
+                                    <img src="images/slides/title0.png" alt="Cytoscape 3 Desktop"/>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <div class="text">
+                                    <h1>New Features</h1>
 
-				<div class="section">
-					Cytoscape 3.0 is the latest version of Cytoscape, which introduces a whole new architecture,
-					developer API and set of user controls. Cytoscape 3.0 represents a major redesign from the
-					ground up, toward the goal of provide a stable, extensible, high-performance platform for
-					network visualization and analysis. The initial Beta Release will introduce users to the new
-					interfaces and features we've been working on:
+                                    <p>
+                                        Cytoscape 3 has new features including: <strong>Edge Bundling,
+                                        Network Collections, Visual Annotations, Advanced Search,
+                                        and Improved Data Table Browser</strong>.
+                                    </p>
 
-					<ul>
-						<li>
-						New welcome screen and toolbar for quick access to common actions
-						</li>
-						<li>
-						New Data Table controls to interface with your data
-						</li>
-						<li>
-						Integrated support for graphical annotations in networks
-						</li>
-						<li>
-						Support for independent sets of networks within a single session
-						</li>
-						<li>
-						Advanced network and table import controls
-						</li>
-						<li>
-						Improved architecture and API for a more stable experience
-						</li>
-						<li>
-						Cut/Copy/Paste of nodes and edges
-						</li>
-						<li>
-						Metanode support in the core
-						</li>
-						<li>
-						Context menus for improved usability
-						</li>
-					</ul>
-				</div>
+                                    <p>
+                                        <a href="release_notes_3_0_1.html">Learn more about new features &rsaquo;</a>
+                                    </p>
+                                </div>
+                                <a href="images/slides/new_features.png" title="New Features">
+                                    <img src="images/slides/new_features.png"/>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <div class="text">
+                                    <h1>App Store</h1>
 
-				<h2>Apps for Cytoscape 3.0</h2>
-				<div class="section">
-					You can install Cytoscape 3 Apps directly from new Cytoscape App Store.  Please
-					visit <a href="http://apps.cytoscape.org/" target="_new">apps.cytoscape.org</a>.
-				</div>
+                                    <p>
+                                        You can install Apps directly from Cytoscape App Store.
+                                    </p>
 
-				<h2>Report Bugs</h2>
-				<div class="textright">
-					<a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">
-						<button class="button hugenarrow red">
-							Report a Bug
-					</button> </a>
-				</div>
-				<div class="section">
-						We need your help to improve Cytoscpae 3 final release.  You can report a bug from
-						<strong>Help &rarr; Report a Bug...</strong>.  Or, click this button: 
-				</div>
+                                    <p>
+                                        <a href="http://apps.cytoscape.org/">Visit Cytoscape App Store &rsaquo;</a>
+                                    </p>
+                                </div>
+                                <a href="images/slides/appstore.png" title="App Store">
+                                    <img src="images/slides/appstore.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="frame"></div>
+                </div>
+            </div>
 
-				<h3><a href="release_notes_3_0_0.html#issues" >Important Note for Mac OS X Mountain Lion Users</a></h3>
-				
-				<h2>Developer Documents</h2>
-				<div class="section">
-					<ul>
-						<li>
-						<a href="http://chianti.ucsd.edu/cytoscape-3.0.0/API">Cytoscape API 3.0.0 JavaDocs</a>
-						</li>
-						<li>
-						<a href="http://chianti.ucsd.edu/cytoscape-3.0.0/swing-app-api-3.0.0.jar">API JAR 3.0.0</a>
-						</li>
-						<li>
-						<a href="http://chianti.ucsd.edu/svn/core3/app-developer/tags/3.0.0">App Developer Project Tag</a>
-						</li>
-						<li>
-						Primary documentation for Cytoscape 3.0 <a href="http://wiki.cytoscape.org/Cytoscape_3/AppDeveloper">app development</a>.
-						</li>
-						<li>
-						Learn about the <a href="http://wiki.cytoscape.org/Cytoscape_3/CoreDevelopment">Architecture, Backward Compatibility,
-							and API</a> of Cytoscape 3.0.
-						</li>
-						<li>
-						All Cytoscape 3.0 <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">app development tutorials</a>.
-						</li>
-					</ul>
-				</div>
-			</div>
-			<script src="js/footer.js"></script>
-		</div>
-	</body>
+            <div class="textleft">
+                <ul>
+                    <li>
+                        <a href="download.html">
+                            <button class="button hugerounded orange">
+                                Download Cytoscape 3.0
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cy3_welcome_letter_v5.pdf">
+                            <button class="button hugenarrow green">
+                                Download Welcome Letter
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
+                            <button class="button hugenarrow blue">
+                                User Manual
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="release_notes_3_0_1.html">
+                            <button class="button hugenarrow blue">
+                                Release Notes
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">
+                            <button class="button hugenarrow blue">
+                                Tutorials
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="blockfull3">
+        <h2>What is Cytoscape 3.0?</h2>
+
+        <div class="rightimg">
+            <img src="images/cytoscape_logo_left.png"/>
+        </div>
+
+        <div class="section">
+            Cytoscape 3.0 is the latest version of Cytoscape, which introduces a whole new architecture,
+            developer API and set of user controls. Cytoscape 3.0 represents a major redesign from the
+            ground up, toward the goal of provide a stable, extensible, high-performance platform for
+            network visualization and analysis. The initial Beta Release will introduce users to the new
+            interfaces and features we've been working on:
+
+            <ul>
+                <li>
+                    New welcome screen and toolbar for quick access to common actions
+                </li>
+                <li>
+                    New Data Table controls to interface with your data
+                </li>
+                <li>
+                    Integrated support for graphical annotations in networks
+                </li>
+                <li>
+                    Support for independent sets of networks within a single session
+                </li>
+                <li>
+                    Advanced network and table import controls
+                </li>
+                <li>
+                    Improved architecture and API for a more stable experience
+                </li>
+                <li>
+                    Cut/Copy/Paste of nodes and edges
+                </li>
+                <li>
+                    Metanode support in the core
+                </li>
+                <li>
+                    Context menus for improved usability
+                </li>
+            </ul>
+        </div>
+
+        <h2>Apps for Cytoscape 3.0</h2>
+
+        <div class="section">
+            You can install Cytoscape 3 Apps directly from new Cytoscape App Store. Please
+            visit <a href="http://apps.cytoscape.org/" target="_new">apps.cytoscape.org</a>.
+        </div>
+
+        <h2>Report Bugs</h2>
+
+        <div class="textright">
+            <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">
+                <button class="button hugenarrow red">
+                    Report a Bug
+                </button>
+            </a>
+        </div>
+        <div class="section">
+            We need your help to improve quality of Cytoscape 3. You can report a bug from
+            <strong>Help &rarr; Report a Bug...</strong>. Or, click this button:
+        </div>
+
+        <h2>Developer Documents</h2>
+        <div class="section">
+            Cytoscape 3 is an open-source platform and source code is hosted on Github.
+            <ul>
+                <li>
+                    <a href="https://github.com/cytoscape">Cytoscape source code on Github</a>
+                </li>
+                <li>
+                    <a href="http://chianti.ucsd.edu/cytoscape-3.0.1/API">Cytoscape API 3.0.1 JavaDocs</a>
+                </li>
+                <li>
+                    <a href="http://chianti.ucsd.edu/cytoscape-3.0.1/swing-app-api-3.0.1.jar">API JAR 3.0.1</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cytoscape/cytoscape-gui-distribution/tree/3.0.1">App Developer Project Tag</a>
+                </li>
+                <li>
+                    Primary documentation for Cytoscape 3.0
+                    <a href="http://wiki.cytoscape.org/Cytoscape_3/AppDeveloper">app development</a>.
+                </li>
+                <li>
+                    <a href="http://code.cytoscape.org/">Cytoscape Core Developer Portal (code.cytoscape.org)</a>
+                </li>
+                <li>
+                    Learn about the <a href="http://wiki.cytoscape.org/Cytoscape_3/CoreDevelopment">Architecture,
+                    Backward Compatibility,
+                    and API</a> of Cytoscape 3.0.
+                </li>
+                <li>
+                    All Cytoscape 3.0 <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">app
+                    development tutorials</a>.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/footer.js"></script>
+
+</div>
+</body>
 </html>

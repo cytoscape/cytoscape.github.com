@@ -7,7 +7,6 @@ $(document).ready(function() {
 	appendIconLinks();
 	appendMainMenuItems();
 	appendIntro();
-	// appendPlugin();
 	appendDocument();
 	appendCommunity();
 });
@@ -66,13 +65,10 @@ function appendMainMenuItems() {
 			"<li id=\"communityMenu\"><a href=\"#\">Community</a></li>");
 	$("#nav")
 			.append(
-					"<li id=\"bugMenu\"><a href=\"http://cbio.mskcc.org/cytoscape/bugs/my_view_page.php\">Report a Bug</a></li>");
+					"<li id=\"bugMenu\"><a href=\"http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php\">Report a Bug</a></li>");
 	$("#nav")
 			.append(
 					"<li id=\"helpMenu\"><a href=\"http://www.cytoscape.org/community.html\">Getting Help</a></li>");
-	$("#nav")
-			.append(
-					"<li id=\"threePointOhMenu\"><a href=\"http://www.cytoscape.org/cy3.html\">3.0!</a></li>");
 }
 
 function appendIntro() {
@@ -119,9 +115,6 @@ function appendDocument() {
 							+ ".html\">"
 							+ latestVersion
 							+ " Release Notes</a></li>"
-							+ "<li><a href=\""
-							+ baseURL
-							+ "documentation_cy3_dev.html\">3.0 app development</a></li>"
 							+ "<li><a href=\"http://cytoscape.wodaklab.org/wiki/\">Cytoscape Wiki</a></li>"
 							+ "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape\">Cytoscape at Open Tutorials</a></li></ul>");
 }

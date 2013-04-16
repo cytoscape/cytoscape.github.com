@@ -70,8 +70,10 @@
 	padding: .4em 1.5em .42em;
 }
 .small {
-	font-size: 11px;
-	padding: .2em 1em .275em;
+	margin-top: .4em !important;
+	margin-bottom: 0 !important;
+	font-size: 9px !important;
+	padding: .2em !important;
 }
 
 /* color styles 

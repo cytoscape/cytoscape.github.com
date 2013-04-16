@@ -1,155 +1,295 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
-<title>What is Cytoscape?</title>
-<script type="text/javascript" 
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <meta charset="utf-8">
 
-<script type="text/javascript" src="js/global_variables.js"></script>
-<script type="text/javascript" src="js/menu_generator.js"></script>
+    <title>What is Cytoscape?</title>
+
+    <meta name="description" content="An Overview of Cytoscpae Project.">
+    <meta name="author" content="Keiichiro Ono">
+
+    <link href="css/main.css" rel="stylesheet">
+    <script src="http:///ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="js/global_variables.js"></script>
+    <script src="js/menu_generator.js"></script>
 </head>
 
 <body>
 <div id="container">
-<script src="js/header.js"></script>
+    <script src="js/header.js"></script>
 
-<div id="introtitle"> <img src="images/title3.png"/> </div>
+    <div id="introtitle">
+        <img src="images/new_title.png"/>
+    </div>
 
-<div class="blockfull">
-  <h2>What is Cytoscape?</h2>
-  <img src="images/intro_2.png" /><img src="images/intro_1.png" />
-  <p> <strong><i>Cytoscape</i></strong> is an open source bioinformatics software platform for <strong><i> visualizing</i></strong> molecular interaction networks and biological pathways and <strong><i>integrating</i></strong> these networks with annotations, gene expression 
-    profiles and other state data. &nbsp; Although Cytoscape was originally designed for 
-    biological research, now it is a general platform for complex network analysis and 
-    visualization. &nbsp;  Cytoscape <i>core</i> distribution provides a basic set of features 
-    for data integration and visualization. &nbsp; Additional features are available as <strong><i>plugins</i></strong>. &nbsp; Plugins are available for network and molecular 
-    profiling analyses, new layouts, additional file format support, scripting, and connection 
-    with databases. &nbsp; Plugins may be developed by anyone using the Cytoscape open API based on <a href="http://www.java.com/en/" target="_blank">Java&#8482;</a> technology and plugin <a href="community.php"> community development</a> is encouraged.  Most of the 
-    plugins are <a href="plugins/index.php">freely available</a>. </p>
+    <div class="blockfull">
+        <h2>What is Cytoscape?</h2>
+        <img src="images/intro_2.png"/><img src="images/intro_1.png"/>
+
+        <p>
+            <strong><i>Cytoscape</i></strong> is an open source software platform for <strong><i>
+            visualizing</i></strong> molecular interaction networks and biological pathways and
+            <strong><i>integrating</i></strong> these networks with annotations, gene expression
+            profiles and other state data.  Although Cytoscape was originally designed for
+            biological research, now it is a general platform for complex network analysis and
+            visualization. &nbsp; Cytoscape <i>core</i> distribution provides a basic set of features
+            for data integration, analysis, and visualization. &nbsp; Additional features are available as
+            <strong><i>Apps</i></strong> (formerly called <i>Plugins</i>). &nbsp; Apps are available
+            for network and molecular profiling analyses, new layouts, additional file format support,
+            scripting, and connection with databases. &nbsp; They may be developed by anyone using the
+            Cytoscape open API based on <a href="http://www.java.com/en/" target="_blank">Java&#8482;</a>
+            technology and App community development is encouraged. Most of the Apps are
+            freely available from <a href="http://apps.cytoscape.org/">Cytoscape App Store</a>.
+        </p>
+        <img src="images/irefindex.png" title="Visualization of human interactome from iRefindex data set."/>
+    </div>
+
+    <div class="blockfull">
+        <h2>Cytoscape Family</h2>
+
+        <a href="cy3.html"><img src="images/cy3.png" title="Cytoscape 3.x Series Logo"/></a>
+        <img src="images/cy2.png" title="Cytoscape 2.x Series Logo"/>
+
+        <p>
+            As of March 2013, there are three versions of Cytoscape:
+            <strong>Cytoscape 2.x, <a href="cy3.html">Cytoscape 3.x</a>, and
+            <a href="http://cytoscape.github.com/cytoscape.js/index.html">cytoscape.js</a></strong>.
+            <strong>Cytoscape 2.x</strong> is a stable, production version of Cytoscape.  This version is in
+            maintenance mode and core team may release bug-fix versions, but new features will
+            not be added by the core developers.
+            <strong>3.x</strong> is the whole new version of Cytoscape with modular architecture.
+            It is designed for long-term maintainability and eventually it replaces 2.x series.
+            New major features, including new user interfaces, headless (command-line)
+            distribution, and multiple rendering engine support, will be released
+            for this version.  Currently, Cytoscape community is in the middle of transition
+            from 2.x to 3.x.  Core and third party App developers are working hard to port as much as 2.x
+            features and Apps to 3.x series.<br/>
+
+            <a href="http://cytoscape.github.com/cytoscape.js/index.html">cytoscape.js</a> is a successor of
+            <a href="http://cytoscapeweb.cytoscape.org">Cytoscape Web</a>.  cytoscape.js is a JavaScript
+            library for network visualization, <strong>NOT a complete web application</strong>.
+            It shares some design-level concepts with Desktop (Java) version of Cytoscape, but code base is
+            completely independent.  It is designed to be a building block for complex
+            data visualization web applications for the HTML5 era.
+
+        <h2>Which one is right for me?</h2>
+        <a href="http://cytoscape.github.com/cytoscape.js/"><img src="images/cyjs.png"/></a>
+
+        <ul>
+            <li>
+                <strong>Users</strong>: Use Cytoscape 2.x for your real-world projects.
+                Core team members are not going to add new features to it, but at
+                this point of time, the latest release of 2.x series is the most
+                stable version of Cytoscape.
+            </li>
+            <li>
+                <strong>Advanced Users</strong>: If you want to use new features only for
+                Cytoscape 3.x, try the latest version of 3.x.  Note that not all Apps
+                (plugins) are available for 3.x yet.
+            </li>
+            <li>
+                <strong>App Developers</strong>: Please port your 2.x Apps to 3.x series.
+                We recommend to use 3.x for new plugins development.
+                <a href="http://chianti.ucsd.edu/cytoscape-3.0.0/API/">3.x API</a> is stable
+                enough to develop new Apps, but if you notice any design flaws or bugs,
+                <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-discuss">
+                    please let us know</a>.
+            </li>
+            <li>
+                <strong>Web Application Developers</strong>: You can use cytoscape.js as
+                network data visualization engine for your web application.  It is a pure
+                JavaScript library and no plugin is required for the web browsers.
+                In the long term, this library and other server-side applications replaces
+                Java Web Start version of Cytoscape.
+            </li>
+        </ul>
+
+        <a href="cy3.html"><h2>Learn more about the latest version of Cytoscape...</h2></a>
+        </p>
+    </div>
+
+    <!-- Optimized for 960px images -->
+    <img src="images/overview.png" />
+
+    <div class="blockleft">
+        <h4>Supports Many Standards</h4>
+        <img src="images/intro_3.png"/>
+
+        <p>
+            Cytoscape supports a lot of standard network and annotation file formats including: SIF
+            (Simple Interaction Format), <a href="http://www.infosun.fim.uni-passau.de/Graphlet/GML/"> GML</a>, <a
+                    href="http://www.cs.rpi.edu/~puninj/XGMML/">XGMML</a>, <a href="http://www.biopax.org/">BioPAX</a>,
+            <a href="http://www.psidev.info/index.php?q=node/60">PSI-MI</a>,
+            <a href="http://graphml.graphdrawing.org/">GraphML</a>,
+            <a href="http://www.kegg.jp/kegg/xml/">KGML (KEGG XML)</a>,
+            <a href="http://sbml.org/Main_Page">SBML</a>, <a href="http://www.obofoundry.org/">OBO</a>,
+            and <a href="http://www.geneontology.org/GO.format.annotation.shtml">Gene Association</a>.
+            Delimited text files and MS Excel&#8482; Workbook are also supported and you can import
+            data files, such as expression profiles or <a href="http://www.geneontology.org">GO</a> annotations,
+            generated by other applications
+            or spreadsheet programs. Using this feature, you can load and save arbitrary attributes
+            on nodes, edges, and networks. For example, input a set of custom annotation terms for
+            your proteins, create a set of confidence values for your protein-protein interactions.
+        </p>
+    </div>
+    <div class="blockright">
+        <h4>Web Service Clients</h4>
+        <img src="images/intro_4.png"/>
+
+        <p> Cytoscape works as a web service client. This means Cytoscape can directly connect to
+            the external public databases and imports network and annotation data. Currently, <a
+                    href="http://www.pathwaycommons.org/pc/">Pathway Commons</a>, <a
+                    href="http://www.ebi.ac.uk/intact/site/index.jsf">IntAct</a>, <a href="http://www.biomart.org/">BioMart</a>,
+            and <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene">NCBI Entrez Gene</a>
+            are supported. And we continue to
+            develop new service clients for popular databases. </p>
+    </div>
+    <div class="blockright">
+        <h4>Interoperability</h4>
+        <img src="images/intro_5.png"/>
+
+        <p>
+            Since Cytoscape supports import/export standard file formats, you can easily put Cytoscape
+            into your workflow. For example, if you have a network data generated by
+            <a href="http://cneurocvs.rmki.kfki.hu/igraph/">igraph</a> or
+            <a href="http://www.bioconductor.org/packages/release/GraphsAndNetworks.html">Bioconductor</a>,
+            Cytoscape can load the file as a text table and you can export it in PSI-MI format for
+            other bioinformatics tools or your own applications/scripts.
+        </p>
+    </div>
+    <div class="blockleft">
+        <h4>Session File</h4>
+        <img src="images/intro_6.png"/>
+
+        <p>
+            You can save your work by a single click. All of settings, data files, and visualizations
+            are packed in a session file. It is called <i>Cytoscape Session (.cys) file</i>.
+            Cytoscape Session file includes networks, attributes (for node/edge/network), Desktop
+            states (selected/hidden nodes and edges, window sizes), Properties, some plugin states,
+            and Visual Styles.
+        </p>
+    </div>
+    <div class="blockleft">
+        <h4>VizMapper&#8482;</h4>
+        <img src="images/intro_12.png"/> <img src="images/intro_7.png"/>
+
+        <p>
+            Customize network data display using powerful
+            <a href="http://wiki.cytoscape.org/Cytoscape_User_Manual/Visual_Styles">
+            <strong><i>VisualStyles</i></strong></a>.
+            View a superposition of gene expression ratios and p-values on the network. &nbsp;
+            Expression data can be mapped to node color, label, border thickness, or border color,
+            etc. according to user-configurable colors and visualization schemes.
+        </p>
+    </div>
+    <div class="blockright">
+        <h4>Image Export</h4>
+        <img src="images/pdficon_large.gif"/>
+
+        <p>
+            You can export networks as publishiable-quality images. Supports PDF, PS, SVG, PNG,
+            JPEG, and BMP files. Vector images (PDF and PS) can be modified by other application
+            such as Adobe Illustrator for further enhancements.
+        </p>
+    </div>
+    <div class="blockright">
+        <h4>Layout</h4>
+        <img src="images/intro_9.png"/>
+
+        <p> Layout networks in two dimensions. &nbsp;A variety of layout algorithms are available,
+            including cyclic, tree, force-directed, edge-weight, and yFiles Organic layouts. You can
+            also use Manual Layout tools similar to other graphics application user interface. </p>
+    </div>
+    <div class="blockright">
+        <h4>Browsing</h4>
+        <img src="images/intro_11.png"/>
+
+        <p> Zoom in/out and pan for browsing the network. Use the network manager to easily organize
+            multiple networks. And this structure can be saved in a session file. Use the <i>bird's
+                eye view</i> to easily navigate large networks. Easily navigate large networks (100,000+ nodes and
+            edges) by efficient rendering engine. </p>
+    </div>
+
+    <div class="blockleft">
+        <h4>Search</h4>
+        <img src="images/intro_8.png"/>
+
+        <p>
+            Search target nodes and edges by Quick Find or
+            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2427162/">Enhanced Search</a>.
+            <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2427162/table/T1/">
+            Lucene Syntax</a> is
+            supported by <i>Enhanced Search Plugin (ESP)</i> for arbitrary complex queries.
+        </p>
+        <img src="images/intro_17.png"/>
+    </div>
+
+    <div class="blockleft">
+        <h4>Filter</h4>
+        <img src="images/intro_16.png"/>
+
+        <p>
+            <strong>Filter the network</strong> to select subsets of nodes and/or interactions based
+            on the current data. &nbsp;For instance, users may select nodes involved in a threshold
+            number of interactions, nodes that share a particular GO annotation, or nodes whose gene
+            expression levels change significantly in one or more conditions according to p-values
+            loaded with the gene expression data. You can create new networks from the filtering result. </p>
+    </div>
+    <div class="blockright">
+        <h4>Find Modules/ Clusters</h4>
+        <img src="images/intro_14.png"/> <img src="images/intro_15.png"/>
+
+        <p>
+            <strong>Find active subnetworks/pathway modules</strong>. The network is screened against gene expression
+            data to identify connected sets of interactions, i.e. <i>interaction subnetworks</i>, whose genes show
+            particularly high levels of differential expression. &nbsp;The interactions contained in each subnetwork
+            provide hypotheses for the regulatory and signaling interactions in control of the observed expression
+            changes. <strong>Find clusters (highly interconnected regions)</strong> in any network loaded into
+            Cytoscape. Depending on the type of network, clusters may mean different things. For instance, clusters in a
+            protein-protein interaction network have been shown to be protein complexes and parts of pathways. Clusters
+            in a protein similarity network represent protein families. </p>
+    </div>
+    <div class="blockleft">
+        <h4>App Manager</h4>
+
+        <img src="images/intro_18.png"/>
+
+        <p>
+            <strong><a href="http://apps.cytoscape.org">Apps</a></strong> are available for network and molecular
+            profile analysis. Cytoscape is a software written in Java and you can write your own
+            App for data analysis, import, and visualization by writing Java code. More Apps are
+            available at the <a href="http://apps.cytoscape.org">Cytoscape App Store</a>.
+            You can install most of the Apps by just one click from <i>App Manager</i>, or directly install
+            from the App Store (this is a Cytoscape 3 feature).
+        </p>
+    </div>
+    <div class="blockright">
+        <h4>Multilingual</h4>
+        <img src="images/intro_13.png"/>
+
+        <p>
+            You can use your language for the data files. Most of the features in Cytoscape supports
+            languages other than English, including Eastern Asian languages using two-byte characters.
+        </p>
+    </div>
+
+    <div class="blockabout">
+        <h2>History and Future</h2>
+
+        <p>
+            Cytoscape was initially made public in July, 2002 (v0.8); the second release (v0.9) was in
+            November, 2002 and v1.0 was released in March 2003.&nbsp; Version 1.1.1 is the last stable
+            release for the 1.0 series.&nbsp; Latest version of Cytoscape 2.x series is 2.8.3.<br />
+        </p>
+        <p>
+            Cytoscape 3.0, the first release of more modularized, scalable version
+            of Cytoscape, is now available for advanced users and App developers. For more information, please
+            visit <a href="cy3.html">this page</a>.
+        </p>
+    </div>
+    <script src="js/footer.js"></script>
 </div>
 
-  <div class="blockleft">
-    <h4>Supports Many Standards</h4>
-    <img src="images/intro_3.png" />
-    <p> Cytoscape supports a lot of standard network and annotation file formats including: SIF 
-      (Simple Interaction Format), <a href="http://www.infosun.fim.uni-passau.de/Graphlet/GML/"> GML</a>, <a href="http://www.cs.rpi.edu/~puninj/XGMML/">XGMML</a>, <a href="http://www.biopax.org/">BioPAX</a>, <a href="http://www.psidev.info/index.php?q=node/60">PSI-MI</a>, <a href="http://sbml.org/Main_Page">SBML</a>, <a href="http://www.obofoundry.org/">OBO</a>, 
-      and <a href="http://www.geneontology.org/GO.format.annotation.shtml">Gene Association</a>.  
-      Delimited text files and MS Excel&#8482; Workbook are also supported and you can import 
-      data files, such as expression profiles or <a href="http://www.geneontology.org">GO</a> annotations, generated by other applications 
-      or spreadsheet programs.  Using this feature, you can load and save arbitrary attributes 
-      on nodes, edges, and networks.  For example, input a set of custom annotation terms for 
-      your proteins, create a set of confidence values for your protein-protein interactions. </p>
-  </div>
-  <div class="blockright">
-    <h4>Web Service Clients</h4>
-    <img src="images/intro_4.png" />
-    <p> Cytoscape works as a web service client.  This means Cytoscape can directly connect to 
-      the external public databases and imports network and annotation data.  Currently, <a href="http://www.pathwaycommons.org/pc/">Pathway Commons</a>, <a href="http://www.ebi.ac.uk/intact/site/index.jsf">IntAct</a>, <a href="http://www.biomart.org/">BioMart</a>, <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene">NCBI Entrez Gene</a>, 
-      and <a href="http://www.ebi.ac.uk/Tools/picr/">PICR</a> are supported.  And we continue to 
-      develop new service clients for popular databases. </p>
-  </div>
-  <div class="blockright">
-    <h4>Interoperability</h4>
-    <img src="images/intro_5.png" />
-    <p> Since Cytoscape supports import/export standard file formats, you can easily put Cytoscape 
-      into your workflow.  For example, if you have a network data generated by <a href="http://cneurocvs.rmki.kfki.hu/igraph/">igraph</a> or <a href="http://www.bioconductor.org/packages/release/GraphsAndNetworks.html">Bioconductor</a>, 
-      Cytoscape can load the file as a text table and you can export it in PSI-MI format for 
-      other bioinformatics tools or your own programs/scripts. </p>
-  </div>
-  <div class="blockleft">
-    <h4>Session File</h4>
-    <img src="images/intro_6.png" />
-    <p> You can save your work by a single click.  All of settings, data files, and visualizations 
-      are packed in a session file.  It is called <i>Cytoscape Session (.cys) file</i>.  
-      Cytoscape Session file includes networks, attributes (for node/edge/network), Desktop 
-      states (selected/hidden nodes and edges, window sizes), Properties, some plugin states, 
-      and Visual Styles. </p>
-  </div>
-  <div class="blockleft">
-    <h4>VizMapper&#8482;</h4>
-    <img src="images/intro_12.png" /> <img src="images/intro_7.png" />
-    <p> Customize network data display using powerful <a href="http://cytoscape.wodaklab.org/wiki/Cytoscape_User_Manual/Visual_Styles"> <strong><i>Visual Styles</i></strong></a>.  
-      View a superposition of gene expression ratios and p-values on the network. &nbsp;
-      Expression data can be mapped to node color, label, border thickness, or border color, 
-      etc. according to user-configurable colors and visualization schemes. </p>
-  </div>
-  <div class="blockright">
-    <h4>Image Export</h4>
-    <img src="images/pdficon_large.gif" />
-    <p> You can export networks as publishiable-quality images.  Supports PDF, EPS, SVG, PNG, 
-      JPEG, and BMP files.  Vector images (PDF and EPS) can be modified by other application 
-      such as Adobe Illustrator for further enhancements. </p>
-  </div>
-  <div class="blockright">
-    <h4>Layout</h4>
-    <img src="images/intro_9.png" />
-    <p> Layout networks in two dimensions. &nbsp;A variety of layout algorithms are available, 
-      including cyclic, tree, force-directed, edge-weight, and yFiles Organic layouts.  You can 
-      also use Manual Layout tools similar to other graphics application user interface. </p>
-  </div>
-  <div class="blockright">
-    <h4>Browsing</h4>
-    <img src="images/intro_11.png" />
-    <p> Zoom in/out and pan for browsing the network.  Use the network manager to easily organize 
-      multiple networks.  And this structure can be saved in a session file.  Use the <i>bird's 
-      eye view</i> to easily navigate large networks.  Easily navigate large networks (100,000+ nodes and edges) by efficient rendering engine. </p>
-  </div>
-  
-  <div class="blockleft">
-    <h4>Search</h4>
-    <img src="images/intro_8.png" /> <img src="images/intro_17.png" />
-    <p> <strong>Search target nodes and edges</strong> by Quick Find or Enhanced Search. <a href="http://conklinwolf.ucsf.edu/genmappwiki/Google_Summer_of_Code_2007/Maital"> Lucene Syntax</a> is supported by <i>Enhanced Search Plugin (ESP)</i> for arbitrary complex queries. </p>
-  </div>
-  
-  <div class="blockleft">
-    <h4>Filter</h4>
-    <img src="images/intro_16.png" />
-    <p> <strong>Filter the network</strong> to select subsets of nodes and/or interactions based 
-      on the current data. &nbsp;For instance, users may select nodes involved in a threshold 
-      number of interactions, nodes that share a particular GO annotation, or nodes whose gene 
-      expression levels change significantly in one or more conditions according to p-values 
-      loaded with the gene expression data.  You can create new networks from the filtering result. </p>
-  </div>
-  <div class="blockright">
-    <h4>Find Modules/ Clusters</h4>
-    <img src="images/intro_14.png" /> <img src="images/intro_15.png" />
-    <p> <strong>Find active subnetworks/pathway modules</strong>. The network is screened against gene expression data to identify connected sets of interactions, i.e. <i>interaction subnetworks</i>, whose genes show particularly high levels of differential expression. &nbsp;The interactions contained in each subnetwork provide hypotheses for the regulatory and signaling interactions in control of the observed expression changes. <strong>Find clusters (highly interconnected regions)</strong> in any network loaded into Cytoscape. Depending on the type of network, clusters may mean different things. For instance, clusters in a protein-protein interaction network have been shown to be protein complexes and parts of pathways. Clusters in a protein similarity network represent protein families. </p>
-  </div>
-  <div class="blockleft">
-    <h4>Plugin Manager</h4>
-    <img src="images/intro_18.png" />
-    <p> <strong><a href="plugins.html">Plugins</a></strong> available for network and molecular 
-      profile analysis.  Cytoscape is a software written in Java and you can write your own 
-      plugin for data analysis/import/visualization by writing Java code.  More plugins 
-      available on the <a href="plugins.html">plugins page</a>.  You can isntall most of the  
-      plugins by just one click from <i>Plugin Manager</i>. </p>
-  </div>
-  <div class="blockright">
-    <h4>Multilingual</h4>
-    <img src="images/intro_13.png" />
-    <p> You can use your language for the data files.  Most of the features in Cytoscape supports 
-      languages other than English, including Eastan Asian languages using two-byte characters. </p>
-  </div>
-  
-  <div class="blockabout">
-    <h2>History and Future</h2>
-    <p> Cytoscape was initially made public in July, 2002 (v0.8); the second release (v0.9) was in 
-      November, 2002. and v1.0 was released in March 2003.&nbsp; Version 1.1.1 is the last stable 
-      release for the 1.0 series.&nbsp; Latest version of Cytoscape is
-      <?= $latest_version ?>
-      : <a href='<?= $latest_download_link ?>'>download</a> (<a href='<?= $latest_release_notes_link ?>'> release notes</a> ).&nbsp;
-      
-      Cytoscape Core developer team continue to work on this project and near future, we are going to 
-      release next major version, Cytoscape 3.0.  It will be more modularized and scalable version 
-      of Cytoscape.  This release includes server-side features.  For more information about version 
-      3.0, please visit <a href="http://cytoscape.wodaklab.org/wiki/Cytoscape_3">developer's 
-      wiki page</a>. </p>
-  </div>
-  <script src="js/footer.js"></script>
-  </div>
-  
 </body>
 </html>
