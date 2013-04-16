@@ -633,9 +633,15 @@ News internal frame
     margin: 20px 20px;
 }
 
+.screenshots h3 {
+    font-weight: 200;
+    font-size: 28px;
+    margin: 20px 20px;
+
+}
 .screenshots .imagepanel img {
     font-size: 12px;
-    width: 200px;
+    width: 273px;
     float: left;
     padding: 10px 10px;
     margin: 10px 10px;
