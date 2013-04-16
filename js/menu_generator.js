@@ -69,9 +69,6 @@ function appendMainMenuItems() {
 	$("#nav")
 			.append(
 					"<li id=\"helpMenu\"><a href=\"http://www.cytoscape.org/community.html\">Getting Help</a></li>");
-	$("#nav")
-			.append(
-					"<li id=\"threePointOhMenu\"><a href=\"http://www.cytoscape.org/cy3.html\">3.0!</a></li>");
 }
 
 function appendIntro() {

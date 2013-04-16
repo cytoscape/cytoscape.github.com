@@ -11,8 +11,9 @@
     <link href="css/main.css" rel="stylesheet" media="screen"/>
     <link href="css/slides.css" rel="stylesheet" media="screen"/>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
     <script src="js/global_variables.js"></script>
     <script src="js/menu_generator.js"></script>
 </head>
@@ -27,87 +28,16 @@
 
             <h2>Release Notes for Cytoscape 3.0.1</h2>
 
-            <div class="feature">
-                <img src="images/welcome_screen.png"/>
-
-                <h3>Updated Welcome Screen</h3>
-
-                <div class="text">
-                    For convenience, Cytoscape shows <strong><i>Welcome Screen</i></strong> at
-                    startup timewhich provides easy way to access sample data sets and public databases.
-                </div>
+            <div class="section">
+                <p>
+                    Cytoscape 3.0.1 is the latest version of Cytoscape 3.x series with a lot of bug fixes.
+                    This is the first mainstream version of Cytoscape 3 recommended for all users. There is
+                    no major new features in this version, but we strongly recommend to upgrade if you use 3.0.0.
+                </p>
             </div>
 
-            <div class="feature">
-                <img src="images/edge_bend_editor.png"/>
-
-                <h3>Edge Bend Visual Property</h3>
-
-                <div class="text">
-                    Edge Bend is now a standard Visual Property.
-                    You can use it as a part of your Visual Style.
-                </div>
-            </div>
-
-            <div class="feature">
-                <img src="images/edge_bundling.png"/>
-
-                <h3>Edge Bundling</h3>
-
-                <div class="text">
-                    You can bundle edges by automatic Edge Bundling.
-                    This feature is useful for dense network views.
-                </div>
-            </div>
-
-            <div class="feature">
-                <img src="images/network_annotation.png"/>
-
-                <h3>Network Annotations</h3>
-
-                <div class="text">
-                    You can add notes and simple shapes to background or foreground of network view.
-                </div>
-            </div>
-
-            <div class="feature">
-
-                <h3>Advanced Search Function</h3>
-                <img src="images/advanced_search.png"/>
-
-                <div class="text">
-                    From this version, EnhancedSearch plugin is part of core.
-                    You can search networks using Lucene syntax.
-                </div>
-            </div>
-
-            <div class="feature">
-                <img src="images/table_browser.png"/>
-
-                <h3>Show All feature in Data Table Browser</h3>
-
-                <div class="text">
-                    By selecting <i>Show All</i> option in Data Table Browser,
-                    you can display all network objects in the
-                    table. Nodes and edges will be selected when you select
-                    associated rows in the table.
-                </div>
-            </div>
-
-            <div class="feature">
-                <img src="images/network_collection.png"/>
-
-                <h3>Network Collection</h3>
-
-                <div class="text">
-                    Cytoscape 3 manages networks based on Network Collection.
-                    When you load networks to Cytoscape, you can choose
-                    creating a new set of networks or adding them to existing collection.
-                </div>
-            </div>
 
             <h2>User Manual</h2>
-
             <div class="section">
                 <p>
                     User manual for Cytoscape 3 is available
@@ -116,7 +46,6 @@
             </div>
 
             <h2>System Requirments</h2>
-
             <div class="section">
                 <p>
                     Cytoscape 3 supports the following systems:
@@ -172,23 +101,6 @@
                     file to calibrate the memory allocation configured in the
                     Cytoscape.vmoptions file so it does not exceed 800MB.
                 </p>
-
-                <h3>Installation Problem on Mac OS X Lion and Mountain Lion</h3>
-
-                <p>
-                    From Mac OS X 10.7.5, default security option is set to
-                    allow applications only from Apple's App Store. If you try to install
-                    Cytoscape 3 with the default setting, you will see the following warning
-                    message:
-                </p>
-                <img src="images/cy3_mac_security_warning.png" alt="Mac Security Warning"/>
-
-                <p>
-                    To avoid this problem, you need to change your system's security setting.
-                    From System Preferences, you need to change <i>Allow applications
-                    downloaded from</i> option to <strong>Anywhere</strong>.
-                </p>
-                <img src="images/cy3_mac_change_security.png" alt="Mac change security"/>
             </div>
 
             <h2>How to Report Bugs</h2>
