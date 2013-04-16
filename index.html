@@ -33,66 +33,22 @@
 
 
     <!-- Add fancyBox -->
-    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen"/>
-    <script src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+    <script src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
 
-    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
+    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css"
           media="screen"/>
-    <script src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+    <script src="js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>
 
-    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
+    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css"
           media="screen"/>
-    <script src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
     <!-- Third, add the GalleryView Javascript and CSS files -->
     <script src="js/GalleryView/js/jquery.galleryview-3.0-dev.js"></script>
     <link rel="stylesheet" href="js/GalleryView/css/jquery.galleryview-3.0-dev.css"/>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#slides').galleryView({
-                enable_overlays: true,
-                show_filmstrip_nav: false,
-                autoplay: true,
-                easing: 'swing',
-                show_panel_nav: false,
-                infobar_opacity: 0.4,
-                frame_gap: 2,
-                panel_width: 700,
-                panel_height: 404,
-                show_infobar: true,
-                frame_scale: 'fit',
-                panel_scale: 'fit'
-            });
-
-            $(".fancybox").fancybox();
-
-            $(".fancybox-button").fancybox({
-                prevEffect: 'none',
-                nextEffect: 'none',
-                closeBtn: true,
-                helpers: {
-                    title: { type: 'inside' },
-                    buttons: {}
-                }
-            });
-        });
-        $('#slides .panel img').hover(function () {
-            $(this).wrap('<a href="' + this.src + '" target="_blank"/>');
-        }, function () {
-            $(this).unwrap('<a></a>');
-        });
-    </script>
-    <script type="text/javascript">
-        $(function () {
-            $(".guide").accordion({
-                aughtHeight: true,
-                clearStyle: true,
-                header: "h1"
-            });
-        });
-    </script>
 
     <style type="text/css">
         .title h1 {
@@ -179,6 +135,7 @@
     <a href="http://nrnb.org" target="blank">Introduction to the National Resource for Network Biology</a>
 
     <h3>How to Cite Cytoscape</h3>
+
     <p>
         <strong>Cytoscape project needs your support!</strong>
         Please cite either of the following papers when you use Cytoscape in your publications, which is very important
@@ -322,6 +279,7 @@
 </div>
 
 <h1><a href="#">Semantic Web</a></h1>
+
 <div class="category">
     <div class="text">
         Cytoscape is also a tool of choice for the semantic web community, since the semantic web is encoded and
@@ -361,6 +319,7 @@
 </div>
 
 <h1><a href="#">General Complex Network Analysis</a></h1>
+
 <div class="category">
     <div class="text">
         Cytoscape is domain-independent and therefore is a powerful tool for complex network analysis in
@@ -546,6 +505,50 @@
 
 <script src="js/footer.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#slides').galleryView({
+            enable_overlays: true,
+            show_filmstrip_nav: false,
+            autoplay: true,
+            easing: 'swing',
+            show_panel_nav: false,
+            infobar_opacity: 0.4,
+            frame_gap: 2,
+            panel_width: 700,
+            panel_height: 404,
+            show_infobar: true,
+            frame_scale: 'fit',
+            panel_scale: 'fit'
+        });
+
+        $(".fancybox").fancybox();
+
+        $(".fancybox-button").fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: true,
+            helpers: {
+                title: { type: 'inside' },
+                buttons: {}
+            }
+        });
+    });
+    $('#slides .panel img').hover(function () {
+        $(this).wrap('<a href="' + this.src + '" target="_blank"/>');
+    }, function () {
+        $(this).unwrap('<a></a>');
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".guide").accordion({
+            aughtHeight: true,
+            clearStyle: true,
+            header: "h1"
+        });
+    });
+</script>
 </div>
 </body>
 </html>
