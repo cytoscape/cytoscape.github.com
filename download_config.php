@@ -56,7 +56,7 @@ $older_versions = array(
 	"2.7.0" => "http://chianti.ucsd.edu/Cyto-2_7_0/",
 	"2.8.0" => "http://chianti.ucsd.edu/Cyto-2_8_0/",
 	"2.8.1" => "http://chianti.ucsd.edu/Cyto-2_8_1/",
-	"2.8.2" => "http://chianti.ucsd.edu/Cyto-2_8_2/"
+	"2.8.2" => "http://chianti.ucsd.edu/Cyto-2_8_2/",
 	"3.0.0" => "http://chianti.ucsd.edu/cytoscape-3.0.0/"
 );
 
