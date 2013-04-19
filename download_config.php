@@ -39,25 +39,25 @@ $beta_2x = "";
 
 # Older versions (be sure to update!)
 $older_versions = array(
-	"2.1" => "http://chianti.ucsd.edu/Cyto2.1/",
-	"2.2" => "http://chianti.ucsd.edu/Cyto-2_2/",
-	"2.3.0" => "http://chianti.ucsd.edu/Cyto-2_3/",
-	"2.3.1" => "http://chianti.ucsd.edu/Cyto-2_3_1/",
-	"2.3.2" => "http://chianti.ucsd.edu/Cyto-2_3_2/",
-	"2.4.0" => "http://chianti.ucsd.edu/Cyto-2_4/",
-	"2.4.1" => "http://chianti.ucsd.edu/Cyto-2_4_1/",
-	"2.5.0" => "http://chianti.ucsd.edu/Cyto-2_5/",
-	"2.5.1" => "http://chianti.ucsd.edu/Cyto-2_5_1/",
-	"2.5.2" => "http://chianti.ucsd.edu/Cyto-2_5_2/",
-	"2.6.0" => "http://chianti.ucsd.edu/Cyto-2_6_0/",
-	"2.6.1" => "http://chianti.ucsd.edu/Cyto-2_6_1/",
-	"2.6.2" => "http://chianti.ucsd.edu/Cyto-2_6_2/",
-	"2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/",
-	"2.7.0" => "http://chianti.ucsd.edu/Cyto-2_7_0/",
-	"2.8.0" => "http://chianti.ucsd.edu/Cyto-2_8_0/",
-	"2.8.1" => "http://chianti.ucsd.edu/Cyto-2_8_1/",
-	"2.8.2" => "http://chianti.ucsd.edu/Cyto-2_8_2/",
-	"3.0.0" => "http://chianti.ucsd.edu/cytoscape-3.0.0/"
+    "3.0.0" => "http://chianti.ucsd.edu/cytoscape-3.0.0/",
+    "2.8.2" => "http://chianti.ucsd.edu/Cyto-2_8_2/",
+    "2.8.1" => "http://chianti.ucsd.edu/Cyto-2_8_1/",
+    "2.8.0" => "http://chianti.ucsd.edu/Cyto-2_8_0/",
+    "2.7.0" => "http://chianti.ucsd.edu/Cyto-2_7_0/",
+    "2.6.3" => "http://chianti.ucsd.edu/Cyto-2_6_3/",
+    "2.6.2" => "http://chianti.ucsd.edu/Cyto-2_6_2/",
+    "2.6.1" => "http://chianti.ucsd.edu/Cyto-2_6_1/",
+    "2.6.0" => "http://chianti.ucsd.edu/Cyto-2_6_0/",
+    "2.5.2" => "http://chianti.ucsd.edu/Cyto-2_5_2/",
+    "2.5.1" => "http://chianti.ucsd.edu/Cyto-2_5_1/",
+    "2.5.0" => "http://chianti.ucsd.edu/Cyto-2_5/",
+    "2.4.1" => "http://chianti.ucsd.edu/Cyto-2_4_1/",
+    "2.4.0" => "http://chianti.ucsd.edu/Cyto-2_4/",
+    "2.3.2" => "http://chianti.ucsd.edu/Cyto-2_3_2/",
+    "2.3.1" => "http://chianti.ucsd.edu/Cyto-2_3_1/",
+    "2.3.0" => "http://chianti.ucsd.edu/Cyto-2_3/",
+    "2.2" => "http://chianti.ucsd.edu/Cyto-2_2/",
+    "2.1" => "http://chianti.ucsd.edu/Cyto2.1/"
 );
 
 ######### For Cytoscape 2.x Series
