@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 function appendMainMenuItems() {
     $("#nav")
-        .append("<li id=\"homeMenu\"><a href=\"http://www.cytoscape.org/\">Home</a></li>")
+        .append("<li id=\"homeMenu\"><a href=\"index.html\">Home</a></li>")
         .append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>")
         .append("<li id=\"downloadMenu\"><a href=\"download.html\">Download</a></li>")
         .append("<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\">Apps</a></li>")

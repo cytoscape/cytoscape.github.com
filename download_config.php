@@ -29,8 +29,8 @@ $latest_version = "2.8.3";
 $latest_version_underscore = "2_8_3";
 $latest_version_doc_prefix = "2_8";
 
-$latest_3x_version = "3.0.0";
-$latest_3x_version_underscore = "3_0_0";
+$latest_3x_version = "3.0.1";
+$latest_3x_version_underscore = "3_0_1";
 $latest_3x_version_doc_prefix = "3_0";
 
 # Beta and Development versions.  Use empty string when beta is not available.
@@ -57,6 +57,7 @@ $older_versions = array(
 	"2.8.0" => "http://chianti.ucsd.edu/Cyto-2_8_0/",
 	"2.8.1" => "http://chianti.ucsd.edu/Cyto-2_8_1/",
 	"2.8.2" => "http://chianti.ucsd.edu/Cyto-2_8_2/"
+	"3.0.0" => "http://chianti.ucsd.edu/cytoscape-3.0.0/"
 );
 
 ######### For Cytoscape 2.x Series

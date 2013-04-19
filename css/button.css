@@ -51,6 +51,25 @@
 	font-weight:100;
 }
 
+.hugetall, .hugemedium {
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    font-size: 32px;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: .5em;
+    width:305px;
+    height: 58px;
+    font-weight:100;
+}
+
+.hugemedium {
+    font-size: 24px;
+    height: 38px;
+}
+
 .bigrounded {
 	-webkit-border-radius: 2em;
 	-moz-border-radius: 2em;

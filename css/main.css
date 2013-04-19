@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("button.css");
 @import url("navigation.css");
-@import url("slide_show.css");
 @import url("rss.css");
 
 /*
@@ -342,7 +341,10 @@ Main Components
     height: 450px;
     background-color: #FFF;
     margin: 0 0;
-    padding: 0px 15px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 6px;
+    padding-bottom: 0px;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -374,12 +376,13 @@ Main Components
     list-style: none;
 }
 
-.introbox .button {
-    margin: 20px auto 0 auto;
+.introbox button {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 0 !important;
+    margin-bottom: 0;
     width: 225px;
-    padding: auto 5px !important;
     font-size: 18px !important;
-    line-height: 24px !important;
 }
 
 /* News Feed box by Tumblr */
@@ -399,6 +402,7 @@ Main Components
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
     background: #FFF;
 }
+
 
 /* Accordion box */
 .startnav {
@@ -587,17 +591,21 @@ News internal frame
 }
 
 #titleimage {
-    color: #fff;
     position: relative;
     margin: 5px auto;
     padding: 7px 10px;
     text-align: center;
+    vertical-align: middle;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-    background: #000;
+    background: #000000;
+}
+
+#titleimage img {
+    vertical-align: middle;
 }
 
 #introtop {
@@ -654,6 +662,7 @@ News internal frame
 }
 
 #downleft, #downright {
+    font: "Helvetica Neue Light", "helvetica neue", "helvetica";
     height: auto;
 }
 
@@ -933,7 +942,7 @@ Top page components: citation funcing agencies
 #cite p {
     line-height: 23px;
     margin: 5px auto;
-    padding: auto 6px;
+    padding: 6px;
     font-size: 14px;
 
 }
@@ -947,7 +956,7 @@ Top page components: citation funcing agencies
 }
 
 #cite .pub .title {
-    line-height: : 110 %;
+    line-height: 110%;
     font-size: 14px !important;
 }
 
@@ -962,8 +971,10 @@ Top page components: citation funcing agencies
     margin: 15px 20px;
 }
 
-.twitter-timeline {
-    margin-left: auto;
-    margin-right: auto;
+.news {
+    float: right;
+}
+.news .twitter-timeline {
+    float: right;
     width: 700px !important;
 }
