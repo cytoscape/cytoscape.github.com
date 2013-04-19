@@ -10,7 +10,7 @@ function appendMainMenuItems() {
         .append("<li id=\"homeMenu\"><a href=\"index.html\">Home</a></li>")
         .append("<li id=\"introMenu\"><a href=\"#\">Introduction</a></li>")
         .append("<li id=\"downloadMenu\"><a href=\"download.html\">Download</a></li>")
-        .append("<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\">Apps</a></li>")
+        .append("<li id=\"pluginMenu\"><a href=\"http://apps.cytoscape.org\" target=\"_blank\">Apps</a></li>")
         .append("<li id=\"documentMenu\"><a href=\"#\">Documentation</a></li>")
         .append("<li id=\"communityMenu\"><a href=\"#\">Community</a></li>")
         .append("<li id=\"bugMenu\"><a href=\"http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php\">Report a Bug</a></li>")
