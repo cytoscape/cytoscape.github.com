@@ -97,7 +97,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 					</ul>
 				</li>
 			</ol>
-		</div>
+			
 			<h2>Download Latest 2.x Series:
 				<?=$latest_version?>
 			</h2>
@@ -119,6 +119,8 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 					</ul>
 				</li>
 			</ol>
+		</div>
+
 		<div class="blockright">
 				<h2>Latest Development Versions</h2>
 				<ul>
