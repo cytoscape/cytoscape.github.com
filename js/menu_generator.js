@@ -30,7 +30,7 @@ function appendDocument() {
             + "<li><a href=\"documentation_developers.html\">for Developers</a></li>"
             + "<li><a href=\"releasenotes.html\">Release Notes</a></li>"
             + "<li><a href=\"http://wiki.cytoscape.org/\">Cytoscape Wiki</a></li>"
-            + "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape\">Cytoscape at Open Tutorials</a></li></ul>");
+            + "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3\">Cytoscape at Open Tutorials</a></li></ul>");
 }
 
 function appendCommunity() {
