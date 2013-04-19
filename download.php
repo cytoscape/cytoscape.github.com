@@ -136,8 +136,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <hr />
         <h2>Development Versions</h2>
         <ul>
-          <?=$beta_link?>
-          <li>Nightly Build</li>
+          <li><a href="http://code.cytoscape.org/jenkins/job/cytoscape-3-gui-distribution/lastSuccessfulBuild/org.cytoscape.distribution$cytoscape/">Latest Successful Build</a></li>
         </ul>
     </div>
   </div>
