@@ -48,6 +48,7 @@
                         HTML (Wiki) version of Cytoscape 3 Manual
                     </a>
                 </p>
+
                 <p>
                     <a href="manual/Cytoscape3_0_1Manual.pdf">
                         PDF version
@@ -63,7 +64,7 @@
 
                 <h3>Windows</h3>
                 <ul>
-                    <li>Windows XP and newer. 64 Bit version is recommended due to memory size problem</li>
+                    <li>Windows XP and newer. 64 Bit version is recommended for larger networks</li>
                     <li>64 bit version of Windows 7 or newer is recommended</li>
                     <li>Latest version of Java 6 or 7 from Oracle. OpenJDK and other implementations are not tested</li>
                 </ul>
@@ -99,19 +100,34 @@
                     JRE/JDK or Apple Java Virtual Machine.
                 </p>
 
-                <h3>Windows XP Problems</h3>
-
+                <h3>Proxy Settings</h3>
                 <p>
-                    For Windows XP systems running on PCs having more than 1GB RAM,
-                    attempting to start Cytoscape may fail (as shown in the picture below).
+                    On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
                 </p>
-                <img src="images/cy3_win_xp_memory_problem.png" alt="Windows XP Warning"/>
 
+                <h3>File Encoding</h3>
                 <p>
-                    To solve the problem, execute the <strong>gen_vmoptions.bat</strong>
-                    file to calibrate the memory allocation configured in the
-                    Cytoscape.vmoptions file so it does not exceed 800MB.
+                    On all platforms, all Cytoscape session files are now encoded in UTF-8 instead of the native
+                    language encoding. This makes session files portable between workstations in all locales. Users in
+                    Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be translated
+                    to UTF-8 using a platform-dependent editor (which most users are already using for this purpose).
+                    Users in Europe and the Americas are affected, too, if they use characters beyond the standard ANSI
+                    128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
                 </p>
+
+                <h3>Conflict with Older Versions</h3>
+                <p>
+                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
+                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
+                </p>
+
+                <h3>Internationalization (PDF Export)</h3>
+                <p>
+                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
+                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
+                    the image file instead.
+                </p>
+
             </div>
 
             <h2>How to Report Bugs</h2>
