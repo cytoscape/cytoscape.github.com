@@ -10,9 +10,25 @@
 
     <link href="css/main.css" rel="stylesheet">
     <script src="http:///ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="js/global_variables.js"></script>
     <script src="js/menu_generator.js"></script>
+
+    <style>
+        .blockfull, .blockfull p {
+            font-size: 16px;
+            line-height: 1.8em;
+        }
+
+        .blockfull li {
+            margin-bottom: 10px;
+        }
+
+        .blockfull h2 {
+            font-weight: 200;
+            font-size: 32px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -46,10 +62,10 @@
     </div>
 
     <div class="blockfull">
-        <h2>Cytoscape Family</h2>
-
         <img src="images/cy3.png" title="Cytoscape 3.x Series Logo"/>
         <img src="images/logo.png" title="Cytoscape 2.x Series Logo"/>
+        <h2>Cytoscape Family</h2>
+
 
         <p>
             As of March 2013, there are three versions of Cytoscape:
@@ -58,6 +74,8 @@
             <strong>Cytoscape 2.x</strong> is a stable, production version of Cytoscape.  This version is in
             maintenance mode and core team may release bug-fix versions, but new features will
             not be added by the core developers.
+
+
             <strong>3.x</strong> is the whole new version of Cytoscape with modular architecture.
             It is designed for long-term maintainability and eventually it replaces 2.x series.
             New major features, including new user interfaces, headless (command-line)
@@ -65,6 +83,8 @@
             for this version.  Currently, Cytoscape community is in the middle of transition
             from 2.x to 3.x.  Core and third party App developers are working hard to port as much as 2.x
             features and Apps to 3.x series.<br/>
+
+            <a href="http://cytoscape.github.com/cytoscape.js/" target="_blank"><img src="images/cyjs.png"/></a>
 
             <a href="http://cytoscape.github.com/cytoscape.js/index.html">cytoscape.js</a> is a successor of
             <a href="http://cytoscapeweb.cytoscape.org">Cytoscape Web</a>.  cytoscape.js is a JavaScript
@@ -76,34 +96,28 @@
 
         <a name="which_cytoscape"></a>
         <h2>Which one is right for me?</h2>
-        <a href="http://cytoscape.github.com/cytoscape.js/"><img src="images/cyjs.png"/></a>
 
         <ul>
             <li>
-                <strong>Users</strong>: Use Cytoscape 2.x for your real-world projects.
-                Core team members are not going to add new features to it, but at
-                this point of time, the latest release of 2.x series is the most
-                stable version of Cytoscape.
+                <strong>Users, Casual Users, and Power Users:</strong> Use Cytoscape v3.x -- v2.x has been
+                in the field for several years and will be supported into the future, but over
+                time, v3.x and successors will be better supported. Use v2.x if you have used
+                v2.x in the past and rely on a plugin not supported as a v3.x app in the App
+                Store – keep checking the App Store for new arrivals.
             </li>
             <li>
-                <strong>Advanced Users</strong>: If you want to use new features only for
-                Cytoscape 3.x, try the latest version of 3.x.  Note that not all Apps
-                (plugins) are available for 3.x yet.
-            </li>
-            <li>
-                <strong>App Developers</strong>: Please port your 2.x Apps to 3.x series.
-                We recommend to use 3.x for new plugins development.
-                <a href="http://chianti.ucsd.edu/cytoscape-3.0.0/API/">3.x API</a> is stable
-                enough to develop new Apps, but if you notice any design flaws or bugs,
+                <strong>Developers:</strong> Please port your 2.x Apps to 3.x series. We recommend to use
+                3.x for new plugins development. <a href="http://chianti.ucsd.edu/cytoscape-3.0.1/API/">3.x API</a>
+                is stable enough to develop new Apps,
+                but if you notice any design flaws or bugs,
                 <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-discuss">
-                    please let us know</a>.
+                please let us know</a>.
             </li>
             <li>
-                <strong>Web Application Developers</strong>: You can use cytoscape.js as
-                network data visualization engine for your web application.  It is a pure
-                JavaScript library and no plugin is required for the web browsers.
-                In the long term, this library and other server-side applications replaces
-                Java Web Start version of Cytoscape.
+                <strong>Application Developers:</strong> You can use cytoscape.js as network data visualization
+                engine for your web application. It is a pure JavaScript library and no plugin
+                is required for the web browsers. In the long term, this library and other
+                server-side applications replaces Java Web Start version of Cytoscape.
             </li>
         </ul>
         </p>
