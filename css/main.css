@@ -38,6 +38,14 @@ a img {
     border-style: none;
 }
 
+.warning {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+
 /*
 Main Components
  */
@@ -70,7 +78,11 @@ Main Components
 
 #header .title h1 {
     font-weight: 400;
-    margin: 8px 15px 8px;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 8px;
 }
 
 #header .title a {
