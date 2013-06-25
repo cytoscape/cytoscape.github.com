@@ -21,7 +21,6 @@ document
 
         "<div class=\"title\">"
         + "<h1>Cytoscape</h1>"
-        + "<div class='warning'>Mac Users: Apple has released a new Java that breaks Cytoscape. We recommend avoiding Java updates until further notice.</div>"
         + "</div></div>" +
 
         "<ul id=\"nav\"></ul>");
