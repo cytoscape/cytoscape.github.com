@@ -1,0 +1,37 @@
+
+#header {
+    color: #333;
+    height: 60px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    background-image: url(../images/cytoscape_title.png);
+    background-repeat: no-repeat;
+    line-height: 100%;
+}
+
+.v-center{
+    height: 250px;
+    line-height: 250px;
+    text-align:center;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.v-center img {
+    vertical-align:middle;
+}
+
+.person {
+    height: 120px !important;
+    line-height: 190px !important;
+}
+
+.section {
+    margin-top: 160px !important;
+}
+

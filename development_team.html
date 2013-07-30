@@ -1,152 +1,334 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
-<title>Developer Team</title>
-<script type="text/javascript" 
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <meta charset="utf-8">
 
-<script type="text/javascript" src="js/global_variables.js"></script>
-<script type="text/javascript" src="js/menu_generator.js"></script>
+    <title>Consortium Members</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/global_variables.js"></script>
+    <script src="js/menu_generator.js"></script>
 </head>
 
 <body>
-<div id="container"> 
-  <script src="js/header.js"></script>
-  <div id="people">
-    <div class="blockfull">
-      <h1>Cytoscape Consortium and Funding Agencies</h1>
-      <div class="column">
-        <div class="institute"><a href="http://www.home.agilent.com"><img src="images/logo/agilent_logo_web.png" /></a></div>
-        <div class="institute"><a href="http://www.utoronto.ca/"><img src="images/logo/toronto_logo_web.png" /></a></div>
-      </div>
-      <div class="column">
-        <div class="institute"><a href="http://www.ucsf.edu/"><img src="images/logo/ucsf_logo_web.png" /></a></div>
-        <div class="institute"><a href="http://www.pasteur.fr"><img src="images/logo/pasteur_logo_web.png" /></a></div>
-        <div class="institute"><a href="http://www.mskcc.org"><img src="images/logo/mskcc_logo_web.png" /></a></div>
-      </div>
-      <div class="column">
-        <div class="institute"><a href="http://www.ucsd.edu/"><img src="images/logo/ucsd_logo_web.png" /></a></div>
-        <div class="institute"><a href="http://www.systemsbiology.org/"><img src="images/logo/isb_logo_web.png" /></a></div>
-      </div>
+
+<div class="container">
+    <div id="header">
+        <h1>Cytoscape</h1>
     </div>
-    <div class="blockfull">
-      <h1>Board of Directors</h1>
-      <div class="person"> <a href="http://chianti.ucsd.edu/idekerlab/pages/ideker.html"> <img src="images/people/trey.png"></img>
-        <div class="name">Trey Ideker</div>
-        </a> </div>
-      <div class="person"> <a href="http://cbio.mskcc.org/people/info/chris_sander.html"><img src="images/people/chris_s.jpg"></img>
-        <div class="name">Chris Sander</div>
-        </a></div>
-      </a>
-      <div class="person"><a href="http://www.systemsbiology.org/Scientists_and_Research/Faculty_Groups/Hood_Group"><img src="images/people/hood.jpg"></img>
-        <div class="name">Leroy Hood</div>
-        </a></div>
-      <div class="person"><a href="http://www.pasteur.fr/recherche/unites/Biolsys/benno/"><img src="images/people/benno.jpg"></img>
-        <div class="name">Benno Schwikowski</div>
-        </a></div>
-      <div class="person"><a href="http://www.home.agilent.com"><img src="images/people/annette.jpg"></img>
-        <div class="name">Annette Adler</div>
-        </a> </div>
-      <div class="person"><a href="http://baderlab.org/"><img src="images/people/gary.png"></img>
-        <div class="name">Gary Bader</div>
-        </a> </div>
-      <div class="person"> <a href="http://www.ucsf.edu/"> <img src="images/people/alex.jpg"></img>
-          <div class="name">Alex Pico</div>
-          </a> </div>
-      <div class="person"><a href="http://www.genmapp.org/"><img src="images/people/bruce.jpg"></img>
-        <div class="name">Bruce Conklin</div>
-        </a> </div>
-      <div class="person"><a href="http://www.systemsbiology.org/Scientists_and_Research/Faculty_Groups/Shmulevich_Group"><img src="images/people/ilya.jpg"></img>
-        <div class="name">Ilya Schmulevich</div>
-        </a> </div>
+</div>
+
+
+<div class="navbar">
+    <div class="container">
+
+        <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!-- Be sure to leave the brand out there if you want it shown -->
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Introduction</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Report a Bug</a></li>
+            <li><a href="#">Getting Help</a></li>
+            <form class="navbar-form pull-left">
+                <input type="text" class="form-control" style="width: 150px;">
+                <button type="submit" class="btn btn-default">?</button>
+            </form>
+        </ul>
+
     </div>
-    <div class="blockfull">
-      <h1>Core Developers</h1>
-      <div class="group">
-        <h3>UC, San Diego (California, USA)</h3>
-        <div class="person"> <a href="http://chianti.ucsd.edu/idekerlab/"> <img src="images/people/mike.jpg"></img>
-          <div class="name">Mike Smoot</div>
-          </a> </div>
-        <div class="person"> <a href="http://www.keiono.net/"><img src="images/people/kei.png"></img>
-          <div class="name">Keiichiro Ono</div>
-          </a></div>
-        <div class="person"><a href="http://chianti.ucsd.edu/idekerlab/"><img src="images/people/peng.jpg"></img>
-          <div class="name">Peng-Liang Wang</div>
-          </a></div>
-        <div class="person"><a href="http://chianti.ucsd.edu/idekerlab/"><img src="images/people/NO_PHOTO_YET.jpg"></img>
-          <div class="name">Johannes Ruscheinski</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>UC, San Francisco (California, USA)</h3>
-        <div class="person"> <a href="http://www.ucsf.edu/"><img src="images/people/kristina.jpg"></img>
-          <div class="name">Kristina Hanspers</div>
-          </a></div>
-        <div class="person"> <a href="http://www.ucsf.edu/"><img src="images/people/scooter.jpg"></img>
-          <div class="name">John "Scooter" Morris</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>Agilent Technology (California, USA)</h3>
-        <div class="person"> <a href="http://www.home.agilent.com"><img src="images/people/allan.jpg"></img>
-          <div class="name">Allan Kuchinsky</div>
-          </a></div>
-        <div class="person"> <a href="http://www.home.agilent.com"><img src="images/people/samad.jpg"></img>
-          <div class="name">Samad Lotia</div>
-          </a></div>
-        <div class="person"> <a href="http://www.home.agilent.com"><img src="images/people/mike_creech.jpg"></img>
-          <div class="name">Mike Creech</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>Institute for Systems Biology (Washington, USA)</h3>
-        <div class="person"> <a href="http://www.systemsbiology.org/"><img src="images/people/sarah.jpg"></img>
-          <div class="name">Sarah Killcoyne</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>Memorial Sloan-Kettering Cancer Center (New York, USA)</h3>
-        <div class="person"> <a href="http://cbio.mskcc.org"><img src="images/people/ethan.jpg"></img>
-          <div class="name">Ethan Cerami</div>
-          </a></div>
-        <div class="person"> <a href="http://cbio.mskcc.org/"><img src="images/people/ben.jpg"></img>
-          <div class="name">Benjamin Gross</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>University of Toronto (Ontario, Canada)</h3>
-        <div class="person"><a href="http://baderlab.org/"><img src="images/people/jm1.jpg"></img>
-          <div class="name">Jason Montojo</div>
-          </a></div>
-        <div class="person"><a href="http://baderlab.org/"><img src="images/people/clopes.jpg"></img>
-          <div class="name">Christian Lopes</div>
-          </a></div>
-        <div class="person"><a href="http://baderlab.org/IgorRodchenkov"><img src="images/people/igor.png"></img>
-          <div class="name">Igor Rodchenkov</div>
-          </a></div>
-      </div>
-      <div class="group">
-        <h3>Other Institutes</h3>
-        <div class="person"> <a href="#"><img src="images/people/piet.jpg"></img>
-          <div class="name">Piet Molenaar</div>
-          </a></div>
-        <div class="person"> <a href="http://www.evogene.com/"><img src="images/people/maital.jpg"></img>
-          <div class="name">Maital Ashkenazi</div>
-          </a></div>
-        <div class="person"> <a href="#"><img src="images/people/NO_PHOTO_YET.jpg"></img>
-          <div class="name">Daniel Abel</div>
-          </a></div>
-        <div class="person"> <a href="#"><img src="images/people/NO_PHOTO_YET.jpg"></img>
-          <div class="name">Noel Ruddock</div>
-          </a></div>
-      </div>
+    <!-- /.container -->
+</div>
+<div class="container">
+
+<div class="page-header">
+    <h1>Cytoscape Consortium
+        <small>and Funding Agencies</small>
+    </h1>
+</div>
+
+<div class="row v-center">
+    <div class="col-lg-4">
+        <a href="http://www.home.agilent.com">
+            <img src="images/logo/agilent_logo_web.png"/>
+        </a>
     </div>
-    <div class="blockfull">
-      <h2>Scientific Advisory Board</h2>
-      <ul>
+    <div class="col-lg-4">
+        <a href="http://www.systemsbiology.org/">
+            <img src="images/logo/isb_logo_web.png"/>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://www.pasteur.fr">
+            <img src="images/logo/pasteur_logo_web.png"/>
+        </a>
+    </div>
+</div>
+
+<div class="row v-center">
+    <div class="col-lg-4">
+        <a href="http://www.ucsf.edu/">
+            <img src="images/logo/ucsf_logo_web.png"/>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://www.ucsd.edu/">
+            <img src="images/logo/ucsd_logo_web.png"/>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://www.utoronto.ca/">
+            <img src="images/logo/toronto_logo_web.png"/>
+        </a>
+    </div>
+</div>
+
+<div class="row v-center">
+    <div class="col-lg-6">
+        <a href="http://nrnb.org/">
+            <img src="images/logo/nrnb_250px.png"/>
+        </a>
+    </div>
+    <div class="col-lg-6">
+        <a href="http://www.nigms.nih.gov/About/Overview/bbcb.htm">
+            <img src="images/logo/nigms_logo.gif"/>
+        </a>
+    </div>
+</div>
+<div class="page-header">
+    <h1>Leadership</h1>
+</div>
+
+<div class="row v-center person">
+    <div class="col-lg-3">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/trey-ideker.aspx">
+            <img src="images/people/trey.png" alt="">
+
+            <div class="caption">
+                <h3>Trey Ideker</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://baderlab.org/">
+            <img src="images/people/gary.png" alt="">
+
+            <div class="caption">
+                <h3>Gary Bader</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://gladstoneinstitutes.org/scientist/pico">
+            <img src="images/people/alex.jpg" alt="">
+
+            <div class="caption">
+                <h3>Alex Pico</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://www.proteomics.fr/Sysbio/People/Benno_Schwikowski">
+            <img src="images/people/benno.jpg" alt="">
+
+            <div class="caption">
+                <h3>Benno Schwikowski</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="page-header section">
+    <h1>Core Developers</h1>
+</div>
+
+<div class="row">
+    <h3>UC, San Diego (California, USA)</h3>
+</div>
+
+<div class="row v-center person">
+    <div class="col-lg-4">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
+            <img src="images/people/barry.png" alt="">
+
+            <div class="caption">
+                <h3>Barry Demchak</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://www.keiono.net">
+            <img src="images/people/kei.png" alt="">
+
+            <div class="caption">
+                <h3>Keiichiro Ono</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
+            <img src="images/people/tim.png" alt="">
+
+            <div class="caption">
+                <h3>Tim Hull</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <h3 class="pad">UC San Francisco, Gladstone Institute (California, USA)</h3>
+</div>
+<div class="row v-center person">
+    <div class="col-lg-4">
+        <a href="">
+            <img src="images/people/scooter.jpg" alt="">
+
+            <div class="caption">
+                <h3>John "Scooter" Morris</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://www.keiono.net">
+            <img src="images/people/samad.jpg" alt="">
+
+            <div class="caption">
+                <h3>Samad Lotia</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
+            <img src="images/people/kristina.jpg" alt="">
+
+            <div class="caption">
+                <h3>Kristina Hanspers</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <h3>University of Toronto (Ontario, Canada)</h3>
+</div>
+<div class="row v-center person">
+    <div class="col-lg-3">
+        <a href="">
+            <img src="images/people/jm1.jpg" alt="">
+
+            <div class="caption">
+                <h3>Jason Montojo</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://www.keiono.net">
+            <img src="images/people/clopes.jpg" alt="">
+
+            <div class="caption">
+                <h3>Christian Lopes</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
+            <img src="images/people/max.png" alt="">
+
+            <div class="caption">
+                <h3>Max Franz</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3">
+        <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
+            <img src="" alt="">
+
+            <div class="caption">
+                <h3>Yue Dong</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <h3>Agilent Technology (California, USA)</h3>
+</div>
+<div class="row v-center person">
+    <div class="col-lg-12">
+        <a href="">
+            <img src="images/people/allan.jpg" alt="">
+
+            <div class="caption">
+                <h3>Allan Kuchinsky</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <h3>Institut Pasteur (Paris, France)</h3>
+</div>
+<div class="row v-center person">
+
+    <div class="col-lg-12">
+        <a href="">
+            <img src="images/people/oriol.jpg" alt="">
+
+            <div class="caption">
+                <h3>Oriol Guitart Pla</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <h3>Other Institutions</h3>
+</div>
+<div class="row v-center person">
+    <div class="col-lg-6">
+        <a href="">
+            <img src="images/people/piet.jpg" alt="">
+
+            <div class="caption">
+                <h3>Piet Molenaar</h3>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-6">
+        <a href="http://www.keiono.net">
+            <img src="images/people/bill.png" alt="">
+
+            <div class="caption">
+                <h3>Bill Longabaugh</h3>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <h3 class="col-lg-6">Scientific Advisory Board</h3>
+
+    <h3 class="col-lg-6">Past Developers, Directors, and Funding Agencies</h3>
+</div>
+
+<div class="row">
+    <ul class="col-lg-6">
         <li>Ewan Birney</li>
         <li>Hamid Bolouri</li>
         <li>Joel Bader</li>
@@ -159,11 +341,11 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <li>Marc Vidal</li>
         <li>Mark Gerstein</li>
         <li>Nevan Krogan</li>
-      </ul>
-    </div>
-    <div class="blockfull">
-      <h2>Past Developers, Directors, and Funding Agencies</h2>
-      <ul>
+    </ul>
+
+    <ul class="col-lg-6">
+        <li>Roza</li>
+        <li>Mike Smoot</li>
         <li>Chris Workman</li>
         <li>Aditya Vailaya</li>
         <li>Melissa Cline</li>
@@ -183,15 +365,12 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <li>Robert Sheridan</li>
         <li>Yeyejide Adeleye</li>
         <li>Mathieu Michaud</li>
-      </ul>
-      <p>
-      <ul>
-      	<li>Unilever</li>
-      </ul>
-      </p>
-    </div>
-  </div>
-  <script src="js/footer.js"></script> 
+    </ul>
 </div>
+
+<script src="js/footer.js"></script>
+</div>
+
+
 </body>
 </html>
