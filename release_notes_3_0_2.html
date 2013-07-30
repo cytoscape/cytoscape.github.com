@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Cytoscape 3.0.2 Release Notes</title>
+
+    <meta name="description" content="Release Notes for Cytoscape 3.">
+    <meta name="author" content="Keiichiro Ono">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav></nav>
+
+
+<div class="container text-center">
+    <img src="images/top_slides/cy301release.png"/>
+
+    <div class="page-header">
+        <h2>Release Notes for Cytoscape 3.0.2</h2>
+    </div>
+</div>
+
+<div class="container">
+    <p class="lead">
+        Cytoscape 3.0.2 is the latest version of Cytoscape 3.x series with many bug fixes.
+        This is a mainstream release of Cytoscape 3 and is recommended for all users.
+    </p>
+
+    <h2>User Manual</h2>
+
+    <p>
+        <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
+            HTML (Wiki) version of Cytoscape 3 Manual
+        </a>
+    </p>
+
+    <p>
+        <a href="manual/Cytoscape3_0_1Manual.pdf">
+            PDF version
+        </a>
+    </p>
+
+    <h2>System Requirements</h2>
+
+    <p class="lead">
+        Cytoscape 3 supports the following systems:
+    </p>
+
+    <h3>Windows</h3>
+    <ul>
+        <li>Windows XP and newer. 64 Bit version is recommended for larger networks</li>
+        <li>64 bit version of Windows 7 or newer is recommended</li>
+        <li>Latest version of Java 6 or 7 from Oracle. OpenJDK and other implementations are not tested</li>
+    </ul>
+
+    <h3>Mac</h3>
+    <ul>
+        <li>Mac OS X 10.5 and later</li>
+        <li>Latest version of Apple Java 6 or Java 7 from Oracle</li>
+        <li><strong>Latest version of Java is required. Please install all system/Java updates before
+            installing Cytoscape 3. Cytoscape does not start on older versions of Apple Java 6</strong></li>
+    </ul>
+
+    <h3>Linux</h3>
+    <ul>
+        <li>Tested on Ubuntu 11.x and 12.x, but may work on other distributions</li>
+        <li>Latest version of JDK 6 or 7 from Oracle is recommended. Not tested on OpenJDK.</li>
+        <li>64 bit version distributions with latest version of Oracle JDK is recommended</li>
+    </ul>
+
+
+    <a name="issues"></a>
+
+    <h2>Known Issues</h2>
+
+    <h3>Java Versions</h3>
+
+    <p>
+        You can run Cytoscape 3 on Java 6 or 7. However, there are several problems if you use OpenJDK.
+        Please use Oracle JRE/JDK or Apple Java Virtual Machine.
+    </p>
+
+    <h3>Proxy Settings</h3>
+
+    <p>
+        On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
+    </p>
+
+    <h3>File Encoding</h3>
+
+    <p>
+        On all platforms, all Cytoscape session files are now encoded in UTF-8 instead of the native
+        language encoding. This makes session files portable between workstations in all locales. Users in
+        Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be translated
+        to UTF-8 using a platform-dependent editor (which most users are already using for this purpose).
+        Users in Europe and the Americas are affected, too, if they use characters beyond the standard ANSI
+        128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
+    </p>
+
+    <h3>Conflict with Older Versions</h3>
+
+    <p>
+        On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
+        the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
+    </p>
+
+    <h3>Internationalization (PDF Export)</h3>
+
+    <p>
+        For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
+        labeling information in the PDF. As a workaround, users can generate any type of image file and use
+        the image file instead.
+    </p>
+
+
+    <div class="row">
+        <h2 class="col-lg-6">How to Report Bugs</h2>
+
+        <h2 class="col-lg-6">Need Help?</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                Your bug reports are very important
+                to improve quality of future versions of Cytoscape 3. If you notice any problems,
+                please report them from:
+            </p>
+
+            <blockquote>Help &rarr; Report a bug...</blockquote>
+        </div>
+        <p class="col-lg-6">
+            We need your feedback to improve Cytoscape 3! Please send your questions and comments
+            to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+            mailing list</a>.
+        </p>
+    </div>
+
+
+</div>
+
+<footer></footer>
+
+<script src="js/setup_page.js"></script>
+</body>
+</html>

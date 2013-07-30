@@ -1,16 +1,17 @@
+html {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif !important;
+    background-color: rgb(245,245,245);
+}
 
-#header {
+header {
     color: #333;
-    height: 60px;
-    margin-top: -20px;
+    margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     padding-top: 0;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 0;
-    background-image: url(../images/cytoscape_title.png);
-    background-repeat: no-repeat;
     line-height: 100%;
 }
 
@@ -35,3 +36,16 @@
     margin-top: 160px !important;
 }
 
+footer {
+    background-color: rgb(245,245,245);
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dark {
+}
+
+.cy3-color {
+    color: rgb(247,148,30) !important;
+}

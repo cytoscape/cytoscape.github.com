@@ -9,57 +9,27 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.bootstrap.css" rel="stylesheet">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/global_variables.js"></script>
-    <script src="js/menu_generator.js"></script>
 </head>
 
 <body>
 
-<div class="container">
-    <div id="header">
-        <h1>Cytoscape</h1>
+<nav></nav>
+
+<div class="container text-center">
+    <img src="images/logo/cytoscape3_logo_h200px.png">
+    <div class="page-header">
+        <h1>
+            Consortium
+            <small>and Funding Agencies</small>
+        </h1>
     </div>
 </div>
 
 
-<div class="navbar">
-    <div class="container">
-
-        <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-
-        <!-- Be sure to leave the brand out there if you want it shown -->
-        <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Introduction</a></li>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Apps</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Report a Bug</a></li>
-            <li><a href="#">Getting Help</a></li>
-            <form class="navbar-form pull-left">
-                <input type="text" class="form-control" style="width: 150px;">
-                <button type="submit" class="btn btn-default">?</button>
-            </form>
-        </ul>
-
-    </div>
-    <!-- /.container -->
-</div>
 <div class="container">
-
-<div class="page-header">
-    <h1>Cytoscape Consortium
-        <small>and Funding Agencies</small>
-    </h1>
-</div>
-
 <div class="row v-center">
     <div class="col-lg-4">
         <a href="http://www.home.agilent.com">
@@ -118,7 +88,7 @@
             <img src="images/people/trey.png" alt="">
 
             <div class="caption">
-                <h3>Trey Ideker</h3>
+                <h4>Trey Ideker</h4>
             </div>
         </a>
     </div>
@@ -127,7 +97,7 @@
             <img src="images/people/gary.png" alt="">
 
             <div class="caption">
-                <h3>Gary Bader</h3>
+                <h4>Gary Bader</h4>
             </div>
         </a>
     </div>
@@ -136,7 +106,7 @@
             <img src="images/people/alex.jpg" alt="">
 
             <div class="caption">
-                <h3>Alex Pico</h3>
+                <h4>Alex Pico</h4>
             </div>
         </a>
     </div>
@@ -145,7 +115,7 @@
             <img src="images/people/benno.jpg" alt="">
 
             <div class="caption">
-                <h3>Benno Schwikowski</h3>
+                <h4>Benno Schwikowski</h4>
             </div>
         </a>
     </div>
@@ -156,68 +126,62 @@
 </div>
 
 <div class="row">
-    <h3>UC, San Diego (California, USA)</h3>
+    <h4 class="col-lg-6">UC, San Diego (California, USA)</h4>
+    <h4 class="col-lg-6">UC San Francisco, Gladstone Institute (California, USA)</h4>
 </div>
 
 <div class="row v-center person">
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
             <img src="images/people/barry.png" alt="">
 
             <div class="caption">
-                <h3>Barry Demchak</h3>
+                <h4>Barry Demchak</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="http://www.keiono.net">
             <img src="images/people/kei.png" alt="">
 
             <div class="caption">
-                <h3>Keiichiro Ono</h3>
+                <h4>Keiichiro Ono</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
             <img src="images/people/tim.png" alt="">
 
             <div class="caption">
-                <h3>Tim Hull</h3>
+                <h4>Tim Hull</h4>
             </div>
         </a>
     </div>
-</div>
-
-
-<div class="row">
-    <h3 class="pad">UC San Francisco, Gladstone Institute (California, USA)</h3>
-</div>
-<div class="row v-center person">
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="">
             <img src="images/people/scooter.jpg" alt="">
 
             <div class="caption">
-                <h3>John "Scooter" Morris</h3>
+                <h4>John "Scooter" Morris</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="http://www.keiono.net">
             <img src="images/people/samad.jpg" alt="">
 
             <div class="caption">
-                <h3>Samad Lotia</h3>
+                <h4>Samad Lotia</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-2">
         <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
             <img src="images/people/kristina.jpg" alt="">
 
             <div class="caption">
-                <h3>Kristina Hanspers</h3>
+                <h4>Kristina Hanspers</h4>
             </div>
         </a>
     </div>
@@ -225,102 +189,92 @@
 
 
 <div class="row">
-    <h3>University of Toronto (Ontario, Canada)</h3>
+    <h4 class="col-lg-8">University of Toronto (Ontario, Canada)</h4>
+    <h4 class="col-lg-4">Agilent Technology (California, USA)</h4>
 </div>
 <div class="row v-center person">
-    <div class="col-lg-3">
+    <div class="col-lg-2">
         <a href="">
             <img src="images/people/jm1.jpg" alt="">
 
             <div class="caption">
-                <h3>Jason Montojo</h3>
+                <h4>Jason Montojo</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-2">
         <a href="http://www.keiono.net">
             <img src="images/people/clopes.jpg" alt="">
 
             <div class="caption">
-                <h3>Christian Lopes</h3>
+                <h4>Christian Lopes</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-2">
         <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
             <img src="images/people/max.png" alt="">
 
             <div class="caption">
-                <h3>Max Franz</h3>
+                <h4>Max Franz</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-2">
         <a href="http://idekerlab.ucsd.edu/people/Pages/default.aspx#cytoscape">
             <img src="" alt="">
 
             <div class="caption">
-                <h3>Yue Dong</h3>
+                <h4>Yue Dong</h4>
             </div>
         </a>
     </div>
-</div>
-
-<div class="row">
-    <h3>Agilent Technology (California, USA)</h3>
-</div>
-<div class="row v-center person">
-    <div class="col-lg-12">
+    <div class="col-lg-2">
         <a href="">
             <img src="images/people/allan.jpg" alt="">
-
             <div class="caption">
-                <h3>Allan Kuchinsky</h3>
+                <h4>Allan Kuchinsky</h4>
             </div>
         </a>
     </div>
 </div>
 
-
 <div class="row">
-    <h3>Institut Pasteur (Paris, France)</h3>
+    <h4 class="col-lg-4">Institut Pasteur (Paris, France)</h4>
+    <h4 class="col-lg-4">Academic Medical Center (Amsterdam, Netherlands)</h4>
+    <h4 class="col-lg-4">Institute for Systems Biology (Washington, USA)</h4>
 </div>
 <div class="row v-center person">
 
-    <div class="col-lg-12">
+    <div class="col-lg-4">
         <a href="">
             <img src="images/people/oriol.jpg" alt="">
 
             <div class="caption">
-                <h3>Oriol Guitart Pla</h3>
+                <h4>Oriol Guitart Pla</h4>
             </div>
         </a>
     </div>
-</div>
-
-<div class="row">
-    <h3>Other Institutions</h3>
-</div>
-<div class="row v-center person">
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <a href="">
             <img src="images/people/piet.jpg" alt="">
 
             <div class="caption">
-                <h3>Piet Molenaar</h3>
+                <h4>Piet Molenaar</h4>
             </div>
         </a>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <a href="http://www.keiono.net">
             <img src="images/people/bill.png" alt="">
 
             <div class="caption">
-                <h3>Bill Longabaugh</h3>
+                <h4>Bill Longabaugh</h4>
             </div>
         </a>
     </div>
 </div>
+
 <div class="row">
     <h3 class="col-lg-6">Scientific Advisory Board</h3>
 
@@ -328,7 +282,7 @@
 </div>
 
 <div class="row">
-    <ul class="col-lg-6">
+    <ul class="col-lg-6 list-inline">
         <li>Ewan Birney</li>
         <li>Hamid Bolouri</li>
         <li>Joel Bader</li>
@@ -343,9 +297,24 @@
         <li>Nevan Krogan</li>
     </ul>
 
-    <ul class="col-lg-6">
-        <li>Roza</li>
+    <ul class="col-lg-6 list-inline">
+        <li>Chris Sander</li>
+        <li>Leroy Hood</li>
+        <li>Annette Adler</li>
+        <li>Bruce Conklin</li>
+        <li>Ilya Schmulevich</li>
         <li>Mike Smoot</li>
+        <li>Peng-Liang Wang</li>
+        <li>Johannes Ruscheinski</li>
+        <li>Roza Ghamari</li>
+        <li>Mike Creech</li>
+        <li>Sarah Killcoyne</li>
+        <li>Ethan Cerami</li>
+        <li>Benjamin Gross</li>
+        <li>Igor Rodchenkov</li>
+        <li>Maital Ashkenazi<li>
+        <li>Daniel Abel</li>
+        <li>Noel Ruddock</li>
         <li>Chris Workman</li>
         <li>Aditya Vailaya</li>
         <li>Melissa Cline</li>
@@ -367,9 +336,11 @@
         <li>Mathieu Michaud</li>
     </ul>
 </div>
-
-<script src="js/footer.js"></script>
 </div>
+
+<footer></footer>
+
+<script src="js/setup_page.js"></script>
 
 
 </body>
