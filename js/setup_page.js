@@ -75,4 +75,5 @@ $(document).ready(function () {
         '<script type="text/javascript">_uacct = "UA-155159-2"; urchinTracker();</script></div>';
 
     $('footer').append(footerText);
+
 });
