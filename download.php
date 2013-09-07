@@ -1,4 +1,5 @@
 <?php
+
 include "download_config.php";
 
 ####################################################
@@ -84,7 +85,11 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 					<h3>Platform Specific Installers</h3>
 				</li>
 				<ul>
-					<li><a href="<?=$files3x["mac"]?>">Mac OS X</a></li>
+                    <li>
+                        <a href="<?=$files3x["mac"]?>">Mac OS X</a>
+                        <strong><a href="release_notes_3_0_2.html#mac-java" style="color: red;">
+                             (READ THIS FIRST)</strong>
+                    </li>
 					<li><a href="<?=$files3x["win32"]?>">Windows 32bit</a></li>
 					<li><a href="<?=$files3x["win64"]?>">Windows 64bit</a></li>
 					<li><a href="<?=$files3x["linux"]?>">Linux</a></li>

@@ -100,6 +100,34 @@
 
         <h2>Known Issues</h2>
 
+        <div id="mac-java">
+        <h3 style="color: red">Mac and the Java Virtual Machine</h3>
+        <p>
+        There is a known issue with a recent Java update distributed by Apple -- 
+        it causes Cytoscape not to start up properly. This can occur even if you've 
+        installed the latest version of Oracle Java 7 as Cytoscape uses the Apple JVM. 
+        To find out if you have the problematic update, run the following command in a Terminal window:
+
+        <h4><strong>/usr/libexec/java_home -v 1.6 -exec java -version</strong></h4>
+
+        If the output contains “xM4508”, you have the broken version. In that case, 
+        you will need to install the latest update from Apple according to your OS version:
+        </p>
+        <p>
+        <ul>
+            <li>
+                <a href="http://support.apple.com/kb/DL1572">http://support.apple.com/kb/DL1572</a>
+                 (for OS X 10.7, 10.8+)
+            </li>
+            <li>
+                <a href="http://support.apple.com/kb/DL1573">http://support.apple.com/kb/DL1573</a>
+                 (for OS X 10.6)
+            </li>
+        </ul>
+        
+        </p>
+
+        </div>  
         <h3>Java Versions</h3>
 
         <p>
