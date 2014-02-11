@@ -69,7 +69,7 @@ $(document).ready(function () {
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
         'numbers P41 RR031228 and GM103504.</p>' +
-        '<p class="text-muted text-center">&copy;2001-2013 <a href="http://www.cytoscapeconsortium.org/">' +
+        '<p class="text-muted text-center">&copy;2001-2014 <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
         '<script src="http://www.google-analytics.com/urchin.js"></script>' +
         '<script type="text/javascript">_uacct = "UA-155159-2"; urchinTracker();</script></div>';
