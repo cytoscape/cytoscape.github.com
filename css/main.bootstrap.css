@@ -77,6 +77,10 @@ footer {
     margin-top: 0;
 }
 
+.top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .orange {
     background-color: rgb(247,148,30) !important;
@@ -90,6 +94,10 @@ footer {
 .light-blue {
     background-color: rgb(0,150,255);
     color: #ffffff;
+}
+
+.transparent {
+    background-color: rgba(255,255,255,0);
 }
 
 .white {
@@ -147,3 +155,27 @@ footer {
 .item {
     margin-top: 30px;
 }
+
+#slide-top {
+    height: 600px;
+    color: red;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+.carousel-inner .item img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    color: #555555;
+    background-color: rgba(255,255,255,0.95);
+    margin: 0;
+    height: 575px;
+}
+

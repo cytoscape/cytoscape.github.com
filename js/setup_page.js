@@ -10,7 +10,7 @@ $(document).ready(function () {
     // For drop down menu
     $('.dropdown-toggle').dropdown();
 
-    var navText = '<div class="navbar"><div class="container">' +
+    var navText = '<div class="navbar navbar-default"><div class="container">' +
         '<ul class="nav navbar-nav">' +
             '<li><a href="index.html">Home</a></li>' +
             '<li class="dropdown">' +
