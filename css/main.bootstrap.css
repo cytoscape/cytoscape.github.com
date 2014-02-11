@@ -105,6 +105,10 @@ footer {
     color: #555555 !important;
 }
 
+.black {
+    background-color: #000000;
+    color: #a0a0a0 !important;
+}
 .snow-white {
     background-color: #FAFAFA;
     color: #555555 !important;
