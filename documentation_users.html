@@ -8,146 +8,144 @@
     <meta name="description" content="Documents for Cytoscape users">
     <meta name="author" content="Keiichiro Ono">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS for all pages. -->
-    <link href="css/main.css" rel="stylesheet">
-    <script src="js/global_variables.js"></script>
-    <script src="js/menu_generator.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link href="css/main.bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="container">
 
-    <script src="js/header.js"></script>
+<nav></nav>
 
-    <div id="documents">
-        <div class="blockleft">
-            <h2>Quick Start Guides</h2>
-            <ul>
-                <li>
-                    <a href="http://opentutorials.cgl.ucsf.edu/index.php/Tutorial:Introduction_to_Cytoscape_3">
-                        Introduction to Cytoscape (3.x)
-                    </a>
-                </li>
-                <li>
-                    <a href="http://opentutorials.cgl.ucsf.edu/index.php/Tutorial:Introduction_to_Cytoscape">
-                        Introduction to Cytoscape (2.x)
-                    </a>
-                </li>
-            </ul>
-
-            <h3>Tutorials</h3>
-            <ul>
-                <li>
-                    <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">
-                        Open Tutorials: for 3.x
-                    </a>
-                </li>
-                <li>
-                    <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape">
-                        Open Tutorials: for 2.x
-                    </a>
-                </li>
-            </ul>
-
-            <h2>Papers about Cytoscape</h2>
-
-            <h3>
-                <a href="http://www.nature.com/nprot/journal/v2/n10/abs/nprot.2007.324.html">
-                    Nature Protocols sample workflow paper
-                </a>
-                by Cytoscape Consortium - a quick overview of Cytoscape functions.
-            </h3>
-
-            <h3>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23132118">Nature Methods paper</a>
-                by Cytoscape Consortium - a quick overview of Cytoscape App (Plugin) universe.
-            </h3>
-
-        </div>
-
-        <div class="blockright">
-            <h2>User Documents</h2>
-
-            <h3>User Manual for the latest version of Cytoscape</h3>
-            <ul>
-                <li>
-                    <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">3.x HTML Version</a>
-                </li>
-                <li>
-                    <a href="manual/Cytoscape3_0_1Manual.pdf">3.x PDF Version</a>
-                </li>
-                <li>
-                    <script>document.write('<a href="' + manualURL + '">')</script>
-                    2.x HTML Version</a>
-                </li>
-                <li>
-                    <script>document.write('<a href="' + manualPDFURL + '">')</script>
-                    2.x PDF Version</a>
-                </li>
-            </ul>
-            <h4><a href="manual">Manuals for older versions</a></h4>
-
-            <h3>Presentations</h3>
-            <ul>
-                <li>
-                    <a href="http://wiki.cytoscape.org/InternationalConferenceOnSystemsBiologyDemos">
-                        International Conference on Systems Biology Demos
-                    </a>
-                </li>
-                <li>
-                    Cytoscape presentation slides at <a href="https://speakerdeck.com/cytoscape">Speaker Deck</a>
-                </li>
-            </ul>
-
-            <h3><a href="http://www.biostars.org/show/tag/cytoscape/" target="_blank">User FAQ at Biostar</a></h3>
-
-        </div>
-        <div class="blockleft">
-            <h2>Data Sources</h2>
-
-            <h3>Biological Networks</h3>
-            <ul>
-                <li><a href="http://www.pathguide.org/">Pathguide</a> - Comprehensive list of pathway/interaction
-                    databases
-                </li>
-                <li><a href="http://code.google.com/p/psicquic/">PSICQUIC</a> - Standardized web service supported by
-                    most of the major data providers
-                </li>
-            </ul>
-
-            <h3>Social Science</h3>
-
-            <p>
-                Social networking services are good data sources. You can write simple web crawler using scripting
-                languages and save it as standard data format such as GML, GraphML, or simple tab-delimited text.
-                Cytoscape supports many standard graph file formats.
-            </p>
-            <br/>
-        </div>
-        <div class="blockright"><img src="images/icon/Gnome-Dialog-Question-64.png"/>
-
-            <h2>Getting Help</h2>
-            <br/>
-
-            <p><strong>Still cannot find answer for your question? Ask your question in the <a href="community.html">mailing
-                list</a>.</strong></p>
-            <br/>
-
-            <div class="important">
-                <h3>Tips for Asking Questions</h3>
+<div class="belt light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Quick Start Guides</h2>
                 <ul>
-                    <li>Be specific: write down steps to reproduce your issues or details about new feature you want.
+                    <li>
+                        <a href="http://opentutorials.cgl.ucsf.edu/index.php/Tutorial:Introduction_to_Cytoscape_3">
+                            Introduction to Cytoscape (3.x)
+                        </a>
                     </li>
-                    <li>Write information about your platform: OS/Java version, memory size, etc.</li>
-                    <li>Add example files: network/attribute files</li>
+                    <li>
+                        <a href="http://opentutorials.cgl.ucsf.edu/index.php/Tutorial:Introduction_to_Cytoscape">
+                            Introduction to Cytoscape (2.x)
+                        </a>
+                    </li>
                 </ul>
+                <h3>Tutorials</h3>
+                <ul>
+                    <li>
+                        <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">
+                            Open Tutorials: for 3.x
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape">
+                            Open Tutorials: for 2.x
+                        </a>
+                    </li>
+                </ul>
+
+                <h2>Papers about Cytoscape</h2>
+
+                <p class="lead">
+                    <a href="http://www.nature.com/nprot/journal/v2/n10/abs/nprot.2007.324.html">
+                        Nature Protocols sample workflow paper
+                    </a>
+                    by Cytoscape Consortium - a quick overview of Cytoscape functions.
+                </p>
+                <p class="lead">
+                    <a href="http://www.ncbi.nlm.nih.gov/pubmed/23132118">Nature Methods paper</a>
+                    by Cytoscape Consortium - a quick overview of Cytoscape App (Plugin) universe.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h2>User Documents</h2>
+
+                <h3>User Manual for the latest version of Cytoscape</h3>
+                <ul>
+                    <li>
+                        <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">3.x HTML Version</a>
+                    </li>
+                    <li>
+                        <a href="manual/Cytoscape3_1_0Manual.pdf">3.x PDF Version</a>
+                    </li>
+                    <li>
+                        <a href="http://cytoscape.org/manual/Cytoscape2_8Manual.html">2.x HTML Version</a>
+                    </li>
+                    <li>
+                        <a href="http://cytoscape.org/manual/Cytoscape2_8Manual.pdf">2.x PDF Version</a>
+                    </li>
+                </ul>
+                <h4><a href="manual">Manuals for older versions</a></h4>
+
+                <h3>Presentations</h3>
+                <ul>
+                    <li>
+                        <a href="http://wiki.cytoscape.org/InternationalConferenceOnSystemsBiologyDemos">
+                            International Conference on Systems Biology Demos
+                        </a>
+                    </li>
+                    <li>
+                        Cytoscape presentation slides at <a href="https://speakerdeck.com/cytoscape">Speaker Deck</a>
+                    </li>
+                </ul>
+
+                <h3><a href="http://www.biostars.org/show/tag/cytoscape/" target="_blank">User FAQ at Biostar</a></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Data Sources</h2>
+
+                <h3>Biological Networks</h3>
+                <ul>
+                    <li><a href="http://www.pathguide.org/">Pathguide</a> - Comprehensive list of pathway/interaction
+                        databases
+                    </li>
+                    <li><a href="http://code.google.com/p/psicquic/">PSICQUIC</a> - Standardized web service supported by
+                        most of the major data providers
+                    </li>
+                </ul>
+
+                <h3>Social Science</h3>
+
+                <p>
+                    Social networking services are good data sources. You can write simple web crawler using scripting
+                    languages and save it as standard data format such as GML, GraphML, or simple tab-delimited text.
+                    Cytoscape supports many standard graph file formats.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h2>Getting Help</h2>
+                <img src="images/icon/Gnome-Dialog-Question-64.png"/>
+
+                <p><strong>Still cannot find answer for your question? Ask your question in the <a href="community.html">mailing
+                    list</a>.</strong></p>
+                <br/>
+
+                <div class="important">
+                    <h3>Tips for Asking Questions</h3>
+                    <ul>
+                        <li>Be specific: write down steps to reproduce your issues or details about new feature you want.
+                        </li>
+                        <li>Write information about your platform: OS/Java version, memory size, etc.</li>
+                        <li>Add example files: network/attribute files</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <script src="js/footer.js"></script>
 </div>
+
+<footer></footer>
+
+<script src="js/setup_page.js"></script>
 </body>
 </html>

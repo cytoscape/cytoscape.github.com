@@ -27,12 +27,14 @@ function ProcessSuccess($download_log) {
 	$fr = fopen($download_log, 'a');
 	fputs($fr, $newEntry);
 	fclose($fr);
+
+	return $newEntry;
 }
 
 # Process
 $submit = $_REQUEST["submit"];
 if (isset($submit)) {
-	ProcessSuccess($download_log);
+	$test = ProcessSuccess($download_log);
 	$files["gz"] = $latest_dist_gz;
 	$files["zip"] = $latest_dist_zip;
 	$files["mac"] = $latest_mac; 
@@ -77,6 +79,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<div id="download">
 		<div class="blockleft">
 			<!-- 3.x Series Download -->
+			<h1>ADD2 = <?=$test ?></h1>
 			<h2>Download Latest 3.x Series:
 				<?=$latest_3x_version?>
 			</h2>
@@ -87,8 +90,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 				<ul>
                     <li>
                         <a href="<?=$files3x["mac"]?>">Mac OS X</a>
-                        <strong><a href="release_notes_3_0_2.html#mac-java" style="color: red;">
-                             (READ THIS FIRST)</strong>
                     </li>
 					<li><a href="<?=$files3x["win32"]?>">Windows 32bit</a></li>
 					<li><a href="<?=$files3x["win64"]?>">Windows 64bit</a></li>

@@ -8,43 +8,44 @@
     <meta name="description" content="Release Notes for Cytoscape 3.">
     <meta name="author" content="Keiichiro Ono">
 
-    <link href="css/main.css" rel="stylesheet" media="screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
-    <script src="js/global_variables.js"></script>
-    <script src="js/menu_generator.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-
-    <!-- Validator -->
-    <link rel="stylesheet" href="js/formValidator/css/validationEngine.jquery.css" media="screen"/>
-    <link rel="stylesheet" href="js/formValidator/css/template.css" media="screen"/>
-    <script src="js/formValidator/js/jquery.validationEngine-en.js"></script>
-    <script src="js/formValidator/js/jquery.validationEngine.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#downloadForm").validationEngine()
-        });
-    </script>
+    <link href="css/main.bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="container">
 
-<script src="js/header.js"></script>
+<nav></nav>
 
-<div id="titleimage">
-    <img src="images/cy3.png"/>
-    <img src="images/logo.png"/>
+<div class="belt light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <img src="images/cy3.png"/>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
 </div>
 
-<div id="downleft" class="blockleft">
-<h2>Download Cytoscape: 3.x, 2.x, and Past Versions</h2>
-<h3>License Agreement</h3>
+<div class="belt white">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<h3>Download Cytoscape: 3.x, 2.x, and Past Versions</h3>
+<h4>License Agreement</h4>
 
-<p> Cytoscape is available as a platform-independent open-source Java application, released under the
+<p>
+    Cytoscape is available as a platform-independent open-source Java application, released under the
     terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>.
-    To obtain Cytoscape, you must: </p>
+    To obtain Cytoscape, you must:
+</p>
 <ul>
     <li> Read the license agreement that follows and make sure you agree with its terms.</li>
     <li> If so, fill in the application form. <strong><u>This information is used to understand the Cytoscape user base
@@ -52,8 +53,9 @@
         will not be used for other purposes.</u></strong></li>
     <li> Click the Proceed button to be transferred to the download page.</li>
 </ul>
-<form>
-<textarea wrap="1" cols="55" rows="9" name="license agreement">
+
+<textarea class="form-control" rows="15">
+
 CYTOSCAPE LICENSE AGREEMENT
 
 GNU LESSER GENERAL PUBLIC LICENSE
@@ -511,41 +513,56 @@ FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 </textarea>
-</form>
 </div>
-<div id="downright" class="blockright">
-    <form id="downloadForm" class="formular" method="post" action="download.php">
+<div class="col-lg-6">
+    <form id="downloadForm" class="form-horizontal" method="post" action="download.php">
+
         <input type="hidden" name="file" value="cyto_latest">
         <fieldset>
             <legend>Your information</legend>
-            <label> <span>Name : </span>
-                <input value="" class="validate[required,length[1,100]] text-input" type="text" id="name" name="name"/>
-            </label>
-            <label> <span>Organization : </span>
-                <input value="" class="validate[required, length[1,100]] text-input" type="text" name="org" id="org"/>
-            </label>
-            <label> <span>Email address : </span>
-                <input value="" class="validate[optional] text-input" type="text" name="email" id="email"/>
-            </label>
-
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <p class="help-block"></p>
+            </div>
+            <div class="form-group">
+                <label for="org">Organization:</label>
+                <input type="text" class="form-control" id="org" placeholder="Your organization name">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Your e-mail address">
+            </div>
         </fieldset>
         <fieldset>
             <legend>Conditions</legend>
-            <div class="infos">Checking this box indicates that you accept terms of use (Required):</div>
-            <label> <span class="checkbox">I accept terms of use : </span>
-                <input class="validate[required] checkbox" type="checkbox" id="agree" name="agree"/>
+            <p>Checking this box indicates that you accept terms of use (Required):</p>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="agree" name="agree" value="option1" required>
+                I accept terms of use:
             </label>
-            <label> <span class="checkbox"> Join our mailing list? (Optional): </span>
-                <input class="checkbox" type="checkbox" id="contact" name="contact"/>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="contact" name="contact" value="option2">
+                Join our mailing list? (Optional):
             </label>
+
         </fieldset>
-        <input class="submit" type="submit" name="submit" value="Proceed to Download"/>
-        <hr/>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10 col-lg-4">
+                <br/>
+                <button class="btn btn-default" type="submit" name="submit" value="Proceed to Download">
+                    Proceed to Download
+                </button>
+            </div>
+        </div>
     </form>
 </div>
-
-<script src="js/footer.js"></script>
-
 </div>
+</div>
+</div>
+
+<footer></footer>
+
+<script src="js/setup_page.js"></script>
 </body>
 </html>
