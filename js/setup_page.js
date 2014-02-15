@@ -10,7 +10,7 @@ $(document).ready(function () {
     // For drop down menu
     $('.dropdown-toggle').dropdown();
 
-    var navText = '<div class="navbar navbar-default"><div class="container">' +
+    var navText = '<div class="container">' +
         '<ul class="nav navbar-nav">' +
             '<li><a href="index.html">Home</a></li>' +
             '<li class="dropdown">' +
@@ -47,7 +47,7 @@ $(document).ready(function () {
             '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
         '</ul>' +
 
-        '<form class=\"navbar-form pull-right\" action=\"http://www.google.com/search\">' +
+        '<form class=\"navbar-form\" action=\"http://www.google.com/search\">' +
         '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
         '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
         '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
@@ -56,7 +56,7 @@ $(document).ready(function () {
         '<input placeholder="Search cytoscape.org" class=\"form-control\" style=\"width: 200px;\"' +
         'type=\"text\" name=\"q\">' +
         '<button class=\"btn btn-primary\" type=\"submit\" name=\"btnG\">Search</button>' +
-        '</form></div></div>';
+        '</form></div>';
 
 
     $('nav').append(navText);

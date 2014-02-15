@@ -126,6 +126,7 @@ footer {
     background-color: white;
 }
 
+
 .narrow {
     padding: 0;
     margin: -30px;
@@ -162,7 +163,9 @@ footer {
 
 .box {
     color: #fafafa;
-    margin: 0;
+    background-color: rgb(44,77,131);
+    padding: 2em;
+    padding-top: 0;
 }
 .box p {
     font-weight: 100;
