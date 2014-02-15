@@ -9,6 +9,7 @@ nav {
     background-color: rgba(100, 100, 100, 0.0) !important;
 }
 
+
 h1, h2{
     font-weight: 200;
 }
@@ -168,6 +169,10 @@ footer {
 }
 .box h1 {
     color: #fafafa;
+}
+
+.box p a {
+    color: orange;
 }
 
 .image-wide img {
