@@ -10,9 +10,22 @@ $(document).ready(function () {
     // For drop down menu
     $('.dropdown-toggle').dropdown();
 
-    var navText = '<div class="container">' +
-        '<ul class="nav navbar-nav">' +
-            '<li><a href="index.html">Home</a></li>' +
+    var responsiveNav =
+        '<div class="container"><nav class="navbar navbar-default" role="navigation">' +
+            '<div class="container-fluid">' +
+
+            '<div class="navbar-header">' +
+            '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cy-navbar">' +
+            '<span class="sr-only">Toggle navigation</span>' +
+            '<span class="icon-bar"></span>' +
+            '<span class="icon-bar"></span>' +
+            '<span class="icon-bar"></span>' +
+            '</button>' +
+            '<a class="navbar-brand" href="index.html">Cytoscape</a>' +
+            '</div>' +
+
+            '<div class="collapse navbar-collapse" id="cy-navbar">' +
+            '<ul class="nav navbar-nav">' +
             '<li class="dropdown">' +
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
@@ -45,24 +58,16 @@ $(document).ready(function () {
 
             '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
             '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
-        '</ul>' +
+            '</ul>' +
 
-        '<form class=\"navbar-form\" action=\"http://www.google.com/search\">' +
-        '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
-        '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
-        '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
-        '<input placeholder="Search cytoscape.org" class=\"form-control\" style=\"width: 200px;\"' +
-        'type=\"text\" name=\"q\">' +
-        '<button class=\"btn btn-primary\" type=\"submit\" name=\"btnG\">Search</button>' +
-        '</form></div>';
+            '</div></div></nav></div>';
 
 
-    $('nav').append(navText);
+    $('body').prepend(responsiveNav);
 
     // Footer
-    var footerText = '<div class="container"><p class="text-muted text-left">' +
+    var footerText = '<div class="container"><div class="row">' +
+        '<div class="col-xs-12 col-md-8"><p class="text-muted text-left">' +
         'Funding for continued development and maintenance of Cytoscape is provided by the U.S. ' +
         '<a href="http://www.nigms.nih.gov">National Institute of General Medical Sciences (NIGMS)</a> ' +
         'under award number GM070743.  ' +
@@ -71,6 +76,18 @@ $(document).ready(function () {
         'numbers P41 RR031228 and GM103504.</p>' +
         '<p class="text-muted text-center">&copy;2001-2014 <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
+
+        '</div><div class="col-xs-12 col-md-4">' +
+        '<form class="navbar-form navbar-left" action=\"http://www.google.com/search\">' +
+        '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
+        '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
+        '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
+        '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
+        '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
+        '<input placeholder="Search Cytoscape.org" class=\"form-control\" style=\"width: 60%;\"' +
+        'type=\"text\" name=\"q\">' +
+        '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
+        '</form></div></div>' +
         '<script src="http://www.google-analytics.com/urchin.js"></script>' +
         '<script type="text/javascript">_uacct = "UA-155159-2"; urchinTracker();</script></div>';
 

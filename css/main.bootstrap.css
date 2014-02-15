@@ -1,28 +1,12 @@
-/*html {*/
-    /*font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif !important;*/
-    /*background-color: rgb(245,245,245);*/
-/*}*/
-
-header {
-    background-image: url(../images/cytoscape_title.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 65px;
-
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 0;
-    line-height: 100%;
+html {
+    background-color: rgb(248,248,248);
 }
 
 nav {
     margin-bottom: 0 !important;
-    height: 20px;
     border-radius: 0 !important;
+    border: none !important;
+    background-color: rgba(100, 100, 100, 0.0) !important;
 }
 
 h1, h2{
@@ -31,6 +15,11 @@ h1, h2{
 
 h3, h4, h5{
     font-weight: 200;
+}
+
+#image-header img {
+    display: inline;
+    width: 100%;
 }
 
 .v-center{
@@ -121,8 +110,10 @@ footer {
 
 .background-31 {
     background-image: url("../images/3_1_title3.png");
-    width: 100%;
-    height: 650px;
+    /*-moz-background-size: 100% auto;*/
+    /*background-size: 100% auto;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 100%;*/
     background-color: white;
 }
 
@@ -153,32 +144,32 @@ footer {
     padding-bottom: 20px;
 }
 
+
 .container h1 {
     color: #545454;
 }
+
 
 .item {
     margin-top: 30px;
 }
 
 .box {
+    z-index: 0;
     color: #fafafa;
-    background-color: rgb(44,77,131);
+    background-color: rgba(44,77,131, 0.0);
+
     padding: 2em;
     padding-top: 0;
 }
 .box p {
-    font-weight: 100;
-    font-size: 16px;
-}
-.box p {
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 18px;
 }
 .box h1 {
     color: #fafafa;
 }
 
-.box h1 small {
-    font-weight: 100;
-    color: #dadada;
+.image-wide img {
+    width: 100%;
 }
