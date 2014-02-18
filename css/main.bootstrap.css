@@ -128,7 +128,8 @@ footer {
     /*-moz-background-size: 100% auto;*/
     /*background-size: 100% auto;*/
     /*background-repeat: no-repeat;*/
-    /*width: 100%;*/
+    height: 700px;
+    padding-top: 150px;
 }
 
 
