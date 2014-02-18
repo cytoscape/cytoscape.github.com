@@ -8,3 +8,5 @@ Redirect 301 /datasets/rual.sif http://chianti.ucsd.edu/cytoscape-data/rual.sif
 Redirect 301 /datasets/galFiltered.sif http://chianti.ucsd.edu/cytoscape-data/galFiltered.sif
 Redirect 301 /tut/getting.started/RUAL.subset.sif http://chianti.ucsd.edu/cytoscape-data/RUAL.subset.sif
 Redirect 301 /ISMB2002 http://prosecco.ucsd.edu/ISMB2002
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
