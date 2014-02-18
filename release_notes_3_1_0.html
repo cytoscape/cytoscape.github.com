@@ -16,6 +16,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
+    <script src="js/cytoscape.js-2.1.0/cytoscape.min.js"></script>
 
 </head>
 
@@ -83,8 +84,8 @@
             <div class="col-md-7">
                 <h3>New Style Editor</h3>
 
-                <p>
-                    (Description for new vizmapper...)
+                <p class="lead">
+                    Cytoscape 3.1.0 has a new Visual Style editor.  It is more intuitive, and easy to use.
                 </p>
             </div>
         </div>
@@ -94,7 +95,8 @@
                 <h3>New Filter</h3>
 
                 <p class="lead">
-                    (Description for new filter...)
+                    New Filter is much faster than the last version.  User interface is also updated
+                    for handling more complex queries in real time.
                 </p>
             </div>
             <div class="col-md-7">
@@ -109,13 +111,15 @@
             </div>
             <div class="col-md-4">
                 <h3>Export to JSON</h3>
+                <p class="lead">
+                   Cytoscape 3.1.0 can export networks, tables, and Visual Styles into cytoscape.js compatible
+                    JSON format.  This means you can use network visualizations created with Cytoscape
+                    in web browsers.  (Try it in the window below.)
+                </p>
             </div>
         </div>
         <div class="row item">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-8">
-                <img src="images/screenshots/31_js2.png" width="100%">
+            <div class="cyjs" style="height: 500px">
             </div>
         </div>
 
@@ -127,7 +131,9 @@
                 <h3>Commands and Its REST API</h3>
 
                 <p>
-                    (Description for Commands...)
+                    Basic Cytoscape functions, such as Layout, or export to files, can be accessed through
+                    Cytoscape Commands.  You can automate your workflow by writing simple Command files.
+                     Commands are accessible from REST API.
                 </p>
             </div>
         </div>
@@ -137,7 +143,7 @@
                 <h3>Updated Welcome Screen</h3>
 
                 <p class="lead">
-                    (Description for new welcome Screen...)
+                    New Welcome Screen with more preset data sets.
                 </p>
             </div>
             <div class="col-md-7">
@@ -152,8 +158,10 @@
             <div class="col-md-4">
                 <h3>Updated Remote Database Client</h3>
 
-                <p>
-                    (Description for PSICQUIC client...)
+                <p class="lead">
+                    New remote data access client
+                    (<a href="https://code.google.com/p/psicquic/">PSICQUIC</a> Client)
+                    is faster, and more stable.  It supports new MITAB 2.7 table columns.
                 </p>
             </div>
         </div>
@@ -371,6 +379,7 @@
 
 <footer></footer>
 
+<script src="js/load_cyjs.js"></script>
 <script src="js/setup_page.js"></script>
 </body>
 </html>

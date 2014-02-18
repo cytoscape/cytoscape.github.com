@@ -59,31 +59,34 @@ if (isset($submit)) {
 }
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
+	<meta charset="utf-8">
+	<title>Thank you !</title>
+	<meta name="description" content="Download page for Cytoscape.">
+	<meta name="author" content="Keiichiro Ono">
 
-<title>Thank you!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script type="text/javascript" 
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/global_variables.js"></script>
-<script type="text/javascript" src="js/menu_generator.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<link href="css/main.bootstrap.css" rel="stylesheet">
 </head>
 
-<body>
-<div id="container"> 
-	<script src="js/header.js"></script>
-	<div id="download">
-		<div class="blockleft">
+<body class="white">
+<div class="belt white">
+    <div class="container">
+	<div class="row">
+		<div class="col-md-6">
 			<!-- 3.x Series Download -->
-			<h1>ADD2 = <?=$test ?></h1>
 			<h2>Download Latest 3.x Series:
 				<?=$latest_3x_version?>
 			</h2>
-			<ol>
+			<ul>
 				<li>
 					<h3>Platform Specific Installers</h3>
 				</li>
@@ -102,12 +105,12 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 						<li><a href="<?=$files3x["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
 					</ul>
 				</li>
-			</ol>
+			</ul>
 			
 			<h2>Download Latest 2.x Series:
 				<?=$latest_version?>
 			</h2>
-			<ol>
+			<ul>
 				<li>
 					<h3>Platform Specific Installers</h3>
 				</li>
@@ -124,10 +127,10 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 						<li><a href="<?=$files["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
 					</ul>
 				</li>
-			</ol>
+			</ul>
 		</div>
 
-		<div class="blockright">
+		<div class="col-md-6">
 				<h2>Latest Development Versions</h2>
 				<ul>
 					<li>
@@ -149,8 +152,10 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 				</ul>
 		</div>
 	</div>
+</div>
+</div>
 
-	<!-- Google Code for Cytoscape downloaded Conversion Page -->
+<!-- Google Code for Cytoscape downloaded Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
 var google_conversion_id = 1026957401;
@@ -161,15 +166,20 @@ var google_conversion_label = "-cK5CJPKiwIQ2cDY6QM";
 var google_conversion_value = 0;
 /* ]]> */
 </script>
+
 <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
 </script>
+
 <noscript>
-<div style="display:inline;">
+<div style="display:inline;" class="white">
 <img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1026957401/?label=-cK5CJPKiwIQ2cDY6QM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
 
-	<script src="js/footer.js"></script> 
-</div>
+
+<footer></footer>
+
+<script src="js/setup_page.js"></script>
+
 </body>
 </html>
