@@ -2,7 +2,6 @@ html {
     background-color: rgb(248,248,248);
 }
 body {
-
     background-color: #DDDED3;
 }
 nav {
@@ -23,6 +22,12 @@ h1, h2{
 
 h3, h4, h5{
     font-weight: 200;
+}
+
+.underline {
+    border-bottom: solid 1px #555555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #image-header img {
@@ -46,6 +51,31 @@ h3, h4, h5{
     line-height: 200px !important;
 }
 
+.institute img {
+    width: 200px;
+    margin: 20px;
+}
+
+.panel {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.panel h4 {
+    border-bottom: solid 1px #777777;
+    margin-bottom: 10px;
+}
+
+.panel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .section {
     margin-top: 160px !important;
 }
