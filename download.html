@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    i
     <meta charset="utf-8">
 
     <title>Download Cytoscape</title>
@@ -20,7 +21,6 @@
 
 <body>
 
-<nav></nav>
 
 <div class="belt snow-white">
     <div class="container">
@@ -36,14 +36,14 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6">
-<h3>Download Cytoscape: 3.x, 2.x, and Past Versions</h3>
+
+<h3>Download Cytoscape: 3.x and All Past Versions</h3>
+
 <h4>License Agreement</h4>
 
-<p>
-    Cytoscape is available as a platform-independent open-source Java application, released under the
+<p> Cytoscape is available as a platform-independent open-source Java application, released under the
     terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>.
-    To obtain Cytoscape, you must:
-</p>
+    To obtain Cytoscape, you must: </p>
 <ul>
     <li> Read the license agreement that follows and make sure you agree with its terms.</li>
     <li> If so, fill in the application form. <strong><u>This information is used to understand the Cytoscape user base
@@ -51,9 +51,8 @@
         will not be used for other purposes.</u></strong></li>
     <li> Click the Proceed button to be transferred to the download page.</li>
 </ul>
-
-<textarea class="form-control" rows="15">
-
+<form>
+<textarea wrap="1" cols="75" rows="9" name="license agreement">
 CYTOSCAPE LICENSE AGREEMENT
 
 GNU LESSER GENERAL PUBLIC LICENSE
@@ -511,48 +510,54 @@ FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 </textarea>
+</form>
 </div>
-<div class="col-md-6">
-    <form id="downloadForm" class="form-horizontal" method="post" action="download.php">
 
+
+<div class="col-md-6">
+
+    <form id="downloadForm" class="formular" method="post" action="download.php">
         <input type="hidden" name="file" value="cyto_latest">
         <fieldset>
             <legend>Your information</legend>
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                <p class="help-block"></p>
+
+
+                <label>
+                    Name :
+                </label>
+                <input value="" class="text-input form-control" type="text" id="name" name="name" placeholder="required" required>
             </div>
             <div class="form-group">
-                <label for="org">Organization:</label>
-                <input type="text" class="form-control" id="org" placeholder="Your organization name">
+                <label>
+                    Organization :
+                </label>
+                <input value="" class="text-input form-control" type="text" name="org" id="org"/>
             </div>
             <div class="form-group">
-                <label for="email">E-mail Address:</label>
-                <input type="email" class="form-control" id="email" placeholder="Your e-mail address">
+                <label>Email address :
+                </label>
+                <input value="" class="text-input form-control" type="text" name="email" id="email"/>
             </div>
         </fieldset>
         <fieldset>
             <legend>Conditions</legend>
-            <p>Checking this box indicates that you accept terms of use (Required):</p>
-            <label class="checkbox-inline">
-                <input type="checkbox" id="agree" name="agree" value="option1" required>
-                I accept terms of use:
-            </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" id="contact" name="contact" value="option2">
-                Join our mailing list? (Optional):
-            </label>
+            <div class="infos">Checking this box indicates that you accept terms of use (Required):</div>
+            <div class="checkbox">
+                <label>
+                    <input class="checkbox" type="checkbox" id="agree" name="agree" required /><strong>I accept terms of use :</strong>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label><input class="checkbox" type="checkbox" id="contact" name="contact"/>
+                    Join our mailing list? (Optional):
+                </label>
+            </div>
 
         </fieldset>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10 col-lg-4">
-                <br/>
-                <button class="btn btn-default" type="submit" name="submit" value="Proceed to Download">
-                    Proceed to Download
-                </button>
-            </div>
-        </div>
+        <button type="submit" name="submit" value="Proceed to Download" class="submit btn btn-warning">Proceed to Download</button>
+        <!--<input class="submit" type="submit" name="submit" value="Proceed to Download"/>-->
+        <hr/>
     </form>
 </div>
 </div>
