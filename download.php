@@ -95,7 +95,9 @@ if (isset($submit)) {
                         <a href="<?=$files3x["mac"]?>">Mac OS X</a>
                     </li>
 					<li><a href="<?=$files3x["win32"]?>">Windows 32bit</a></li>
-					<li><a href="<?=$files3x["win64"]?>">Windows 64bit</a></li>
+					<li><a href="<?=$files3x["win64"]?>">Windows 64bit</a>
+					<a href="release_notes_3_1_0.html#system_requirements" style="color: red;">(You need 64bit JVM to use this version)</a>
+					</li>
 					<li><a href="<?=$files3x["linux"]?>">Linux</a></li>
 				</ul>
 				<li>
