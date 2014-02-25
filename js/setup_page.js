@@ -78,16 +78,20 @@ $(document).ready(function () {
         'Cytoscape Consortium</a></p>' +
 
         '</div><div class="col-xs-12 col-md-4">' +
-        '<form class="navbar-form navbar-left" action=\"http://www.google.com/search\">' +
-        '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
-        '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
-        '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
-        '<input placeholder="Search Cytoscape.org" class=\"form-control\" style=\"width: 60%;\"' +
-        'type=\"text\" name=\"q\">' +
-        '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
-        '</form></div></div>' +
+        '<p>Search Cytoscape Web Sites:</p>' +
+        '<script>(function() {' +
+        "var cx = '010752552860291056652:n_a3iwexlj8';"+
+            "var gcse = document.createElement('script');" +
+            "gcse.type = 'text/javascript';" +
+            "gcse.async = true;" +
+            "gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + " +
+            "'//www.google.com/cse/cse.js?cx=' + cx;" +
+            "var s = document.getElementsByTagName('script')[0];" +
+            "s.parentNode.insertBefore(gcse, s);" +
+            "})();" +
+        "</script><gcse:searchbox-only></gcse:searchbox-only>" +
+
+        '</div></div>' +
         '<script src="http://www.google-analytics.com/urchin.js"></script>' +
         '<script type="text/javascript">_uacct = "UA-155159-2"; urchinTracker();</script></div>';
 
