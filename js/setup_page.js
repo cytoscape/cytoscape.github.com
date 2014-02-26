@@ -21,13 +21,13 @@ $(document).ready(function () {
             '<span class="icon-bar"></span>' +
             '<span class="icon-bar"></span>' +
             '</button>' +
-            '<a class="navbar-brand" href="index.html">Cytoscape</a>' +
+            '<a class="navbar-brand" href="index.html"><img src="images/logo/cy3logoOrange.svg" height="100%"/>Cytoscape</a>' +
             '</div>' +
 
             '<div class="collapse navbar-collapse" id="cy-navbar">' +
             '<ul class="nav navbar-nav">' +
             '<li class="dropdown">' +
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction<b class="caret"></b></a>' +
+            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Intro.<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
             '<li><a href="what_is_cytoscape.html">What is Cytoscape?</a></li>' +
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
@@ -38,7 +38,7 @@ $(document).ready(function () {
             '<li><a href="http://apps.cytoscape.org/" target="_blank">Apps</a></li>' +
 
             '<li class="dropdown">' +
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
+            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
             '<li><a href="documentation_users.html">For Users</a></li>' +
             '<li><a href="documentation_developers.html">For Developers</a></li>' +
@@ -57,9 +57,27 @@ $(document).ready(function () {
             '</ul></li>' +
 
             '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
-            '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
-            '</ul>' +
+            '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Help</a></li>' +
 
+
+
+            '<li><div class="google-search">' +
+
+            '<script>(function() {' +
+            "var cx = '010752552860291056652:n_a3iwexlj8';"+
+            "var gcse = document.createElement('script');" +
+            "gcse.type = 'text/javascript';" +
+            "gcse.async = true;" +
+            "gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + " +
+            "'//www.google.com/cse/cse.js?cx=' + cx;" +
+            "var s = document.getElementsByTagName('script')[0];" +
+            "s.parentNode.insertBefore(gcse, s);" +
+            "})();" +
+            "</script><gcse:searchbox-only></gcse:searchbox-only>" +
+
+            '</li></div>' +
+
+            '</ul>' +
             '</div></div></nav></div>';
 
 
