@@ -86,7 +86,7 @@ if (isset($submit)) {
 			<h2>Download Latest 3.x Series:
 				<?=$latest_3x_version?>
 			</h2>
-			<h3 style="color: red;">Java 6 or 7 is required.  Cytoscape is not compatible with Java 8</h3>
+			<h4 style="color: red;"><strong>Java 6 or 7 is required.  Cytoscape is not compatible with Java 8.</strong></h4>
 			<ul>
 				<li>
 					<h3>Platform Specific Installers</h3>
