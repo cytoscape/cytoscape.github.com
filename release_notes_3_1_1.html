@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Cytoscape 3.1.1 Release Notes</title>
+
+    <meta name="description" content="Release Notes for Cytoscape 3.1.1">
+    <meta name="author" content="Keiichiro Ono">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+    <script src="js/cytoscape.js-2.1.0/cytoscape.min.js"></script>
+
+</head>
+
+<body>
+<div class="light-gray">
+    <div class="white image-wide">
+        <img src="images/3_1_title3.png"/>
+    </div>
+    <div class="container">
+        <h2>Release Notes for Cytoscape 3.1.1</h2>
+    </div>
+</div>
+
+<div class="narrow light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <p>
+                    <a class="btn btn-primary btn-lg btn-block" href="#bug_fixes">
+                        Bug Fixes
+                    </a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <p>
+                    <a class="btn btn-primary btn-lg btn-block" href="#system_requirements">
+                        System Requirements
+                    </a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <p>
+                    <a class="btn btn-primary btn-lg btn-block" href="#manual">
+                        Manual
+                    </a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <p>
+                    <a class="btn btn-warning btn-lg btn-block"
+                       href="#known_issues">
+                        Known Issues
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a name="bug_fixes"></a>
+
+<div class="snow-white">
+    <div class="container">
+        <h2>About Version 3.1.1</h2>
+
+        <p class="lead">
+            Cytoscape 3.1.1 is a bug-fix release of Cytoscape 3.x series.
+            This is a mainstream release of Cytoscape 3 and is recommended for all users.
+        </p>
+    </div>
+</div>
+
+<div class="belt white">
+    <div class="container">
+            <h3>Major Bug Fixes</h3>
+
+            <p class="lead">
+                The following major issues have been fixed in Cytoscape 3.1.1.
+                <ul>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2465">#2465: DialogTaskManager/CyTableImpl threw: column already exists ... 'layoutAlgorithm'</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2055">#2055: JVM SIGSEGV appears on Cytoscape startup/shutdown on Ubuntu 13.04+Oracle Java 7</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2511">#2511: Mappings sometimes not applied when restoring session</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2514">#2514: Session saved with equation return type not matching column type results in instability when reloaded</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2516">#2516: Filters not cleared when starting/loading new session</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2548">#2548: ConcurrentModificationException When Recreating CyNetworkViews</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2653">#2653: Command processing using "-S" is broken</a></li>
+                    <li><a href="http://code.cytoscape.org/redmine/issues/2586">#2586: Ding deadlock in 3.1.1</a></li>
+                </ul>
+            </p>
+            <p>
+                For complete list of fixed bugs, please visit our <a href="http://code.cytoscape.org/redmine/projects/cytoscape3/issues?utf8=%E2%9C%93&set_filter=1&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=15&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=">
+                issue traker web site.</a>  More details are available in the last section of <a href="cy3_welcome_letter_v11.pdf">Welcome Letter</a>.
+            </p>
+    </div>
+</div>
+
+<a name="system_requirements"></a>
+
+<div class="belt snow-white">
+    <div class="container">
+        <h2>System Requirements</h2>
+
+        <h4 style="color: red">Important: Cytoscape 3.1.1 is not compatible with Java 8.  Please use Java 6 or 7 instead.</h4>
+        <p class="lead">
+            Cytoscape 3.1.1 supports the following systems:
+        </p>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <h3>Windows</h3>
+                <ul>
+                    <li>Windows XP and newer (including Windows 7 and 8). 64 bit version is recommended for larger
+                        networks.
+                    </li>
+                    <li>Latest version of Java 6 or 7 from Oracle. OpenJDK and other implementations are not tested.
+                    </li>
+                    <li>Note that the java.com website installs a 32 bit JVM by default (to match Windows’ 32 bit
+                        browsers).
+                        To download a 64 bit JVM, use <a href="http://java.com/en/download/manual.jsp">this page</a>.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h3>Mac</h3>
+                <ul>
+                    <li>Mac OS X 10.7 and later</li>
+                    <li>Latest version of Apple Java 6 or Java 7 from Oracle</li>
+                    <li><strong>Latest version of Java is required. Please install all system/Java updates before
+                        installing Cytoscape 3. Cytoscape does not start on older versions of Apple Java 6</strong></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h3>Linux</h3>
+
+                <p>
+                    For Linux, a simple way of installing the Oracle JVM is described
+                    <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html.">here</a>.
+                </p>
+                <ul>
+                    <li>Tested on CentOS 6, Fedora 19/20, and Ubuntu 12.x/13.x/14.x, but may work on other distributions</li>
+                    <li>
+                        For JDK6, latest version from Oracle is recommended. For JDK7, latest version
+                        of OpenJDK is recommended. (Oracle JDK7 has known stability issues on Ubuntu,
+                        but may work on other distributions.)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a name="manual"></a>
+<div class="belt light-gray">
+    <div class="container">
+        <h2>User Manual</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
+                    <h3>HTML (Wiki) Version</h3>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="manual/Cytoscape3_1_0Manual.pdf">
+                    <h3>PDF version</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a name="known_issues"></a>
+<div class="belt snow-white">
+    <div class="container">
+        <h2>Known Issues</h2>
+
+        <div class="row">
+            <div class="col-md-4 panel snow-white">
+                <h3>Proxy Settings</h3>
+
+                <p>
+                    On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
+                </p>
+            </div>
+            <div class="col-md-4 panel snow-white">
+                <h3>File Encoding</h3>
+
+                <p>
+                    On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of
+                    the
+                    native
+                    language encoding. This makes session files portable between workstations in all locales. Users in
+                    Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be translated
+                    to UTF-8 using a platform-dependent editor (which most users are already using for this purpose).
+                    Users in Europe and the Americas are affected, too, if they use characters beyond the standard ANSI
+                    128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
+                </p>
+            </div>
+            <div class="col-md-4 panel snow-white">
+                <h3>Conflict with Older Versions</h3>
+
+                <p>
+                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
+                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 panel snow-white">
+                <h3>Internationalization (PDF Export)</h3>
+
+                <p>
+                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
+                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
+                    the image file instead.
+                </p>
+            </div>
+            <div class="col-md-4 panel snow-white">
+                <h3>Deprecating Support for 32 bit OSs and Java 6</h3>
+
+                <p>
+                    While v3.1 has both 32 bit OS and Java 6 support, we plan to remove support for these configurations
+                    in
+                    Cytoscape v3.2, which is under development and will likely be released in the later third of 2014.
+                    This
+                    matches current industry practice, and allows us to focus our resources on more advanced feature
+                    development. Once v3.2 is released, we will continue to make previous Cytoscape versions available,
+                    and they
+                    will continue to have 32 bit OS and Java 6 support.
+                </p>
+            </div>
+            <div class="col-md-4 panel snow-white">
+                <h3>Privacy</h3>
+
+                <p>
+                    The latest privacy policy is posted
+                    <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Privacy">here</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Missing Columns After Loading Multiple Networks</h3>
+
+                <p>
+                    When loading multiple networks into the same network collection, it is
+                    important to import tables only after each of the networks is loaded.
+                    Interspersing table imports with network loads may cause some table columns
+                    to become inaccessible to some networks.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Missing Organism Networks on Welcome Screen</h3>
+
+                <p>
+                    Users upgrading from previous Cytoscape versions (e.g., 3.0.2) may notice
+                    that the Welcome Screen contains only six of the eight organism networks shown
+                    in the user manual. To add the two new networks, terminate Cytoscape,
+                    remove the biogrid directory in the CytoscapeConfiguration directory, and
+                    restart Cytoscape. For more information on the <strong>CytoscapeConfiguration</strong> directory,
+                    see <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Launching_Cytoscape">Launching
+                    Cytoscape in manual</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="belt light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h2>How to Report Bugs</h2>
+
+                <p class="lead">
+                    Your bug reports are very important
+                    to improve quality of future versions of Cytoscape 3. If you notice any problems,
+                    please report them from:
+                </p>
+                <blockquote>Help &rarr; Report a bug...</blockquote>
+
+                <p class="lead">
+                    Or, you can directly report it from
+                    <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a bug</a>
+                    link on the navigation bar.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h2>Need Help?</h2>
+
+                <p class="lead">
+                    We need your feedback to improve Cytoscape 3! Please send your questions and comments
+                    to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+                    mailing list</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer></footer>
+
+<script src="js/load_cyjs.js"></script>
+<script src="js/setup_page.js"></script>
+</body>
+</html>

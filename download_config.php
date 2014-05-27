@@ -29,8 +29,8 @@ $latest_version = "2.8.3";
 $latest_version_underscore = "2_8_3";
 $latest_version_doc_prefix = "2_8";
 
-$latest_3x_version = "3.1.0";
-$latest_3x_version_underscore = "3_1_0";
+$latest_3x_version = "3.1.1";
+$latest_3x_version_underscore = "3_1_1";
 $latest_3x_version_doc_prefix = "3_1";
 
 # Beta and Development versions.  Use empty string when beta is not available.
@@ -39,6 +39,7 @@ $beta_2x = "";
 
 # Older versions (be sure to update!)
 $older_versions = array(
+    "3.1.0" => "http://chianti.ucsd.edu/cytoscape-3.1.0/",
     "3.0.2" => "http://chianti.ucsd.edu/cytoscape-3.0.2/",
     "3.0.1" => "http://chianti.ucsd.edu/cytoscape-3.0.1/",
     "3.0.0" => "http://chianti.ucsd.edu/cytoscape-3.0.0/",
