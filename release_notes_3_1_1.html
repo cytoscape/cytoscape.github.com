@@ -141,17 +141,14 @@
             </div>
             <div class="col-xs-12 col-md-4">
                 <h3>Linux</h3>
-
-                <p>
-                    For Linux, a simple way of installing the Oracle JVM is described
-                    <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html.">here</a>.
-                </p>
                 <ul>
                     <li>Tested on CentOS 6, Fedora 19/20, and Ubuntu 12.x/13.x/14.x, but may work on other distributions</li>
                     <li>
-                        For JDK6, latest version from Oracle is recommended. For JDK7, latest version
-                        of OpenJDK is recommended. (Oracle JDK7 has known stability issues on Ubuntu,
-                        but may work on other distributions.)
+                        Latest version of Java 6 or 7 from Oracle, or latest version of OpenJDK 7. Earlier versions of OpenJDK are not tested.
+                    </li>
+                    <li>
+                    For Ubuntu, a simple way of installing the Oracle JVM is described
+                    <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html">here</a>.
                     </li>
                 </ul>
             </div>
@@ -253,13 +250,13 @@
 
         <div class="row">
             <div class="col-md-4">
-                <h3>Missing Columns After Loading Multiple Networks</h3>
+                <h3>Missing Edge Columns After Loading Multiple Networks</h3>
 
                 <p>
                     When loading multiple networks into the same network collection, it is
-                    important to import tables only after each of the networks is loaded.
-                    Interspersing table imports with network loads may cause some table columns
-                    to become inaccessible to some networks.
+                    important to import edge tables only after each of the networks is loaded.
+                    Interspersing edge table imports with network loads may cause edge columns
+                    to become inaccessible to some networks. Node columns are unaffected by this issue.
                 </p>
             </div>
             <div class="col-md-4">
@@ -273,6 +270,15 @@
                     restart Cytoscape. For more information on the <strong>CytoscapeConfiguration</strong> directory,
                     see <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Launching_Cytoscape">Launching
                     Cytoscape in manual</a>.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Executing Scripts from Command Line</h3>
+
+                <p>
+                    On some systems, executing Cytoscape command scripts using the -S (or --script) 
+                    command line option may not work properly. As an alternative, command scripts
+                    can be executed using the Tools-Execute Command File menu item.
                 </p>
             </div>
         </div>
