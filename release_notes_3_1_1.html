@@ -276,8 +276,11 @@
                 <h3>Executing Scripts from Command Line</h3>
 
                 <p>
-                    On some systems, executing Cytoscape command scripts using the -S (or --script) 
-                    command line option may not work properly. As an alternative, command scripts
+                    Executing Cytoscape command scripts using the -S (or —script) command line option may not work
+                    if an app does not start properly or no apps are installed. If you are experiencing this issue 
+                    on a clean install of Cytoscape, installing a small app (such as Cy3PerformanceReporter) should 
+                    resolve the problem.  Additionally, relative file paths are not supported by -S/—script, 
+                    nor are any paths with backslashes, spaces, or colons. As an alternative, command scripts 
                     can be executed using the Tools-Execute Command File menu item.
                 </p>
             </div>
