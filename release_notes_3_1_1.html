@@ -98,7 +98,7 @@
             </p>
             <p>
                 For complete list of fixed bugs, please visit our <a href="http://code.cytoscape.org/redmine/projects/cytoscape3/issues?utf8=%E2%9C%93&set_filter=1&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=15&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=">
-                issue traker web site.</a>  More details are available in the last section of <a href="cy3_welcome_letter_v11.pdf">Welcome Letter</a>.
+                issue tracker web site.</a>  More details are available in the last section of <a href="cy3_welcome_letter_v11.pdf">Welcome Letter</a>.
             </p>
     </div>
 </div>
@@ -282,6 +282,37 @@
                     resolve the problem.  Additionally, relative file paths are not supported by -S/—script, 
                     nor are any paths with backslashes, spaces, or colons. As an alternative, command scripts 
                     can be executed using the Tools-Execute Command File menu item.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 panel snow-white">
+                <h3>Java 6 used on Mac, even with Java 7 installed</h3>
+
+                <p>
+                    On the Mac platform, Java 6 will be used by default (and automatically installed if necessary), 
+                    even if Oracle Java 7 is installed. To use Oracle Java 7, you will have to set the JAVA_HOME 
+                    environment variable to the Java 7 installation path.
+                </p>
+                <p>
+                    To do this automatically on startup, add the following line to the .bashrc file
+                    in your home directory:
+                </p>
+                <pre>
+export JAVA_HOME=$(/usr/libexec/java_home)
+                </pre>
+                <p>
+                    And the following to the .profile file in your home directory:
+                </p>
+                <pre>
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+                </pre>
+                <p>
+                    Note that this only applies to Cytoscape instances launched from the command line 
+                    using the cytoscape.sh script - Java 7 is not supported when launching from the GUI. 
+                    This issue will be resolved in a future release.
                 </p>
             </div>
         </div>
