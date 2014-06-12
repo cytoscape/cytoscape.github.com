@@ -98,7 +98,7 @@
             </p>
             <p>
                 For complete list of fixed bugs, please visit our <a href="http://code.cytoscape.org/redmine/projects/cytoscape3/issues?utf8=%E2%9C%93&set_filter=1&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=15&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&group_by=">
-                issue traker web site.</a>  More details are available in the last section of <a href="cy3_welcome_letter_v11.pdf">Welcome Letter</a>.
+                issue tracker web site.</a>  More details are available in the last section of <a href="cy3_welcome_letter_v11.pdf">Welcome Letter</a>.
             </p>
     </div>
 </div>
@@ -181,39 +181,6 @@
 <div class="belt snow-white">
     <div class="container">
         <h2>Known Issues</h2>
-
-        <div class="row">
-            <div class="col-md-4 panel snow-white">
-                <h3>Proxy Settings</h3>
-
-                <p>
-                    On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
-                </p>
-            </div>
-            <div class="col-md-4 panel snow-white">
-                <h3>File Encoding</h3>
-
-                <p>
-                    On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of
-                    the
-                    native
-                    language encoding. This makes session files portable between workstations in all locales. Users in
-                    Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be translated
-                    to UTF-8 using a platform-dependent editor (which most users are already using for this purpose).
-                    Users in Europe and the Americas are affected, too, if they use characters beyond the standard ANSI
-                    128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
-                </p>
-            </div>
-            <div class="col-md-4 panel snow-white">
-                <h3>Conflict with Older Versions</h3>
-
-                <p>
-                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
-                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
-                </p>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col-md-4 panel snow-white">
                 <h3>Internationalization (PDF Export)</h3>
@@ -222,6 +189,23 @@
                     For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
                     labeling information in the PDF. As a workaround, users can generate any type of image file and use
                     the image file instead.
+                </p>
+                <h3>Privacy</h3>
+
+                <p>
+                    The latest privacy policy is posted
+                    <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Privacy">here</a>.
+                </p>
+                <h3>Proxy Settings</h3>
+
+                <p>
+                    On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
+                </p>
+                <h3>Conflict with Older Versions</h3>
+
+                <p>
+                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
+                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
                 </p>
             </div>
             <div class="col-md-4 panel snow-white">
@@ -237,19 +221,6 @@
                     and they
                     will continue to have 32 bit OS and Java 6 support.
                 </p>
-            </div>
-            <div class="col-md-4 panel snow-white">
-                <h3>Privacy</h3>
-
-                <p>
-                    The latest privacy policy is posted
-                    <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Privacy">here</a>.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
                 <h3>Missing Edge Columns After Loading Multiple Networks</h3>
 
                 <p>
@@ -257,6 +228,52 @@
                     important to import edge tables only after each of the networks is loaded.
                     Interspersing edge table imports with network loads may cause edge columns
                     to become inaccessible to some networks. Node columns are unaffected by this issue.
+                </p>
+            </div>
+            <div class="col-md-4 panel snow-white">
+                <h3>Java 6 used on Mac, even with Java 7 installed</h3>
+
+                <p>
+                    On the Mac platform, Java 6 will be used by default (and automatically installed if necessary),
+                    even if Oracle Java 7 is installed. To use Oracle Java 7, you will have to set the JAVA_HOME
+                    environment variable to the Java 7 installation path.
+                </p>
+                <p>
+                    To do this automatically on startup, add the following line to the .bashrc file
+                    in your home directory:
+                </p>
+                <pre>
+export JAVA_HOME=$(/usr/libexec/java_home)
+                </pre>
+                <p>
+                    And the following to the .profile file in your home directory:
+                </p>
+                <pre>
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+                </pre>
+                <p>
+                    Note that this only applies to Cytoscape instances launched from the command line
+                    using the cytoscape.sh script - Java 7 is not supported when launching from the GUI.
+                    This issue will be resolved in a future release.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>File Encoding</h3>
+
+                <p>
+                    On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of
+                    the
+                    native
+                    language encoding. This makes session files portable between workstations in all locales. Users in
+                    Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be translated
+                    to UTF-8 using a platform-dependent editor (which most users are already using for this purpose).
+                    Users in Europe and the Americas are affected, too, if they use characters beyond the standard ANSI
+                    128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
                 </p>
             </div>
             <div class="col-md-4">
@@ -276,10 +293,17 @@
                 <h3>Executing Scripts from Command Line</h3>
 
                 <p>
-                    On some systems, executing Cytoscape command scripts using the -S (or --script) 
-                    command line option may not work properly. As an alternative, command scripts
+                    Executing Cytoscape command scripts using the -S (or —script) command line option may not work
+                    if an app does not start properly or no apps are installed. If you are experiencing this issue 
+                    on a clean install of Cytoscape, installing a small app (such as Cy3PerformanceReporter) should 
+                    resolve the problem.  Additionally, relative file paths are not supported by -S/—script, 
+                    nor are any paths with backslashes, spaces, or colons. As an alternative, command scripts 
                     can be executed using the Tools-Execute Command File menu item.
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 panel snow-white">
             </div>
         </div>
     </div>
