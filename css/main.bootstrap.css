@@ -3,6 +3,7 @@ html {
 }
 body {
     background-color: #DDDED3;
+    font-family: "Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 }
 nav {
     margin-bottom: 0 !important;
@@ -16,7 +17,12 @@ nav {
     border-radius: 0 !important;
 }
 
-h1, h2{
+h1 {
+    font-weight: 200;
+
+}
+
+h2{
     font-weight: 200;
 }
 
@@ -155,6 +161,11 @@ footer {
     color: #252525 !important;
 }
 
+.dark-gray {
+    background-color: #444444;
+    color: #252525 !important;
+}
+
 .background-31 {
     /*background-color: rgb(5,81,129);*/
     background-image: url("../images/3_1_title4.png");
@@ -242,6 +253,20 @@ footer {
     font-weight: 400 !important;
 }
 
+.centering {
+    text-align: center;
+}
+
+.image-fit {
+    width: 100%;
+    text-align:center;
+    vertical-align:middle;
+    padding: 20px;
+}
+
+.warn {
+    color: red;
+}
 
 /* For Cytoscape.js */
 .cyjs {
