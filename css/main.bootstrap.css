@@ -18,15 +18,13 @@ nav {
 }
 
 h1 {
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 5em;
 
 }
 
-h2{
-    font-weight: 200;
-}
 
-h3, h4, h5{
+h2, h3, h4, h5{
     font-weight: 200;
 }
 
@@ -135,7 +133,16 @@ footer {
 
 .light-blue {
     background-color: rgb(0,150,255);
-    color: #ffffff;
+    color: #ffffff !important;
+}
+
+.light-blue a:visited {
+    color: red !important;
+}
+
+.water-blue {
+    background-color: #0aeaff;
+    color: #ffffff !important;
 }
 
 .transparent {
@@ -152,7 +159,7 @@ footer {
     color: #a0a0a0 !important;
 }
 .snow-white {
-    background-color: #FAFAFA;
+    background-color: #F0F0F0;
     color: #555555 !important;
 }
 
@@ -266,6 +273,10 @@ footer {
 
 .warn {
     color: red;
+}
+
+.light-text {
+    color: #aaaaaa !important;
 }
 
 /* For Cytoscape.js */
