@@ -123,10 +123,10 @@
         } else if (osName.indexOf('Windows') !== -1) {
             // This is windows.
             if (is64) {
-                osString = osName + '(64 bit version)';
+                osString = osName + ' (64 bit version)';
                 fileName = 'windows_64bit.exe';
             } else {
-                osString = osName + '(32 bit version)';
+                osString = osName + ' (32 bit version)';
                 fileName = 'windows_32bit.exe';
             }
         } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
@@ -142,7 +142,7 @@
         $('.download-primary a').attr('href', downloadLink);
 
         $.ajax({
-            url: "../LGPL.txt",
+            url: "LGPL.txt",
             success: function (data) {
                 var lines = data.split(/\n/);
 
