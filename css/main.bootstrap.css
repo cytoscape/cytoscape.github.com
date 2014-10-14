@@ -279,6 +279,43 @@ footer {
     color: #aaaaaa !important;
 }
 
+.license {
+    border: 2em solid #DDDED3;
+    height: 500px;
+    width: 100%;
+    background-color: #DDDED3;
+    color: inherit;
+    overflow-y: scroll;
+}
+
+/*
+    For download page
+*/
+.download-button {
+    background-color: #F2DFA7;
+    color: #555555;
+    border: none;
+}
+
+.download-button h1 {
+    color: inherit;
+}
+.download-small {
+    width: 80%;
+    background-color: #44C2B3;
+}
+
+a .download-button, a:hover .download-button {
+    color: white;
+    text-decoration: none;
+}
+
+.download-primary a {
+    color: #555555 !important;
+    text-decoration: none;
+}
+
+
 /* For Cytoscape.js */
 .cyjs {
     width: 100%;
