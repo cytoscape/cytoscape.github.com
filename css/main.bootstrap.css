@@ -292,7 +292,7 @@ footer {
     For download page
 */
 .download-button {
-    background-color: #F2DFA7;
+    background-color: #44C2B3 !important;
     color: #555555;
     border: none;
 }
@@ -301,7 +301,7 @@ footer {
     color: inherit;
 }
 .download-small {
-    width: 80%;
+    width: 100%;
     background-color: #44C2B3;
 }
 
@@ -310,10 +310,13 @@ a .download-button, a:hover .download-button {
     text-decoration: none;
 }
 
-.download-primary a {
-    color: #555555 !important;
-    text-decoration: none;
+.platform {
+    padding-top: 0;
+    padding-bottom: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
 
 
 /* For Cytoscape.js */

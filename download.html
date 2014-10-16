@@ -8,6 +8,8 @@
     <meta name="author" content="Keiichiro Ono">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="js/download.js"></script>
+
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/UAParser/ua-parser.0.7.0.min.js"></script>
 
@@ -18,20 +20,59 @@
 </head>
 
 <body>
-
+<!--[if lt IE 11]>
+<p class="browsehappy">
+    You are using an <strong>outdated, ancient, archaic</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.
+</p>
+<![endif]-->
 
 <div class="narrow white">
     <div class="container">
         <div class="row centering">
-            <button disabled class="btn download-button download-primary">
-                <a href="">
-                    <h1><img src="images/logo/cy3logoOrange.svg"/>Download Cytoscape</h1>
+            <img src="images/logo/cy3logoOrange.svg"/>
+            <h3>License Agreement</h3>
+        </div>
+        <div class="row centering">
+            <div class="checkbox">
+                <label>
+                    <input class="checkbox" type="checkbox" id="agree" name="agree" required/>
+                    <strong class="warn">I accept terms of use</strong>
+                </label>
+            </div>
+        </div>
 
-                    <div class="platform">
-                        <h2><span class="glyphicon glyphicon-cloud-download"></span></h2>
-                    </div>
-                </a>
-            </button>
+        <div class="row centering">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                <p>
+                    Cytoscape is available as a platform-independent open-source Java application, released under the
+                    terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>.
+                    To obtain Cytoscape, you must:
+                </p>
+
+                <p>Read the license agreement that follows and make sure you agree with its terms.</p>
+
+                <p>Click the checkbox to enable the download button.</p>
+            </div>
+        </div>
+        <div class="row centering">
+            <h3>Java 7 Is required. <strong>Java 8 support is still experimental.</strong></h3>
+        </div>
+    </div>
+</div>
+
+<div class="narrow white">
+    <div class="container">
+        <div class="row centering">
+            <a class="download-primary">
+                <button disabled class="btn download-button platform">
+                    <h1>
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                    </h1>
+                </button>
+            </a>
+            <div class="warn win32"></div>
         </div>
     </div>
 
@@ -40,14 +81,14 @@
 <div class="narrow white">
     <div class="container">
         <div class="row centering">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-4 col-md-offset-2">
                 <a href="download-platforms.html">
                     <button disabled class="btn btn-lg download-button download-small">
                         For Other Platforms
                     </button>
                 </a>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-4">
                 <a href="download_old_versions.html">
                     <button disabled class="btn btn-lg download-button download-small">
                         Old Versions
@@ -60,33 +101,16 @@
 
 
 <div class="white">
-    <div class="container">
-        <div class="row centering">
-            <h3>License Agreement</h3>
-        </div>
-        <div class="row centering">
-            <div class="checkbox">
-                <label>
-                    <input class="checkbox" type="checkbox" id="agree" name="agree" required/>
-                    <strong>I accept terms of use</strong>
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <p>
-                Cytoscape is available as a platform-independent open-source Java application, released under the
-                terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>.
-                To obtain Cytoscape, you must:
-            </p>
-            <ul>
-                <li> Read the license agreement that follows and make sure you agree with its terms.</li>
-                <li><strong>Click the checkbox to enable the download button.</strong></li>
-            </ul>
-        </div>
-    </div>
     <div class="light-gray">
-        <div class="container">
+        <div class="container centering">
+            <h3>
+                CYTOSCAPE LICENSE AGREEMENT
+            </h3>
+            <h4>
+                GNU LESSER GENERAL PUBLIC LICENSE
+                Version 2.1, February 1999
+            </h4>
+
             <div class="license"></div>
         </div>
     </div>
@@ -97,9 +121,7 @@
 
 <script>
     $(function () {
-        var LATEST_CYTOSCAPE_VERSION = "3.1.1";
-        var FILE_PREFIX = 'Cytoscape_3_1_1_';
-        var BASE_URL = 'http://chianti.ucsd.edu/cytoscape-' + LATEST_CYTOSCAPE_VERSION + '/' + FILE_PREFIX;
+        var BASE_URL = LATEST.url + 'Cytoscape_' + LATEST.version.split('.').join('_') + '_';
 
         var is64 = true;
 
@@ -115,19 +137,25 @@
 
         var osString = '';
         var osName = parser.getOS().name;
+        var cpu = parser.getCPU();
+        var architecture = null;
+        if (cpu !== undefined) {
+            architecture = cpu.architecture;
+        }
         var fileName = '';
 
         if (osName.indexOf('Mac OS') !== -1) {
             osString = osName;
             fileName = 'macos.dmg';
-        } else if (osName.indexOf('Windows') !== -1) {
+        } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
             // This is windows.
-            if (is64) {
+            if (is64 || architecture === 'amd64') {
                 osString = osName + ' (64 bit version)';
                 fileName = 'windows_64bit.exe';
             } else {
                 osString = osName + ' (32 bit version)';
                 fileName = 'windows_32bit.exe';
+                $('.win32').append('<h3>32bit version is not recommended.  Please use 64bit version if possible.</h3>');
             }
         } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
             osString = osName;
@@ -138,21 +166,22 @@
 
         var downloadLink = BASE_URL + fileName;
 
-        $('.platform h2').append(' for ' + osString);
-        $('.download-primary a').attr('href', downloadLink);
+        $('.platform h1').append(' for ' + osString);
+        $('.download-primary').attr('href', downloadLink);
 
         $.ajax({
             url: "LGPL.txt",
             success: function (data) {
                 var lines = data.split(/\n/);
-
                 $(".license").html(lines.join("<br />"));
             }
         });
 
         var button = $('.download-button');
-        button.attr('disabled', 'disabled');
-        $('#agree').change(function (status) {
+        var checkbox = $('#agree');
+
+      button.attr('disabled', 'disabled');
+        checkbox.change(function (status) {
             if (this.checked) {
                 button.removeAttr('disabled');
             } else {
