@@ -32,13 +32,7 @@
 <div class="narrow white">
     <div class="container centering">
         <h1>Download Cytoscape</h1>
-        <div class="row centering">
-            <div class="col-sm-12 col-md-10 col-md-offset-1">
-                <h4 style="color: #888888"><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">
-                    Java 7</a> Is required. Java 8 support is still experimental.</h4>
 
-            </div>
-        </div>
     </div>
 </div>
 
@@ -54,6 +48,14 @@
             </a>
 
             <div class="warn win32"></div>
+        </div>
+        <div class="row centering">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <h4 style="color: #888888"><a
+                        href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">
+                    Java 7</a> is required. Java 8 support is still experimental.</h4>
+
+            </div>
         </div>
     </div>
 
@@ -92,10 +94,9 @@
                 <p>
                     Cytoscape is available as a platform-independent open-source Java application, released under the
                     terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>.
-                    To obtain Cytoscape, you must read the license agreement that follows and make sure
-                    you agree with its terms.
+                    By downloading Cytoscape, you agree that you have read the license agreement that follows and agree
+                    to its terms. If you don't agree, do not download Cytoscape.
                 </p>
-
             </div>
         </div>
     </div>
@@ -164,7 +165,7 @@
             osString = undefined;
         }
 
-        if(osString === undefined) {
+        if (osString === undefined) {
             $('.download-primary').remove();
             $('.download-main').append('<h3>Could not detect your system.  Please choose from the following links:</h3>');
         } else {
