@@ -1,161 +1,137 @@
-<?php
-
-include "download_config.php";
-
-####################################################
-# Generate download page if input values are valid.
-####################################################
-function ProcessSuccess($download_log) {
-
-	# Get User URL Parameters
-	# Assume these values are validated in client script.
-	$name = $_REQUEST["name"];
-	$org = $_REQUEST["org"];
-	$email = $_REQUEST["email"];
-	$contact = $_REQUEST["contact"];
-
-	# Add to the log
-	$now = date("F j, Y, g:i a");  
-	$ip = getenv(REMOTE_ADDR);
-
-	$contactStr = "NO_EMAIL";
-	if (isset($contact)) {
-		$contactStr = "YES_EMAIL";
-	}
-	$newEntry = "$now\t$ip\t$file\t$name\t$org\t$email\t$contactStr\n";
-
-	$fr = fopen($download_log, 'a');
-	fputs($fr, $newEntry);
-	fclose($fr);
-
-	return $newEntry;
-}
-
-# Process
-$submit = $_REQUEST["submit"];
-if (isset($submit)) {
-	$test = ProcessSuccess($download_log);
-	$files["gz"] = $latest_dist_gz;
-	$files["zip"] = $latest_dist_zip;
-	$files["mac"] = $latest_mac; 
-	$files["win32"] = $latest_windows_32;
-	$files["win64"] = $latest_windows_64; 
-	$files["linux"] = $latest_linux; 
-
-	$files3x["gz"] = $latest_3x_dist_gz;
-	$files3x["zip"] = $latest_3x_dist_zip;
-	$files3x["mac"] = $latest_3x_mac; 
-	$files3x["win32"] = $latest_3x_windows_32;
-	$files3x["win64"] = $latest_3x_windows_64; 
-	$files3x["linux"] = $latest_3x_linux; 
-
-	if(strlen($beta_2x) == 0) {
-		$beta_link = "";
-	} else {
-		$beta_link = "<li><a href=".$beta_2x.">Beta Version</a></li>";
-	}
-} else {
-	echo "cannot process";
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Thank you !</title>
-	<meta name="description" content="Download page for Cytoscape.">
-	<meta name="author" content="Keiichiro Ono">
+    <meta charset="utf-8">
+    <title>Download Cytoscape</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download page for Cytoscape.">
+    <meta name="author" content="Keiichiro Ono">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="js/download.js"></script>
 
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-	<link href="css/main.bootstrap.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/UAParser/ua-parser.0.7.0.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link href="css/main.bootstrap.css" rel="stylesheet">
 </head>
 
-<body class="white">
-<div class="belt white">
+<body>
+<!--[if lt IE 11]>
+<p class="browsehappy">
+    You are using an <strong>outdated, ancient, archaic</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.
+</p>
+<![endif]-->
+
+
+<div class="narrow white">
+    <div class="container centering">
+        <h1>Download Cytoscape</h1>
+    </div>
+</div>
+
+<div class="narrow white">
     <div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<!-- 3.x Series Download -->
-			<h2>Download Latest 3.x Series:
-				<?=$latest_3x_version?>
-			</h2>
-			<ul>
-				<li>
-					<h3>Platform Specific Installers</h3>
-				</li>
-				<ul>
-                    <li>
-                        <a href="<?=$files3x["mac"]?>">Mac OS X</a>
-                    </li>
-					<li><a href="<?=$files3x["win32"]?>">Windows 32bit</a></li>
-					<li><a href="<?=$files3x["win64"]?>">Windows 64bit</a>
-					<a href="release_notes_3_1_0.html#system_requirements" style="color: red;">(You need 64bit JVM to use this version)</a>
-					</li>
-					<li><a href="<?=$files3x["linux"]?>">Linux</a></li>
-				</ul>
-				<li>
-					<h3>Archived Distribution Files</h3>
-					<ul>
-						<li><a href="<?=$files3x["zip"]?>">Zip Archive ( for Windows )</a></li>
-						<li><a href="<?=$files3x["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<h2>Download Latest 2.x Series:
-				<?=$latest_version?>
-			</h2>
-			<ul>
-				<li>
-					<h3>Platform Specific Installers</h3>
-				</li>
-				<ul>
-					<li><a href="<?=$files["mac"]?>">Mac OS X</a></li>
-					<li><a href="<?=$files["win32"]?>">Windows 32bit</a></li>
-					<li><a href="<?=$files["win64"]?>">Windows 64bit</a></li>
-					<li><a href="<?=$files["linux"]?>">Linux</a></li>
-				</ul>
-				<li>
-					<h3>Archived Distribution Files</h3>
-					<ul>
-						<li><a href="<?=$files["zip"]?>">Zip Archive ( for Windows )</a></li>
-						<li><a href="<?=$files["gz"]?>">GZIP Archive ( for Mac/Unix Systems )</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+        <div class="row centering download-main">
+            <a class="download-primary">
+                <button class="download-button platform">
+                    <h1>
+                        <span class="glyphicon glyphicon-cloud-download" style="vertical-align: text-top;"></span>
+                    </h1>
+                </button>
+            </a>
 
-		<div class="col-md-6">
-				<h2>Latest Development Versions</h2>
-				<ul>
-					<li>
-						<a href="http://code.cytoscape.org/jenkins/job/cytoscape-3-gui-distribution/lastSuccessfulBuild/org.cytoscape.distribution$cytoscape/">
-							Latest Successful Build
-						</a>
-					</li>
-				</ul>
+            <div class="warn win32"></div>
+        </div>
+    </div>
 
-				<hr />
+</div>
 
-				<h2>Older Versions</h2>
-				<ul>
-					<?
-						while(list($tKey,$tValue)=each($older_versions)) {
-							print '<li><a href="'.$tValue.'">'.$tKey.'</a></li>';
-						}
-					?>
-				</ul>
-		</div>
-	</div>
+<div class="narrow white">
+    <div class="container centering">
+        <div class="row centering">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <h3>Please install <a
+                        href="https://www.java.com/en/download/manual_java7.jsp">
+                    Java <strong>7</strong></a> first to use Cytoscape.
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="narrow white">
+    <div class="container">
+        <div class="row centering">
+            <h4>
+                <a href="download-platforms.html">
+                    Other Platforms
+                </a>
+            </h4>
+            <h4>
+                <a href="download_old_versions.html">
+                    Old Versions
+                </a>
+            </h4>
+        </div>
+    </div>
 </div>
 </div>
+
+
+<div class="narrow white">
+    <div class="container">
+        <div class="row centering">
+            <h3>License Agreement</h3>
+        </div>
+
+        <div class="row centering">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                <p>
+                    Cytoscape is available as a platform-independent open-source Java application, released under the
+                    terms of the <a href="http://www.gnu.org/copyleft/lesser.html" target="_new">LGPL</a>. By
+                    downloading Cytoscape, you agree that you have read the license agreement that follows and agree to
+                    its terms. If you don't agree, do not download Cytoscape.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="belt light-gray">
+    <div class="container centering">
+        <h3>
+            CYTOSCAPE LICENSE AGREEMENT
+        </h3>
+        <h4>
+            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+        </h4>
+
+        <div class="license"></div>
+    </div>
+</div>
+
+<div class="belt white">
+    <div class="container centering">
+        <div class="row">
+	        <h4>
+	            Cytoscape installers are created with:
+	        </h4>
+	        <a href="https://www.ej-technologies.com/products/install4j/overview.html">
+	            <img src="http://www.ej-technologies.com/images/banners/install4j_large.png"/>
+	        </a>
+        </div>
+    </div>
+</div>
+
+
+<footer></footer>
 
 <!-- Google Code for Cytoscape downloaded Conversion Page -->
 <script type="text/javascript">
@@ -178,10 +154,72 @@ var google_conversion_value = 0;
 </div>
 </noscript>
 
+<script>
+    $(function () {
+        var BASE_URL = LATEST.url + 'Cytoscape_' + LATEST.version.split('.').join('_') + '_';
 
-<footer></footer>
+        var is64 = true;
 
+        var parser = new UAParser();
+        console.log(parser.getOS());
+        console.log(parser.getCPU());
+        console.log(window.navigator.platform);
+        console.log(window.navigator.cpuClass);
+        if (navigator.userAgent.indexOf("WOW64") === -1 ||
+                navigator.userAgent.indexOf("Win64") === -1) {
+            is64 = false;
+        }
+
+        var osString = '';
+        var osName = parser.getOS().name;
+        var cpu = parser.getCPU();
+        var architecture = null;
+        if (cpu !== undefined) {
+            architecture = cpu.architecture;
+        }
+        var fileName = '';
+
+        if (osName.indexOf('Mac OS') !== -1) {
+            osString = osName;
+            fileName = 'macos.dmg';
+        } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
+            // This is windows.
+            if (is64 || architecture === 'amd64') {
+                osString = osName + ' (64 bit)';
+                fileName = 'windows_64bit.exe';
+            } else {
+                osString = osName + ' (32 bit)';
+                fileName = 'windows_32bit.exe';
+                $('.win32').append('<h3>32bit version is not recommended.  Please use 64bit version if possible.</h3>');
+            }
+        } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
+            osString = osName;
+            fileName = 'unix.sh';
+        } else {
+            osString = undefined;
+        }
+
+        if (osString === undefined) {
+            $('.download-primary').remove();
+            $('.download-main').append('<h3>Could not detect your system.  Please choose from the following links:</h3>');
+        } else {
+            var downloadLink = BASE_URL + fileName;
+
+            $('.platform h1').append(' for ' + osString);
+            $('.download-primary').attr('href', downloadLink);
+        }
+
+
+        $.ajax({
+            url: "LGPL.txt",
+            success: function (data) {
+                var lines = data.split(/\n/);
+                $(".license").html(lines.join("<br />"));
+            }
+        });
+    });
+</script>
 <script src="js/setup_page.js"></script>
-
 </body>
+
 </html>

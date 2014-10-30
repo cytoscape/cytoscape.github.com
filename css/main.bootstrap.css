@@ -291,15 +291,16 @@ footer {
 /*
     For download page
 */
-.download-button {
-    background-color: darkorange !important;
+.download-button, .download-button:hover {
+    background-color: #ff8c00;
     color: #FFFFFF;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px !important;
 }
 
-.download-button:hover h1 {
-    font-weight: 300;
+.download-button:hover, .download-button:hover h1 {
+    background-color: #ffc500;
+    color: #555555;
 }
 
 .download-button:visited, .download-button:active, .download-button:hover, .download-button:focus {
@@ -309,7 +310,7 @@ footer {
 }
 
 .download-button h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     color: inherit;
 }
 

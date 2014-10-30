@@ -33,7 +33,7 @@ $(document).ready(function () {
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
             '<li><a href="screenshots.html">Screenshots</a></li>' +
             '</ul></li>' +
-            '<li><a href="download.html">Download</a></li>' +
+            '<li><a href="download.php">Download</a></li>' +
 
             '<li><a href="http://apps.cytoscape.org/" target="_blank">Apps</a></li>' +
 
