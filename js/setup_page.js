@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     var responsiveNav =
         '<div class="container"><nav class="navbar navbar-default" role="navigation">' +
-            '<div class="container-fluid">' +
+            '<div class="container">' +
 
             '<div class="navbar-header">' +
             '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cy-navbar">' +
@@ -21,7 +21,9 @@ $(document).ready(function () {
             '<span class="icon-bar"></span>' +
             '<span class="icon-bar"></span>' +
             '</button>' +
-            '<a class="navbar-brand" href="index.html">Cytoscape</a>' +
+            '<a class="navbar-brand" href="index.html">' +
+                '<img src="images/logo/cy3logoOrange.svg" style="height: 43px !important; margin-top: -13px; margin-left: -1em;"/>' +
+            '</a>' +
             '</div>' +
 
             '<div class="collapse navbar-collapse" id="cy-navbar">' +
