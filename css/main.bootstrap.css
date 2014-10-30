@@ -12,6 +12,13 @@ nav {
     background-color: rgba(100, 100, 100, 0.0) !important;
 }
 
+#cy-navbar {
+    font-size: 0.98em;
+}
+.search-form {
+    font-size: 0.9em;
+}
+
 
 .btn {
     border-radius: 0 !important;

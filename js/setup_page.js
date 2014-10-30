@@ -58,6 +58,18 @@ $(document).ready(function () {
 
             '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
             '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
+
+            '<li>' +
+            '<form class="navbar-form search-form" action=\"http://www.google.com/search\">' +
+            '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
+            '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
+            '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
+            '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
+            '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
+            '<input placeholder=\"Cytoscape.org\" class=\"form-control search-form\" style=\"width: 60%;\" type=\"text\" name=\"q\">' +
+            '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
+            '</form>' +
+            '</li>' +
             '</ul>' +
 
             '</div></div></nav></div>';
@@ -78,16 +90,19 @@ $(document).ready(function () {
         'Cytoscape Consortium</a></p>' +
 
         '</div><div class="col-xs-12 col-md-4">' +
-        '<form class="navbar-form navbar-left" action=\"http://www.google.com/search\">' +
+
+        '<form class="navbar-form navbar-left search-form" action=\"http://www.google.com/search\">' +
         '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
         '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
         '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
         '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
         '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
-        '<input placeholder="Search Cytoscape.org" class=\"form-control\" style=\"width: 60%;\"' +
+        '<input placeholder="Cytoscape.org" class=\"form-control\" style=\"width: 60%;\"' +
         'type=\"text\" name=\"q\">' +
         '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
-        '</form></div></div>' +
+        '</form>' +
+
+        '</div></div>' +
         '<script>' +
         '(function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){' +
         '    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),' +
