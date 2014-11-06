@@ -7,6 +7,13 @@
  */
 $(document).ready(function () {
 
+    ////////////////////////////////////
+    // Modify this when releasing new version!
+    ////////////////////////////////////
+    var CYTOSCAPE_LATEST_VERSION = '3.2.0';
+    $('.cy-latest-version').append(CYTOSCAPE_LATEST_VERSION);
+
+
     // For drop down menu
     $('.dropdown-toggle').dropdown();
 

@@ -1,10 +1,12 @@
 html {
-    background-color: rgb(248,248,248);
+    background-color: rgb(248, 248, 248);
 }
+
 body {
     background-color: #DDDED3;
-    font-family: "Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
 }
+
 nav {
     margin-bottom: 0 !important;
     border-radius: 0 !important;
@@ -15,10 +17,10 @@ nav {
 #cy-navbar {
     font-size: 0.98em;
 }
+
 .search-form {
     font-size: 0.9em;
 }
-
 
 .btn {
     border-radius: 0 !important;
@@ -30,8 +32,7 @@ h1 {
 
 }
 
-
-h2, h3, h4, h5{
+h2, h3, h4, h5 {
     font-weight: 200;
 }
 
@@ -46,15 +47,15 @@ h2, h3, h4, h5{
     width: 100%;
 }
 
-.v-center{
+.v-center {
     height: 150px;
     line-height: 150px;
-    text-align:center;
-    vertical-align:middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .v-center img {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .person {
@@ -90,23 +91,24 @@ h2, h3, h4, h5{
     margin-bottom: 10px;
 
 }
+
 .section {
     margin-top: 160px !important;
 }
 
 footer {
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
     margin-top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .people {
-    background-color: rgb(245,245,245) !important;
+    background-color: rgb(245, 245, 245) !important;
 }
 
 .cy3-color {
-    color: rgb(247,148,30) !important;
+    color: rgb(247, 148, 30) !important;
 }
 
 .belt {
@@ -130,7 +132,7 @@ footer {
 }
 
 .orange {
-    background-color: rgb(247,148,30) !important;
+    background-color: rgb(247, 148, 30) !important;
 }
 
 .blue {
@@ -139,7 +141,7 @@ footer {
 }
 
 .light-blue {
-    background-color: rgb(0,150,255);
+    background-color: rgb(0, 150, 255);
     color: #ffffff !important;
 }
 
@@ -153,7 +155,7 @@ footer {
 }
 
 .transparent {
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .white {
@@ -165,6 +167,7 @@ footer {
     background-color: #000000;
     color: #a0a0a0 !important;
 }
+
 .snow-white {
     background-color: #F0F0F0;
     color: #555555 !important;
@@ -182,16 +185,15 @@ footer {
 
 .background-31 {
     /*background-color: rgb(5,81,129);*/
-    background-image: url("../images/3_1_title4.png");
+    background-image: url("../images/release_notes/cy32-release5.png");
     /*-moz-background-size: 100% auto;*/
     /*background-size: 100% auto;*/
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 700px;
-    padding-top: 150px;
+    padding-top: 60px;
+    background-color: #000000;
 }
-
-
-
 
 .narrow .container h2 {
     font-weight: 100;
@@ -205,20 +207,23 @@ footer {
 }
 
 .background-31 h2 {
-    font-weight: 100;
+    font-weight: 100 !important;
     font-size: 32px;
     padding-right: 40px;
     color: #ffffff;
     text-align: right;
-    background-color: rgba(255,255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0.0);
     padding-bottom: 20px;
 }
 
+.background-31 h1 {
+    font-weight: 100 !important;
+    font-size: 8.5em !important;
+}
 
 .container h1 {
     color: #545454;
 }
-
 
 .item {
     margin-top: 30px;
@@ -227,15 +232,17 @@ footer {
 .box {
     z-index: 0;
     color: #fafafa;
-    background-color: rgba(44,77,131, 0.0);
+    background-color: rgba(44, 77, 131, 0.0);
 
-    padding: 2em;
+    padding: 1em;
     padding-top: 0;
 }
+
 .box p {
     font-weight: 100;
     font-size: 18px;
 }
+
 .box h1 {
     font-weight: 700;
     font-size: 90px;
@@ -252,19 +259,18 @@ footer {
 
 .box .btn {
     height: 80px;
-    font-weight: 200;
-    color: #555555;
-    padding-top: 16px;
-   /*border: solid 2px #ffffff;*/
-    border: none;
-   font-size: 32px;
-   background-color: #FFFFFF;
+    font-weight: 100;
+    color: #FFFFFF;
+    border: solid 2px #ffffff;
+    font-size: 3.2em;
+    /*background-color: #FFFFFF;*/
 }
 
 .orange-button {
-    color: white !important;
+    color: white!important;
     background-color: orange !important;
-    font-weight: 400 !important;
+    font-weight: 100 !important;
+    border: none !important;
 }
 
 .centering {
@@ -273,8 +279,8 @@ footer {
 
 .image-fit {
     width: 100%;
-    text-align:center;
-    vertical-align:middle;
+    text-align: center;
+    vertical-align: middle;
     padding: 20px;
 }
 
@@ -321,15 +327,12 @@ footer {
     color: inherit;
 }
 
-
 .platform {
     padding-top: 0;
     padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
 }
-
-
 
 /* For Cytoscape.js */
 .cyjs {
