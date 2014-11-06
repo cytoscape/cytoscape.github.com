@@ -65,6 +65,17 @@
         </div>
     </div>
 </div>
+<div class="narrow white">
+    <div class="container">
+        <div class="row centering">
+            <h4>
+                <a href="releasenotes.html">
+                    Release Notes
+                </a>
+            </h4>
+        </div>
+    </div>
+</div>
 
 <div class="narrow white">
     <div class="container">
