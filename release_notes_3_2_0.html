@@ -87,6 +87,7 @@
 
 <div class="belt snow-white">
     <h1 class="centering">Performance</h1>
+
     <div class="container">
         <div class="row item">
             <div class="col-md-6">
@@ -177,7 +178,7 @@
 
         <p class="lead light-text">
             Cytoscape exports your session as Cytoscape.js-based web visualization. You can publish your
-            networks as a complete web application.  This feature is for Mac and Linux only.  Support for
+            networks as a complete web application. This feature is for Mac and Linux only. Support for
             Windows will be available in 3.2.1.
         </p>
 
@@ -209,14 +210,22 @@
 
 <div class="narrow white">
     <div class="container">
-        <div class="centering">
-            <h1>System Requirements</h1>
+        <h1 class="centering">System Requirements</h1>
 
-            <div class="row">
-                <h3 class="warn">Important: Cytoscape 3.2 no longer suports Java 6 and older</h3>
-                <h3>Please install <a href="http://java.com/en/download/manual.jsp">Java 7</a> first</h3>
+        <h3 class="warn centering">Continuing 32 bit OS Support, Deprecating Java 6 Support</h3>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-2 col-md-8">
+                <p class="lead">
+                    While v3.2 continues to support 32 bit OSs, it no longer supports Java 6. We plan to
+                    support 32 bit OSs as long as we can, but will eventually drop this support.
+                    Desupporting Java 6 matches current industry practice, and allows us to focus our
+                    resources on more advanced feature development.
+                </p>
+
             </div>
         </div>
+
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <h3>Windows</h3>
@@ -224,10 +233,11 @@
                     <li>Windows XP and newer (including Windows 7 and 8). 64 bit version is recommended for larger
                         networks.
                     </li>
-                    <li>Latest version of Java 7 from Oracle. OpenJDK and other implementations are not tested.
+                    <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">
+                        Java 7 from Oracle</a>. OpenJDK and other implementations are not tested.
                     </li>
                     <li>Note that the java.com website installs a 32 bit JVM by default (to match Windows’ 32 bit
-                        browsers). To download a 64 bit JVM, use <a href="http://java.com/en/download/manual.jsp">this
+                        browsers). To download a 64 bit JVM, use <a href="http://java.com/en/download/manual_java7.jsp">this
                             page</a>.
                     </li>
                 </ul>
@@ -237,7 +247,7 @@
                 <h3>Mac</h3>
                 <ul>
                     <li>Mac OS X 10.5 and later</li>
-                    <li>Latest version of Oracle Java 7</li>
+                    <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">Oracle Java 7</a></li>
                     <li>
                         <strong>Latest version of Java is required. Please install all system/Java updates before
                             installing Cytoscape 3. Cytoscape does not start on older versions of Apple Java 6</strong>
@@ -252,11 +262,11 @@
                     <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html">here</a>.
                 </p>
                 <ul>
-                    <li>Tested on CentOS 6, Fedora 19/20, and Ubuntu 11.x/12.x/13.x, but may work on other
-                        distributions
+                    <li>Tested on
+                        <a href="https://docs.google.com/spreadsheet/ccc?key=0Ak5JMUI-p-wFdEJ3YV9zZ2Z4a0FNYTV5aTZEV3ZQRXc&usp=docslist_api#gid=0">these distributions</a>
                     </li>
                     <li>
-                        For JDK6, latest version from Oracle is recommended. For JDK7, latest version of OpenJDK is
+                        Latest version of OpenJDK 7 is
                         recommended. (Oracle JDK7 has known stability issues on Ubuntu, but may work on other
                         distributions.)
                     </li>
