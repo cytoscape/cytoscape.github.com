@@ -32,7 +32,7 @@
 
 <div class="narrow white">
     <div class="container centering">
-        <h1>Download Cytoscape</h1>
+        <h1 class="cy-latest-version">Download Cytoscape </h1>
     </div>
 </div>
 
