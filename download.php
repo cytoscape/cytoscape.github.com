@@ -61,6 +61,9 @@
                         href="https://www.java.com/en/download/manual_java7.jsp">
                     Java <strong>7</strong></a> first to use Cytoscape.
                 </h3>
+                <h3 class="warn">
+                    Java 6 is no longer supported
+                </h3>
             </div>
         </div>
     </div>
