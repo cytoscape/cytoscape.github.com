@@ -17,8 +17,10 @@ $(document).ready(function () {
     // For drop down menu
     $('.dropdown-toggle').dropdown();
 
+    var navContainer = $('<div class="container"></div>');
+
     var responsiveNav =
-        '<div class="container"><nav class="navbar navbar-default" role="navigation">' +
+        '<nav class="navbar navbar-default" role="navigation">' +
             '<div class="container">' +
 
             '<div class="navbar-header">' +
@@ -42,16 +44,17 @@ $(document).ready(function () {
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
             '<li><a href="screenshots.html">Screenshots</a></li>' +
             '</ul></li>' +
+
             '<li><a href="download.php">Download</a></li>' +
 
             '<li><a href="http://apps.cytoscape.org/" target="_blank">Apps</a></li>' +
 
-            '<li class="dropdown">' +
+            '<li id="docs" class="dropdown">' +
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
+            '<li><a href="releasenotes.html">Release Notes</a></li>' +
             '<li><a href="documentation_users.html">For Users</a></li>' +
             '<li><a href="documentation_developers.html">For Developers</a></li>' +
-            '<li><a href="releasenotes.html">Release Notes</a></li>' +
             '<li><a href="http://wiki.cytoscape.org/">Wiki</a></li>' +
             '<li><a href="http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3">Open Tutorials</a></li>' +
             '</ul></li>' +
@@ -81,10 +84,13 @@ $(document).ready(function () {
             '</li>' +
             '</ul>' +
 
-            '</div></div></nav></div>';
+            '</div></div></nav>';
 
+    navContainer.append(responsiveNav);
+    $('body').prepend(navContainer);
 
-    $('body').prepend(responsiveNav);
+    // Job Link
+    $('<li class="dropdown"><a href="jobs.html" style="color: red; font-weight: 700;">Jobs</a></li>').insertAfter('#docs');
 
     // Footer
     var footerText = '<div class="container"><div class="row">' +

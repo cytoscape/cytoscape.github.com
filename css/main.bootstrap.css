@@ -146,7 +146,11 @@ footer {
 }
 
 .light-blue a:visited {
-    color: red !important;
+    color: #aaaaaa !important;
+}
+
+.light-blue a {
+    color: orange !important;
 }
 
 .water-blue {
