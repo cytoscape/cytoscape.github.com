@@ -126,6 +126,11 @@ footer {
     margin-top: 0;
 }
 
+.underline {
+    border-bottom: solid 1px #cccccc;
+    color: #bbbbbb;
+}
+
 .top {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -179,7 +184,7 @@ footer {
 
 .light-gray {
     background-color: #DDDED3;
-    color: #252525 !important;
+    color: #222222 !important;
 }
 
 .dark-gray {
