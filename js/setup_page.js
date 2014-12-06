@@ -62,6 +62,7 @@ $(document).ready(function () {
             '<li class="dropdown">' +
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
+            '<li class="warn"><a href="cy32_launch_challenge.html"><strong>v3.2 Launch Challenge!</strong></a></li>' +
             '<li><a href="development_team.html">Developer Team</a></li>' +
             '<li><a href="community.html">Social Media</a></li>' +
             '<li><a href="http://nrnb.org/cyretreat/">Conferences</a></li>' +
