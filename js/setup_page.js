@@ -62,7 +62,7 @@ $(document).ready(function () {
             '<li class="dropdown">' +
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
-            '<li class="warn"><a href="http://nrnb.org/competitions.html"><strong>Competitions</strong></a></li>' +
+            '<li class="warn"><a href="http://nrnb.org/competitions.html">Competitions</a></li>' +
             '<li><a href="development_team.html">Developer Team</a></li>' +
             '<li><a href="community.html">Social Media</a></li>' +
             '<li><a href="http://nrnb.org/cyretreat/">Conferences</a></li>' +
