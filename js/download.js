@@ -29,6 +29,10 @@ var OLD_VERSIONS = [
         url: "http://chianti.ucsd.edu/cytoscape-3.0.0/"
     },
     {
+        version: "2.8.3",
+        url: "http://chianti.ucsd.edu/Cyto-2_8_3/"
+    },
+    {
         version: "2.8.2",
         url: "http://chianti.ucsd.edu/Cyto-2_8_2/"
     },
