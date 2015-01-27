@@ -318,14 +318,22 @@
 
         <div class="row">
             <div class="col-md-4 panel">
+                <h3>Table Import: Key Column Data Type</h3>
+                <p>
+                    In Cytoscape 3.2, table identifier columns are no longer treated as Strings by default, which  can cause a type mismatch error when using numeric identifiers. Because of this, you will need to manually change the ID column data type to import a table with a numeric identifier into a network using a String column as an identifier (such as “shared name”).  To do this, right-click the column heading in the table import preview and change the selected type to String before importing.
+                </p>
+            </div>
+
+            <div class="col-md-4 panel">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>Proxy Settings</h3>
+                    <h3>Internationalization (PDF Export)</h3>
 
-                        <p>
-                            On Linux, on the proxy configuration dialog box, fonts are clipped and messages are
-                            truncated.
-                        </p>
+                    <p>
+                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
+                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
+                    the image file instead.
+                    </p>
                     </div>
                 </div>
                 <div class="row">
@@ -341,22 +349,27 @@
             </div>
 
             <div class="col-md-4 panel">
-                <h3>Internationalization (PDF Export)</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Proxy Settings</h3>
 
-                <p>
-                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
-                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
-                    the image file instead.
-                </p>
-            </div>
-
-            <div class="col-md-4 panel">
+                        <p>
+                            On Linux, on the proxy configuration dialog box, fonts are clipped and messages are
+                            truncated.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
                 <h3>Conflict with Older Versions</h3>
 
                 <p>
                     On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
                     the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
                 </p>
+                </div>
+                </div>
             </div>
         </div>
 
