@@ -58,8 +58,8 @@
         <div class="row centering">
             <div class="col-sm-12 col-md-10 col-md-offset-1">
                 <h3>Please install <a
-                        href="https://www.java.com/en/download/manual_java7.jsp">
-                    Java <strong>7</strong></a> first to use Cytoscape.
+                        href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
+                    Java</a> first to use Cytoscape.
                 </h3>
                 <h3 class="warn">
                     Java 6 is no longer supported

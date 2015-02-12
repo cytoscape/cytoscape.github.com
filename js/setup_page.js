@@ -10,7 +10,7 @@ $(document).ready(function () {
     ////////////////////////////////////
     // Modify this when releasing new version!
     ////////////////////////////////////
-    var CYTOSCAPE_LATEST_VERSION = '3.2.0';
+    var CYTOSCAPE_LATEST_VERSION = '3.2.1';
     $('.cy-latest-version').append(CYTOSCAPE_LATEST_VERSION);
 
 
@@ -102,7 +102,7 @@ $(document).ready(function () {
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
         'numbers P41 RR031228 and GM103504.</p>' +
-        '<p class="text-muted text-center">&copy;2001-2014 <a href="http://www.cytoscapeconsortium.org/">' +
+        '<p class="text-muted text-center">&copy;2001-2015 <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
 
         '</div><div class="col-xs-12 col-md-4">' +
