@@ -127,7 +127,21 @@
             GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
         </h4>
 
-        <div class="license"></div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                <div class="license" style="text-align: left;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <p style="text-align: left;">
+                Note: Incorporating function code by extending an abstract class is specifically 
+                deemed to be equivalent to ‘using numerical parameters, data structure layouts 
+                and accessors, and small macros and small inline functions (ten lines or less in 
+                length)’ for the purposes of Section 5.
+            </p>
+            </div>
+        </div>
     </div>
 </div>
 
