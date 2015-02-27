@@ -42,6 +42,7 @@ $(document).ready(function () {
             '<ul class="dropdown-menu">' +
             '<li><a href="what_is_cytoscape.html">What is Cytoscape?</a></li>' +
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
+            '<li><a href="stat.html">Project Statistics</a></li>' +
             '<li><a href="screenshots.html">Screenshots</a></li>' +
             '</ul></li>' +
 
