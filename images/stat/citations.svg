@@ -1,127 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="3858px" height="1433px" viewBox="0 0 3858 1433" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="3852px" height="1427px" viewBox="0 0 3852 1427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>citations</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="citations" sketch:type="MSLayerGroup" transform="translate(-16.000000, -16.000000)">
+        <g id="citations" sketch:type="MSLayerGroup" transform="translate(-13.000000, -13.000000)">
             <g id="Page-1">
-                <g id="Cytoscape-Citations-Jan-2004-to-Feb-2015-from-MedLine.001">
-                    <g id="Page_1-Clipped">
-                        <g id="Page_1">
-                            <path d="M295,1028 L3871,1028 L3871,1034 L295,1034 L295,1028 L295,1028 Z M295,861 L3871,861 L3871,867 L295,867 L295,861 L295,861 Z M295,694 L3871,694 L3871,700 L295,700 L295,694 L295,694 Z M295,526 L3871,526 L3871,532 L295,532 L295,526 L295,526 Z M295,359 L3871,359 L3871,365 L295,365 L295,359 L295,359 Z M295,192 L3871,192 L3871,198 L295,198 L295,192 L295,192 Z M295,25 L3871,25 L3871,31 L295,31 L295,25 L295,25 Z" id="Shape" fill="#868686" sketch:type="MSShapeGroup"></path>
-                            <path d="M3067,172 L3186,172 L3186,1198 L3067,1198 L3067,172 L3067,172 Z M3365,262 L3484,262 L3484,1198 L3365,1198 L3365,262 L3365,262 Z M2769,371 L2888,371 L2888,1198 L2769,1198 L2769,371 L2769,371 Z M2471,606 L2590,606 L2590,1198 L2471,1198 L2471,606 L2471,606 Z M2172,738 L2292,738 L2292,1198 L2172,1198 L2172,738 L2172,738 Z M1874,784 L1994,784 L1994,1198 L1874,1198 L1874,784 L1874,784 Z M1576,972 L1696,972 L1696,1198 L1576,1198 L1576,972 L1576,972 Z M1278,1079 L1397,1079 L1397,1198 L1278,1198 L1278,1079 L1278,1079 Z M3663,1145 L3782,1145 L3782,1198 L3663,1198 L3663,1145 L3663,1145 Z M980,1146 L1099,1146 L1099,1198 L980,1198 L980,1146 L980,1146 Z M682,1168 L801,1168 L801,1198 L682,1198 L682,1168 L682,1168 Z M384,1180 L503,1180 L503,1198 L384,1198 L384,1180 L384,1180 Z" id="Shape" fill="#4F81BD" sketch:type="MSShapeGroup"></path>
-                            <rect id="Rectangle-path" fill="#868686" sketch:type="MSShapeGroup" x="292" y="28" width="6" height="1170"></rect>
-                            <path d="M269,1195 L295,1195 L295,1201 L269,1201 L269,1195 L269,1195 Z M269,1028 L295,1028 L295,1034 L269,1034 L269,1028 L269,1028 Z M269,861 L295,861 L295,867 L269,867 L269,861 L269,861 Z M269,694 L295,694 L295,700 L269,700 L269,694 L269,694 Z M269,526 L295,526 L295,532 L269,532 L269,526 L269,526 Z M269,359 L295,359 L295,365 L269,365 L269,359 L269,359 Z M269,192 L295,192 L295,198 L269,198 L269,192 L269,192 Z M269,25 L295,25 L295,31 L269,31 L269,25 L269,25 Z" id="Shape" fill="#868686" sketch:type="MSShapeGroup"></path>
-                            <rect id="Rectangle-path" fill="#868686" sketch:type="MSShapeGroup" x="295" y="1195" width="3576" height="6"></rect>
-                            <path d="M298,1198 L298,1224 L292,1224 L292,1198 L298,1198 L298,1198 Z M596,1198 L596,1224 L590,1224 L590,1198 L596,1198 L596,1198 Z M894,1198 L894,1224 L888,1224 L888,1198 L894,1198 L894,1198 Z M1192,1198 L1192,1224 L1186,1224 L1186,1198 L1192,1198 L1192,1198 Z M1490,1198 L1490,1224 L1484,1224 L1484,1198 L1490,1198 L1490,1198 Z M1788,1198 L1788,1224 L1782,1224 L1782,1198 L1788,1198 L1788,1198 Z M2086,1198 L2086,1224 L2080,1224 L2080,1198 L2086,1198 L2086,1198 Z M2384,1198 L2384,1224 L2378,1224 L2378,1198 L2384,1198 L2384,1198 Z M2682,1198 L2682,1224 L2676,1224 L2676,1198 L2682,1198 L2682,1198 Z M2980,1198 L2980,1224 L2974,1224 L2974,1198 L2980,1198 L2980,1198 Z M3278,1198 L3278,1224 L3272,1224 L3272,1198 L3278,1198 L3278,1198 Z M3576,1198 L3576,1224 L3570,1224 L3570,1198 L3576,1198 L3576,1198 Z M3874,1198 L3874,1224 L3868,1224 L3868,1198 L3874,1198 L3874,1198 Z" id="Shape" fill="#868686" sketch:type="MSShapeGroup"></path>
-                            <text id="11" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="403" y="1122">11</tspan>
-                            </text>
-                            <text id="18" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="701" y="1111">18</tspan>
-                            </text>
-                            <text id="31" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="999" y="1089">31</tspan>
-                            </text>
-                            <text id="71" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1297" y="1022">71</tspan>
-                            </text>
-                            <text id="135" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1575" y="915">135</tspan>
-                            </text>
-                            <text id="248" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1873" y="726">248</tspan>
-                            </text>
-                            <text id="275" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2171" y="681">275</tspan>
-                            </text>
-                            <text id="354" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2469" y="549">354</tspan>
-                            </text>
-                            <text id="495" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2767" y="313">495</tspan>
-                            </text>
-                            <text id="614" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3065" y="114">614</tspan>
-                            </text>
-                            <text id="560" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3363" y="204">560</tspan>
-                            </text>
-                            <text id="32" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3681" y="1087">32</tspan>
-                            </text>
-                            <text id="0" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="180" y="1221">0</tspan>
-                            </text>
-                            <text id="100" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="1054">100</tspan>
-                            </text>
-                            <text id="200" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="887">200</tspan>
-                            </text>
-                            <text id="300" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="720">300</tspan>
-                            </text>
-                            <text id="400" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="553">400</tspan>
-                            </text>
-                            <text id="500" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="386">500</tspan>
-                            </text>
-                            <text id="600" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="218">600</tspan>
-                            </text>
-                            <text id="700" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="98" y="51">700</tspan>
-                            </text>
-                            <text id="2004" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="363" y="1326">2004</tspan>
-                            </text>
-                            <text id="2005" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="661" y="1326">2005</tspan>
-                            </text>
-                            <text id="2006" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="959" y="1326">2006</tspan>
-                            </text>
-                            <text id="2007" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1257" y="1326">2007</tspan>
-                            </text>
-                            <text id="2008" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1555" y="1326">2008</tspan>
-                            </text>
-                            <text id="2009" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="1853" y="1326">2009</tspan>
-                            </text>
-                            <text id="2010" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2151" y="1326">2010</tspan>
-                            </text>
-                            <text id="2011" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2449" y="1326">2011</tspan>
-                            </text>
-                            <text id="2012" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="2747" y="1326">2012</tspan>
-                            </text>
-                            <text id="2013" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3045" y="1326">2013</tspan>
-                            </text>
-                            <text id="2014" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3343" y="1326">2014</tspan>
-                            </text>
-                            <text id="2015" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="normal">
-                                <tspan x="3642" y="1326">2015</tspan>
-                            </text>
-                            <g id="Group" transform="translate(33.500000, 664.500000) rotate(-90.000000) translate(-33.500000, -664.500000) translate(-65.000000, 632.000000)" font-size="53.6870912" font-family="Calibri" fill="#000000" sketch:type="MSTextLayer" font-weight="bold">
-                                <g id="Citations">
-                                    <text>
-                                        <tspan x="0" y="51">Citations</tspan>
+                <g id="citations">
+                    <g id="Page-1">
+                        <g id="Cytoscape-Citations-Jan-2004-to-Feb-2015-from-MedLine.001">
+                            <g id="Page_1-Clipped">
+                                <g id="Page_1">
+                                    <path d="M286,1019 L3862,1019 L3862,1025 L286,1025 L286,1019 L286,1019 Z M286,852 L3862,852 L3862,858 L286,858 L286,852 L286,852 Z M286,685 L3862,685 L3862,691 L286,691 L286,685 L286,685 Z M286,517 L3862,517 L3862,523 L286,523 L286,517 L286,517 Z M286,350 L3862,350 L3862,356 L286,356 L286,350 L286,350 Z M286,183 L3862,183 L3862,189 L286,189 L286,183 L286,183 Z M286,16 L3862,16 L3862,22 L286,22 L286,16 L286,16 Z" id="Shape" fill="#868686" sketch:type="MSShapeGroup"></path>
+                                    <path d="M3058,163 L3177,163 L3177,1189 L3058,1189 L3058,163 L3058,163 Z M3356,253 L3475,253 L3475,1189 L3356,1189 L3356,253 L3356,253 Z M2760,362 L2879,362 L2879,1189 L2760,1189 L2760,362 L2760,362 Z M2462,597 L2581,597 L2581,1189 L2462,1189 L2462,597 L2462,597 Z M2163,729 L2283,729 L2283,1189 L2163,1189 L2163,729 L2163,729 Z M1865,775 L1985,775 L1985,1189 L1865,1189 L1865,775 L1865,775 Z M1567,963 L1687,963 L1687,1189 L1567,1189 L1567,963 L1567,963 Z M1269,1070 L1388,1070 L1388,1189 L1269,1189 L1269,1070 L1269,1070 Z M3654,1136 L3773,1136 L3773,1189 L3654,1189 L3654,1136 L3654,1136 Z M971,1137 L1090,1137 L1090,1189 L971,1189 L971,1137 L971,1137 Z M673,1159 L792,1159 L792,1189 L673,1189 L673,1159 L673,1159 Z M375,1171 L494,1171 L494,1189 L375,1189 L375,1171 L375,1171 Z" id="Shape" fill="#4F81BD" sketch:type="MSShapeGroup"></path>
+                                    <rect id="Rectangle-path" fill="#868686" sketch:type="MSShapeGroup" x="286" y="1186" width="3576" height="6"></rect>
+                                    <path d="M289,1189 L289,1215 L283,1215 L283,1189 L289,1189 L289,1189 Z M587,1189 L587,1215 L581,1215 L581,1189 L587,1189 L587,1189 Z M885,1189 L885,1215 L879,1215 L879,1189 L885,1189 L885,1189 Z M1183,1189 L1183,1215 L1177,1215 L1177,1189 L1183,1189 L1183,1189 Z M1481,1189 L1481,1215 L1475,1215 L1475,1189 L1481,1189 L1481,1189 Z M1779,1189 L1779,1215 L1773,1215 L1773,1189 L1779,1189 L1779,1189 Z M2077,1189 L2077,1215 L2071,1215 L2071,1189 L2077,1189 L2077,1189 Z M2375,1189 L2375,1215 L2369,1215 L2369,1189 L2375,1189 L2375,1189 Z M2673,1189 L2673,1215 L2667,1215 L2667,1189 L2673,1189 L2673,1189 Z M2971,1189 L2971,1215 L2965,1215 L2965,1189 L2971,1189 L2971,1189 Z M3269,1189 L3269,1215 L3263,1215 L3263,1189 L3269,1189 L3269,1189 Z M3567,1189 L3567,1215 L3561,1215 L3561,1189 L3567,1189 L3567,1189 Z M3865,1189 L3865,1215 L3859,1215 L3859,1189 L3865,1189 L3865,1189 Z" id="Shape" fill="#868686" sketch:type="MSShapeGroup"></path>
+                                    <text id="11" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="394" y="1113">11</tspan>
+                                    </text>
+                                    <text id="18" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="692" y="1102">18</tspan>
+                                    </text>
+                                    <text id="31" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="990" y="1080">31</tspan>
+                                    </text>
+                                    <text id="71" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1288" y="1013">71</tspan>
+                                    </text>
+                                    <text id="135" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1566" y="906">135</tspan>
+                                    </text>
+                                    <text id="248" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1864" y="717">248</tspan>
+                                    </text>
+                                    <text id="275" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2162" y="672">275</tspan>
+                                    </text>
+                                    <text id="354" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2460" y="540">354</tspan>
+                                    </text>
+                                    <text id="495" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2758" y="304">495</tspan>
+                                    </text>
+                                    <text id="614" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3056" y="105">614</tspan>
+                                    </text>
+                                    <text id="560" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3354" y="195">560</tspan>
+                                    </text>
+                                    <text id="32" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3672" y="1078">32</tspan>
+                                    </text>
+                                    <text id="0" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="171" y="1212">0</tspan>
+                                    </text>
+                                    <text id="100" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="1045">100</tspan>
+                                    </text>
+                                    <text id="200" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="878">200</tspan>
+                                    </text>
+                                    <text id="300" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="711">300</tspan>
+                                    </text>
+                                    <text id="400" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="544">400</tspan>
+                                    </text>
+                                    <text id="500" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="377">500</tspan>
+                                    </text>
+                                    <text id="600" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="209">600</tspan>
+                                    </text>
+                                    <text id="700" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="89" y="42">700</tspan>
+                                    </text>
+                                    <text id="2004" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="354" y="1317">2004</tspan>
+                                    </text>
+                                    <text id="2005" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="652" y="1317">2005</tspan>
+                                    </text>
+                                    <text id="2006" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="950" y="1317">2006</tspan>
+                                    </text>
+                                    <text id="2007" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1248" y="1317">2007</tspan>
+                                    </text>
+                                    <text id="2008" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1546" y="1317">2008</tspan>
+                                    </text>
+                                    <text id="2009" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="1844" y="1317">2009</tspan>
+                                    </text>
+                                    <text id="2010" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2142" y="1317">2010</tspan>
+                                    </text>
+                                    <text id="2011" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2440" y="1317">2011</tspan>
+                                    </text>
+                                    <text id="2012" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="2738" y="1317">2012</tspan>
+                                    </text>
+                                    <text id="2013" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3036" y="1317">2013</tspan>
+                                    </text>
+                                    <text id="2014" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3334" y="1317">2014</tspan>
+                                    </text>
+                                    <text id="2015" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="normal">
+                                        <tspan x="3633" y="1317">2015</tspan>
+                                    </text>
+                                    <g id="Group" transform="translate(28.000000, 673.000000) rotate(-90.000000) translate(-28.000000, -673.000000) translate(-53.000000, 646.000000)" font-size="43.9804651" font-family="Calibri" fill="#000000" sketch:type="MSTextLayer" font-weight="bold">
+                                        <g id="Citations">
+                                            <text>
+                                                <tspan x="0" y="42">Citations</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <text id="Year" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="43.9804651" font-weight="bold">
+                                        <tspan x="1999" y="1439">Year</tspan>
                                     </text>
                                 </g>
                             </g>
-                            <text id="Year" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="53.6870912" font-weight="bold">
-                                <tspan x="2008" y="1448">Year</tspan>
-                            </text>
                         </g>
                     </g>
                 </g>

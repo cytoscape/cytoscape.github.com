@@ -1,131 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="2042px" height="1467px" viewBox="0 0 2042 1467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="1356px" height="1111px" viewBox="0 0 1356 1111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>Web Site Visits Jan 2012 to Feb 2015 by Country.001</title>
+    <title>web_site_visits_by_country</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Web-Site-Visits-Jan-2012-to-Feb-2015-by-Country.001" sketch:type="MSLayerGroup">
-            <g id="Page_1-Clipped">
-                <g id="Page_1">
-                    <rect id="Rectangle-path" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="2042" height="1467"></rect>
-                    <path d="M1021,842 L1511,956 L1516,931 L1520,905 L1523,880 L1524,855 L1524,830 L1523,806 L1521,781 L1517,757 L1512,733 L1506,709 L1499,686 L1491,663 L1482,641 L1472,619 L1461,598 L1448,577 L1421,537 L1390,500 L1355,466 L1317,435 L1276,408 L1255,396 L1232,385 L1209,375 L1185,366 L1161,359 L1136,352 L1108,347 L1079,343 L1050,340 L1021,339 L1021,842 L1021,842 Z" id="Shape" fill="#4572A7" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L1409,1162 L1427,1139 L1443,1115 L1458,1091 L1472,1065 L1484,1039 L1494,1012 L1503,984 L1511,956 L1021,842 L1021,842 Z" id="Shape" fill="#AA4643" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L1259,1285 L1280,1273 L1301,1260 L1340,1231 L1376,1198 L1409,1162 L1021,842 L1021,842 Z" id="Shape" fill="#89A54E" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L1087,1340 L1109,1337 L1132,1332 L1175,1320 L1218,1304 L1259,1285 L1021,842 L1021,842 Z" id="Shape" fill="#71588F" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L920,1334 L961,1341 L1003,1344 L1045,1344 L1087,1340 L1021,842 L1021,842 Z" id="Shape" fill="#4198AF" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L778,1282 L812,1299 L847,1313 L883,1325 L920,1334 L1021,842 L1021,842 Z" id="Shape" fill="#DB843D" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L680,1211 L703,1231 L727,1250 L752,1266 L778,1282 L1021,842 L1021,842 Z" id="Shape" fill="#93A9CF" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L610,1131 L643,1173 L661,1192 L680,1211 L1021,842 L1021,842 Z" id="Shape" fill="#D19392" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L562,1047 L572,1069 L584,1090 L597,1111 L610,1131 L1021,842 L1021,842 Z" id="Shape" fill="#B9CD96" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L539,986 L550,1017 L562,1047 L1021,842 L1021,842 Z" id="Shape" fill="#A99BBD" sketch:type="MSShapeGroup"></path>
-                    <path d="M1021,842 L1021,339 L995,340 L970,342 L945,345 L920,349 L896,355 L872,362 L848,370 L826,379 L803,389 L782,400 L761,412 L740,425 L701,454 L666,486 L633,522 L604,561 L591,581 L579,602 L568,624 L558,646 L549,669 L541,692 L534,716 L528,741 L524,765 L521,791 L519,816 L518,842 L519,878 L524,914 L530,950 L539,986 L1021,842 L1021,842 Z" id="Shape" fill="#91C3D5" sketch:type="MSShapeGroup"></path>
-                    <path d="M645,1175 L551,1269 L530,1269 L530,1266 L549,1266 L548,1266 L642,1172 L645,1175 L645,1175 Z M1414,528 L1504,434 L1523,434 L1523,437 L1505,437 L1507,437 L1417,531 L1414,528 L1414,528 Z M729,1250 L682,1348 L680,1349 L661,1349 L661,1346 L680,1346 L679,1347 L726,1249 L729,1250 L729,1250 Z M1472,1064 L1568,1109 L1567,1109 L1586,1109 L1586,1112 L1567,1112 L1471,1067 L1472,1064 L1472,1064 Z M585,1092 L500,1140 L481,1140 L481,1137 L499,1137 L584,1089 L585,1092 L585,1092 Z M848,1314 L803,1392 L801,1393 L782,1393 L782,1390 L801,1390 L800,1391 L845,1313 L848,1314 L848,1314 Z M618,543 L531,498 L513,498 L513,495 L532,495 L619,540 L618,543 L618,543 Z M1177,1320 L1195,1383 L1193,1382 L1211,1382 L1211,1385 L1193,1385 L1192,1384 L1174,1321 L1177,1320 L1177,1320 Z M1341,1230 L1371,1269 L1369,1268 L1387,1268 L1387,1271 L1369,1271 L1368,1270 L1338,1231 L1341,1230 L1341,1230 Z" id="Shape" fill="#000000" sketch:type="MSShapeGroup"></path>
-                    <text id="United" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1531" y="436">United</tspan>
-                    </text>
-                    <text id="States" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1652" y="436">States</tspan>
-                    </text>
-                    <text id="29%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1607" y="486">29%</tspan>
-                    </text>
-                    <text id="India" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1593" y="1112">India</tspan>
-                    </text>
-                    <text id="7%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1609" y="1161">7%</tspan>
-                    </text>
-                    <text id="China" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1395" y="1270">China</tspan>
-                    </text>
-                    <text id="6%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1417" y="1320">6%</tspan>
-                    </text>
-                    <text id="United" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1219" y="1385">United</tspan>
-                    </text>
-                    <text id="Kingdom" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1340" y="1385">Kingdom</tspan>
-                    </text>
-                    <text id="6%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="1328" y="1435">6%</tspan>
-                    </text>
-                    <text id="Germany" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="837" y="1399">Germany</tspan>
-                    </text>
-                    <text id="5%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="888" y="1449">5%</tspan>
-                    </text>
-                    <text id="Japan" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="683" y="1399">Japan</tspan>
-                    </text>
-                    <text id="5%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="705" y="1449">5%</tspan>
-                    </text>
-                    <text id="France" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="546" y="1348">France</tspan>
-                    </text>
-                    <text id="4%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="576" y="1398">4%</tspan>
-                    </text>
-                    <text id="Canada" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="402" y="1269">Canada</tspan>
-                    </text>
-                    <text id="3%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="439" y="1319">3%</tspan>
-                    </text>
-                    <text id="Italy" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="406" y="1139">Italy</tspan>
-                    </text>
-                    <text id="3%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="416" y="1189">3%</tspan>
-                    </text>
-                    <text id="Netherlands" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="322" y="1009">Netherlands</tspan>
-                    </text>
-                    <text id="2%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="399" y="1059">2%</tspan>
-                    </text>
-                    <text id="Other" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="425" y="448">Other</tspan>
-                    </text>
-                    <text id="30%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="33.5872" font-weight="normal">
-                        <tspan x="438" y="498">30%</tspan>
-                    </text>
-                    <text id="Web" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="568" y="102">Web</tspan>
-                    </text>
-                    <text id="Site" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="725" y="102">Site</tspan>
-                    </text>
-                    <text id="Sessions" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="856" y="102">Sessions</tspan>
-                    </text>
-                    <text id="(1,071,150)" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="1129" y="102">(1,071,150)</tspan>
-                    </text>
-                    <text id="(1/" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="555" y="191">(1/</tspan>
-                    </text>
-                    <text id="1/" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="647" y="191">1/</tspan>
-                    </text>
-                    <text id="2012" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="716" y="191">2012</tspan>
-                    </text>
-                    <text id="through" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="881" y="191">through</tspan>
-                    </text>
-                    <text id="2/" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="1140" y="191">2/</tspan>
-                    </text>
-                    <text id="22/" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="1209" y="191">22/</tspan>
-                    </text>
-                    <text id="2015)" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="60.6208" font-weight="bold">
-                        <tspan x="1316" y="191">2015)</tspan>
-                    </text>
+        <g id="web_site_visits_by_country" sketch:type="MSLayerGroup" transform="translate(-2.000000, 0.000000)">
+            <g id="Page-1">
+                <g id="Web-Site-Visits-Jan-2012-to-Feb-2015-by-Country.001">
+                    <g id="Page_1-Clipped">
+                        <g id="Page_1">
+                            <path d="M699,503 L1189,617 L1194,592 L1198,566 L1201,541 L1202,516 L1202,491 L1201,467 L1199,442 L1195,418 L1190,394 L1184,370 L1177,347 L1169,324 L1160,302 L1150,280 L1139,259 L1126,238 L1099,198 L1068,161 L1033,127 L995,96 L954,69 L933,57 L910,46 L887,36 L863,27 L839,20 L814,13 L786,8 L757,4 L728,1 L699,0 L699,503 L699,503 Z" id="Shape" fill="#4572A7" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L1087,823 L1105,800 L1121,776 L1136,752 L1150,726 L1162,700 L1172,673 L1181,645 L1189,617 L699,503 L699,503 Z" id="Shape" fill="#AA4643" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L937,946 L958,934 L979,921 L1018,892 L1054,859 L1087,823 L699,503 L699,503 Z" id="Shape" fill="#89A54E" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L765,1001 L787,998 L810,993 L853,981 L896,965 L937,946 L699,503 L699,503 Z" id="Shape" fill="#71588F" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L598,995 L639,1002 L681,1005 L723,1005 L765,1001 L699,503 L699,503 Z" id="Shape" fill="#4198AF" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L456,943 L490,960 L525,974 L561,986 L598,995 L699,503 L699,503 Z" id="Shape" fill="#DB843D" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L358,872 L381,892 L405,911 L430,927 L456,943 L699,503 L699,503 Z" id="Shape" fill="#93A9CF" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L288,792 L321,834 L339,853 L358,872 L699,503 L699,503 Z" id="Shape" fill="#D19392" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L240,708 L250,730 L262,751 L275,772 L288,792 L699,503 L699,503 Z" id="Shape" fill="#B9CD96" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L217,647 L228,678 L240,708 L699,503 L699,503 Z" id="Shape" fill="#A99BBD" sketch:type="MSShapeGroup"></path>
+                            <path d="M699,503 L699,0 L673,1 L648,3 L623,6 L598,10 L574,16 L550,23 L526,31 L504,40 L481,50 L460,61 L439,73 L418,86 L379,115 L344,147 L311,183 L282,222 L269,242 L257,263 L246,285 L236,307 L227,330 L219,353 L212,377 L206,402 L202,426 L199,452 L197,477 L196,503 L197,539 L202,575 L208,611 L217,647 L699,503 L699,503 Z" id="Shape" fill="#91C3D5" sketch:type="MSShapeGroup"></path>
+                            <path d="M323,836 L229,930 L208,930 L208,927 L227,927 L226,927 L320,833 L323,836 L323,836 Z M1092,189 L1182,95 L1201,95 L1201,98 L1183,98 L1185,98 L1095,192 L1092,189 L1092,189 Z M407,911 L360,1009 L358,1010 L339,1010 L339,1007 L358,1007 L357,1008 L404,910 L407,911 L407,911 Z M1150,725 L1246,770 L1245,770 L1264,770 L1264,773 L1245,773 L1149,728 L1150,725 L1150,725 Z M263,753 L178,801 L159,801 L159,798 L177,798 L262,750 L263,753 L263,753 Z M526,975 L481,1053 L479,1054 L460,1054 L460,1051 L479,1051 L478,1052 L523,974 L526,975 L526,975 Z M296,204 L209,159 L191,159 L191,156 L210,156 L297,201 L296,204 L296,204 Z M855,981 L873,1044 L871,1043 L889,1043 L889,1046 L871,1046 L870,1045 L852,982 L855,981 L855,981 Z M1019,891 L1049,930 L1047,929 L1065,929 L1065,932 L1047,932 L1046,931 L1016,892 L1019,891 L1019,891 Z" id="Shape" fill="#000000" sketch:type="MSShapeGroup"></path>
+                            <text id="United-States" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1209" y="97">United States</tspan>
+                            </text>
+                            <text id="29%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1285" y="147">29%</tspan>
+                            </text>
+                            <text id="India" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1271" y="773">India</tspan>
+                            </text>
+                            <text id="7%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1287" y="822">7%</tspan>
+                            </text>
+                            <text id="China" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1073" y="931">China</tspan>
+                            </text>
+                            <text id="6%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1095" y="981">6%</tspan>
+                            </text>
+                            <text id="United" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="897" y="1046">United</tspan>
+                            </text>
+                            <text id="Kingdom" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1018" y="1046">Kingdom</tspan>
+                            </text>
+                            <text id="6%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="1006" y="1096">6%</tspan>
+                            </text>
+                            <text id="Germany" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="515" y="1060">Germany</tspan>
+                            </text>
+                            <text id="5%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="566" y="1110">5%</tspan>
+                            </text>
+                            <text id="Japan" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="361" y="1060">Japan</tspan>
+                            </text>
+                            <text id="5%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="383" y="1110">5%</tspan>
+                            </text>
+                            <text id="France" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="224" y="1009">France</tspan>
+                            </text>
+                            <text id="4%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="254" y="1059">4%</tspan>
+                            </text>
+                            <text id="Canada" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="80" y="930">Canada</tspan>
+                            </text>
+                            <text id="3%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="117" y="980">3%</tspan>
+                            </text>
+                            <text id="Italy" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="84" y="800">Italy</tspan>
+                            </text>
+                            <text id="3%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="94" y="850">3%</tspan>
+                            </text>
+                            <text id="Netherlands" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="0" y="670">Netherlands</tspan>
+                            </text>
+                            <text id="2%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="77" y="720">2%</tspan>
+                            </text>
+                            <text id="Other" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="103" y="109">Other</tspan>
+                            </text>
+                            <text id="30%" fill="#000000" sketch:type="MSTextLayer" font-family="Calibri" font-size="27.5146342" font-weight="normal">
+                                <tspan x="116" y="159">30%</tspan>
+                            </text>
+                        </g>
+                    </g>
                 </g>
             </g>
         </g>
