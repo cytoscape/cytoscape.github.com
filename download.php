@@ -155,6 +155,15 @@
 	            <img src="http://www.ej-technologies.com/images/banners/install4j_large.png"/>
 	        </a>
         </div>
+
+        <div class="row">
+            <h4>
+                Cytoscape is supported by JetBrains through their open source licencing program:
+            </h4>
+            <a href="https://www.jetbrains.com/">
+                <img src="https://www.jetbrains.com/company/docs/logo_jetbrains.png" />
+            </a>
+        </div>
     </div>
 </div>
 
