@@ -426,6 +426,20 @@
                     On Fedora 21, the Cytoscape splash screen may appear blank on startup. This is a known issue, and does not affect the operation of the Cytoscape application otherwise.
                 </p>
             </div>
+            <div class="col-md-4 panel">
+                <h3>Apps Won’t Install or Update Properly</h3>
+
+                <p>
+                    Beginning with Cytoscape 3.2.1, apps may not install or update properly on configurations using network-mounted 
+                    user home directories or apps symbolically linked from the app installed directory. To revert to the Cytoscape 
+                    3.2 behavior, add the following line to the <strong>org.apache.felix.fileinstall-deploy.cfg</strong> file 
+                    located in <strong>framework/etc</strong> under your Cytoscape installation directory - NOT CytoscapeConfiguration:
+
+                </p>
+                <p>
+                    <strong>felix.fileinstall.disableNio2 = true</strong>
+                </p>
+            </div>
         </div>
         </div>
     </div>
