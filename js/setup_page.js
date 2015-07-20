@@ -13,6 +13,16 @@ $(document).ready(function () {
     var CYTOSCAPE_LATEST_VERSION = '3.2.1';
     $('.cy-latest-version').append(CYTOSCAPE_LATEST_VERSION);
 
+    (function() {
+        var cx = '010752552860291056652:n_a3iwexlj8';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
 
     // For drop down menu
     $('.dropdown-toggle').dropdown();
@@ -73,17 +83,8 @@ $(document).ready(function () {
             '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
             '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
 
-            '<li>' +
-            '<form class="navbar-form search-form" action=\"http://www.google.com/search\">' +
-            '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
-            '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
-            '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
-            '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
-            '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
-            '<input placeholder=\"Cytoscape.org\" class=\"form-control search-form\" style=\"width: 60%;\" type=\"text\" name=\"q\">' +
-            '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
-            '</form>' +
-            '</li>' +
+            '<li><gcse:searchbox-only newWindow="true"></gcse:searchbox-only></li>' +
+
             '</ul>' +
 
             '</div></div></nav>';
@@ -107,18 +108,7 @@ $(document).ready(function () {
         'Cytoscape Consortium</a></p>' +
 
         '</div><div class="col-xs-12 col-md-4">' +
-
-        '<form class="navbar-form navbar-left search-form" action=\"http://www.google.com/search\">' +
-        '<input type=\"hidden\" name=\"hl\" value=\"en\">' +
-        '<input type=\"hidden\" name=\"hq\" value=\"inurl:www.cytoscape.org/\">' +
-        '<input type=\"hidden\" name=\"ie\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"oe\" value=\"UTF-8\">' +
-        '<input type=\"hidden\" name=\"filter\" value=\"0\">' +
-        '<input placeholder="Cytoscape.org" class=\"form-control\" style=\"width: 60%;\"' +
-        'type=\"text\" name=\"q\">' +
-        '<button class="btn btn-default" type=\"submit\" name=\"btnG\">Search</button>' +
-        '</form>' +
-
+        '<gcse:searchbox-only newWindow="true"></gcse:searchbox-only>' +
         '</div></div>' +
         '<script>' +
         '(function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){' +

@@ -356,3 +356,11 @@ footer {
     height: 600px;
     background-color: #fafafa;
 }
+
+/* For Custom Search */
+
+#___gcse_0 {
+    width: 230px !important;
+    border-color: #FFFFFF !important;
+    height: 30px!important;
+}
