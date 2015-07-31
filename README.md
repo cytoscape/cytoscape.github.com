@@ -11,6 +11,6 @@ This is a code repository for [cytoscape.org](http://www.cytoscape.org/ "Cytosca
    * ./deploy-test.sh
    * This server is maintained by UCSD.  You need to ask them to deploy to this server.
  * If it looks OK, deploy to the production web server:
-   * ./deploy.sh
-   * You need sourceforge account to deploy.
+   * ./deploy-vine1.sh
+   * You need credentials on 169.228.38.222 to deploy.
  * Push your changes to *develop* branch.
