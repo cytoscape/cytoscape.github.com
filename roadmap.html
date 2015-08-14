@@ -34,388 +34,393 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
- <p>Cytoscape was initially released in 2002, and has undergone numerous 
-development sprints. The most recent major sprint ended in 2014 with the 
-release of Cytoscape v3, which refactored major internal data models and 
-greatly improved support for third party plugin applications (via the 
-App Store, semantic versioning disciplines, published APIs, and code 
-management via OSGi).</p>
+                <p>Cytoscape was initially released in 2002, and has undergone numerous
+                    development sprints. The most recent major sprint ended in 2014 with the
+                    release of Cytoscape v3, which refactored major internal data models and
+                    greatly improved support for third party plugin applications (via the
+                    App Store, semantic versioning disciplines, published APIs, and code
+                    management via OSGi).</p>
 
-<p>Since v3, we have focused on addressing 
-outstanding bugs and upgrading a number of user-facing features, 
-including visual styles (VizMapper), fast node filtering, network 
-capacity, and overall speed and UI consistency. The Cytoscape app 
-developer community has upgraded a number of v2 plugins into v3 apps, 
-and has contributed a steady stream of new apps 
-(apps.cytoscape.org).</p>
+                <p>Since v3, we have focused on addressing
+                    outstanding bugs and upgrading a number of user-facing features,
+                    including visual styles (VizMapper), fast node filtering, network
+                    capacity, and overall speed and UI consistency. The Cytoscape app
+                    developer community has upgraded a number of v2 plugins into v3 apps,
+                    and has contributed a steady stream of new apps
+                    (apps.cytoscape.org).</p>
 
-<p>As of early 2015, our efforts have been 
-rewarded, as Cytoscape has become more popular than ever – 
-<a href="stat.html">14,000 downloads per month 
-worldwide</a>.</p>
+                <p>As of early 2015, our efforts have been
+                    rewarded, as Cytoscape has become more popular than ever –
+                    <a href="stat.html">14,000 downloads per month
+                        worldwide</a>.</p>
 
-<p>This page explains our roadmap for future 
-odeliveries and activities. Feel free to contribute to this discussion 
-via e-mail at <a href="mailto:cytoscape-discuss@googlegroups.com">cytoscape-discuss@googlegroups.com</a>.</p> <p>Cytoscape is going down a number of roads 
-simultaneously:</p> 
+                <p>This page explains our roadmap for future
+                    odeliveries and activities. Feel free to contribute to this discussion
+                    via e-mail at <a
+                            href="mailto:cytoscape-discuss@googlegroups.com">cytoscape-discuss@googlegroups.com</a>.</p>
 
-<ul>
-<li>Cytoscape Desktop</li>
-<li>Cytoscape Cyberinfrastructure</li>
-<li>Cytoscape Community Outreach</li>
-</ul>
+                <p>Cytoscape is going down a number of roads
+                    simultaneously:</p>
 
-<p>For now, this page describes the Cytoscape Desktop (aka Cytoscape) roadmap.</p>
+                <ul>
+                    <li>Cytoscape Desktop</li>
+                    <li>Cytoscape Cyberinfrastructure</li>
+                    <li>Cytoscape Community Outreach</li>
+                </ul>
 
-<h2>Release History</h2>
+                <p>For now, this page describes the Cytoscape Desktop (aka Cytoscape) roadmap.</p>
 
-<table border=1 cellspacing=0
- cellpadding=0 style='border-collapse:collapse;border:none;'>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>Version</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>Release Date</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>12/12/2005</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>06/23/2006</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/19/2006</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/30/2006</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.4.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>01/16/2007</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.4.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/25/2007</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/23/2007</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/31/2007</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/01/2008</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/02/2008</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>09/17/2008</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/24/2009</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.3</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>06/25/2009</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.7.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>03/23/2010</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>11/30/2010</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/11/2011</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/18/2011</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.3</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>05/04/2012</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/04/2013</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/22/2013</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/30/2013</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/13/2014</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.1.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>05/27/2014</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.2</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>11/07/2014</td>
-</tr>
-<tr>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.2.1</td>
-<td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/11/2015</td>
-</tr>
-</table>
+                <h2>Release History</h2>
 
-<h2>Cytoscape Core and Core Apps</h2>
+                <table border=1 cellspacing=0
+                       cellpadding=0 style='border-collapse:collapse;border:none;'>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>Version</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>Release Date</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>12/12/2005</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>06/23/2006</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/19/2006</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.3.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/30/2006</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.4.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>01/16/2007</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.4.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/25/2007</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/23/2007</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/31/2007</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.5.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/01/2008</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/02/2008</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>09/17/2008</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/24/2009</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.6.3</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>06/25/2009</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.7.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>03/23/2010</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>11/30/2010</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/11/2011</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>08/18/2011</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>2.8.3</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>05/04/2012</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/04/2013</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>04/22/2013</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.0.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>07/30/2013</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/13/2014</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.1.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>05/27/2014</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.2</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>11/07/2014</td>
+                    </tr>
+                    <tr>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>3.2.1</td>
+                        <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>02/11/2015</td>
+                    </tr>
+                </table>
 
-<p>We have viewed Cytoscape as
-consisting of the Cytoscape Core as augmented by the Cytoscape Apps. As of v3.3,
-we have created a middle ground: the Cytoscape Core Apps. The Core is the code
-that organizes, displays, reads, and writes networks but is agnostic as to
-network meaning or use – the Core does not contain biology-related
-functionality. Cytoscape Core Apps are installable modules that perform
-non-Core functions but are still integral to most usage (e.g., network biology)
-of Cytoscape. </p>
+                <h2>Cytoscape Core and Core Apps</h2>
 
-
-    <div class="container centering">
-        <div class="row">
-<img src="images/roadmap/core-picture.png">
-        </div>
-        <h4>Cytoscape Desktop</h4>
-    </div>
+                <p>We have viewed Cytoscape as
+                    consisting of the Cytoscape Core as augmented by the Cytoscape Apps. As of v3.3,
+                    we have created a middle ground: the Cytoscape Core Apps. The Core is the code
+                    that organizes, displays, reads, and writes networks but is agnostic as to
+                    network meaning or use – the Core does not contain biology-related
+                    functionality. Cytoscape Core Apps are installable modules that perform
+                    non-Core functions but are still integral to most usage (e.g., network biology)
+                    of Cytoscape. </p>
 
 
-<p>To date, a Cytoscape release has consisted of the Core +
-Core Apps. Beginning in v3.3, the Core Apps are available individually in the
-App Store, though they will all be installed with the Core when Cytoscape is
-installed. However, unlike previous Cytoscape versions, Core Apps are
-upgradable without releasing all of Cytoscape. (For example, bugs can be fixed
-or features can be added to the Network Merge at any time.) This enables the
-Cytoscape team to upgrade specific features much more quickly than in the past.
-Additionally, because the Core is much smaller, too, Cytoscape Desktop itself
-can be released more frequently, too.</p>
+                <div class="container centering">
+                    <div class="row">
+                        <img src="images/roadmap/core-picture.png">
+                    </div>
+                    <h4>Cytoscape Desktop</h4>
+                </div>
 
-<h2>Policies and Practices</h2>
 
-<p>Consequently, we have the following policies, subject to periodic change:</p>
+                <p>To date, a Cytoscape release has consisted of the Core +
+                    Core Apps. Beginning in v3.3, the Core Apps are available individually in the
+                    App Store, though they will all be installed with the Core when Cytoscape is
+                    installed. However, unlike previous Cytoscape versions, Core Apps are
+                    upgradable without releasing all of Cytoscape. (For example, bugs can be fixed
+                    or features can be added to the Network Merge at any time.) This enables the
+                    Cytoscape team to upgrade specific features much more quickly than in the past.
+                    Additionally, because the Core is much smaller, too, Cytoscape Desktop itself
+                    can be released more frequently, too.</p>
 
-<p style='margin-left:.5in'><b><u>P1:</u></b> 
-Past releases of Cytoscape Desktop have been made
-roughly every 12 months, with minor releases for bug fixes and minor features
-occurring every 3-6 months. Beginning with v3.3, a new version of Cytoscape
-Desktop is released every six months (~April 15 and ~November 15), with updates
-of Core Apps to the App Store on an as-needed basis. </p>
+                <h2>Policies and Practices</h2>
 
-<p style='margin-left:.5in'><b><u>P2:</u></b> A high risk Core feature (which could substantially
-affect overall usability or which are impossible to definitively verify) must
-be built into the Core eight weeks before the Core is released,
-or the feature will be carried over to the next Core release. </p>
+                <p>Consequently, we have the following policies, subject to periodic change:</p>
 
-<p style='margin-left:.5in'><b><u>P3:</u></b> Other features must be built into the Core five weeks
-before Core release. </p>
+                <p style='margin-left:.5in'><b><u>P1:</u></b>
+                    Past releases of Cytoscape Desktop have been made
+                    roughly every 12 months, with minor releases for bug fixes and minor features
+                    occurring every 3-6 months. Beginning with v3.3, a new version of Cytoscape
+                    Desktop is released every six months (~April 15 and ~November 15), with updates
+                    of Core Apps to the App Store on an as-needed basis. </p>
 
-<p style='margin-left:.5in'><b><u>P4:</u></b> Bug fixes may be performed (with proper review) up to
-ten days before Core release. </p>
+                <p style='margin-left:.5in'><b><u>P2:</u></b> A high risk Core feature (which could substantially
+                    affect overall usability or which are impossible to definitively verify) must
+                    be built into the Core eight weeks before the Core is released,
+                    or the feature will be carried over to the next Core release. </p>
 
-<p style='margin-left:.5in'><b><u>P5:</u></b> An external API must be frozen, documented, and with
-preliminary implementations eight weeks before the Core is released, or the API
-will be carried over to the next Core release. </p>
+                <p style='margin-left:.5in'><b><u>P3:</u></b> Other features must be built into the Core five weeks
+                    before Core release. </p>
 
-<p style='margin-left:.5in'><b><u>P6:</u></b> Milestone builds are created and made available to the
-user and app developer community eight weeks, five weeks, and ten days before a
-Core release. If bugs need to be fixed, features need to be withdrawn before
-the release, or developers see a good reason, additional milestone builds are
-created.</p>
+                <p style='margin-left:.5in'><b><u>P4:</u></b> Bug fixes may be performed (with proper review) up to
+                    ten days before Core release. </p>
 
-<p style='margin-left:.5in'><b><u>P7:</u></b> Milestone builds (including nightly builds) are made
-available via a developer Download page on the Cytoscape web site.</p>
+                <p style='margin-left:.5in'><b><u>P5:</u></b> An external API must be frozen, documented, and with
+                    preliminary implementations eight weeks before the Core is released, or the API
+                    will be carried over to the next Core release. </p>
 
-<p style='margin-left:.5in'><b><u>P8:</u></b> Emerging API definitions (or references to definitions)
-are posted on the developer Download page, too.</p>
+                <p style='margin-left:.5in'><b><u>P6:</u></b> Milestone builds are created and made available to the
+                    user and app developer community eight weeks, five weeks, and ten days before a
+                    Core release. If bugs need to be fixed, features need to be withdrawn before
+                    the release, or developers see a good reason, additional milestone builds are
+                    created.</p>
 
-<p style='margin-left:.5in'><b><u>P9:</u></b> A preliminary feature list is published five months
-prior to a Core release, and is updated periodically until ten days before a
-Core release, at which time it is frozen.</p>
+                <p style='margin-left:.5in'><b><u>P7:</u></b> Milestone builds (including nightly builds) are made
+                    available via a developer Download page on the Cytoscape web site.</p>
 
-<p style='margin-left:.5in'><b><u>P10:</u></b> Notably, Cytoscape has 
-expanded beyond its role as a desktop application by also exposing 
-Cytoscape functionality to external control via automation features 
-(also known as Cytoscape as a Service). Feature and workflow testing 
-is performed to a large degree through external scripting (e.g., 
-PyUnit tests driven by Python). </p>
+                <p style='margin-left:.5in'><b><u>P8:</u></b> Emerging API definitions (or references to definitions)
+                    are posted on the developer Download page, too.</p>
 
-<h2>Key Workflows</h2>
+                <p style='margin-left:.5in'><b><u>P9:</u></b> A preliminary feature list is published five months
+                    prior to a Core release, and is updated periodically until ten days before a
+                    Core release, at which time it is frozen.</p>
 
-<p>A top priority for Cytoscape
-development is to enable efficient execution of new and existing key workflows,
-including:</p>
+                <p style='margin-left:.5in'><b><u>P10:</u></b> Notably, Cytoscape has
+                    expanded beyond its role as a desktop application by also exposing
+                    Cytoscape functionality to external control via automation features
+                    (also known as Cytoscape as a Service). Feature and workflow testing
+                    is performed to a large degree through external scripting (e.g.,
+                    PyUnit tests driven by Python). </p>
 
-<ul>
-<li>Cytoscape Main (identify enriched functions/process)</li>
-<li>Network analysis of mass spec data</li>
-<li>Functional enrichment</li>
-<li>Pathway analysis of gene expression data</li>
-</ul>
+                <h2>Key Workflows</h2>
 
-<p>Functionality that implements the Core Apps feature will be
-used to enable user-driven customization of Cytoscape according to use themes.
-For example, a theme might be defined as the execution of a key workflow, and
-the customization would be the installation of all App Store apps required for
-the workflow.</p>
+                <p>A top priority for Cytoscape
+                    development is to enable efficient execution of new and existing key workflows,
+                    including:</p>
 
-<h2>Themes and Features</h2>
+                <ul>
+                    <li>Cytoscape Main (identify enriched functions/process)</li>
+                    <li>Network analysis of mass spec data</li>
+                    <li>Functional enrichment</li>
+                    <li>Pathway analysis of gene expression data</li>
+                </ul>
 
-<table border=1 cellspacing=0
- cellpadding=0 style='border-collapse:collapse;border:none;'>
- <tr>
-  <td width=76 valign=top style='width:56.7pt;border:solid #7BA0CD 1.0pt;
+                <p>Functionality that implements the Core Apps feature will be
+                    used to enable user-driven customization of Cytoscape according to use themes.
+                    For example, a theme might be defined as the execution of a key workflow, and
+                    the customization would be the installation of all App Store apps required for
+                    the workflow.</p>
+
+                <h2>Themes and Features</h2>
+
+                <table border=1 cellspacing=0
+                       cellpadding=0 style='border-collapse:collapse;border:none;'>
+                    <tr>
+                        <td width=76 valign=top style='width:56.7pt;border:solid #7BA0CD 1.0pt;
   border-right:none;background:#4F81BD;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   115%;page-break-after:avoid;'><b><span style='color:white;'>Release</span></b></p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border-top:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=78 valign=top style='width:58.5pt;border-top:solid #7BA0CD 1.0pt;
   border-left:
   none;border-bottom:solid #7BA0CD 1.0pt;border-right:none;background:#4F81BD;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   115%;page-break-after:avoid;'><b><span style='color:white;'
-  >Date</span></b></p>
-  </td>
-  <td width=178 valign=top style='width:1.85in;border-top:solid #7BA0CD 1.0pt;
+                                    >Date</span></b></p>
+                        </td>
+                        <td width=178 valign=top style='width:1.85in;border-top:solid #7BA0CD 1.0pt;
   border-left:
   none;border-bottom:solid #7BA0CD 1.0pt;
   border-right:none;background:#4F81BD;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   115%;page-break-after:avoid;'><b><span style='color:white;
   '>Themes</span></b></p>
-  </td>
-  <td width=188 valign=top style='width:141.3pt;border:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=188 valign=top style='width:141.3pt;border:solid #7BA0CD 1.0pt;
   ;border-left:none; background:#4F81BD;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   115%;page-break-after:avoid;'><b><span style='color:white;'>Features</span></b></p>
-  </td>
- </tr>
- 
- <tr>
-  <td width=76 valign=top style='width:56.7pt;border-top:none;border-left:solid #7BA0CD 1.0pt;
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=76 valign=top style='width:56.7pt;border-top:none;border-left:solid #7BA0CD 1.0pt;
   border-bottom:
   solid #7BA0CD 1.0pt;border-right:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;page-break-after:avoid;mso-yfti-cnfc:64'>3.3</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border:none;border-bottom:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=78 valign=top style='width:58.5pt;border:none;border-bottom:solid #7BA0CD 1.0pt;
   background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;page-break-after:avoid;'>Nov ’15</p>
-  </td>
-  <td width=178 valign=top style='width:1.85in;border:none;border-bottom:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=178 valign=top style='width:1.85in;border:none;border-bottom:solid #7BA0CD 1.0pt;
   background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
-  <ul>
-  <li style='margin-left:-0.25in'>High frequency improvements</li>
-  <li style='margin-left:-0.25in'>Automation</li>
-  <li style='margin-left:-0.25in'>Shareability</li>
-  <li style='margin-left:-0.25in'>Customizability</li>
-  <li style='margin-left:-0.25in'>Consistent operation/appearance</li>
-  <li style='margin-left:-0.25in'>Core workflow fidelity</li>
-</ul>
-  </td>
-  <td width=188 valign=top style='width:141.3pt;border-top:none;border-left:
+                            <ul>
+                                <li style='margin-left:-0.25in'>High frequency improvements</li>
+                                <li style='margin-left:-0.25in'>Automation</li>
+                                <li style='margin-left:-0.25in'>Shareability</li>
+                                <li style='margin-left:-0.25in'>Customizability</li>
+                                <li style='margin-left:-0.25in'>Consistent operation/appearance</li>
+                                <li style='margin-left:-0.25in'>Core workflow fidelity</li>
+                            </ul>
+                        </td>
+                        <td width=188 valign=top style='width:141.3pt;border-top:none;border-left:
   none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
   background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
-  <ul>
-  <li style='margin-left:-0.25in'>App bundles (both user and system)</li>
-  <li style='margin-left:-0.25in'>NDEx integration</li>
-  <li style='margin-left:-0.25in'>Network panel facelift</li>
-  <li style='margin-left:-0.25in'>Improved default views</li>
-  <li style='margin-left:-0.25in'>Unified network/data import</li>
-  </ul>
-  </td>
- </tr>
- 
-<tr>
-  <td width=76 valign=top style='width:56.7pt;border-top:none;border-left:solid #7BA0CD 1.0pt;
+                            <ul>
+                                <li style='margin-left:-0.25in'>App bundles (both user and system)</li>
+                                <li style='margin-left:-0.25in'>NDEx integration</li>
+                                <li style='margin-left:-0.25in'>Network panel facelift</li>
+                                <li style='margin-left:-0.25in'>Improved default views</li>
+                                <li style='margin-left:-0.25in'>Unified network/data import</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=76 valign=top style='width:56.7pt;border-top:none;border-left:solid #7BA0CD 1.0pt;
   border-bottom:
   solid #7BA0CD 1.0pt;border-right:none;background:#FFFFFF;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;page-break-after:avoid;mso-yfti-cnfc:64'>3.4</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border:none;border-bottom:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=78 valign=top style='width:58.5pt;border:none;border-bottom:solid #7BA0CD 1.0pt;
   background:#FFFFFF;padding:0in 5.4pt 0in 5.4pt'>
-  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                            <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;page-break-after:avoid;'>Apr ’16</p>
-  </td>
-  <td width=178 valign=top style='width:1.85in;border:none;border-bottom:solid #7BA0CD 1.0pt;
+                        </td>
+                        <td width=178 valign=top style='width:1.85in;border:none;border-bottom:solid #7BA0CD 1.0pt;
   background:#FFFFFF;padding:0in 5.4pt 0in 5.4pt'>
-  <ul>
-  <li style='margin-left:-0.25in'>Targeted versions</li>
-  <li style='margin-left:-0.25in'>CI integration</li>
-  <li style='margin-left:-0.25in'>Core workflow fidelity</li>
-  <li style='margin-left:-0.25in'>GPU integration</li>
-</ul>
-  </td>
-  <td width=188 valign=top style='width:141.3pt;border-top:none;border-left:
+                            <ul>
+                                <li style='margin-left:-0.25in'>Targeted versions</li>
+                                <li style='margin-left:-0.25in'>CI integration</li>
+                                <li style='margin-left:-0.25in'>Core workflow fidelity</li>
+                                <li style='margin-left:-0.25in'>GPU integration</li>
+                            </ul>
+                        </td>
+                        <td width=188 valign=top style='width:141.3pt;border-top:none;border-left:
   none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
   background:#FFFFFF;padding:0in 5.4pt 0in 5.4pt'>
-  <ul>
-  <li style='margin-left:-0.25in'>Theme delivery</li>
-  <li style='margin-left:-0.25in'>Fast layout/draw</li>
-  <li style='margin-left:-0.25in'>Track web-based long running jobs</li>
-  </ul>
-  </td>
- </tr>
-</table>
+                            <ul>
+                                <li style='margin-left:-0.25in'>Theme delivery</li>
+                                <li style='margin-left:-0.25in'>Fast layout/draw</li>
+                                <li style='margin-left:-0.25in'>Track web-based long running jobs</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
 
-<h2>Integration with Cytoscape Cyberinfrastructure</h2>
+                <h2>Integration with Cytoscape Cyberinfrastructure</h2>
 
-<p>As a member of the Cytoscape Cyberinfrastructure (CI),
-Cytoscape exchanges networks with a number of CI services, including NDEx and
-viewers based on cytoscape.js.</p>
+                <p>As a member of the Cytoscape Cyberinfrastructure (CI),
+                    Cytoscape exchanges networks with a number of CI services, including NDEx and
+                    viewers based on cytoscape.js.</p>
 
-<p>One long term vision is to tightly integrate Cytoscape and
-NDEx so that users naturally load and store their networks using the NDEx
-service. This enables seamless sharing of networks between Cytoscape and other
-CI services (e.g., Network Based Stratification), and with other users and
-publishers. Upon startup, Cytoscape will enumerate the NDEx networks best
-suited for the user’s use, including networks previously saved by the user
-and/or the user’s NDEx-based groups, networks pertinent to the user’s interest
-(e.g., by species, curation properties, etc), or
-other networks proposed by a recommendation engine. Cytoscape and NDEx will
-cooperate to make sampling of networks nearly costless so as to encourage
-exploration (e.g., by caching and displaying network layouts and statistics).
-Finally, once selected, Cytoscape and NDEx will cooperate to make network loads
-fast enough that users can remain on task. This vision will initially be
-realized by a new Core App that replaces the Welcome screen with a panel (a
-sibling of Network and Select panels) that presents NDEx networks and serves as
-a jumping off point for workflow execution.</p>
+                <p>One long term vision is to tightly integrate Cytoscape and
+                    NDEx so that users naturally load and store their networks using the NDEx
+                    service. This enables seamless sharing of networks between Cytoscape and other
+                    CI services (e.g., Network Based Stratification), and with other users and
+                    publishers. Upon startup, Cytoscape will enumerate the NDEx networks best
+                    suited for the user’s use, including networks previously saved by the user
+                    and/or the user’s NDEx-based groups, networks pertinent to the user’s interest
+                    (e.g., by species, curation properties, etc), or
+                    other networks proposed by a recommendation engine. Cytoscape and NDEx will
+                    cooperate to make sampling of networks nearly costless so as to encourage
+                    exploration (e.g., by caching and displaying network layouts and statistics).
+                    Finally, once selected, Cytoscape and NDEx will cooperate to make network loads
+                    fast enough that users can remain on task. This vision will initially be
+                    realized by a new Core App that replaces the Welcome screen with a panel (a
+                    sibling of Network and Select panels) that presents NDEx networks and serves as
+                    a jumping off point for workflow execution.</p>
 
-<p>Cytoscape currently exports a network as a file that can be
-used as supplemental material for a journal article. A journal publisher’s
-online article viewer is free to display the network in an interactive viewer,
-which allows the user to zoom into the network and move nodes. In our vision,
-advanced viewers may perform lookups on selected nodes and show the results in
-windows, perform new layouts and network analysis/clustering, and export the
-network to NDEx for integration with Cytoscape and other services – the network
-would be furnished to the publisher via NDEx directly from Cytoscape instead as
-a file in supplementary data. Currently, Elsevier offers a simple viewer that
-accepts a network file and allows zooming and node movement:</p>
+                <p>Cytoscape currently exports a network as a file that can be
+                    used as supplemental material for a journal article. A journal publisher’s
+                    online article viewer is free to display the network in an interactive viewer,
+                    which allows the user to zoom into the network and move nodes. In our vision,
+                    advanced viewers may perform lookups on selected nodes and show the results in
+                    windows, perform new layouts and network analysis/clustering, and export the
+                    network to NDEx for integration with Cytoscape and other services – the network
+                    would be furnished to the publisher via NDEx directly from Cytoscape instead as
+                    a file in supplementary data. Currently, Elsevier offers a simple viewer that
+                    accepts a network file and allows zooming and node movement:</p>
 
-<ul>
-<li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000724">http://www.sciencedirect.com/science/article/pii/S2352340915000724</a></li>
-<li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000840">http://www.sciencedirect.com/science/article/pii/S2352340915000840</a></li>
-</ul>
+                <ul>
+                    <li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000724">http://www.sciencedirect.com/science/article/pii/S2352340915000724</a>
+                    </li>
+                    <li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000840">http://www.sciencedirect.com/science/article/pii/S2352340915000840</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

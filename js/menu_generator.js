@@ -20,25 +20,26 @@ function appendMainMenuItems() {
 function appendIntro() {
     $("#introMenu").append(
         "<ul><li><a href=\"what_is_cytoscape.html\">What is Cytoscape?</a></li>"
-            + "<li><a href=\"who_is_using.html\">Who is Using Cytoscape?</a></li>"
-            + "<li><a href=\"screenshots.html\">Screenshots</a></li></ul>");
+        + "<li><a href=\"who_is_using.html\">Who is Using Cytoscape?</a></li>"
+        + "<li><a href=\"screenshots.html\">Screenshots</a></li></ul>"
+        + "<li><a href=\"roadmap.html\">Roadmap</a></li></ul>");
 }
 
 function appendDocument() {
     $("#documentMenu").append(
         "<ul><li><a href=\"documentation_users.html\">for Users</a></li>"
-            + "<li><a href=\"documentation_developers.html\">for Developers</a></li>"
-            + "<li><a href=\"releasenotes.html\">Release Notes</a></li>"
-            + "<li><a href=\"http://wiki.cytoscape.org/\">Cytoscape Wiki</a></li>"
-            + "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3\">Cytoscape at Open Tutorials</a></li></ul>");
+        + "<li><a href=\"documentation_developers.html\">for Developers</a></li>"
+        + "<li><a href=\"releasenotes.html\">Release Notes</a></li>"
+        + "<li><a href=\"http://wiki.cytoscape.org/\">Cytoscape Wiki</a></li>"
+        + "<li><a href=\"http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3\">Cytoscape at Open Tutorials</a></li></ul>");
 }
 
 function appendCommunity() {
     $("#communityMenu")
         .append(
-            "<ul><li><a href=\"development_team.html\">Developer Team</a></li>"
-                + "<li><a href=\"community.html\">Social Media</a></li>"
-                + "<li><a href=\"http://nrnb.org/cyretreat/\">Conferences</a></li>"
-                + "<li><a href=\"http://nrnb.org/training.html\">Training</a></li>"
-                + "</ul>");
+        "<ul><li><a href=\"development_team.html\">Developer Team</a></li>"
+        + "<li><a href=\"community.html\">Social Media</a></li>"
+        + "<li><a href=\"http://nrnb.org/cyretreat/\">Conferences</a></li>"
+        + "<li><a href=\"http://nrnb.org/training.html\">Training</a></li>"
+        + "</ul>");
 }
