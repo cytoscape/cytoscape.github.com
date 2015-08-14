@@ -54,6 +54,7 @@ $(document).ready(function () {
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
             '<li><a href="stat.html">Project Statistics</a></li>' +
             '<li><a href="screenshots.html">Screenshots</a></li>' +
+            '<li><a href="roadmap.html">Roadmap</a></li>' +
             '</ul></li>' +
 
             '<li><a href="download.php">Download</a></li>' +
