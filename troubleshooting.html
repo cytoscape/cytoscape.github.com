@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Troubleshooting</title>
+
+    <meta name="description" content="Troubleshooting tips for Cytoscpae users.">
+    <meta name="author" content="Keiichiro Ono">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="white">
+    <div class="container centering">
+        <h1 class="belt">Troubleshooting</h1>
+
+        <h3 class="centering">
+            Cannot run Cytoscape? Please read this page first.
+        </h3>
+
+        <div class="row centering belt">
+            <div class="col-xs-12 col-md-offset-3 col-md-3">
+                <img src="images/logo/cy3logoOrange.svg" height="200">
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <img src="images/logo/java_logo.svg" height="200">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="white">
+    <div class="container">
+        <h2 class="centering belt">System Checker Script</h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-1 col-md-10">
+                <p class="lead">
+                    Cytoscape is a <a href="https://www.java.com/">Java</a> application and
+                    it requires some third-party software packages to run properly. To test your system, please
+                    download one of the following scripts for your operating system first.
+                </p>
+            </div>
+        </div>
+
+        <div class="row belt">
+            <div class="col-xs-12 col-md-offset-2 col-md-2">
+                <p>
+                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/mac.sh"
+                       download>
+                        <img src="images/logo/mac.svg">
+                    </a>
+                <h4 class="centering">Mac</h4>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-offset-1 col-md-2">
+                <p>
+                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/windows.bat"
+                       download>
+                        <img src="images/logo/windows.svg">
+                    </a>
+                <h4 class="centering">Windows</h4>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-offset-1 col-md-2">
+                <p>
+                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/linux.sh"
+                       download>
+                        <img src="images/logo/linux.svg">
+                    </a>
+                <h4 class="centering">Linux</h4>
+                </p>
+            </div>
+        </div>
+
+        <h2 class="centering">How to Test Your System</h2>
+
+        <div class="row belt">
+            <div class="col-xs-12 col-md-3">
+                <h3>Open Terminal</h3>
+            </div>
+            <div class="col-xs-12 col-md-8 lead">
+                <img src="images/screenshots/terminal1.png"/>
+            </div>
+        </div>
+
+        <div class="row belt">
+            <div class="col-xs-12 col-md-3">
+                <h3>Go into download directory</h3>
+
+                <p>This depends on where you saved the script above.</p>
+            </div>
+            <div class="col-xs-12 col-md-8 lead">
+                <img src="images/screenshots/terminal2.png"/>
+            </div>
+        </div>
+
+        <div class="row belt">
+            <div class="col-xs-12 col-md-3">
+                <h3>Make the script executable</h3>
+
+                <p>You need to change permission to make it runnable.</p>
+            </div>
+            <div class="col-xs-12 col-md-8 lead">
+                <img src="images/screenshots/terminal3.png"/>
+            </div>
+        </div>
+
+        <div class="row belt">
+            <div class="col-xs-12 col-md-3">
+                <h3>Test your system</h3>
+
+                <p>After few seconds, it should desplay the test results.</p>
+            </div>
+            <div class="col-xs-12 col-md-8 lead">
+                <img src="images/screenshots/terminal4.png"/>
+            </div>
+        </div>
+
+        <h3 class="centering belt">If your system passes all tests, you are ready to use Cytoscape.</h3>
+    </div>
+
+    <div class="belt snow-white">
+        <div class="container">
+            <h2 class="centering">Still Have Problems?</h2>
+            <h3 class="centering"
+                style="color: red">Don't forget to copy-and-paste outputs from the system checker script!</h3>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <h2>How to Report Issues</h2>
+
+
+                        <p class="lead">
+                            If the checker shows your machine is ready, and still unable to run Cytoscape, it can be a
+                            bug. Please report them from:
+                        </p>
+                        <blockquote>Help &rarr; Report a bug...</blockquote>
+
+                        <p class="lead">
+                            Or, you can directly report it from
+                            <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a bug</a>
+                            link on the navigation bar.
+                        </p>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Ask Questions</h2>
+
+                        <p class="lead">
+                            If you get error message from system checker script, and cannot solve the issue by yourself,
+                            please send your question to out mailing list.  Cytoscape-helpdesk is the best place to
+                            send this type of questions.
+                        </p>
+                        <h4 class="centering">
+                            <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+                                cytoscape-helpdesk
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="snow-white">
+        <div class="container">
+            <div class="small centering">
+                Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                is licensed under <a href="http://creativecommons.org/licenses/by/3.0/"
+                                     title="Creative Commons BY 3.0">CC BY 3.0</a>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="js/load_cyjs.js"></script>
+    <script src="js/setup_page.js"></script>
+</body>
+
+</html>
