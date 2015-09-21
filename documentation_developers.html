@@ -6,127 +6,132 @@
     <title>Developer Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link href="css/main.bootstrap.css" rel="stylesheet">
 
 </head>
-
 <body>
 
     <nav></nav>
 
-    <div class="belt light-gray">
+    <div class="belt snow-white">
         <div class="container">
-
             <div class="row">
-                <div class="col-md-4">
-                    <a href="cy3.html">
-                        <img src="images/cytoscape_logo_left.png" />
+                <div class="col-sm-4">
+                    <a href="what_is_cytoscape.html">
+                        <img src="images/logo/cy3logoOrange.svg" />
                     </a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-8">
                     <h2>Get Involved!</h2>
 
-                    <h3>Publish Your Apps</h3>
+                    <h3>Cytoscape App Developer Ladder</h3>
+                    <p>
+                        <a href="http://wiki.cytoscape.org/Cytoscape_3/AppDeveloper/Cytoscape_App_Ladder">
+                        Start your climb today!
+                        </a>
+                        This is the best introduction to Cytoscape App development.
+                    </p>
+
+
+                    <h4>Publish Your Apps</h4>
                     <p>
                         Got a new App? Please <a href="http://apps.cytoscape.org">send it to us</a>. Once your plugin is registered to the store, Cytoscape users can access it through App Manager.
                     </p>
 
-                    <h3>Google Summer of Code</h3>
+                    <h4>Google Summer of Code</h4>
                     <p>
                         If you are a students, you can contribute to Cytoscape through Google Summer of Code program. For more information about GSoC, please visit <a href="http://nrnb.org/gsoc.html">NRNB web site.</a>
                     </p>
+                </div>
+                <div class="col-sm-12">
 
                     <h3>Join Core Team</h3>
                     <p>
-                        Want to hack on the Cytoscape Core? Volunteers are always welcome! Joining our community is easy. There's no commitment beyond writing good code and you can contribute as much or as little as you like. Here is how to get started:
+                        Want to hack the Cytoscape Core code? Volunteers are always welcome! Joining our community is easy. There's no commitment beyond writing good code and you can contribute as much or as little as you like. Here is how to get started:
                     </p>
                     <ul>
                         <li>
-                            Ask questions and start sending us patches on the cytoscape-discuss mailing list.
+                            Ask questions and start sending us pull-reauests / patches on the cytoscape-discuss mailing list.
                         </li>
                         <li>
                             We'll provide commit access to our <a href="https://github.com/cytoscape">GitHub repository</a>
                             once we trust you!
                         </li>
                         <li>
-                            Start joining our team conference calls each Thursday to coordinate your development efforts with ours. <a href="https://plus.google.com/109114602647105355066">Contact us</a> for details on calling in.
+                            Start joining our team conference calls each Thursday to coordinate your development efforts with ours. 
+                            <a href="mailto:idekerlab.bdemchak@gmail.com">Contact us</a> for details on calling in.
                         </li>
                         <li>
                             If you remain a helpful contributor to the team, we'll vote you in as a core developer!
                         </li>
                         <li>
-                            If your company or institution is interested in taking a larger role in the project, join the <a href="http://www.cytoscapeconsortium.org/">Cytoscape Consortium</a>.
+                            If your company or institution is interested in taking a larger role in the project, join the <a href="http://www.cytoscapeconsortium.org/">Cytoscape Consortium</a>. 
+                            <a href="mailto:idekerlab.bdemchak@gmail.com">Please contact us</a> for more details.
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
+                <p>
                 <div class="col-md-3">
                     <a href="https://github.com/cytoscape">
                         <img src="images/github.png" />
                     </a>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-md-9">
                     <h2>Developer Tools</h2>
                     <h3>Issue Tracker, Nexus Repository, Nightly Builds, and Code Metrics</h3>
                     <p>
                         <a href="http://code.cytoscape.org/">code.cytoscape.org</a> is the start page for all developers. You can cehck the most up-to-date information about Cytoscape Core projects from here.
                     </p>
+                    <h3>New Cytoscape Code Repository on GitHub</h3>
+                    <p>
+                        Cytoscape Core projects are now hosted on <a href="https://github.com/cytoscape">GitHub</a>. From now on, latest version of Cytoscape code should be obtained from the following git repositories:
+                    </p>
+                    <ul>
+                        <li>
+                            <h4><a href="https://github.com/cytoscape/cytoscape">Cytoscape 3.x</a></h4>
+                        </li>
+                        <li>
+                            <h4><a href="https://github.com/cytoscape/cytoscape.js">Cytoscape.js</a></h4>
+                        </li>
+                    </ul>
+                    <p>
+                        <a href="https://github.com/cytoscape/cytoscape2">(Obsolete) Cytoscape 2.x</a>
+                    </p>
+
+                    <p>
+                        Note that Cytoscape 3 is a multi-repository project. You need to read
+                        <a href="https://github.com/cytoscape/cytoscape/blob/develop/README.md">this</a>
+                        document to learn how to clone all Cytoscape 3 projects.
+                    </p>
                 </div>
+                </p>
             </div>
             <div class="row">
-                <h3>Port Your 2.x Plugins</h3>
+                <h4>Port Your 2.x Plugins</h4>
                 <p>
                     With the release of the 3.x, Cytoscape core team no longer maintaining 2.x code and you need to port your Plugins to 3.x series to use latest features in Cytoscape. In the sections below, you'll find links to documentation and tutorials related to 3.x app development.
                 </p>
 
-                <h3>New Cytoscape Code Repository on GitHub</h3>
-                <p>
-                    Cytoscape Core projects are now hosted on <a href="https://github.com/cytoscape">GitHub</a>. From now on, latest version of Cytoscape code should be obtained from the following git repositories:
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/cytoscape/cytoscape2">Cytoscape 2.x</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/cytoscape/cytoscape">Cytoscape 3.x</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/cytoscape/cytoscape.js">Cytoscape.js</a>
-                    </li>
-                </ul>
-
-                <p>
-                    Note that Cytoscape 3 is a multi-repository project. You need to read
-                    <a href="https://github.com/cytoscape/cytoscape/blob/develop/README.md">this</a>
-                    document to learn how to clone all Cytoscape 3 projects.
-                </p>
 
                 <h3>Questions?</h3>
-                <ul>
-                    <li>
-                        <a href="http://stackoverflow.com/questions/tagged/cytoscape?sort=votes&pagesize=15" target="_blank">
-                            FAQ at Stackoverflow
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-discuss" target="_blank">
-                            Mailing list for developers
-                        </a>
-                    </li>
-                </ul>
+                <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-discuss" target="_blank">
+                    Cytoscape-Discuss Google Group
+                </a> is the best way to reach core developers.  If you have any App development questions, please 
+                send it to the mailing list.
             </div>
         </div>
     </div>
 
-    <div class="snow-white">
+    <div class="white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <h3>Documentation for 3.x App Developers</h3>
                     <h4>What is Cytoscape 3.x?</h4>
                     <p>
@@ -148,34 +153,33 @@
                         app development tutorials</a>.
                     </p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <h3>Code for 3.x App Developers</h3>
-                    <h4>Cytoscape 3.1.1 Released!</h4>
+                    <h4 class="cy-latest-version">Latest Cytoscape Release: </h4>
                     <ul>
                         <li>
-                            <a href="download.html">
-                            Download Cytoscape 3.1.1 Release
-                        </a>
+                            <a href="download.php" class="cy-latest-version">
+                            Download Cytoscape </a>
                         </li>
                         <li>
-                            <a href="http://chianti.ucsd.edu/cytoscape-3.1.1/API">
-                                Cytoscape 3.1.1 JavaDocs
+                            <a href="http://chianti.ucsd.edu/cytoscape-3.2.0/API" class="cy-latest-version">
+                                JavaDocs for
                             </a>
                         </li>
                         <li>
-                            <a href="http://chianti.ucsd.edu/cytoscape-3.1.1/swing-app-api-3.1.1.jar">
-                            API Jar for 3.1.1
+                            <a href="http://chianti.ucsd.edu/cytoscape-3.2.0/swing-app-api-3.2.0.jar" class="cy-latest-version">
+                            API Jar for
                         </a>
                         </li>
                         <li>
-                            <a href="https://github.com/cytoscape/cytoscape-app-developer/tree/3.1.1">
-                            3.1.1 App Developer Project Tag
+                            <a href="https://github.com/cytoscape/cytoscape-app-developer/tree/3.2.0" class="cy-latest-version">
+                            App Developer Project Tag:
                         </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h3>Quick Start Guides for 2.x App Developers</h3>
+                <div class="col-md-3">
+                    <h5>Quick Start Guides for 2.x App Developers</h5>
                     <ul>
                         <li><a href="http://cytoscape.wodaklab.org/wiki/Cytoscape_Plugin_Tutorial">Cytoscape Plugin
                         Development
@@ -196,14 +200,14 @@
                             </ul>
                         </li>
                     </ul>
-                    <h4>Build Cytoscape 2.x from Source Code</h4>
 
+                    <h5>Build Cytoscape 2.x from Source Code</h5>
                     <p>
                         <a href="https://github.com/cytoscape">GitHub repository</a> is available for all developers. Detailed instruction how to clone 2.x repository is available <a href="https://github.com/cytoscape/cytoscape2">here</a>.
                     </p>
                 </div>
-                <div class="col-lg-3">
-                    <h3>Other Cytoscape 2.x Resources</h3>
+                <div class="col-md-3">
+                    <h5>Other Cytoscape 2.x Resources</h5>
                     <ul>
                         <li>
                             <a href="http://wiki.cytoscape.org/">

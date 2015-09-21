@@ -1,9 +1,12 @@
 html {
-    background-color: rgb(248,248,248);
+    background-color: rgb(248, 248, 248);
 }
+
 body {
     background-color: #DDDED3;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
 }
+
 nav {
     margin: 0 !important;
     border-radius: 0 !important;
@@ -11,38 +14,25 @@ nav {
     background-color: rgba(100, 100, 100, 0.0) !important;
 }
 
-.navbar-brand {
-    color: #555555 !important;
-    height: 50px;
-    padding-top: 11px;
-    font-size: 20px !important;
-    font-weight: 300;
-    top: 0;
+#cy-navbar {
+    font-size: 0.98em;
 }
 
-
-.navbar-nav li a {
-    color: #555555 !important;
-    padding-top: 13px;
-}
-
-.google-search {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 300px !important;
-    padding-top: 0px !important;
+.search-form {
+    font-size: 0.9em;
 }
 
 .btn {
     border-radius: 0 !important;
 }
 
-h1, h2{
-    font-weight: 200;
+h1 {
+    font-weight: 100;
+    font-size: 5em;
+
 }
 
-h3, h4, h5{
+h2, h3, h4, h5 {
     font-weight: 200;
 }
 
@@ -57,15 +47,15 @@ h3, h4, h5{
     width: 100%;
 }
 
-.v-center{
+.v-center {
     height: 150px;
     line-height: 150px;
-    text-align:center;
-    vertical-align:middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .v-center img {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .person {
@@ -101,23 +91,24 @@ h3, h4, h5{
     margin-bottom: 10px;
 
 }
+
 .section {
     margin-top: 160px !important;
 }
 
 footer {
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
     margin-top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .people {
-    background-color: rgb(245,245,245) !important;
+    background-color: rgb(245, 245, 245) !important;
 }
 
 .cy3-color {
-    color: rgb(247,148,30) !important;
+    color: rgb(247, 148, 30) !important;
 }
 
 .belt {
@@ -135,13 +126,18 @@ footer {
     margin-top: 0;
 }
 
+.underline {
+    border-bottom: solid 1px #cccccc;
+    color: #bbbbbb;
+}
+
 .top {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .orange {
-    background-color: rgb(247,148,30) !important;
+    background-color: rgb(247, 148, 30) !important;
 }
 
 .blue {
@@ -150,12 +146,25 @@ footer {
 }
 
 .light-blue {
-    background-color: rgb(0,150,255);
-    color: #ffffff;
+    background-color: rgb(0, 150, 255);
+    color: #ffffff !important;
+}
+
+.light-blue a:visited {
+    color: #aaaaaa !important;
+}
+
+.light-blue a {
+    color: orange !important;
+}
+
+.water-blue {
+    background-color: #0aeaff;
+    color: #ffffff !important;
 }
 
 .transparent {
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .white {
@@ -167,28 +176,33 @@ footer {
     background-color: #000000;
     color: #a0a0a0 !important;
 }
+
 .snow-white {
-    background-color: #FAFAFA;
+    background-color: #F0F0F0;
     color: #555555 !important;
 }
 
 .light-gray {
     background-color: #DDDED3;
+    color: #222222 !important;
+}
+
+.dark-gray {
+    background-color: #444444;
     color: #252525 !important;
 }
 
 .background-31 {
     /*background-color: rgb(5,81,129);*/
-    background-image: url("../images/3_1_title4.png");
+    background-image: url("../images/release_notes/cy32-release5.png");
     /*-moz-background-size: 100% auto;*/
     /*background-size: 100% auto;*/
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 700px;
-    padding-top: 150px;
+    padding-top: 60px;
+    background-color: #000000;
 }
-
-
-
 
 .narrow .container h2 {
     font-weight: 100;
@@ -202,20 +216,23 @@ footer {
 }
 
 .background-31 h2 {
-    font-weight: 100;
+    font-weight: 100 !important;
     font-size: 32px;
     padding-right: 40px;
     color: #ffffff;
     text-align: right;
-    background-color: rgba(255,255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0.0);
     padding-bottom: 20px;
 }
 
+.background-31 h1 {
+    font-weight: 100 !important;
+    font-size: 8.5em !important;
+}
 
 .container h1 {
     color: #545454;
 }
-
 
 .item {
     margin-top: 30px;
@@ -224,15 +241,17 @@ footer {
 .box {
     z-index: 0;
     color: #fafafa;
-    background-color: rgba(44,77,131, 0.0);
+    background-color: rgba(44, 77, 131, 0.0);
 
-    padding: 2em;
+    padding: 1em;
     padding-top: 0;
 }
+
 .box p {
     font-weight: 100;
     font-size: 18px;
 }
+
 .box h1 {
     font-weight: 700;
     font-size: 90px;
@@ -249,26 +268,99 @@ footer {
 
 .box .btn {
     height: 80px;
-    font-weight: 200;
-    color: #555555;
-    padding-top: 16px;
-   /*border: solid 2px #ffffff;*/
-    border: none;
-   font-size: 32px;
-   background-color: #FFFFFF;
+    font-weight: 100;
+    color: #FFFFFF;
+    border: solid 2px #ffffff;
+    font-size: 3.2em;
+    /*background-color: #FFFFFF;*/
 }
 
 .orange-button {
-    color: white !important;
+    color: white!important;
     background-color: orange !important;
-    font-weight: 400 !important;
+    font-weight: 100 !important;
+    border: none !important;
 }
 
+.centering {
+    text-align: center;
+}
+
+.image-fit {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.warn {
+    color: red;
+}
+
+.light-text {
+    color: #aaaaaa !important;
+}
+
+.license {
+    border: 2em solid #DDDED3;
+    height: 400px;
+    width: 100%;
+    background-color: #DDDED3;
+    color: inherit;
+    overflow-y: scroll;
+}
+
+/*
+    For download page
+*/
+.download-button, .download-button:hover {
+    background-color: #ff8c00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px !important;
+}
+
+.download-button:hover, .download-button:hover h1 {
+    background-color: #ffc500;
+    color: #555555;
+}
+
+.download-button:visited, .download-button:active, .download-button:hover, .download-button:focus {
+    color: #FFFFFF;
+    border: none;
+    border-radius: inherit;
+}
+
+.download-button h1 {
+    font-size: 4.5em;
+    color: inherit;
+}
+
+.platform {
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
 
 /* For Cytoscape.js */
 .cyjs {
+    opacity: 0.6;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: rgb(6, 81, 129);
 }
 
+.cyjs2, .cyjs3 {
+    width: 100%;
+    height: 600px;
+    background-color: #fafafa;
+}
+
+/* For Custom Search */
+
+#___gcse_0 {
+    width: 230px !important;
+    border-color: #FFFFFF !important;
+    height: 30px!important;
+}

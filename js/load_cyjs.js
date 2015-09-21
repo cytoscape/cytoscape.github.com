@@ -10,6 +10,7 @@ $(function () {
     var DEFAULT_VISUAL_STYLE = 'Flat2';
 
     console.log('Network rendering start...');
+    var cy;
 
     var options = {
 
@@ -22,7 +23,7 @@ $(function () {
         },
 
         ready: function () {
-            var cy = this;
+            cy = this;
             cy.load(networkData.elements);
             applyVisualStyle(cy);
         }
@@ -37,6 +38,7 @@ $(function () {
             visualStyles[title] = visualStyle;
         }
         cy.style().fromJson(visualStyles[DEFAULT_VISUAL_STYLE].style).update();
+
     }
 
     var networkData = {};
@@ -50,4 +52,24 @@ $(function () {
             $('.cyjs').cytoscape(options);
         });
     });
+
+    $('#js-section').one('mouseenter ontouchstart ontouch', function() {
+        var selected = cy.$('#187, #196');
+        $(".cyjs").animate({
+            opacity: 1.0
+        }, 900, function() {
+            // Animation complete.
+            cy.animate({
+
+                fit: {
+                    eles: selected,
+                    padding: 20
+                }
+            }, {
+                duration: 1000
+            });
+        });
+
+    });
+
 });
