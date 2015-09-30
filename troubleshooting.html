@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/UAParser/ua-parser.0.7.0.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="css/main.bootstrap.css" rel="stylesheet">
@@ -52,39 +54,28 @@
                 </p>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="row belt">
-            <div class="col-xs-12 col-md-offset-2 col-md-2">
+<div class="belt light-blue">
+    <div class="container">
+        <div class="row">
+            <h3 id="platform-name" class="centering">Download System Checker Script for</h3>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-5 col-xs-2">
                 <p>
-                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/mac.sh"
-                       download>
-                        <img src="images/logo/mac.svg">
+                    <a id="script-download" href="" download>
+                        <img id="platform-icon" src="">
                     </a>
-                <h4 class="centering">Mac</h4>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-offset-1 col-md-2">
-                <p>
-                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/windows.bat"
-                       download>
-                        <img src="images/logo/windows.svg">
-                    </a>
-                <h4 class="centering">Windows</h4>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-offset-1 col-md-2">
-                <p>
-                    <a href="https://raw.githubusercontent.com/cytoscape/cytoscape-scripts/master/system-checker/linux.sh"
-                       download>
-                        <img src="images/logo/linux.svg">
-                    </a>
-                <h4 class="centering">Linux</h4>
                 </p>
             </div>
         </div>
+    </div>
+</div>
 
-
-
+<div class="white belt">
+    <div class="container">
         <h2 class="centering">How to Test Your System: Linux and Mac</h2>
 
         <div class="row belt">
@@ -217,7 +208,7 @@
 
     <footer></footer>
 
-    <script src="js/load_cyjs.js"></script>
+    <script src="js/platform_checker.js"></script>
     <script src="js/setup_page.js"></script>
 </body>
 

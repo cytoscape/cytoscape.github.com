@@ -65,6 +65,7 @@ $(document).ready(function () {
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
             '<li><a href="releasenotes.html">Release Notes</a></li>' +
+            '<li><a href="troubleshooting.html">Troubleshooting</a></li>' +
             '<li><a href="documentation_users.html">For Users</a></li>' +
             '<li><a href="documentation_developers.html">For Developers</a></li>' +
             '<li><a href="http://wiki.cytoscape.org/">Wiki</a></li>' +

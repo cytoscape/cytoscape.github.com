@@ -61,8 +61,12 @@
                         href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
                     Java</a> first to use Cytoscape.
                 </h3>
-                <h3 class="warn">
+                <h4 class="warn">
                     Java 6 is no longer supported
+                </h4>
+
+                <h3>
+                    Problems? <a href="troubleshooting.html">Read this page first</a>
                 </h3>
             </div>
         </div>
