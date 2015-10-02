@@ -65,7 +65,6 @@ $(document).ready(function () {
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
             '<li><a href="releasenotes.html">Release Notes</a></li>' +
-            '<li><a href="troubleshooting.html">Troubleshooting</a></li>' +
             '<li><a href="documentation_users.html">For Users</a></li>' +
             '<li><a href="documentation_developers.html">For Developers</a></li>' +
             '<li><a href="http://wiki.cytoscape.org/">Wiki</a></li>' +
@@ -83,7 +82,13 @@ $(document).ready(function () {
             '</ul></li>' +
 
             '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
-            '<li><a class="cy3-color" href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
+
+            '<li class="dropdown">' +
+            '<a href="#" class="dropdown-toggle cy3-color" data-toggle="dropdown">Help<b class="caret"></b></a>' +
+            '<ul class="dropdown-menu">' +
+            '<li><a href="troubleshooting.html">Troubleshooting</a></li>' +
+            '<li><a href="https://groups.google.com/forum/#!forum/cytoscape-helpdesk">Getting Help</a></li>' +
+            '</ul></li>' +
 
             '<li><gcse:searchbox-only newWindow="true"></gcse:searchbox-only></li>' +
 
