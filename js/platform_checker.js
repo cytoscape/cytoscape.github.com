@@ -45,6 +45,7 @@ $(function() {
         var iconLink = 'images/logo/' + platform + '.svg';
 
         $('#script-download').attr('href', downloadLink);
+        $('.platform h1').append('Download for ' + platform.charAt(0).toUpperCase() + platform.slice(1));
         $('#platform-icon').attr('src', iconLink);
     }
 });
