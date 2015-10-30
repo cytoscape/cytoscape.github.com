@@ -1,5 +1,6 @@
 /**
- * Created by kono on 2014/10/15.
+ * download.js: List of all versions of Cytoscape.
+ *   This is used by the download page (download.php).
  */
 
 var LATEST = {
