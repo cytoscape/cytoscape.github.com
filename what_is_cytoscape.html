@@ -10,13 +10,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" 
+        integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" 
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" 
+        crossorigin="anonymous"></script>
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
-    <script src="js/cytoscape.js-2.3.4/build/cytoscape.min.js"></script>
+
+    <script src="js/cytoscape.js-2.5.0/cytoscape.min.js"></script>
 
 </head>
 
@@ -57,49 +63,42 @@
 
 <div class="belt black image-wide">
     <div class="container">
-        <img src="images/irefindex.png" title="Visualization of human interactome from iRefindex data set."
+        <img src="images/screenshots/structure-aware-layout.jpg"
              style="width: 100%"/>
     </div>
 </div>
 
-<div class="narrow light-gray">
-    <div class="container">
 
-        <div class="row centering">
+<div class="belt cy3-intro">
+    <div class="container">
+        <div class="centering">
             <h1>Cytoscape Family</h1>
         </div>
-    </div>
-</div>
-
-<div class="narrow light-gray">
-    <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-5">
-                <h1>Cytoscape 3</h1>
+            <div class="col-xs-12 col-md-6">
+                <h2>Cytoscape 3</h2>
 
                 <p class="lead">
-                    <i>Cytoscape 3</i> is the mainstream version of Cytoscape with modular architecture.
-                    It is designed for long-term maintainability and it replaced 2.x series.
+                    <strong><i>Cytoscape 3</i> is the mainstream version of Cytoscape with modular architecture</strong>.
+                    It is designed for long-term maintainability and it replaced 2.x series.  It is a Java desktop application 
+                    designed for large-scale network analysis and visualization.
                     New features, including new user interfaces, advanced visualization functions, headless
                     (command-line)
-                    distribution, and multiple rendering engine support, will be released
-                    for this version. As of November 2014, Cytoscape community is still in the process of transition
-                    from 2.x to 3.x. Many Apps are now available for Cytoscape 3, and third party App developers
-                    are working hard to port 2.x Apps to 3.x series.
+                    distribution, RESTful API, and multiple rendering engine support, will be released
+                    for this version. As of November 2015, transition from Cytoscape 2.x to 3.x is almost complete. 
+                    Many Apps are now available for Cytoscape 3, and third party App developers
+                    are working hard to port remaining 2.x plugins to 3.x series.
                 </p>
-            </div>
-            <div class="col-xs-12 col-md-7">
-                <img src="images/screenshots/31_original.png" width="100%">
             </div>
         </div>
     </div>
 </div>
 
-<div class="narrow light-gray" id="js-section">
+<div class="narrow cyjs-back" id="js-section">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h3>Cytoscape.js</h3>
+            <div class="col-xs-12 col-md-offset-6 col-md-6">
+                <h2>Cytoscape.js</h2>
 
                 <p class="lead">
                     <a href="http://cytoscape.github.com/cytoscape.js/index.html">Cytoscape.js</a> is a successor of
@@ -117,15 +116,21 @@
                     Cytoscape 3.2, users can export network visualizations as interactive web application using
                     Cytoscape.js.
                 </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="cyjs"></div>
-                <p class="lead">Interactive visualization with Cytoscape.js (touch me!)</p>
-            </div>
-        </div>
 
+                <h3 class="warn">This background is rendered by Cytoscape.js</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cyjs-back">
+    <div class="cyjs">
+        
+    </div>
+</div>
+
+<div class="belt light-gray" id="js-section">
+    <div class="container">
         <div class="row">
             <a name="which_cytoscape"></a>
 

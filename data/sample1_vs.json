@@ -18,7 +18,7 @@
       "font-size" : 12,
       "border-opacity" : 1.0,
       "border-width" : 2.0,
-      "color" : "rgb(255,255,255)",
+      "color" : "rgb(120, 120, 140)",
       "height" : 10.0,
       "width" : 10.0,
       "content" : "data(Human_Readable_Label)"

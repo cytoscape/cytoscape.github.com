@@ -343,12 +343,29 @@ footer {
     padding-left: 30px;
 }
 
+
+.cy3-intro {
+    background-image: url("../images/screenshots/cy3_intro.png");
+    background-attachment: fixed;
+    height: 720px;
+}
 /* For Cytoscape.js */
+
+/* For what_is_cytoscape.html */
+.cyjs-back {
+    background-color: #065181;
+    color: white;
+}
+.cyjs-back a {
+    color: orange;
+    text-decoration: none;
+}
+
 .cyjs {
-    opacity: 0.6;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: rgb(6, 81, 129);
+    margin-top: -500px;
 }
 
 .cyjs2, .cyjs3 {
