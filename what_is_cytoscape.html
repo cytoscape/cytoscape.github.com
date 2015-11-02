@@ -24,6 +24,9 @@
 
     <script src="js/cytoscape.js-2.5.0/cytoscape.min.js"></script>
 
+    <!-- For Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                 <img src="images/logo/cy3logoOrange.svg" width="100%" style="margin-top: 2em;"/>
             </div>
             <div class="col-sm-12 col-md-8">
-                <h2>What is Cytoscape?</h2>
+                <h1>What is Cytoscape?</h1>
 
                 <p class="lead">
                     <strong><i>Cytoscape</i></strong> is an open source software platform for <strong><i>
@@ -58,18 +61,28 @@
                 </p>
             </div>
         </div>
+        <div class="centering">
+            <a href="#section-image1" data-scroll>
+                <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="belt black image-wide">
+<div id="section-image1" class="belt black image-wide">
     <div class="container">
         <img src="images/screenshots/structure-aware-layout.jpg"
              style="width: 100%"/>
+        <div class="centering">
+            <a href="#section-family" data-scroll>
+                <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color: white;"></span></h2>
+            </a>
+        </div>
     </div>
 </div>
 
 
-<div class="belt cy3-intro">
+<div id="section-family" class="belt white cy3-intro">
     <div class="container">
         <div class="centering">
             <h1>Cytoscape Family</h1>
@@ -91,10 +104,29 @@
                 </p>
             </div>
         </div>
+        <div class="centering">
+            <a href="#section-cy3-desktop" data-scroll>
+                <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color: black;"></span></h2>
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="narrow cyjs-back" id="js-section">
+<div id="section-cy3-desktop" class="belt white image-wide">
+    <div class="container centering">
+        <h2>Cytoscape 3.3 Desktop</h2>
+        <img src="images/screenshots/cy3_3_0_desktop.png"
+             style="width: 100%"/>
+        <div class="row narrow">
+        <a href="#section-cyjs" data-scroll>
+            <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
+        </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="section-cyjs" class="narrow cyjs-back" id="js-section">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-offset-6 col-md-6">
@@ -127,9 +159,15 @@
     <div class="cyjs">
         
     </div>
+
+    <div class="centering row narrow">
+        <a href="#section-cy2" data-scroll>
+            <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color: white;"></span></h2>
+        </a>
+    </div>
 </div>
 
-<div class="belt light-gray" id="js-section">
+<div id="section-cy2" class="belt light-gray" id="js-section">
     <div class="container">
         <div class="row">
             <a name="which_cytoscape"></a>
@@ -174,11 +212,16 @@
                 </ul>
             </div>
         </div>
+        <div class="row centering">
+            <a href="#section-features" data-scroll>
+                <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color: darkgray;"></span></h2>
+            </a>
+        </div>
     </div>
 </div>
 
 
-<div class="narrow white">
+<div id="section-features" class="narrow white">
     <div class="container centering">
         <h1>Cytoscape 3 Core Features</h1>
     </div>
@@ -415,6 +458,12 @@
             </div>
         </div>
     </div>
+
+    <div class="centering">
+        <a href="#" data-scroll>
+            <h2><span class="glyphicon glyphicon-menu-up" aria-hidden="true" style="color: darkgray;"></span></h2>
+        </a>
+    </div>
 </div>
 
 
@@ -423,6 +472,13 @@
 
 <script src="js/load_cyjs.js"></script>
 <script src="js/setup_page.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+    }) ;
+</script>
 
 </body>
 </html>

@@ -192,6 +192,11 @@ footer {
     color: #252525 !important;
 }
 
+.dark {
+    background-color: #3C3C3C;
+    color: white;
+}
+
 .background-31 {
     /*background-color: rgb(5,81,129);*/
     background-image: url("../images/release_notes/cy32-release5.png");
@@ -343,11 +348,20 @@ footer {
     padding-left: 30px;
 }
 
+#introduction {
+    background-image: url("../images/3_1_title3.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto;
+
+height: 800px;
+}
 
 .cy3-intro {
     background-image: url("../images/screenshots/cy3_intro.png");
     background-attachment: fixed;
-    height: 720px;
+    height: 800px;
 }
 /* For Cytoscape.js */
 
@@ -374,6 +388,9 @@ footer {
     background-color: #fafafa;
 }
 
+data-scroll {
+    color: white !important;
+}
 /* For Custom Search */
 
 #___gcse_0 {
