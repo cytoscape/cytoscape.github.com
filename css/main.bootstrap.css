@@ -199,14 +199,13 @@ footer {
 
 .background-31 {
     /*background-color: rgb(5,81,129);*/
-    background-image: url("../images/release_notes/cy32-release5.png");
+    background-image: url("../images/screenshots/cy3_3_index_page.png");
     /*-moz-background-size: 100% auto;*/
-    /*background-size: 100% auto;*/
-    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-repeat: no-repeat;*/
     background-attachment: fixed;
-    height: 700px;
+    height: 900px;
     padding-top: 60px;
-    background-color: #000000;
 }
 
 .narrow .container h2 {

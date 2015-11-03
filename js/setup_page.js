@@ -78,7 +78,7 @@ $(document).ready(function () {
             '<li class="warn"><a href="http://nrnb.org/competitions.html">Competitions</a></li>' +
             '<li><a href="development_team.html">Developer Team</a></li>' +
             '<li><a href="community.html">Social Media</a></li>' +
-            '<li><a href="http://nrnb.org/cyretreat/">Conferences</a></li>' +
+            '<li><a href="http://nrnb.org/media-symposia.html">Conferences</a></li>' +
             '<li><a href="http://nrnb.org/training.html">Training</a></li>' +
             '</ul></li>' +
 
