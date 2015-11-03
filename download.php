@@ -59,10 +59,10 @@
             <div class="col-sm-12 col-md-10 col-md-offset-1">
                 <h3>Please install <a
                         href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
-                    Java</a> first to use Cytoscape.
+                    Java 8</a> first to use Cytoscape.
                 </h3>
                 <h4 class="warn">
-                    Java 6 is no longer supported
+                    Java 6 & 7 are no longer supported
                 </h4>
 
                 <h3>

@@ -49,7 +49,7 @@ $(document).ready(function () {
             '<div class="collapse navbar-collapse" id="cy-navbar">' +
             '<ul class="nav navbar-nav">' +
             '<li class="dropdown">' +
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Intro.<b class="caret"></b></a>' +
+            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Intro<b class="caret"></b></a>' +
             '<ul class="dropdown-menu">' +
             '<li><a href="what_is_cytoscape.html">What is Cytoscape?</a></li>' +
             '<li><a href="who_is_using.html">Who is Using Cytoscape</a></li>' +
