@@ -242,7 +242,7 @@
                             distributions</a>
                     </li>
                     <li>
-                        Latest version of Java is required.
+                        Latest version of Java is required (minimum Java 8 Update 72).
                     </li>
 
                     <li>
@@ -294,12 +294,11 @@
 
         <div class="row">
             <div class="col-md-4 panel">
-                <h3>Table Import: Key Column Data Type</h3>
+                <h3>Missing Scrollbars on Linux</h3>
                 <p>
-                    In Cytoscape 3.3, table identifier columns are no longer treated as Strings by default, which  can cause a type mismatch error when using numeric identifiers. Because of this, you will need to manually change the ID column data type to import a table with a numeric identifier into a network using a String column as an identifier (such as “shared name”).  To do this, right-click the column heading in the table import preview and change the selected type to String before importing.
+                    A bug in Java 8 Update 60 (also present in 65/66) causes scrollbars to not always appear on Linux systems. This occurs on both OpenJDK and Oracle Java releases (including the OpenJDK shipped with Ubuntu 15.10 and some other recent Linux distributions), and is resolved by installing Java 8 Update 72 or later from Oracle.
                 </p>
             </div>
-
             <div class="col-md-4 panel">
                 <div class="row">
                     <div class="col-md-12">
@@ -376,40 +375,26 @@
                 <h3>Installing on Ubuntu 15.10 (64 bit)</h3>
 
                 <p>
-                    The Cytoscape installer does not run on non-root accounts. It will work under root. Alternatively, Cytoscape can be installed by downloading and unzipping the GZIP archive found via the <a href="download-platforms.html">Other Platforms link on the Download page</a>.
+                    The Cytoscape installer does not run on non-root accounts using the default OpenJDK JVM. It works properly with Oracle Java 8 Update 71 or higher, or as root with OpenJDK. Alternatively, Cytoscape can be installed by downloading and unzipping the GZIP archive found via the <a href="download-platforms.html">Other Platforms link on the Download page</a>.
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 panel">
-                <h3>Fedora 21: Headless Java</h3>
+                <h3>Fedora 21+: Headless Java</h3>
 
                 <p>
-                    Fedora 21 installs a headless (non-GUI) version of Java by default. As a GUI application, Cytoscape will not install or run with this version of Java. To use Cytoscape on Fedora 21, one will need to install a standard version of Java. The OpenJDK JRE is available from the Fedora package repository - simply install the java-1.8.0-openjdk.x86_64 (for 64-bit) or java-1.8.0-openjdk.i686 (ofor 32-bit) packages. Oracle’s JRE is available for download in RPM format at java.com, though this requires extra configuration.
+                    Fedora 21 (or later) installs a headless (non-GUI) version of Java by default. As a GUI application, Cytoscape will not install or run with this version of Java. To use Cytoscape on Fedora 21 (or later), one will need to install a standard version of Java. The OpenJDK JRE is available from the Fedora package repository - simply install the java-1.8.0-openjdk.x86_64 (for 64-bit) or java-1.8.0-openjdk.i686 (ofor 32-bit) packages. Oracle’s JRE is available for download in RPM format at java.com, though this requires extra configuration.
                 </p>
             </div>
             <div class="col-md-4 panel">
-                <h3>Fedora 21: Blank Startup Screen</h3>
+                <h3>Fedora 21+: Blank Startup Screen</h3>
 
                 <p>
-                    On Fedora 21, the Cytoscape splash screen may appear blank on startup. This is a known issue, and does not affect the operation of the Cytoscape application otherwise.
+                    On Fedora 21 (or later), the Cytoscape splash screen may appear blank on startup. This is a known issue, and does not affect the operation of the Cytoscape application otherwise.
                 </p>
             </div>
-            <div class="col-md-4 panel">
-                <h3>Apps Won’t Install or Update Properly</h3>
-
-                <p>
-                    Beginning with Cytoscape 3.2.1, apps may not install or update properly on configurations using network-mounted
-                    user home directories or apps symbolically linked from the app installed directory. To revert to the Cytoscape
-                    3.2 behavior, add the following line to the <strong>org.apache.felix.fileinstall-deploy.cfg</strong> file
-                    located in <strong>framework/etc</strong> under your Cytoscape installation directory - NOT CytoscapeConfiguration:
-
-                </p>
-                <p>
-                    <strong>felix.fileinstall.disableNio2 = true</strong>
-                </p>
-            </div>
-        </div>
+         </div>
         </div>
     </div>
 </div>
