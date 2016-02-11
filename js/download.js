@@ -11,7 +11,7 @@ var LATEST = {
 var OLD_VERSIONS = [
     {
         version: "3.2.1",
-        url: "http://chianti.ucsd.edu/cytoscape-3.2.0/"
+        url: "http://chianti.ucsd.edu/cytoscape-3.2.1/"
     },
     {
         version: "3.2.0",
