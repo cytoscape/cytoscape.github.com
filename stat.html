@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>Cytoscape Project Status</title>
+    <title>Cytoscape Project Statistics</title>
 
     <meta name="description" content="Statistics of Cytoscape projects.">
     <meta name="author" content="Keiichiro Ono">
@@ -17,6 +16,9 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <!-- For Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
 
 </head>
 
@@ -34,26 +36,27 @@
     </div>
 </div>
 
+<!-- Menu -->
 <div class="narrow white">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#overall">
+                    <a class="btn btn-primary btn-lg btn-block" href="#overall" data-scroll>
                         Cytoscape Application
                     </a>
                 </p>
             </div>
             <div class="col-xs-12 col-md-4">
                 <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#appstore">
+                    <a class="btn btn-primary btn-lg btn-block" href="#appstore" data-scroll>
                         App Store
                     </a>
                 </p>
             </div>
             <div class="col-xs-12 col-md-4">
                 <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#misc">
+                    <a class="btn btn-primary btn-lg btn-block" href="#misc" data-scroll>
                         Misc.
                     </a>
                 </p>
@@ -62,86 +65,93 @@
     </div>
 </div>
 
-<a name="overall"></a>
+<!-- Actual Charts -->
 
-<div class="belt light-blue">
+<div class="belt light-blue" id="overall">
     <div class="container centering">
         <h1 class="centering" style="color: white;">Cytoscape Application</h1>
     </div>
 </div>
+
 <div class="narrow white">
     <div class="container">
-        <h3 class="underline">Downloads by Version Over Time (Feb 2014 - Jan 2015)</h3>
-        <p>
-           <strong>Cytoscape downloads in Jan 2015:</strong> 10,500 (~350 per day) 
-        </p>
-        <img src="images/stat/downloads_version_min.svg" class="image-fit">
 
-        <h3 class="underline">Downloads by Version and Platform Over Time (Feb 2014 - Jan 2015)</h3>
+        <h3 class="underline">Downloads by Version Over Time (Feb 2014 - Dec 2015)</h3>
+        <img src="images/stat/may2016/downloads_version_min.svg" class="image-fit">
+
+        <h3 class="underline">Downloads by Version and Platform Over Time (Feb 2014 - Dec 2015)</h3>
         <p>
             Windows is the dominant Cytoscape platform, and in the last year, 32 bit Windows systems have 
             dramatically decreased while 64 bit systems have dramatically increased. Also, Cytoscape 2.x 
             has drastically decreased.
         </p>
-        <img src="images/stat/downloads_version_platform_min.svg" class="image-fit">
+        <img src="images/stat/may2016/downloads_version_platform_min.svg" class="image-fit">
 
-        <h3 class="underline">Daily Cytoscape Starts: Total 537,823 (2/9/2014 - 2/23/2015)</h3>
-        <p>
-            <ul>
-                <li><strong>Avg per month:</strong> 43,976 (counting whole months only, 3/2014 – 1/2015, 11 months)</li>
-                <li><strong>Total:</strong> 537,823 (since 2/9/2014)</li>
-                <li><strong>Number of launches from 1/25/15 – 2/25/15:</strong> 63,866 (~2,130 per day)</li>
-            </ul>
-        </p>
-        <img src="images/stat/daily_starts.svg" class="image-fit">
+        <h3 class="underline">Daily Cytoscape Starts: Total 1,267,406 (2/9/2014 - 1/10/2016)</h3>
+        <img src="images/stat/may2016/daily_starts.svg" class="image-fit">
 
-        <h3 class="underline">Web Site Visits (cytoscape.org) and Downloads (via download.php): 2012-2015</h3>
+        <h3 class="underline">Web Site Visits (cytoscape.org) and Downloads (via download.php): 2012-2016</h3>
         <p>
             Web site visits generally increase year over year, while downloads clearly increase year over year.
         </p>
-        <img src="images/stat/web_site_visits_by_week.svg" class="image-fit">
+        <img src="images/stat/may2016/web_site_visits_by_week.svg" class="image-fit">
 
-        <h3 class="underline">Web Site Sessions: Total 1,071,150 (1/1/2012 - 2/22/2015)</h3>
+        <h3 class="underline">Web Site Sessions: Total 1,492,628 (1/1/2012 - 2/10/2016)</h3>
         <p>
             Web site visits generally increase year over year, while downloads clearly increase year over year.
         </p>
+        <img src="images/stat/may2016/web_site_visits_by_country.svg" class="image-fit">
+        
+        <h4>Prior Year: Total 1,071,150 (1/1/2012 - 2/22/2015)</h4>
         <img src="images/stat/web_site_visits_by_country.svg" class="image-fit">
         
         <h3 class="underline">Web Site Referral Sources: Total 1,071,150 (1/1/2012 - 2/22/2015)</h3>
         <p>
             Cytoscape is most often found via Google search.
         </p>
+        <img src="images/stat/may2016/web_site_visits_by_referrals.svg" class="image-fit">
+        
+        <h4>Prior Year (1/1/2012 - 2/22/2015)</h4>
         <img src="images/stat/web_site_visits_by_referrals.svg" class="image-fit">
     </div>
 </div>
 
-<a name="appstore"></a>
-<div class="belt orange">
+<div class="belt orange" id="appstore">
     <div class="container centering">
         <h1 class="centering" style="color: white;">App Store</h1>
     </div>
 </div>
 <div class="narrow white">
     <div class="container">
-        <h3 class="underline">Top App Store Attraction by Category: Total 132,791 (6/1/2012 - 2/22/2015)</h3>
+        <h3 class="underline">Top App Store Attraction by Category: Total 175,279 (6/1/2012 - 2/10/2016)</h3>
+        <img src="images/stat/may2016/app_store_top_downloads.svg" class="image-fit">
+        
+        <h4>Prior Year: Total 132,791 (6/1/2012 - 2/22/2015)</h4>
         <img src="images/stat/app_store_top_downloads.svg" class="image-fit">
 
         <h3 class="underline">App Store Visits: Total 218,731 (6/1/2012 - 2/22/2015)</h3>
         <p>
             The web site has received over 200,000 visits in 3 years, from nearly all countries on Earth.
         </p>
+        <img src="images/stat/may2016/app_store_visits_by_country.svg" class="image-fit">
+
+        <h4>Prior Year Total 218,731 (6/1/2012 - 2/22/2015)</h4>
         <img src="images/stat/app _store_visits_by_country.svg" class="image-fit">
-        
-        <h3 class="underline">App Store Visits per Week: Total 218,731 (6/1/2012 - 2/22/2015)</h3>
+
+
+        <h3 class="underline">App Store Visits per Week: Total 335,340 (6/1/2012 - 2/10/2016)</h3>
         <p>
             App downloads increase year over year.
         </p>
-        <img src="images/stat/app _store_visits_by_week.svg" class="image-fit">
+        <img src="images/stat/may2016/app_store_visits_by_week.svg" class="image-fit">
         
-        <h3 class="underline">App Store Referral Sources: Total 218,731 (6/1/2012 - 2/22/2015)</h3>
+        <h3 class="underline">App Store Referral Sources: Total 335,340 (6/1/2012 - 2/10/2016)</h3>
         <p>
             Apps are downloaded most often from Cytoscape or discovered via Google search.
         </p>
+        <img src="images/stat/may2016/app_store_referrals.svg" class="image-fit">
+
+        <h4>Prior Year: Total 218,731 (6/1/2012 - 2/22/2015)</h4>
         <img src="images/stat/app _store_referrals.svg" class="image-fit">
         
         <h3 class="underline">Apps Checked into App Store</h3>
@@ -149,38 +159,41 @@
             <strong>New app submissions:</strong> maintaining average of ~3 per month. The vast majority of 
             new apps are for Cytoscape 3.
         </p>
-        <img src="images/stat/app _store_v2_vs_v3.svg" class="image-fit">
+        <img src="images/stat/may2016/app_store_v2_vs_v3.svg" class="image-fit">
     </div>
 </div>
 
-<a name="misc"></a>
-<div class="belt light-blue">
+<div class="belt light-blue" id="misc">
     <div class="container centering">
         <h1 class="centering" style="color: white;">Misc. Statistics</h1>
     </div>
 </div>
 <div class="narrow white">
     <div class="container">
-        <h3 class="underline">MEDLINE Cytoscape Citations as of Feb. 23, 2015</h3>
+        <h3 class="underline">MEDLINE Cytoscape Citations as of Feb. 10, 2016</h3>
         <p>
             Cytoscape is cited in nearly 50 papers per month.
         </p>
-        <img src="images/stat/citations.svg" class="image-fit">
+        <img src="images/stat/may2016/citations.svg" class="image-fit">
 
-        <h3 class="underline">Contries Funding Cytoscape Citations: Total 4,396 Citations</h3>
+        <h3 class="underline">Contries Funding Cytoscape Citations: Total 5,433 Citations</h3>
+        <img src="images/stat/may2016/funding.svg" class="image-fit">
+        <h4>Prior Year: Total 4,396 Citations</h4>
         <img src="images/stat/funding.svg" class="image-fit">
         
-        <h3 class="underline">Top 11 Funding Agency for Cytoscape Citations: Total 4,396 Citations</h3>
+        <h3 class="underline">Top 11 Funding Agency for Cytoscape Citations: Total 5,433 Citations</h3>
+        <img src="images/stat/may2016/funding_agency.svg" class="image-fit">
+        <h4>Prior Year: Total 4,396 Citations</h4>
         <img src="images/stat/funding_agency.svg" class="image-fit">
         
         <h3 class="underline">Bugs</h3>
-        <img src="images/stat/bugs.svg" class="image-fit">
+        <img src="images/stat/may2016/bugs.PNG">
         
         <h3 class="underline">Google Groups Posts / Topics</h3>
-        <img src="images/stat/google_groups.svg" class="image-fit">
+        <img src="images/stat/may2016/google_groups.svg" class="image-fit">
         
         <h3 class="underline">Google Groups Memberships</h3>
-        <img src="images/stat/google_groups_memberships.svg" class="image-fit">
+        <img src="images/stat/may2016/google_groups_memberships.svg" class="image-fit">
     </div>
 </div>
 
@@ -188,6 +201,21 @@
 
 <script src="js/load_cyjs.js"></script>
 <script src="js/setup_page.js"></script>
+
+<script>
+    // For smooth scrolling
+    smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+    });
+
+    // Page setup
+    var startDate = ""
+    var endDate = ""
+
+
+</script>
+
 </body>
 
 </html>

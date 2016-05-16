@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2838px" height="2155px" viewBox="0 0 2838 2155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Top_Ap_Store_Attractions_by_Category_Total</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top_Ap_Store_Attractions_by_Category_Total" transform="translate(-3.000000, -17.000000)">
+            <g id="Page_1-Clipped">
+                <g id="Page_1">
+                    <polygon id="Shape" fill="#4572A7" points="1512 1122 2446 1149 2446 1101 2444 1053 2439 1006 2433 960 2423 915 2412 870 2399 826 2383 783 2366 741 2346 701 2325 661 2302 622 2277 585 2250 549 2222 514 2192 481 2160 449 2127 418 2093 390 2057 363 2020 337 1981 314 1941 292 1901 272 1859 254 1816 238 1772 224 1727 212 1681 203 1634 196 1587 191 1539 188 1512 188"></polygon>
+                    <polygon id="Shape" fill="#AA4643" points="1512 1122 1609 2051 1652 2045 1695 2038 1737 2029 1778 2017 1819 2004 1858 1990 1897 1973 1934 1955 1971 1936 2007 1914 2041 1892 2075 1867 2107 1842 2138 1815 2168 1787 2197 1757 2224 1726 2250 1694 2275 1661 2298 1627 2320 1592 2340 1556 2358 1519 2375 1481 2390 1442 2404 1402 2415 1361 2425 1320 2433 1278 2439 1236 2444 1193 2446 1149"></polygon>
+                    <polygon id="Shape" fill="#89A54E" points="1512 1122 783 1706 822 1751 863 1793 906 1833 952 1869 999 1903 1049 1933 1100 1960 1152 1984 1206 2005 1261 2022 1318 2036 1375 2046 1433 2053 1491 2056 1550 2055 1609 2051"></polygon>
+                    <polygon id="Shape" fill="#71588F" points="1512 1122 609 884 596 938 587 992 581 1046 578 1101 578 1155 582 1209 588 1263 598 1316 611 1368 627 1420 645 1471 667 1520 692 1569 719 1616 750 1662 783 1706"></polygon>
+                    <polygon id="Shape" fill="#4198AF" points="1512 1122 971 361 938 385 907 411 876 438 847 466 819 496 793 526 768 558 744 591 722 624 701 659 682 695 664 731 648 768 633 806 620 845 609 884"></polygon>
+                    <polygon id="Shape" fill="#DB843D" points="1512 1122 1512 188 1476 189 1440 191 1404 194 1368 199 1332 205 1297 213 1262 222 1228 232 1194 244 1160 257 1127 271 1095 286 1063 303 1032 321 1001 340 971 361"></polygon>
+                    <path d="M1153,1987 L731,2073 L694,2073 L694,2067 L730,2067 L729,2067 L1151,1981 L1153,1987 L1153,1987 Z M2199,1755 L2338,1909 L2336,1908 L2372,1908 L2372,1914 L2336,1914 L2334,1913 L2195,1759 L2199,1755 L2199,1755 Z M742,593 L608,471 L610,472 L574,472 L574,466 L610,466 L612,467 L746,589 L742,593 L742,593 Z M1225,233 L1148,62 L1151,64 L1114,64 L1114,58 L1151,58 L1154,60 L1231,231 L1225,233 L1225,233 Z M2179,470 L2211,299 L2212,298 L2214,297 L2251,297 L2251,303 L2214,303 L2217,301 L2185,472 L2179,470 L2179,470 Z M598,1319 L459,1312 L422,1312 L422,1306 L459,1306 L598,1313 L598,1319 L598,1319 Z" id="Shape" fill="#000000"></path>
+                    <text id="NetworkGeneration" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="2264" y="301">NetworkGeneration</tspan>
+                    </text>
+                    <text id="25%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="2520" y="399">25%</tspan>
+                    </text>
+                    <text id="DataVisualization" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="2387" y="1913">DataVisualization</tspan>
+                    </text>
+                    <text id="23%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="2599" y="2011">23%</tspan>
+                    </text>
+                    <text id="GraphAnalysis" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="218" y="2071">GraphAnalysis</tspan>
+                    </text>
+                    <text id="16%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="380" y="2170">16%</tspan>
+                    </text>
+                    <text id="Clustering" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="83" y="1310">Clustering</tspan>
+                    </text>
+                    <text id="15%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="177" y="1409">15%</tspan>
+                    </text>
+                    <text id="OntologyAnalysis" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="0" y="470">OntologyAnalysis</tspan>
+                    </text>
+                    <text id="11%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="211" y="569">11%</tspan>
+                    </text>
+                    <text id="OnlineDataImport" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="511" y="62">OnlineDataImport</tspan>
+                    </text>
+                    <text id="10%" fill="#000000" font-family="Calibri" font-size="65.536" font-weight="normal">
+                        <tspan x="737" y="161">10%</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
