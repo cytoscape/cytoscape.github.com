@@ -156,7 +156,7 @@
 	            Cytoscape installers are created with:
 	        </h4>
 	        <a href="https://www.ej-technologies.com/products/install4j/overview.html">
-	            <img src="http://www.ej-technologies.com/images/banners/install4j_large.png"/>
+	            <img src="images/logo/install4j_large.png"/>
 	        </a>
         </div>
 
@@ -166,6 +166,15 @@
             </h4>
             <a href="https://www.jetbrains.com/">
                 <img src="https://www.jetbrains.com/company/docs/logo_jetbrains.png" />
+            </a>
+        </div>
+
+        <div class="row">
+            <h4>
+                Cytoscape Consortium is supported by BrowserStack through their open source licencing program:
+            </h4>
+            <a href="https://www.browserstack.com/">
+                <img src="images/logo/browserstack.svg" width="300px" />
             </a>
         </div>
     </div>
