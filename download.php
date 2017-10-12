@@ -62,6 +62,9 @@
                     Java 8</a> first to use Cytoscape.
                 </h3>
                 <h4 class="warn">
+                    Java 9 is not yet supported
+                </h4>
+                <h4>
                     Java 6 & 7 are no longer supported
                 </h4>
 
