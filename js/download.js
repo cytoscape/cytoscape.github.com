@@ -4,11 +4,15 @@
  */
 
 var LATEST = {
-    version: "3.5.1",
-    url: "http://chianti.ucsd.edu/cytoscape-3.5.1/"
+    version: "3.6.0",
+    url: "http://chianti.ucsd.edu/cytoscape-3.6.0/"
 }
 
 var OLD_VERSIONS = [
+    {
+        version: "3.5.1",
+        url: "http://chianti.ucsd.edu/cytoscape-3.5.1/"
+    },
     {
         version: "3.5.0",
         url: "http://chianti.ucsd.edu/cytoscape-3.5.0/"
