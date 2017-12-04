@@ -55,6 +55,9 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2 box">
                 <div class="row centering">
+                    <div id="staging">
+                        <h2>This is a staging site. The live site is at <a href="http://cytoscape.org>cytoscape.org</a></h2>
+                    </div>
                     <h1>
                         <img src="images/logo/cy3logoOrange.svg" style="height: 150px; padding-bottom: 0"/>
                         Cytoscape
@@ -484,6 +487,16 @@
     }, function () {
         $(this).unwrap('<a></a>');
     });
+</script>
+    
+<script type="text/javascript">
+  // Check URL for github, i.e., staging site
+  var url = window.location.href;
+  // and show div if staging
+  var msg = document.getElementById('staging');
+  if( url.search( 'github' ) > 0 ) {
+      msg.style.display = "block";
+  }
 </script>
 
 <footer></footer>
