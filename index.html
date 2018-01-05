@@ -55,11 +55,9 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2 box">
                 <div class="row centering">
-                    <div id="staging">
-<!--
+                    <div id="staging" style="display: none;">
                         <h2 style="font-size:52px;text-align:center;">This is a staging site. <br>The live site is at <a href="http://www.cytoscape.org">cytoscape.org</a>.</h2>
                         <br><br><br><br>
--->
                     </div>
                     <h1>
                         <img src="images/logo/cy3logoOrange.svg" style="height: 150px; padding-bottom: 0"/>
@@ -180,7 +178,7 @@
     <p>
     Other articles and papers about Cytoscape are available <a href="documentation_users.html">here</a>.
     </p>
-
+<!--
      <h3>How to Donate to Cytoscape</h3>
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -192,6 +190,7 @@
 
     <font style="display:inline-block; font-size:9px; line-height:1.4;">This is a tax deductible donation to a 501(c)(3) nonprofit
 organization, <br />The Cytoscape Consoritum, Tax ID: 20-4909879.</font><br /><br /><br />
+-->
 
     <!-- Twitter Feed -->
     <a class="twitter-timeline" width="100%" height="1500" href="https://twitter.com/cytoscape"
@@ -509,9 +508,12 @@ organization, <br />The Cytoscape Consoritum, Tax ID: 20-4909879.</font><br /><b
   var url = window.location.href;
   // and show div if staging
   var msg = document.getElementById('staging');
+
   if( url.search( 'github' ) > 0 ) {
-      msg.style.display = "block";
+        // Site appears to be github, so enable the Staging Site warning
+        msg.style.display = "block";
   }
+
 </script>
 
 <footer></footer>
