@@ -57,15 +57,9 @@
     <div class="container centering">
         <div class="row centering">
             <div class="col-sm-12 col-md-10 col-md-offset-1">
-                <h3>Please install <a
-                        href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
-                    Java 8</a> first to use Cytoscape.
-                </h3>
+                <div class="javainstall"></div>
                 <h4 class="warn">
                     Java 9 is not yet supported
-                </h4>
-                <h4>
-                    Java 6 & 7 are no longer supported
                 </h4>
 
                 <h3>
@@ -251,6 +245,7 @@ var google_conversion_value = 0;
         if (osName.indexOf('Mac OS') !== -1) {
             osString = osName;
             fileName = 'macos.dmg';
+            $('.javainstall').append('<h3>Java 8 will be automatically installed if not already present</h3>');
         } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
             // This is windows.
             if (is64 || architecture === 'amd64') {
@@ -261,9 +256,11 @@ var google_conversion_value = 0;
                 fileName = 'windows_32bit.exe';
                 $('.win32').append('<h3>32bit version is not recommended.  Please use 64bit version if possible.</h3>');
             }
+            $('.javainstall').append('<h3>Java 8 will be automatically installed if not already present</h3>');
         } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
             osString = osName;
             fileName = 'unix.sh';
+            $('.javainstall').append('<h3>Please install <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"> Java 8</a> before using Cytoscape');
         } else {
             osString = undefined;
         }

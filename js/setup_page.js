@@ -10,7 +10,7 @@ $(document).ready(function () {
     ////////////////////////////////////
     // Modify this when releasing new version!
     ////////////////////////////////////
-    var CYTOSCAPE_LATEST_VERSION = '3.6.0';
+    var CYTOSCAPE_LATEST_VERSION = '3.6.1';
 
     $('.cy-latest-version').append(CYTOSCAPE_LATEST_VERSION);
 
@@ -108,10 +108,10 @@ $(document).ready(function () {
         '<div class="col-xs-12 col-md-8"><p class="text-muted text-left">' +
         'Funding for continued development and maintenance of Cytoscape is provided by the U.S. ' +
         '<a href="http://www.nigms.nih.gov">National Institute of General Medical Sciences (NIGMS)</a> ' +
-        'under award number GM070743.  ' +
+        'under award number R01 GM070743.  ' +
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
-        'numbers P41 RR031228 and GM103504.</p>' +
+        'number P41 GM103504.</p>' +
         '<p class="text-muted text-center">&copy;2001-2017 <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
 
