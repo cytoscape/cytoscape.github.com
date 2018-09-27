@@ -68,18 +68,18 @@ $(document).ready(function() {
         '<li><a href="releasenotes.html">Release Notes</a></li>' +
         '<li><a href="documentation_users.html">For Users</a></li>' +
         '<li><a href="documentation_developers.html">For Developers</a></li>' +
-        '<li><a href="wiki.cytoscape.org">Wiki</a></li>' +
-        '<li><a href="tutorials.cytoscape.org">Tutorials</a></li>' +
+        '<li><a href="https://wiki.cytoscape.org">Wiki</a></li>' +
+        '<li><a href="https://tutorials.cytoscape.org">Tutorials</a></li>' +
         '</ul></li>' +
 
         '<li class="dropdown">' +
         '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>' +
         '<ul class="dropdown-menu">' +
-        '<li class="warn"><a href="http://nrnb.org/competitions.html">Competitions</a></li>' +
+        '<li class="warn"><a href="https://nrnb.org/competitions.html">Competitions</a></li>' +
         '<li><a href="development_team.html">Developer Team</a></li>' +
         '<li><a href="community.html">Social Media</a></li>' +
-        '<li><a href="nrnb.org/media-symposia.html">Conferences</a></li>' +
-        '<li><a href="nrnb.org/training.html">Training</a></li>' +
+        '<li><a href="https://nrnb.org/media-symposia.html">Conferences</a></li>' +
+        '<li><a href="https://nrnb.org/training.html">Training</a></li>' +
         '</ul></li>' +
 
         '<li><a href="bug-report.html">Report a Bug</a></li>' +
