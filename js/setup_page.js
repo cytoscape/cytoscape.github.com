@@ -58,7 +58,7 @@ $(document).ready(function() {
         '<li><a href="roadmap.html">Roadmap</a></li>' +
         '</ul></li>' +
 
-        '<li><a href="download.php">Download</a></li>' +
+        '<li><a href="download.html">Download</a></li>' +
 
         '<li><a href="http://apps.cytoscape.org/" target="_blank">Apps</a></li>' +
 
@@ -82,7 +82,7 @@ $(document).ready(function() {
         '<li><a href="http://nrnb.org/training.html">Training</a></li>' +
         '</ul></li>' +
 
-        '<li><a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a Bug</a></li>' +
+        '<li><a href="bug-report.html">Report a Bug</a></li>' +
 
         '<li class="dropdown">' +
         '<a href="#" class="dropdown-toggle cy3-color" data-toggle="dropdown">Help<b class="caret"></b></a>' +
@@ -109,7 +109,7 @@ $(document).ready(function() {
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
         'number P41 GM103504.</p>' +
-        '<p class="text-muted text-center">&copy;2001-2017 <a href="http://www.cytoscapeconsortium.org/">' +
+        '<p class="text-muted text-center">&copy;2001-2018 <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
 
         '</div><div class="col-xs-12 col-md-4">' +

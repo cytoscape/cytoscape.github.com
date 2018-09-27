@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Cytoscape 3.6.1 Release Notes</title>
@@ -10,13 +11,9 @@
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-        integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
 
@@ -25,473 +22,457 @@
 </head>
 
 <body>
-<div class="white belt">
-    <div class="container">
-        <h1 class="centering">Release Notes for Cytoscape 3.6.1</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <img src="images/screenshots/cy_3_6_0_desktop.png" class="image-fit">
+    <div class="white belt">
+        <div class="container">
+            <h1 class="centering">Release Notes for Cytoscape 3.6.1</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <img src="images/screenshots/cy_3_6_0_desktop.png" class="image-fit">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#new_features" data-scroll>
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#new_features" data-scroll>
                         New Features
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#system_requirements" data-scroll>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#system_requirements" data-scroll>
                         System Requirements
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#manual" data-scroll>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#manual" data-scroll>
                         Manual
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-warning btn-lg btn-block" href="#known_issues" data-scroll>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-warning btn-lg btn-block" href="#known_issues" data-scroll>
                         Known Issues
                     </a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="new_features" class="white">
-    <div class="container centering">
-        <h1 class="centering">About Version 3.6.1</h1>
-        <p class="lead light-text">
-            Cytoscape 3.6 is a Cytoscape Desktop version with updated user interface and automation features
-        </p>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>Automatic JVM Installation</h2>
-                <p class="lead">
-                    For Windows and Mac users, if the Cytoscape installer doesn't find a suitable Java Virtual Machine (JVM) already on your workstation, it will download and install one for you.
-                    For Linux users, the Cytoscape installer won't download a JVM -- Java 8 (rev 151 or later) must be on the PATH (ahead of any other JVM) or referenced by the JAVA_HOME environment variable.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <img src="images/release_notes/cy_3_6_1_install4j_download.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>Cytoscape Automation</h2>
-                <p class="lead">
-                    Automating Cytoscape operations promotes reproducible science, scaling to large numbers of networks, and participation in larger and more complex workflows.
-                    In 3.6, Cytoscape and various apps are callable as services by Python, R and Cytoscape Command scripts.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <img src="images/release_notes/cy_3_6_0_automation.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <img src="images/release_notes/cy_3_6_0_yfiles.png">
-            </div>
-            <div class="col-md-7">
-                <h2>yFiles Update</h2>
-                <p class="lead">
-                    3.6 includes an all new set of yFiles layouts, replacing the older and slower versions. The layouts are more attractive and perform routing with much greater precision.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>NDEx Integration</h2>
-                <p class="lead">
-                    It is now possible to load networks from an NDEx database directly into Cytoscape (using the Network Search Bar) and to save them directly from Cytoscape (using standard menus). NDEx makes cloud-based sharing and collaboration easy.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <img src="images/release_notes/cy_3_6_0_ndex.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <img src="images/release_notes/cy_3_6_0_search_bar.png">
-            </div>
-            <div class="col-md-7">
-                <h2>Network Search Bar</h2>
-                <p class="lead">
-                    The user interface for loading networks from web-based databases has been dramatically streamlined. Using the new Network Search Bar,
-                    you choose the database and enter a query, all from the main Cytoscape network panel. Apps that provide this access include PSICQUIC, NDEx, STRING, STITCH and Pathway Commons.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>Starter Panel</h2>
-                <p class="lead">
-                    When Cytoscape starts, it shows both recent and sample networks in an attractive layout that replaces the older Welcome Dialog.
-                    Cytoscape now represents saved networks as thumbnails for faster and easier access.
-                    The new sample networks are packaged as modern, immediately useful, and ready-to-load sessions.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <img src="images/release_notes/cy_3_6_0_startup.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Drag & Drop Support</h2>
-                <p class="lead">
-                    To load networks and data tables from files, you can simply
-                    drag & drop them onto Network Panel / Table Browser.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>CyBrowser Integration</h2>
-                <p class="lead">
-                    App developers can create
-                    HTML-based material that can appear in a browser-like
-                    window within Cytoscape itself, and can access Cytoscape
-                    APIs and events.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Diffusion</h2>
-                <p class="lead">
-                    This heat propagation algorithm uses the network topology to deduce a pertinent set of nodes given a seed set. Subnetworks can then be derived for further investigation.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Copycat Layout</h2>
-                <p class="lead">
-                    Use node positions in one network to lay out nodes in another network, thereby simplifying visual network comparison.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Unattended Installation</h2>
-                <p class="lead">
-                    Bypass the Cytoscape installer user interface when it's convenient to install Cytoscape via a script.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Improved Selection Performance</h2>
-                <p class="lead">
-                    Select large numbers of nodes much more quickly than in previous versions.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="system_requirements" class="narrow white">
-    <div class="container">
-        <h1 class="centering">System Requirements</h1>
-
-        <h3 class="warn centering">Continuing 32 bit OS Support, Deprecating Java 6 & 7 Support</h3>
-
-        <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
-                <p class="lead">
-                    While v3.6 continues to support 32 bit OSs, it no longer supports Java 6 or 7. We plan to
-                    support 32 bit OSs as long as we can, but will eventually drop this support.
-                </p>
-
-            </div>
-        </div>
-
-        <h3 class="warn centering">Java 8 is Required -- Automatically Installed</h3>
-
-        <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
-                <p class="lead">
-                    For Windows and Mac users, the Cytoscape installer automatically downloads and installs Java 8 if it's not available on your workstation.
-                    For Linux, please use Java 8 as described below.
-                </p>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <h3>Windows</h3>
-                <ul>
-                    <li>Windows XP and newer (including Windows 7, 8 and 10). <strong>64 bit version is recommended</strong>.
-                    </li>
-                    <li>Cytoscape installer automatically downloads a suitable Java 8 if none is available on your workstation. You can manually download and install latest version of <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
-                        Oracle Java 8</a>. OpenJDK and other implementations are not tested.
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3>Mac</h3>
-                <ul>
-                    <li>Mac OS X 10.11 (El Capitan) and later</li>
-                    <li>Cytoscape installer automatically downloads a suitable Java 8 if none is available on your workstation. You can manually download and install latest version of <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Oracle Java 8</a>.</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3>Linux</h3>
-
-                <p>
-                </p>
-                <ul>
-                    <li>Tested on
-                        <a href="https://docs.google.com/spreadsheets/d/1dkP-82icfrdQp3vqt8HqzeyGb_iwgrqg3OxJaqOuWiI/edit#gid=0&vpid=A1">these
-                            distributions.</a>
-                    </li>
-                    <li>
-                        Latest version of Java is required (minimum Java 8 Update 151).
-                    </li>
-
-                    <li>
-                        For Ubuntu, a simple way of installing the Oracle JVM is described
-                        <a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">here</a>.
-                    </li>
-                    <li>Java 8 must be on the PATH (ahead of any other JVM) or referenced by JAVA_HOME environment variable.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="manual" class="narrow snow-white">
-    <h1 class="centering">User Manual</h1>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-6 centering">
-                <a href="http://manual.cytoscape.org/">
-                    <h3>HTML Version</h3>
-                </a>
-            </div>
-            <div class="col-md-6 centering">
-                <a href="manual/Cytoscape3_6_0Manual.pdf">
-                    <h3>PDF version</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="known_issues" class="belt white">
-    <div class="container">
-        <h1 class="centering">Known Issues</h1>
-
-        <div class="row">
-            <div class="col-md-4 panel">
-                <h3>Missing Scrollbars on Linux</h3>
-                <p>
-                    A bug in Java 8 Update 60 (also present in 65/66) causes scrollbars to not always appear on Linux systems. This occurs on both OpenJDK and Oracle Java releases (including the OpenJDK shipped with Ubuntu 15.10 and some other recent Linux distributions), and is resolved by installing Java 8 Update 72 or later from Oracle.
-                </p>
-            </div>
-            <div class="col-md-4 panel">
-                <div class="row">
-                    <div class="col-md-12">
-                    <h3>Internationalization (PDF Export)</h3>
-                    <p>
-                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
-                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
-                    the image file instead.
                     </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Privacy</h3>
-
-                        <p>
-                            The latest privacy policy is posted
-                            <a href="http://manual.cytoscape.org/en/stable/Cytoscape_Privacy_Policy.html">here</a>.
-                        </p>
-                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 panel">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Proxy Settings</h3>
-
-                        <p>
-                            On Linux, on the proxy configuration dialog box, fonts are clipped and messages are
-                            truncated.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                <h3>Conflict with Older Versions</h3>
-
-                <p>
-                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
-                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
-                </p>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 panel">
-                <h3>File Encoding</h3>
-
-                <p>
-                    On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of
-                    the native language encoding. This makes session files portable between workstations in all locales.
-                    Users in Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be
-                    translated to UTF-8 using a platform-dependent editor (which most users are already using for this
-                    purpose). Users in Europe and the Americas are affected, too, if they use characters beyond the
-                    standard ANSI 128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for
-                    Windows).
-                </p>
-            </div>
-
-            <div class="col-md-4 panel">
-                <h3>Missing Columns After Loading Multiple Networks</h3>
-
-                <p>
-                    When loading multiple networks into the same network collection, it is important to import tables
-                    only after each of the networks is loaded. Interspersing table imports with network loads may cause
-                    some table columns to become inaccessible to some networks.
-                </p>
-            </div>
-                       <div class="col-md-4 panel">
-                <h3>Installing on Ubuntu 15.10 (64 bit)</h3>
-
-                <p>
-                    The Cytoscape installer does not run on non-root accounts using the default OpenJDK JVM. It works properly with Oracle Java 8 Update 151 or higher, or as root with OpenJDK. Alternatively, Cytoscape can be installed by downloading and unzipping the GZIP archive found via the <a href="download-platforms.html">Other Platforms link on the Download page</a>.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 panel">
-                <h3>Fedora 21+: Headless Java</h3>
-
-                <p>
-                    Fedora 21 (or later) installs a headless (non-GUI) version of Java by default. As a GUI application, Cytoscape will not install or run with this version of Java. To use Cytoscape on Fedora 21 (or later), one will need to install a standard version of Java. The OpenJDK JRE is available from the Fedora package repository - simply install the java-1.8.0-openjdk.x86_64 (for 64-bit) or java-1.8.0-openjdk.i686 (ofor 32-bit) packages. Oracle’s JRE is available for download in RPM format at java.com, though this requires extra configuration.
-                </p>
-            </div>
-            <div class="col-md-4 panel">
-                <h3>Fedora 21+: Blank Startup Screen</h3>
-
-                <p>
-                    On Fedora 21 (or later), the Cytoscape splash screen may appear blank on startup. This does not affect the operation of the Cytoscape application, and can be resolved by upgrading to Fedora 23 with latest patches.
-                </p>
-            </div>
-         </div>
         </div>
     </div>
-</div>
 
-<div class="belt light-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+    <div id="new_features" class="white">
+        <div class="container centering">
+            <h1 class="centering">About Version 3.6.1</h1>
+            <p class="lead light-text">
+                Cytoscape 3.6 is a Cytoscape Desktop version with updated user interface and automation features
+            </p>
+        </div>
+    </div>
 
-                <h2>How to Report Bugs</h2>
-
-                <p class="lead">
-                    Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you
-                    notice any problems, please report them from:
-                </p>
-                <blockquote>Help &rarr; Report a bug...</blockquote>
-
-                <p class="lead">
-                    Or, you can directly report it from
-                    <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a bug</a>
-                    link on the navigation bar.
-                </p>
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Automatic JVM Installation</h2>
+                    <p class="lead">
+                        For Windows and Mac users, if the Cytoscape installer doesn't find a suitable Java Virtual Machine (JVM) already on your workstation, it will download and install one for you. For Linux users, the Cytoscape installer won't download a JVM -- Java 8 (rev
+                        151 or later) must be on the PATH (ahead of any other JVM) or referenced by the JAVA_HOME environment variable.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/release_notes/cy_3_6_1_install4j_download.png">
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2>Need Help?</h2>
+        </div>
+    </div>
 
-                <p class="lead">
-                    We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a
-                        href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Cytoscape Automation</h2>
+                    <p class="lead">
+                        Automating Cytoscape operations promotes reproducible science, scaling to large numbers of networks, and participation in larger and more complex workflows. In 3.6, Cytoscape and various apps are callable as services by Python, R and Cytoscape Command
+                        scripts.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/release_notes/cy_3_6_0_automation.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/release_notes/cy_3_6_0_yfiles.png">
+                </div>
+                <div class="col-md-7">
+                    <h2>yFiles Update</h2>
+                    <p class="lead">
+                        3.6 includes an all new set of yFiles layouts, replacing the older and slower versions. The layouts are more attractive and perform routing with much greater precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>NDEx Integration</h2>
+                    <p class="lead">
+                        It is now possible to load networks from an NDEx database directly into Cytoscape (using the Network Search Bar) and to save them directly from Cytoscape (using standard menus). NDEx makes cloud-based sharing and collaboration easy.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/release_notes/cy_3_6_0_ndex.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/release_notes/cy_3_6_0_search_bar.png">
+                </div>
+                <div class="col-md-7">
+                    <h2>Network Search Bar</h2>
+                    <p class="lead">
+                        The user interface for loading networks from web-based databases has been dramatically streamlined. Using the new Network Search Bar, you choose the database and enter a query, all from the main Cytoscape network panel. Apps that provide this access include
+                        PSICQUIC, NDEx, STRING, STITCH and Pathway Commons.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Starter Panel</h2>
+                    <p class="lead">
+                        When Cytoscape starts, it shows both recent and sample networks in an attractive layout that replaces the older Welcome Dialog. Cytoscape now represents saved networks as thumbnails for faster and easier access. The new sample networks are packaged as
+                        modern, immediately useful, and ready-to-load sessions.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/release_notes/cy_3_6_0_startup.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Drag & Drop Support</h2>
+                    <p class="lead">
+                        To load networks and data tables from files, you can simply drag & drop them onto Network Panel / Table Browser.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>CyBrowser Integration</h2>
+                    <p class="lead">
+                        App developers can create HTML-based material that can appear in a browser-like window within Cytoscape itself, and can access Cytoscape APIs and events.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Diffusion</h2>
+                    <p class="lead">
+                        This heat propagation algorithm uses the network topology to deduce a pertinent set of nodes given a seed set. Subnetworks can then be derived for further investigation.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Copycat Layout</h2>
+                    <p class="lead">
+                        Use node positions in one network to lay out nodes in another network, thereby simplifying visual network comparison.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Unattended Installation</h2>
+                    <p class="lead">
+                        Bypass the Cytoscape installer user interface when it's convenient to install Cytoscape via a script.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Improved Selection Performance</h2>
+                    <p class="lead">
+                        Select large numbers of nodes much more quickly than in previous versions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="system_requirements" class="narrow white">
+        <div class="container">
+            <h1 class="centering">System Requirements</h1>
+
+            <h3 class="warn centering">Continuing 32 bit OS Support, Deprecating Java 6 & 7 Support</h3>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        While v3.6 continues to support 32 bit OSs, it no longer supports Java 6 or 7. We plan to support 32 bit OSs as long as we can, but will eventually drop this support.
+                    </p>
+
+                </div>
+            </div>
+
+            <h3 class="warn centering">Java 8 is Required -- Automatically Installed</h3>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        For Windows and Mac users, the Cytoscape installer automatically downloads and installs Java 8 if it's not available on your workstation. For Linux, please use Java 8 as described below.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h3>Windows</h3>
+                    <ul>
+                        <li>Windows XP and newer (including Windows 7, 8 and 10). <strong>64 bit version is recommended</strong>.
+                        </li>
+                        <li>Cytoscape installer automatically downloads a suitable Java 8 if none is available on your workstation. You can manually download and install latest version of <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">
+                        Oracle Java 8</a>. OpenJDK and other implementations are not tested.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Mac</h3>
+                    <ul>
+                        <li>Mac OS X 10.11 (El Capitan) and later</li>
+                        <li>Cytoscape installer automatically downloads a suitable Java 8 if none is available on your workstation. You can manually download and install latest version of <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Oracle Java 8</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Linux</h3>
+
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Tested on
+                            <a href="https://docs.google.com/spreadsheets/d/1dkP-82icfrdQp3vqt8HqzeyGb_iwgrqg3OxJaqOuWiI/edit#gid=0&vpid=A1">these
+                            distributions.</a>
+                        </li>
+                        <li>
+                            Latest version of Java is required (minimum Java 8 Update 151).
+                        </li>
+
+                        <li>
+                            For Ubuntu, a simple way of installing the Oracle JVM is described
+                            <a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">here</a>.
+                        </li>
+                        <li>Java 8 must be on the PATH (ahead of any other JVM) or referenced by JAVA_HOME environment variable.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="manual" class="narrow snow-white">
+        <h1 class="centering">User Manual</h1>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 centering">
+                    <a href="http://manual.cytoscape.org/">
+                        <h3>HTML Version</h3>
+                    </a>
+                </div>
+                <div class="col-md-6 centering">
+                    <a href="manual/Cytoscape3_6_0Manual.pdf">
+                        <h3>PDF version</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="known_issues" class="belt white">
+        <div class="container">
+            <h1 class="centering">Known Issues</h1>
+
+            <div class="row">
+                <div class="col-md-4 panel">
+                    <h3>Missing Scrollbars on Linux</h3>
+                    <p>
+                        A bug in Java 8 Update 60 (also present in 65/66) causes scrollbars to not always appear on Linux systems. This occurs on both OpenJDK and Oracle Java releases (including the OpenJDK shipped with Ubuntu 15.10 and some other recent Linux distributions),
+                        and is resolved by installing Java 8 Update 72 or later from Oracle.
+                    </p>
+                </div>
+                <div class="col-md-4 panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Internationalization (PDF Export)</h3>
+                            <p>
+                                For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of labeling information in the PDF. As a workaround, users can generate any type of image file and use the image file instead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Privacy</h3>
+
+                            <p>
+                                The latest privacy policy is posted
+                                <a href="http://manual.cytoscape.org/en/stable/Cytoscape_Privacy_Policy.html">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Proxy Settings</h3>
+
+                            <p>
+                                On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Conflict with Older Versions</h3>
+
+                            <p>
+                                On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 panel">
+                    <h3>File Encoding</h3>
+
+                    <p>
+                        On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of the native language encoding. This makes session files portable between workstations in all locales. Users in Japan, Korea, and China are most affected
+                        – existing v3.0.0 or v2.x session files must be translated to UTF-8 using a platform-dependent editor (which most users are already using for this purpose). Users in Europe and the Americas are affected, too, if they use characters
+                        beyond the standard ANSI 128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
+                    </p>
+                </div>
+
+                <div class="col-md-4 panel">
+                    <h3>Missing Columns After Loading Multiple Networks</h3>
+
+                    <p>
+                        When loading multiple networks into the same network collection, it is important to import tables only after each of the networks is loaded. Interspersing table imports with network loads may cause some table columns to become inaccessible to some networks.
+                    </p>
+                </div>
+                <div class="col-md-4 panel">
+                    <h3>Installing on Ubuntu 15.10 (64 bit)</h3>
+
+                    <p>
+                        The Cytoscape installer does not run on non-root accounts using the default OpenJDK JVM. It works properly with Oracle Java 8 Update 151 or higher, or as root with OpenJDK. Alternatively, Cytoscape can be installed by downloading and unzipping the GZIP
+                        archive found via the <a href="download-platforms.html">Other Platforms link on the Download page</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 panel">
+                    <h3>Fedora 21+: Headless Java</h3>
+
+                    <p>
+                        Fedora 21 (or later) installs a headless (non-GUI) version of Java by default. As a GUI application, Cytoscape will not install or run with this version of Java. To use Cytoscape on Fedora 21 (or later), one will need to install a standard version of
+                        Java. The OpenJDK JRE is available from the Fedora package repository - simply install the java-1.8.0-openjdk.x86_64 (for 64-bit) or java-1.8.0-openjdk.i686 (ofor 32-bit) packages. Oracle’s JRE is available for download in RPM
+                        format at java.com, though this requires extra configuration.
+                    </p>
+                </div>
+                <div class="col-md-4 panel">
+                    <h3>Fedora 21+: Blank Startup Screen</h3>
+
+                    <p>
+                        On Fedora 21 (or later), the Cytoscape splash screen may appear blank on startup. This does not affect the operation of the Cytoscape application, and can be resolved by upgrading to Fedora 23 with latest patches.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="belt light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h2>How to Report Bugs</h2>
+
+                    <p class="lead">
+                        Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you notice any problems, please report them from:
+                    </p>
+                    <blockquote>Help &rarr; Report a bug...</blockquote>
+
+                    <p class="lead">
+                        Or, you can directly report it from
+                        <a href="bug-report.html">Report a bug</a> link on the navigation bar.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Need Help?</h2>
+
+                    <p class="lead">
+                        We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
                     mailing list</a>.
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<footer></footer>
+    <footer></footer>
 
-<script src="js/load_cyjs.js"></script>
-<script src="js/setup_page.js"></script>
+    <script src="js/load_cyjs.js"></script>
+    <script src="js/setup_page.js"></script>
 
-<script>
-    smoothScroll.init({
-        speed: 1000,
-        easing: 'easeInOutCubic'
-    }) ;
-</script>
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic'
+        });
+    </script>
 
 </body>
 

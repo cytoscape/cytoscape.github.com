@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Cytoscape: An Open Source Platform for Complex Network Analysis and Visualization</title>
 
-    <meta name="description" content="Cytoscape Official Web Site"/>
-    <meta name="author" content="Keiichiro Ono"/>
+    <meta name="description" content="Cytoscape Official Web Site" />
+    <meta name="author" content="Keiichiro Ono" />
     <meta name="keywords" content="Cytoscape,visualization,interaction network,
             software,genetic,gene,expression,protein interaction,graph,bioinformatics,
             computational biology,UCSD,Whitehead Institute,Institute for Systems Biology,
             microarray analysis,clustering,pathways,integration,algorithm,
-            statistical analysis,gene regulation,complex networks,social networks"/>
+            statistical analysis,gene regulation,complex networks,social networks" />
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-        integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
 
     <!-- Add fancyBox -->
-    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
     <script src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
 
-    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css"
-          media="screen"/>
+    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
     <script src="js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
     <script src="js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>
 
-    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css"
-          media="screen"/>
+    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <script src="js/fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
 </head>
 
 <body class="light-gray">
-<!--[if lt IE 10]>
+    <!--[if lt IE 10]>
 <p class="browsehappy">
     <h1>
     You are using an <strong>outdated, ancient</strong> browser.
@@ -50,472 +45,440 @@
 </p>
 <![endif]-->
 
-<div id="banner" class="belt background-31">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 box">
-                <div class="row centering">
-                    <div id="staging" style="display: none;">
-                        <h2 style="font-size:52px;text-align:center;">This is a staging site. <br>The live site is at <a href="http://www.cytoscape.org">cytoscape.org</a>.</h2>
-                        <br><br><br><br>
-                    </div>
-                    <h1>
-                        <img src="images/logo/cy3logoOrange.svg" style="height: 150px; padding-bottom: 0"/>
-                        Cytoscape
-                    </h1>
-                    <h4>Network Data Integration, Analysis, and Visualization in a Box</h4>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-block" href="what_is_cytoscape.html">
+    <div id="banner" class="belt background-31">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 box">
+                    <div class="row centering">
+                        <div id="staging" style="display: none;">
+                            <h2 style="font-size:52px;text-align:center;">This is a staging site. <br>The live site is at <a href="http://www.cytoscape.org">cytoscape.org</a>.</h2>
+                            <br><br><br><br>
+                        </div>
+                        <h1>
+                            <img src="images/logo/cy3logoOrange.svg" style="height: 150px; padding-bottom: 0" /> Cytoscape
+                        </h1>
+                        <h4>Network Data Integration, Analysis, and Visualization in a Box</h4>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-block" href="what_is_cytoscape.html">
                                 Introduction
                             </a>
 
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-block orange-button cy-latest-version" href="download.php">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-block orange-button cy-latest-version" href="download.html">
                                 Download
                             </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="top white">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-7">
-                <p class="lead">
-                    Cytoscape is an <a href="download.php">open source</a> software platform
-                    for visualizing complex networks and integrating these with any type of
-                    attribute data. A lot of <a href="http://apps.cytoscape.org/"><i>Apps</i></a>
-                    are available for various kinds of problem domains, including bioinformatics, social network
-                    analysis, and semantic web. <a href="what_is_cytoscape.html">Learn more...</a>
-                </p>
-            </div>
-            <div class="col-sm-12 col-md-5">
-                <a class="btn btn-primary btn-lg btn-block" href="cy3_welcome_letter_v19.pdf">
+    <div class="top white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <p class="lead">
+                        Cytoscape is an <a href="download.php">open source</a> software platform for visualizing complex networks and integrating these with any type of attribute data. A lot of <a href="http://apps.cytoscape.org/"><i>Apps</i></a> are
+                        available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web. <a href="what_is_cytoscape.html">Learn more...</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <a class="btn btn-primary btn-lg btn-block" href="cy3_welcome_letter_v19.pdf">
                     Welcome Letter
                 </a>
-                <a class="btn btn-primary btn-lg btn-block" href="releasenotes.html">
+                    <a class="btn btn-primary btn-lg btn-block" href="releasenotes.html">
                     Release Notes
                 </a>
-                <a class="btn btn-default btn-lg btn-block" href="screenshots.html">
+                    <a class="btn btn-default btn-lg btn-block" href="screenshots.html">
                     Sample Visualizations
                 </a>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
-<div class="narrow snow-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <p>
-                    <a class="btn btn-warning btn-lg btn-block"
-                       href="http://tutorials.cytoscape.org"
-                       target="_new">
+    <div class="narrow snow-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p>
+                        <a class="btn btn-warning btn-lg btn-block" href="http://tutorials.cytoscape.org" target="_new">
                        Cytoscape Tutorial
                     </a>
-                </p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="https://github.com/cytoscape/cytoscape/wiki/Cytoscape-3.0-App-Development"
-                       target="_new">
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="https://github.com/cytoscape/cytoscape/wiki/Cytoscape-3.0-App-Development" target="_new">
                         App Developers Docs
                     </a>
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="top white">
-<div class="container">
-<div class="row">
+    <div class="top white">
+        <div class="container">
+            <div class="row">
 
-<div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4">
 
-    <h3>NRNB and Cytoscape</h3>
+                    <h3>NRNB and Cytoscape</h3>
 
-    <p>
-        <iframe width="100%" src="http://www.youtube.com/embed/_nbqSe4Zaps?rel=0" frameborder="0"
-                allowfullscreen>
+                    <p>
+                        <iframe width="100%" src="http://www.youtube.com/embed/_nbqSe4Zaps?rel=0" frameborder="0" allowfullscreen>
         </iframe>
-    </p>
-    <p>
-        <a href="http://nrnb.org" target="blank">Introduction to the National Resource for Network Biology</a>
-    </p>
+                    </p>
+                    <p>
+                        <a href="http://nrnb.org" target="blank">Introduction to the National Resource for Network Biology</a>
+                    </p>
 
-    <h3>How to Cite Cytoscape</h3>
-    <p>
-        <h4 class="warn">Cytoscape project needs your support!</h4>
-        Please cite the original Cytoscape paper when you use Cytoscape. This is critical to sustaining our federal funding.
-    </p>
+                    <h3>How to Cite Cytoscape</h3>
+                    <p>
+                        <h4 class="warn">Cytoscape project needs your support!</h4>
+                        Please cite the original Cytoscape paper when you use Cytoscape. This is critical to sustaining our federal funding.
+                    </p>
 
-    <div class="thumbnail snow-white">
-        <p>
-        Shannon P, Markiel A, Ozier O, Baliga NS, Wang
-        JT, Ramage D, Amin N, Schwikowski B, Ideker T.
-        </p>
-        <h4>Cytoscape: a software environment for integrated models of
-            biomolecular interaction networks</h4>
-        <p>
-        Genome Research 2003 Nov; 13(11):2498-504
-        </p>
-        <p>
-            <a href="http://www.genome.org/cgi/content/full/13/11/2498"> [Abstract] </a>
-            <a href="http://www.genome.org/cgi/reprint/13/11/2498"> [PDF] </a>
-            <a href="http://www.ncbi.nlm.nih.gov/pubmed/14597658"> [PubMed entry] </a>
-        </p>
-    </div>
+                    <div class="thumbnail snow-white">
+                        <p>
+                            Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T.
+                        </p>
+                        <h4>Cytoscape: a software environment for integrated models of biomolecular interaction networks</h4>
+                        <p>
+                            Genome Research 2003 Nov; 13(11):2498-504
+                        </p>
+                        <p>
+                            <a href="http://www.genome.org/cgi/content/full/13/11/2498"> [Abstract] </a>
+                            <a href="http://www.genome.org/cgi/reprint/13/11/2498"> [PDF] </a>
+                            <a href="http://www.ncbi.nlm.nih.gov/pubmed/14597658"> [PubMed entry] </a>
+                        </p>
+                    </div>
 
-    <p>
-    Other articles and papers about Cytoscape are available <a href="documentation_users.html">here</a>.
-    </p>
+                    <p>
+                        Other articles and papers about Cytoscape are available <a href="documentation_users.html">here</a>.
+                    </p>
 
-     <h3>How to Donate to Cytoscape</h3>
+                    <h3>How to Donate to Cytoscape</h3>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="4D6STRT24649Y">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="4D6STRT24649Y">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
 
-    <font style="display:inline-block; font-size:9px; line-height:1.4;">This is a tax deductible donation to a 501(c)(3) nonprofit
-organization, <br />The Cytoscape Consoritum, Tax ID: 20-4909879.</font><br /><br /><br />
+                    <font style="display:inline-block; font-size:9px; line-height:1.4;">This is a tax deductible donation to a 501(c)(3) nonprofit organization, <br />The Cytoscape Consoritum, Tax ID: 20-4909879.</font><br /><br /><br />
 
-    <!-- Twitter Feed -->
-    <a class="twitter-timeline" width="100%" height="1500" href="https://twitter.com/cytoscape"
-       data-widget-id="323907169479172096">Tweets by
+                    <!-- Twitter Feed -->
+                    <a class="twitter-timeline" width="100%" height="1500" href="https://twitter.com/cytoscape" data-widget-id="323907169479172096">Tweets by
         @cytoscape</a>
-    <script>!function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + "://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }
-    }(document, "script", "twitter-wjs");</script>
+                    <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                    </script>
 
-</div>
-<div class="col-sm-12 col-md-8">
+                </div>
+                <div class="col-sm-12 col-md-8">
 
-<h3>What Can You Do With Cytoscape?</h3>
+                    <h3>What Can You Do With Cytoscape?</h3>
 
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h2 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#biologyPanel">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#biologyPanel">
                     Biology
                 </a>
-            </h2>
-        </div>
-        <div id="biologyPanel" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <p>
-                    Cytoscape supports many use cases in molecular and systems biology, genomics, and proteomics:
-                </p>
-                <ul>
-                    <li>
-                        Load molecular and genetic <a href="http://www.imexconsortium.org/">interaction data
-                        sets</a>
-                        in <a href="http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html">many standards
+                                </h2>
+                            </div>
+                            <div id="biologyPanel" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>
+                                        Cytoscape supports many use cases in molecular and systems biology, genomics, and proteomics:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Load molecular and genetic <a href="http://www.imexconsortium.org/">interaction data
+                        sets</a> in <a href="http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html">many standards
                         formats</a>
-                    </li>
-                    <li>
-                        Project and integrate global datasets and functional annotations
-                    </li>
-                    <li>
-                        Establish powerful visual mappings across these data
-                    </li>
-                    <li>
-                        Perform advanced analysis and modeling using <a
-                            href="http://apps.cytoscape.org/">Cytoscape Apps</a>
-                    </li>
-                    <li>
-                        Visualize and analyze human-curated pathway datasets such as
-                        <a href="http://www.wikipathways.org/index.php/WikiPathways">WikiPathways</a>,
-                        <a href="http://www.reactome.org/">Reactome</a>,
-                        and <a href="http://www.genome.jp/kegg/pathway.html">KEGG</a>.
-                    </li>
-                </ul>
-                <p>
-                    <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/visualMapping1.png"
-                       title="Visual Mapping for Microarray Data">
-                        <img src="images/screenshots/visualMapping1_380px.png" alt="Visual Mapping"/></a>
-                    <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/kegg1.png"
-                       title="KEGG pathway data visualization by KGMLReader App">
-                        <img src="images/screenshots/kegg1_380px.png" alt="KEGG pathway data import"/></a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#socialPanel">
+                                        </li>
+                                        <li>
+                                            Project and integrate global datasets and functional annotations
+                                        </li>
+                                        <li>
+                                            Establish powerful visual mappings across these data
+                                        </li>
+                                        <li>
+                                            Perform advanced analysis and modeling using <a href="http://apps.cytoscape.org/">Cytoscape Apps</a>
+                                        </li>
+                                        <li>
+                                            Visualize and analyze human-curated pathway datasets such as
+                                            <a href="http://www.wikipathways.org/index.php/WikiPathways">WikiPathways</a>,
+                                            <a href="http://www.reactome.org/">Reactome</a>, and <a href="http://www.genome.jp/kegg/pathway.html">KEGG</a>.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/visualMapping1.png" title="Visual Mapping for Microarray Data">
+                                            <img src="images/screenshots/visualMapping1_380px.png" alt="Visual Mapping" /></a>
+                                        <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/kegg1.png" title="KEGG pathway data visualization by KGMLReader App">
+                                            <img src="images/screenshots/kegg1_380px.png" alt="KEGG pathway data import" /></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#socialPanel">
                     Social Science
                 </a>
-            </h3>
-        </div>
-        <div id="socialPanel" class="panel-collapse collapse">
-            <div class="panel-body">
-                Cytoscape is used by social scientists to:
-                <ul>
-                    <li>
-                        Visualize and analyze large social networks of interpersonal relationships
-                    </li>
-                    <li>
-                        Assemble social networks from tables and forms
-                    </li>
-                    <li>
-                        Gather social interactions from the web by variety of
-                        <a href="http://www.programmableweb.com/apis/directory/1?apicat=social">
+                                </h3>
+                            </div>
+                            <div id="socialPanel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Cytoscape is used by social scientists to:
+                                    <ul>
+                                        <li>
+                                            Visualize and analyze large social networks of interpersonal relationships
+                                        </li>
+                                        <li>
+                                            Assemble social networks from tables and forms
+                                        </li>
+                                        <li>
+                                            Gather social interactions from the web by variety of
+                                            <a href="http://www.programmableweb.com/apis/directory/1?apicat=social">
                             web service APIs
                         </a> with scripting languages and save it in standard data file formats.
-                        <a href="http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html">
+                                            <a href="http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html">
                             Cytoscape supports most of the standard file formats
                         </a>.
-                    </li>
-                    <li>
-                        Calculate network statistics using Apps
-                    </li>
-                    <li>
-                        Use with other tools, such as <a href="http://www.r-project.org/">R</a> with <a
-                            href="http://erzuli.ss.uci.edu/R.stuff/">sna</a>/<a
-                            href="http://igraph.sourceforge.net/">
-                        igraph</a> package or <a href="http://networkx.github.io/">NetworkX</a>, for more advanced
-                        analysis
-                    </li>
-                </ul>
-            </div>
+                                        </li>
+                                        <li>
+                                            Calculate network statistics using Apps
+                                        </li>
+                                        <li>
+                                            Use with other tools, such as <a href="http://www.r-project.org/">R</a> with <a href="http://erzuli.ss.uci.edu/R.stuff/">sna</a>/<a href="http://igraph.sourceforge.net/">
+                        igraph</a> package or <a href="http://networkx.github.io/">NetworkX</a>, for more advanced analysis
+                                        </li>
+                                    </ul>
+                                </div>
 
-            <p>
-                <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/twitterVisualization1.png"
-                   title="Twitter Social Network Visualization">
-                    <img src="images/screenshots/twitterVisualization1_380px.png" alt="Twitter Visualization"/></a>
-            </p>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#complexNetworkPanel">
+                                <p>
+                                    <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/twitterVisualization1.png" title="Twitter Social Network Visualization">
+                                        <img src="images/screenshots/twitterVisualization1_380px.png" alt="Twitter Visualization" /></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#complexNetworkPanel">
                     General Complex Network Analysis
                 </a>
-            </h3>
-        </div>
-        <div id="complexNetworkPanel" class="panel-collapse collapse">
-            <div class="panel-body">
-                Cytoscape is domain-independent and therefore is a powerful tool for complex network analysis in
-                general.
-                <ul>
-                    <li>
-                        Calculate statistics for networks by Apps such as <a
-                            href="http://med.bioinf.mpi-inf.mpg.de/netanalyzer/">NetworkAnalyzer</a> or <a
-                            href="http://profs.sci.univr.it/~scardoni/centiscape/centiscapepage.php">CentiScaPe</a>
-                    </li>
-                    <li>
-                        Find shortest path
-                    </li>
-                    <li>
-                        <a href="http://www.cgl.ucsf.edu/cytoscape/cluster/clusterMaker.html">Find clusters by various
+                                </h3>
+                            </div>
+                            <div id="complexNetworkPanel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Cytoscape is domain-independent and therefore is a powerful tool for complex network analysis in general.
+                                    <ul>
+                                        <li>
+                                            Calculate statistics for networks by Apps such as <a href="http://med.bioinf.mpi-inf.mpg.de/netanalyzer/">NetworkAnalyzer</a> or <a href="http://profs.sci.univr.it/~scardoni/centiscape/centiscapepage.php">CentiScaPe</a>
+                                        </li>
+                                        <li>
+                                            Find shortest path
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cgl.ucsf.edu/cytoscape/cluster/clusterMaker.html">Find clusters by various
                             kinds of algorithms</a>
-                    </li>
-                    <li>
-                        Use with other tools for more advanced analysis
-                    </li>
-                    <li>
-                        Perform advanced network analysis in popular tools, including <a
-                            href="http://igraph.sourceforge.net/">igraph</a>, <a
-                            href="http://vlado.fmf.uni-lj.si/pub/networks/pajek/">Pajek</a>,
-                        or <a href="http://www.graphviz.org/">GraphViz</a>
-                        and import it to Cytoscape as standard file formats like
-                        <a href="http://graphml.graphdrawing.org/">GraphML</a>
-                    </li>
-                </ul>
-                <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/networkAnalyzer1.png"
-                   title="Analyze network with NetworkAnalyzer">
-                    <img src="images/screenshots/networkAnalyzer1_380px.png" alt="NetworkAnalyzer"/></a>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#appPanel">
+                                        </li>
+                                        <li>
+                                            Use with other tools for more advanced analysis
+                                        </li>
+                                        <li>
+                                            Perform advanced network analysis in popular tools, including <a href="http://igraph.sourceforge.net/">igraph</a>, <a href="http://vlado.fmf.uni-lj.si/pub/networks/pajek/">Pajek</a>, or <a href="http://www.graphviz.org/">GraphViz</a>                                            and import it to Cytoscape as standard file formats like
+                                            <a href="http://graphml.graphdrawing.org/">GraphML</a>
+                                        </li>
+                                    </ul>
+                                    <a class="fancybox-button" rel="fancybox-button" href="images/screenshots/networkAnalyzer1.png" title="Analyze network with NetworkAnalyzer">
+                                        <img src="images/screenshots/networkAnalyzer1_380px.png" alt="NetworkAnalyzer" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#appPanel">
                     App Development
                 </a>
-            </h3>
-        </div>
-        <div id="appPanel" class="panel-collapse collapse">
-            <div class="panel-body">
-                Cytoscape is expandable and extensible. Cytoscape has a vibrant App developer community
-                and over a hundred Apps developed by third parties.
+                                </h3>
+                            </div>
+                            <div id="appPanel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Cytoscape is expandable and extensible. Cytoscape has a vibrant App developer community and over a hundred Apps developed by third parties.
 
-                <ul>
-                    <li>
-                        Source code is available on <a href="https://github.com/cytoscape">GitHub</a>
-                    </li>
-                    <li>
-                        Running on <a href="http://felix.apache.org/">OSGi framework</a>
-                    </li>
-                    <li>
-                        Develop simple and complex Apps in
-                        <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java</a>
-                    </li>
-                    <li>
-                        Clean, Rich Cytoscape Application Programming Interface
-                        (<a href="http://chianti.ucsd.edu/cytoscape-3.1.0/API/">API</a>)
-                    </li>
-                    <li>
-                        <a href="http://groups.google.com/group/cytoscape-app-dev">Active developer community</a>
-                    </li>
-                    <li>
-                        Write simple functions with scripting languages, including <a href="http://jruby.org/">Ruby</a>,
-                        <a href="http://www.jython.org/">Python</a>, <a href="http://groovy.codehaus.org/">Groovy</a>,
-                        and <a href="http://www.mozilla.org/rhino/">JavaScript</a>
-                    </li>
-                </ul>
-                <a title="OSGi"
-                   href="http://www.osgi.org/Main/HomePage"> <img
-                        src="images/logo/osgi_380px.png"/>
-                </a>
-                <a title="Hosted on github"
-                   href="https://github.com/cytoscape"> <img
-                        src="images/logo/github_380px.png"/>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+                                    <ul>
+                                        <li>
+                                            Source code is available on <a href="https://github.com/cytoscape">GitHub</a>
+                                        </li>
+                                        <li>
+                                            Running on <a href="http://felix.apache.org/">OSGi framework</a>
+                                        </li>
+                                        <li>
+                                            Develop simple and complex Apps in
+                                            <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java</a>
+                                        </li>
+                                        <li>
+                                            Clean, Rich Cytoscape Application Programming Interface (
+                                            <a href="http://chianti.ucsd.edu/cytoscape-3.1.0/API/">API</a>)
+                                        </li>
+                                        <li>
+                                            <a href="http://groups.google.com/group/cytoscape-app-dev">Active developer community</a>
+                                        </li>
+                                        <li>
+                                            Write simple functions with scripting languages, including <a href="http://jruby.org/">Ruby</a>,
+                                            <a href="http://www.jython.org/">Python</a>, <a href="http://groovy.codehaus.org/">Groovy</a>, and <a href="http://www.mozilla.org/rhino/">JavaScript</a>
+                                        </li>
+                                    </ul>
+                                    <a title="OSGi" href="http://www.osgi.org/Main/HomePage"> <img src="images/logo/osgi_380px.png" />
+                                    </a>
+                                    <a title="Hosted on github" href="https://github.com/cytoscape"> <img src="images/logo/github_380px.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-<!-- Tumblr -->
-<div class="row">
-    <div class="col-sm-12">
-        <h2>
-            Featured Publications
-            <a href="http://cytoscape-publications.tumblr.com/" target="_top">
-                <img src="images/logo/tumblr_logo.svg" width="48" />
-        </h2>
+                    <!-- Tumblr -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>
+                                Featured Publications
+                                <a href="http://cytoscape-publications.tumblr.com/" target="_top">
+                                    <img src="images/logo/tumblr_logo.svg" width="48" />
+                            </h2>
 
-        <p>
-            <a href="mailto:cytoscape-helpdesk@googlegroups.com">Let us know </a>if you've
-            published using Cytoscape and we will feature your publication here!
-        </p>
+                            <p>
+                                <a href="mailto:cytoscape-helpdesk@googlegroups.com">Let us know </a>if you've published using Cytoscape and we will feature your publication here!
+                            </p>
 
-        <p>
-            <iframe id="frame" src="publications_tumblr.html"
-                    height="1100" width="95%" frameborder="0" scrolling="yes">
+                            <p>
+                                <iframe id="frame" src="publications_tumblr.html" height="1100" width="95%" frameborder="0" scrolling="yes">
             </iframe>
-        </p>
-    </div>
-</div>
+                            </p>
+                        </div>
+                    </div>
 
-</div>
-</div>
-</div>
-</div>
-
-<div class="white">
-    <div class="container">
-        <!--Consortium Members -->
-        <h2>
-            <a href="http://www.cytoscapeconsortium.org/">Cytoscape Consortium</a>
-        </h2>
-
-        <div class="row institute">
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.ucsf.edu/"><img src="images/logo/ucsf_logo_web.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.ucsd.edu/"><img src="images/logo/ucsd_logo_web.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.utoronto.ca/"><img src="images/logo/toronto_logo_web.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://gladstoneinstitutes.org/"><img src="images/logo/Gladstone_Logotype.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.home.agilent.com"><img src="images/logo/agilent_logo_web.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.pasteur.fr"><img src="images/logo/pasteur_logo_web.png"/></a>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <a href="http://www.systemsbiology.org/"><img src="images/logo/isb_logo_web.png"/></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="belt light-gray">
-    <div class="container">
-        <p>Cytoscape project is supported by:</p>
-        <div class="row">
-           <div class="col-md-6">
-               <a href="http://nrnb.org/">
-                   <img src="images/logo/nrnb_logo.png"/>
-               </a>
-               <p class="lead">
-                   National Resource for Network Biology
-               </p>
-           </div>
-           <div class="col-md-6">
-               <a href="http://www.nigms.nih.gov/About/Overview/bbcb.htm">
-               <p class="lead">National Institute of General Medical
-                   Sciences of the National Institutes of Health</p>
-               </a>
-           </div>
+    <div class="white">
+        <div class="container">
+            <!--Consortium Members -->
+            <h2>
+                <a href="http://www.cytoscapeconsortium.org/">Cytoscape Consortium</a>
+            </h2>
+
+            <div class="row institute">
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.ucsf.edu/"><img src="images/logo/ucsf_logo_web.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.ucsd.edu/"><img src="images/logo/ucsd_logo_web.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.utoronto.ca/"><img src="images/logo/toronto_logo_web.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://gladstoneinstitutes.org/"><img src="images/logo/Gladstone_Logotype.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.home.agilent.com"><img src="images/logo/agilent_logo_web.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.pasteur.fr"><img src="images/logo/pasteur_logo_web.png" /></a>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a href="http://www.systemsbiology.org/"><img src="images/logo/isb_logo_web.png" /></a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".fancybox").fancybox();
-        $(".fancybox-button").fancybox({
-            prevEffect: 'none',
-            nextEffect: 'none',
-            closeBtn: true,
-            helpers: {
-                title: { type: 'inside' },
-                buttons: {}
-            }
+    <div class="belt light-gray">
+        <div class="container">
+            <p>Cytoscape project is supported by:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="http://nrnb.org/">
+                        <img src="images/logo/nrnb_logo.png" />
+                    </a>
+                    <p class="lead">
+                        National Resource for Network Biology
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <a href="http://www.nigms.nih.gov/About/Overview/bbcb.htm">
+                        <p class="lead">National Institute of General Medical Sciences of the National Institutes of Health</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: true,
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    buttons: {}
+                }
+            });
         });
-    });
-    $('#slides .panel img').hover(function () {
-        $(this).wrap('<a href="' + this.src + '" target="_blank"/>');
-    }, function () {
-        $(this).unwrap('<a></a>');
-    });
-</script>
-  
-<script type="text/javascript">
-  // Check URL for github, i.e., staging site
-  var url = window.location.href;
-  // and show div if staging
-  var msg = document.getElementById('staging');
+        $('#slides .panel img').hover(function() {
+            $(this).wrap('<a href="' + this.src + '" target="_blank"/>');
+        }, function() {
+            $(this).unwrap('<a></a>');
+        });
+    </script>
 
-  if( url.search( 'github' ) > 0 ) {
-        // Site appears to be github, so enable the Staging Site warning
-        msg.style.display = "block";
-  }
-</script>
+    <script type="text/javascript">
+        // Check URL for github, i.e., staging site
+        var url = window.location.href;
+        // and show div if staging
+        var msg = document.getElementById('staging');
 
-<footer></footer>
+        if (url.search('github') > 0) {
+            // Site appears to be github, so enable the Staging Site warning
+            msg.style.display = "block";
+        }
+    </script>
 
-<script src="js/setup_page.js"></script>
+    <footer></footer>
+
+    <script src="js/setup_page.js"></script>
 </body>
+
 </html>
