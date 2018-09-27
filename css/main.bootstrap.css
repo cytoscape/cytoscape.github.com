@@ -15,7 +15,7 @@ nav {
 }
 
 #cy-navbar {
-    font-size: 0.98em;
+    font-size: 1em;
 }
 
 .search-form {
@@ -29,10 +29,12 @@ nav {
 h1 {
     font-weight: 100;
     font-size: 5em;
-
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     font-weight: 200;
 }
 
@@ -89,7 +91,6 @@ h2, h3, h4, h5 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
 .section {
@@ -246,7 +247,6 @@ footer {
     z-index: 0;
     color: #fafafa;
     background-color: rgba(44, 77, 131, 0.0);
-
     padding: 1em;
     padding-top: 0;
 }
@@ -280,7 +280,7 @@ footer {
 }
 
 .orange-button {
-    color: white!important;
+    color: white !important;
     background-color: orange !important;
     font-weight: 100 !important;
     border: none !important;
@@ -314,22 +314,29 @@ footer {
     overflow-y: scroll;
 }
 
+
 /*
-    For download page
+For download page
 */
-.download-button, .download-button:hover {
+
+.download-button,
+.download-button:hover {
     background-color: #ff8c00;
     color: #FFFFFF;
     border: none;
     border-radius: 25px !important;
 }
 
-.download-button:hover, .download-button:hover h1 {
+.download-button:hover,
+.download-button:hover h1 {
     background-color: #ffc500;
     color: #555555;
 }
 
-.download-button:visited, .download-button:active, .download-button:hover, .download-button:focus {
+.download-button:visited,
+.download-button:active,
+.download-button:hover,
+.download-button:focus {
     color: #FFFFFF;
     border: none;
     border-radius: inherit;
@@ -353,8 +360,7 @@ footer {
     background-repeat: no-repeat;
     -moz-background-size: 100% auto;
     background-size: 100% auto;
-
-height: 800px;
+    height: 800px;
 }
 
 .cy3-intro {
@@ -362,13 +368,18 @@ height: 800px;
     background-attachment: fixed;
     height: 800px;
 }
+
+
 /* For Cytoscape.js */
 
+
 /* For what_is_cytoscape.html */
+
 .cyjs-back {
     background-color: #065181;
     color: white;
 }
+
 .cyjs-back a {
     color: orange;
     text-decoration: none;
@@ -381,7 +392,8 @@ height: 800px;
     margin-top: -530px;
 }
 
-.cyjs2, .cyjs3 {
+.cyjs2,
+.cyjs3 {
     width: 100%;
     height: 600px;
     background-color: #fafafa;
@@ -390,10 +402,41 @@ height: 800px;
 data-scroll {
     color: white !important;
 }
+
+
 /* For Custom Search */
 
 #___gcse_0 {
-    width: 230px !important;
+    width: 240px !important;
     border-color: #FFFFFF !important;
-    height: 30px!important;
+    height: 4em !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+iframe[id='dummyFrame'] {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 42em;
+    width: 100%;
+    border: none !important;
+}
+
+.bug-report-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    width: 100%;
+    height: 42em;
+}
+
+.center-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
 }
