@@ -11,7 +11,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -21,435 +21,412 @@
 </head>
 
 <body>
-<div class="white">
-    <div class="container">
-        <h1 class="centering">Release Notes for Cytoscape 3.2.0</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <img src="images/release_notes/cy32-release1.png" class="image-fit">
+    <div class="white">
+        <div class="container">
+            <h1 class="centering">Release Notes for Cytoscape 3.2.0</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <img src="images/release_notes/cy32-release1.png" class="image-fit">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="narrow white">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#new_features">
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#new_features">
                         New Features
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#system_requirements">
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#system_requirements">
                         System Requirements
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-primary btn-lg btn-block" href="#manual">
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#manual">
                         Manual
                     </a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <p>
-                    <a class="btn btn-warning btn-lg btn-block" href="#known_issues">
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-warning btn-lg btn-block" href="#known_issues">
                         Known Issues
                     </a>
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<a name="new_features"></a>
+    <a name="new_features"></a>
 
-<div class="white">
-    <div class="container centering">
-        <h1 class="centering">About Version 3.2.0</h1>
+    <div class="white">
+        <div class="container centering">
+            <h1 class="centering">About Version 3.2.0</h1>
 
-        <p class="lead light-text">
-            Cytoscape 3.2.0 is the latest version of Cytoscape 3.x series with new features and bug fixes.
-        </p>
-    </div>
-</div>
-<div class="narrow white">
-    <div class="container image-fit">
-        <img src="images/release_notes/cy32-release7.png" class="image-fit">
-    </div>
-</div>
-
-<div class="belt snow-white">
-    <h1 class="centering">Performance</h1>
-
-    <div class="container">
-        <div class="row item">
-            <div class="col-md-6">
-                <h3>Improved Network Loading Speed</h3>
-
-                <p class="lead">
-                    Network loading process is optimized and faster than 3.1.x.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h3>Improved Rendering Engine Performance</h3>
-
-                <p class="lead">
-                    Rendering engine is optimized especially for large networks. Zoom/pan is more efficient and faster
-                    than past 3.x series.
-                </p>
-            </div>
-        </div>
-
-        <div class="row item">
-            <div class="col-md-6">
-                <h3>Faster Network Merge</h3>
-
-                <p class="lead">
-                    Network merge function is parallelized and is much faster for large networks.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h3>Improved Startup Speed</h3>
-
-                <p class="lead">
-                    Startup process has been optimized and startup time is shorter than 3.1.
-                </p>
-            </div>
+            <p class="lead light-text">
+                Cytoscape 3.2.0 is the latest version of Cytoscape 3.x series with new features and bug fixes.
+            </p>
         </div>
     </div>
-</div>
-<div class="narrow white">
-    <div class="container">
+    <div class="narrow white">
+        <div class="container image-fit">
+            <img src="images/release_notes/cy32-release7.png" class="image-fit">
+        </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-5">
-                <h1>Chart Editor</h1>
+    <div class="belt snow-white">
+        <h1 class="centering">Performance</h1>
 
-                <p class="lead">
-                    Cytoscape 3.2 has a built-in chart editor. You can use node table data as the source of your charts
-                    and render them as high-quality vector graphics. It supports standard charts including: bar, box,
-                    line, pie, heatmap, and ring. In addition to charts, it supports gradients.
-                </p>
+        <div class="container">
+            <div class="row item">
+                <div class="col-md-6">
+                    <h3>Improved Network Loading Speed</h3>
 
-                <p class="lead">
-                    It is a part of Visual Style editor and you can save everything in your session file.
-                </p>
+                    <p class="lead">
+                        Network loading process is optimized and faster than 3.1.x.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Improved Rendering Engine Performance</h3>
+
+                    <p class="lead">
+                        Rendering engine is optimized especially for large networks. Zoom/pan is more efficient and faster than past 3.x series.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-7">
-                <img src="images/release_notes/cy32-chart-editor.png">
+
+            <div class="row item">
+                <div class="col-md-6">
+                    <h3>Faster Network Merge</h3>
+
+                    <p class="lead">
+                        Network merge function is parallelized and is much faster for large networks.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Improved Startup Speed</h3>
+
+                    <p class="lead">
+                        Startup process has been optimized and startup time is shorter than 3.1.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="narrow white">
+        <div class="container">
 
-<div class="narrow black">
-    <div class="container image-fit">
-        <h1 class="light-text">Gradient Samples:</h1>
-    </div>
-    <img src="images/release_notes/cy32-release5.png" class="image-fit">
-</div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>Chart Editor</h1>
 
-<div class="narrow dark-gray">
-    <img src="images/release_notes/cy32-release6.png" class="image-fit">
-</div>
+                    <p class="lead">
+                        Cytoscape 3.2 has a built-in chart editor. You can use node table data as the source of your charts and render them as high-quality vector graphics. It supports standard charts including: bar, box, line, pie, heatmap, and ring. In addition to charts,
+                        it supports gradients.
+                    </p>
 
-<div class="narrow white">
-    <div class="container image-fit">
-        <h1>Charts on Nodes:</h1>
-    </div>
-    <div class="container image-fit">
-        <img src="images/release_notes/cy32-release-kegg1.png" class="image-fit">
-        <img src="images/release_notes/cy32-release4.png" class="image-fit">
-        <img src="images/release_notes/cy32-release2.png" class="image-fit">
-        <img src="images/release_notes/chart-kegg.png" class="image-fit">
-    </div>
-</div>
-
-<div class="narrow white">
-    <div class="container image-fit">
-        <h1 class="centering">Interactive Web Visualization</h1>
-
-        <p class="lead light-text">
-            Cytoscape exports your session as Cytoscape.js-based web visualization. You can publish your
-            networks as a complete web application. This feature is for Mac and Linux only. Support for
-            Windows will be available in 3.2.1.
-        </p>
-
-        <div class="row">
-            <div class="col-s-12 col-md-6">
-                <h3>Original Cytoscape Session</h3>
-                <img src="images/release_notes/cy32-release-web0.png" class="image-fit">
-            </div>
-            <div class="col-s-12 col-md-6">
-                <h3>Interactive Web Visualization</h3>
-                <img src="images/release_notes/cy32-release-web1.png" class="image-fit">
+                    <p class="lead">
+                        It is a part of Visual Style editor and you can save everything in your session file.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/release_notes/cy32-chart-editor.png">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="narrow white">
-    <div class="container image-fit">
-        <h1 class="centering">Improved Command/Tunable API</h1>
-
-        <p class="lead light-text">
-            API for Tunables and Commands are cleaned up and more stable (for developers).
-        </p>
+    <div class="narrow black">
+        <div class="container image-fit">
+            <h1 class="light-text">Gradient Samples:</h1>
+        </div>
+        <img src="images/release_notes/cy32-release5.png" class="image-fit">
     </div>
-</div>
 
+    <div class="narrow dark-gray">
+        <img src="images/release_notes/cy32-release6.png" class="image-fit">
+    </div>
 
-<a name="system_requirements"></a>
+    <div class="narrow white">
+        <div class="container image-fit">
+            <h1>Charts on Nodes:</h1>
+        </div>
+        <div class="container image-fit">
+            <img src="images/release_notes/cy32-release-kegg1.png" class="image-fit">
+            <img src="images/release_notes/cy32-release4.png" class="image-fit">
+            <img src="images/release_notes/cy32-release2.png" class="image-fit">
+            <img src="images/release_notes/chart-kegg.png" class="image-fit">
+        </div>
+    </div>
 
-<div class="narrow white">
-    <div class="container">
-        <h1 class="centering">System Requirements</h1>
+    <div class="narrow white">
+        <div class="container image-fit">
+            <h1 class="centering">Interactive Web Visualization</h1>
 
-        <h3 class="warn centering">Continuing 32 bit OS Support, Deprecating Java 6 Support</h3>
+            <p class="lead light-text">
+                Cytoscape exports your session as Cytoscape.js-based web visualization. You can publish your networks as a complete web application. This feature is for Mac and Linux only. Support for Windows will be available in 3.2.1.
+            </p>
 
-        <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
-                <p class="lead">
-                    While v3.2 continues to support 32 bit OSs, it no longer supports Java 6. We plan to
-                    support 32 bit OSs as long as we can, but will eventually drop this support.
-                    Desupporting Java 6 matches current industry practice, and allows us to focus our
-                    resources on more advanced feature development.
-                </p>
-
+            <div class="row">
+                <div class="col-s-12 col-md-6">
+                    <h3>Original Cytoscape Session</h3>
+                    <img src="images/release_notes/cy32-release-web0.png" class="image-fit">
+                </div>
+                <div class="col-s-12 col-md-6">
+                    <h3>Interactive Web Visualization</h3>
+                    <img src="images/release_notes/cy32-release-web1.png" class="image-fit">
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <h3>Windows</h3>
-                <ul>
-                    <li>Windows XP and newer (including Windows 7 and 8). 64 bit version is recommended.
-                    </li>
-                    <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">
+    <div class="narrow white">
+        <div class="container image-fit">
+            <h1 class="centering">Improved Command/Tunable API</h1>
+
+            <p class="lead light-text">
+                API for Tunables and Commands are cleaned up and more stable (for developers).
+            </p>
+        </div>
+    </div>
+
+
+    <a name="system_requirements"></a>
+
+    <div class="narrow white">
+        <div class="container">
+            <h1 class="centering">System Requirements</h1>
+
+            <h3 class="warn centering">Continuing 32 bit OS Support, Deprecating Java 6 Support</h3>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        While v3.2 continues to support 32 bit OSs, it no longer supports Java 6. We plan to support 32 bit OSs as long as we can, but will eventually drop this support. Desupporting Java 6 matches current industry practice, and allows us to focus our resources
+                        on more advanced feature development.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h3>Windows</h3>
+                    <ul>
+                        <li>Windows XP and newer (including Windows 7 and 8). 64 bit version is recommended.
+                        </li>
+                        <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">
                         Java 7 from Oracle</a>. OpenJDK and other implementations are not tested.
-                    </li>
-                    <li>Note that the java.com website installs a 32 bit JVM by default (to match Windows’ 32 bit
-                        browsers). To download a 64 bit JVM, use <a href="http://java.com/en/download/manual_java7.jsp">this
+                        </li>
+                        <li>Note that the java.com website installs a 32 bit JVM by default (to match Windows’ 32 bit browsers). To download a 64 bit JVM, use <a href="http://java.com/en/download/manual_java7.jsp">this
                             page</a>.
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
 
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3>Mac</h3>
-                <ul>
-                    <li>Mac OS X 10.7 (Lion) and later</li>
-                    <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">Oracle Java 7</a></li>
-                    <li>
-                        <strong>Cytoscape no longer supports Apple Java 6.</strong>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3>Linux</h3>
-
-                <p>
-                </p>
-                <ul>
-                    <li>Tested on
-                        <a href="https://docs.google.com/spreadsheet/ccc?key=0Ak5JMUI-p-wFdEJ3YV9zZ2Z4a0FNYTV5aTZEV3ZQRXc&usp=docslist_api#gid=0">these
-                            distributions</a>
-                    </li>
-                    <li>
-                        Latest version of Java 7 is required.
-                    </li>
-
-                    <li>
-                        For Ubuntu, a simple way of installing the Oracle JVM is described
-                        <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html">here</a>.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <h3 class="warn centering">About Java 8 Support</h3>
-
-        <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
-                <p class="lead">
-                    Cytoscape 3.2.0 may run on Java 8, but its support is still experimental.  We recommend using Java 7 until
-                    we release the official Java 8 compatible version of Cytoscape.
-                </p>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<a name="manual"></a>
-
-<div class="narrow snow-white">
-    <h1 class="centering">User Manual</h1>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-6 centering">
-                <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
-                    <h3>HTML (Wiki) Version</h3>
-                </a>
-            </div>
-            <div class="col-md-6 centering">
-                <a href="manual/Cytoscape3_2_0Manual.pdf">
-                    <h3>PDF version</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<a name="known_issues"></a>
-
-<div class="belt white">
-    <div class="container">
-        <h1 class="centering">Known Issues</h1>
-
-        <div class="row">
-            <div class="col-md-4 panel">
-                <h3>Table Import: Key Column Data Type</h3>
-                <p>
-                    In Cytoscape 3.2, table identifier columns are no longer treated as Strings by default, which  can cause a type mismatch error when using numeric identifiers. Because of this, you will need to manually change the ID column data type to import a table with a numeric identifier into a network using a String column as an identifier (such as “shared name”).  To do this, right-click the column heading in the table import preview and change the selected type to String before importing.
-                </p>
-            </div>
-
-            <div class="col-md-4 panel">
-                <div class="row">
-                    <div class="col-md-12">
-                    <h3>Internationalization (PDF Export)</h3>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Mac</h3>
+                    <ul>
+                        <li>Mac OS X 10.7 (Lion) and later</li>
+                        <li>Latest version of <a href="http://java.com/en/download/manual_java7.jsp">Oracle Java 7</a></li>
+                        <li>
+                            <strong>Cytoscape no longer supports Apple Java 6.</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Linux</h3>
 
                     <p>
-                    For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of
-                    labeling information in the PDF. As a workaround, users can generate any type of image file and use
-                    the image file instead.
                     </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Privacy</h3>
+                    <ul>
+                        <li>Tested on
+                            <a href="https://docs.google.com/spreadsheet/ccc?key=0Ak5JMUI-p-wFdEJ3YV9zZ2Z4a0FNYTV5aTZEV3ZQRXc&usp=docslist_api#gid=0">these
+                            distributions</a>
+                        </li>
+                        <li>
+                            Latest version of Java 7 is required.
+                        </li>
 
-                        <p>
-                            The latest privacy policy is posted
-                            <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Privacy">here</a>.
-                        </p>
-                    </div>
+                        <li>
+                            For Ubuntu, a simple way of installing the Oracle JVM is described
+                            <a href="http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html">here</a>.
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="col-md-4 panel">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Proxy Settings</h3>
+            <h3 class="warn centering">About Java 8 Support</h3>
 
-                        <p>
-                            On Linux, on the proxy configuration dialog box, fonts are clipped and messages are
-                            truncated.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-12">
-                <h3>Conflict with Older Versions</h3>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        Cytoscape 3.2.0 may run on Java 8, but its support is still experimental. We recommend using Java 7 until we release the official Java 8 compatible version of Cytoscape.
+                    </p>
 
-                <p>
-                    On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear
-                    the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
-                </p>
-                </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-4 panel">
-                <h3>File Encoding</h3>
 
-                <p>
-                    On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of
-                    the native language encoding. This makes session files portable between workstations in all locales.
-                    Users in Japan, Korea, and China are most affected – existing v3.0.0 or v2.x session files must be
-                    translated to UTF-8 using a platform-dependent editor (which most users are already using for this
-                    purpose). Users in Europe and the Americas are affected, too, if they use characters beyond the
-                    standard ANSI 128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for
-                    Windows).
-                </p>
+    <a name="manual"></a>
+
+    <div class="narrow snow-white">
+        <h1 class="centering">User Manual</h1>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 centering">
+                    <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual">
+                        <h3>HTML (Wiki) Version</h3>
+                    </a>
+                </div>
+                <div class="col-md-6 centering">
+                    <a href="manual/Cytoscape3_2_0Manual.pdf">
+                        <h3>PDF version</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a name="known_issues"></a>
+
+    <div class="belt white">
+        <div class="container">
+            <h1 class="centering">Known Issues</h1>
+
+            <div class="row">
+                <div class="col-md-4 panel">
+                    <h3>Table Import: Key Column Data Type</h3>
+                    <p>
+                        In Cytoscape 3.2, table identifier columns are no longer treated as Strings by default, which can cause a type mismatch error when using numeric identifiers. Because of this, you will need to manually change the ID column data type to import a table with
+                        a numeric identifier into a network using a String column as an identifier (such as “shared name”). To do this, right-click the column heading in the table import preview and change the selected type to String before importing.
+                    </p>
+                </div>
+
+                <div class="col-md-4 panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Internationalization (PDF Export)</h3>
+
+                            <p>
+                                For Japanese, Korean, and Chinese users, rendering a network to a PDF file can result in loss of labeling information in the PDF. As a workaround, users can generate any type of image file and use the image file instead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Privacy</h3>
+
+                            <p>
+                                The latest privacy policy is posted
+                                <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Privacy">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Proxy Settings</h3>
+
+                            <p>
+                                On Linux, on the proxy configuration dialog box, fonts are clipped and messages are truncated.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Conflict with Older Versions</h3>
+
+                            <p>
+                                On all platforms, users installing Cytoscape directly from a ZIP or TAR file should manually clear the Cytoscape cache by deleting the CytoscapeConfiguration folder in the user’s home directory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-4 panel">
-                <h3>Missing Columns After Loading Multiple Networks</h3>
+            <div class="row">
+                <div class="col-md-4 panel">
+                    <h3>File Encoding</h3>
 
-                <p>
-                    When loading multiple networks into the same network collection, it is important to import tables
-                    only after each of the networks is loaded. Interspersing table imports with network loads may cause
-                    some table columns to become inaccessible to some networks.
-                </p>
-            </div>
-            <div class="col-md-4 panel">
-                <h3>Missing Organism Networks on Welcome Screen</h3>
+                    <p>
+                        On all platforms, all Cytoscape session files recorded since v3.0.1 are encoded in UTF-8 instead of the native language encoding. This makes session files portable between workstations in all locales. Users in Japan, Korea, and China are most affected
+                        – existing v3.0.0 or v2.x session files must be translated to UTF-8 using a platform-dependent editor (which most users are already using for this purpose). Users in Europe and the Americas are affected, too, if they use characters
+                        beyond the standard ANSI 128 – they can translate to UTF-8 using a platform-dependent editor (e.g., Notepad for Windows).
+                    </p>
+                </div>
 
-                <p>
-                    Users upgrading from previous Cytoscape versions (e.g., 3.0.2) may notice that the Welcome Screen
-                    contains only six of the eight organism networks shown in the user manual. To add the two new
-                    networks, terminate Cytoscape, remove the biogrid directory in the CytoscapeConfiguration directory,
-                    and restart Cytoscape. For more information on the <strong>CytoscapeConfiguration</strong> 
-                    directory, see <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Launching_Cytoscape">Launching
+                <div class="col-md-4 panel">
+                    <h3>Missing Columns After Loading Multiple Networks</h3>
+
+                    <p>
+                        When loading multiple networks into the same network collection, it is important to import tables only after each of the networks is loaded. Interspersing table imports with network loads may cause some table columns to become inaccessible to some networks.
+                    </p>
+                </div>
+                <div class="col-md-4 panel">
+                    <h3>Missing Organism Networks on Welcome Screen</h3>
+
+                    <p>
+                        Users upgrading from previous Cytoscape versions (e.g., 3.0.2) may notice that the Welcome Screen contains only six of the eight organism networks shown in the user manual. To add the two new networks, terminate Cytoscape, remove the biogrid directory
+                        in the CytoscapeConfiguration directory, and restart Cytoscape. For more information on the <strong>CytoscapeConfiguration</strong> directory, see <a href="http://wiki.cytoscape.org/Cytoscape_3/UserManual/Launching_Cytoscape">Launching
                     Cytoscape in manual</a>.
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="belt light-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+    <div class="belt light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
 
-                <h2>How to Report Bugs</h2>
+                    <h2>How to Report Bugs</h2>
 
-                <p class="lead">
-                    Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you
-                    notice any problems, please report them from:
-                </p>
-                <blockquote>Help &rarr; Report a bug...</blockquote>
+                    <p class="lead">
+                        Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you notice any problems, please report them from:
+                    </p>
+                    <blockquote>Help &rarr; Report a bug...</blockquote>
 
-                <p class="lead">
-                    Or, you can directly report it from
-                    <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a bug</a>
-                    link on the navigation bar.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Need Help?</h2>
+                    <p class="lead">
+                        Or, you can directly report it from
+                        <a href="http://chianti.ucsd.edu/cyto_web/bugreport/bugreport.php">Report a bug</a> link on the navigation bar.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Need Help?</h2>
 
-                <p class="lead">
-                    We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a
-                        href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+                    <p class="lead">
+                        We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
                     mailing list</a>.
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<footer></footer>
+    <footer></footer>
 
-<script src="js/load_cyjs.js"></script>
-<script src="js/setup_page.js"></script>
+    <script src="js/load_cyjs.js"></script>
+    <script src="js/setup_page.js"></script>
 </body>
 
 </html>
