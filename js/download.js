@@ -4,11 +4,15 @@
  */
 
 var LATEST = {
-    version: "3.6.1",
-    url: "https://github.com/cytoscape/cytoscape/releases/download/3.6.1/"
+    version: "3.7.0",
+    url: "https://github.com/cytoscape/cytoscape/releases/download/3.7.0/"
 }
 
 var OLD_VERSIONS = [{
+        version: "3.6.1",
+        url: "https://github.com/cytoscape/cytoscape/releases/download/3.6.1/"
+    },
+    {
         version: "3.6.0",
         url: "http://chianti.ucsd.edu/cytoscape-3.6.0/"
     },
