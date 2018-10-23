@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="refresh" content="0; url=../bug-report.html" />
