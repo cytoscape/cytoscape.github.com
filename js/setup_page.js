@@ -65,11 +65,11 @@ $(document).ready(function() {
         '<li id="docs" class="dropdown">' +
         '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
         '<ul class="dropdown-menu">' +
-        '<li><a href="releasenotes.html">Release Notes</a></li>' +
-        '<li><a href="documentation_users.html">For Users</a></li>' +
         '<li><a href="http://tutorials.cytoscape.org">Tutorials</a></li>' +
         '<li><a href="https://github.com/cytoscape/cytoscape-automation/wiki">Automation</a></li>' +
-        '<li><a href="documentation_developers.html">For Developers</a></li>' +
+        '<li><a href="releasenotes.html">Release Notes</a></li>' +
+        '<li><a href="documentation_users.html">Links for Users</a></li>' +
+        '<li><a href="documentation_developers.html">Links or Developers</a></li>' +
         '</ul></li>' +
 
         '<li class="dropdown">' +
