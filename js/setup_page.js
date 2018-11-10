@@ -67,9 +67,9 @@ $(document).ready(function() {
         '<ul class="dropdown-menu">' +
         '<li><a href="releasenotes.html">Release Notes</a></li>' +
         '<li><a href="documentation_users.html">For Users</a></li>' +
-        '<li><a href="documentation_developers.html">For Developers</a></li>' +
-        '<li><a href="http://wiki.cytoscape.org">Wiki</a></li>' +
         '<li><a href="http://tutorials.cytoscape.org">Tutorials</a></li>' +
+        '<li><a href="https://github.com/cytoscape/cytoscape-automation/wiki">Automation</a></li>' +
+        '<li><a href="documentation_developers.html">For Developers</a></li>' +
         '</ul></li>' +
 
         '<li class="dropdown">' +
