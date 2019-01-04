@@ -61,7 +61,11 @@
             var versionLength = OLD_VERSIONS.length;
             var versionList = $('#versions');
             for (var i = 0; i < versionLength; i++) {
-                versionList.append('<h3><a href="' + OLD_VERSIONS[i].url + '">' + OLD_VERSIONS[i].version + '</a></h3>');
+                var BASE_URL = OLD_VERSIONS[i].url;
+								if (BASE_URL.includes('releases/download/')) {
+										BASE_URL = BASE_URL.replace('releases/download/', 'releases/')
+								}
+								versionList.append('<h3><a href="' + BASE_URL + '">' + OLD_VERSIONS[i].version + '</a></h3>');
             }
         });
     </script>
