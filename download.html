@@ -230,7 +230,11 @@
 
     <script>
         $(function() {
+
             var BASE_URL = LATEST.url + 'Cytoscape_' + LATEST.version.split('.').join('_') + '_';
+            if (BASE_URL.includes('github.com/cytoscape/cytoscape/releases')) {
+                BASE_URL = BASE_URL.replace('cytoscape/releases/', 'cytoscape/releases/download/')
+            }
             var is64 = true;
 
             var parser = new UAParser();
