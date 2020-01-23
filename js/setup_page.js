@@ -69,7 +69,7 @@ $(document).ready(function() {
         '<li><a href="https://github.com/cytoscape/cytoscape-automation/wiki">Automation</a></li>' +
         '<li><a href="https://www.youtube.com/channel/UCv6auk9FK4NgXiXiqrDLccw">Video Demos</a></li>' +
         '<li><a href="documentation_users.html">Links for Users</a></li>' +
-        '<li><a href="documentation_developers.html">Links or Developers</a></li>' +
+        '<li><a href="documentation_developers.html">Links for Developers</a></li>' +
         '<li><a href="releasenotes.html">Release Notes</a></li>' +
         '</ul></li>' +
 
