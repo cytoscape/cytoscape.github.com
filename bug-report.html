@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Report an Issue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <div class="bug-report-panel">
+                        <h1>Report a Bug</h1>
+                        <p class="lead">
+                            Please use this form to report reproducible Cytoscape bugs. It is helpful if you can confirm that the bug is reproducible on another computer.
+                        </p>
+                        <p class="lead">
+                            For general questions about Cytoscape installation and usage, visit our 
+                            <a href="documentation_users.html">user documenation page</a>.
+                        </p>
+                        <h2>
+                            Tips for writing a good bug report:
+                        </h2>
+                        <ul>
+                            <li>Add your platform information
+                                <ul>
+                                    <li>Cytoscape version</li>
+                                    <li>OS (Mac/Windows/Linux)</li>
+                                    <li>Java (JVM/JDK) version</li>
+                                </ul>
+                            </li>
+                            <li>Be specific - How can you reprocuce it?</li>
+                            <li>Optional: sample data to reproduce the bug</li>
+                        </ul>
+
+                        <h2>Ready? Click the button to report</h2>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <iframe id="dummyFrame" class="dummy-frame" title="Dummy Frame" src="bug-report-internal.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script src="js/setup_page.js"></script>
+
+</body>
+
+</html>
