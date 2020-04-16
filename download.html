@@ -55,10 +55,6 @@
             <div class="row centering">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
                     <div class="javainstall"></div>
-                    <h4 class="warn">
-                        Java 9 is not yet supported
-                    </h4>
-
                     <h3>
                         Problems? <a href="troubleshooting.html">Read this page first</a>
                     </h3>
@@ -188,7 +184,7 @@
 
     <footer></footer>
 
-    
+
 
 
 <!-- Global site tag (gtag.js) - Google Ads: 1026957401 -->
@@ -206,7 +202,7 @@
   gtag('event', 'conversion', {'send_to': 'AW-1026957401/-cK5CJPKiwIQ2cDY6QM'});
 </script>
 
-    <!-- Google Code for Cytoscape downloaded Conversion Page 
+    <!-- Google Code for Cytoscape downloaded Conversion Page
     <script type="text/javascript">
         /* <![CDATA[ */
         var google_conversion_id = 1026957401;
@@ -218,7 +214,7 @@
         /* ]]> */
     </script>
     -->
-    
+
     <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
     </script>
 
@@ -257,7 +253,7 @@
                 osString = osName;
                 fileName = 'macos.dmg';
                 $('.javainstall').append(
-                    '<h3>Java 8 will be automatically installed if not already present</h3>');
+                    '<h3>Java 11 will be automatically installed if not already present</h3>');
             } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
                 // This is windows.
                 if (is64 || architecture === 'amd64') {
@@ -271,12 +267,12 @@
                     );
                 }
                 $('.javainstall').append(
-                    '<h3>Java 8 will be automatically installed if not already present</h3>');
+                    '<h3>Java 11 will be automatically installed if not already present</h3>');
             } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
                 osString = osName;
                 fileName = 'unix.sh';
                 $('.javainstall').append(
-                    '<h3>Please install <a href="https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"> Java 8</a> before using Cytoscape'
+                    '<h3>Please install <a href="https://adoptopenjdk.net/"> Java 11</a> before using Cytoscape'
                 );
             } else {
                 osString = undefined;
