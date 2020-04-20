@@ -96,8 +96,8 @@
             <h2>For Developers</h2>
 
             <h3>
-                <a href="http://code.cytoscape.org/jenkins/job/cytoscape-3-gui-distribution/lastSuccessfulBuild/org.cytoscape.distribution$cytoscape/">
-                Nightly Build
+                <a href="https://cytoscape-builds.ucsd.edu/cytoscape-builds/Cytoscape-3.8.0/">
+                Recent Builds
             </a>
             </h3>
 
@@ -136,7 +136,7 @@
             var latestVersion = $('.latestVersion');
             var versionUnderscore = LATEST.version.split('.').join('_');
             var fileURL = LATEST.url + 'Cytoscape_' + versionUnderscore + '_';
-            var archivedFileURL = LATEST.url + 'cytoscape-' + LATEST.version + '.';
+            var archivedFileURL = LATEST.url + 'cytoscape-';
 
             latestVersion.append(LATEST.version);
 
@@ -144,8 +144,8 @@
             $('.win32_download').attr('href', fileURL + 'windows_32bit.exe');
             $('.win64_download').attr('href', fileURL + 'windows_64bit.exe');
             $('.unix_download').attr('href', fileURL + 'unix.sh');
-            $('.zip_download').attr('href', archivedFileURL + 'zip');
-            $('.gzip_download').attr('href', archivedFileURL + 'tar.gz');
+            $('.zip_download').attr('href', archivedFileURL + 'windows-' + LATEST.version + '.zip');
+            $('.gzip_download').attr('href', archivedFileURL + 'unix-'+ LATEST.version + '.tar.gz');
         });
     </script>
     <footer></footer>
