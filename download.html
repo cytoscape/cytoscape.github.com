@@ -253,7 +253,7 @@
                 osString = osName;
                 fileName = 'macos.dmg';
                 $('.javainstall').append(
-                    '<h3>Java 11 will be automatically installed if not already present</h3>');
+                    '<h3>Java 11 will be automatically installed if not already present. If you experience diffuculty with this, manual installers for Java can be downloaded <a href="https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_mac_hotspot_11.0.7_10.pkg"> here</a>.</h3> ');
             } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
                 // This is windows.
                 if (is64 || architecture === 'amd64') {
@@ -267,7 +267,7 @@
                     );
                 }
                 $('.javainstall').append(
-                    '<h3>Java 11 will be automatically installed if not already present</h3>');
+                    '<h3>Java 11 will be automatically installed if not already present.  If you experience diffuculty with this, manual installers for Java can be downloaded <a href="https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10.2/OpenJDK11U-jdk_x64_windows_hotspot_11.0.7_10.msi"> here</a>.</h3>');
             } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
                 osString = osName;
                 fileName = 'unix.sh';
