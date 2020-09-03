@@ -65,6 +65,7 @@ $(document).ready(function() {
         '<li id="docs" class="dropdown">' +
         '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>' +
         '<ul class="dropdown-menu">' +
+        '<li><a href="https://manual.cytoscape.org/en/stable/">Manual</a></li>' +
         '<li><a href="http://tutorials.cytoscape.org">Tutorials</a></li>' +
         '<li><a href="https://github.com/cytoscape/cytoscape-automation/wiki">Automation</a></li>' +
         '<li><a href="https://www.youtube.com/channel/UCv6auk9FK4NgXiXiqrDLccw">Video Demos</a></li>' +
