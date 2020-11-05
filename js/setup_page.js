@@ -89,6 +89,7 @@ $(document).ready(function() {
         '<a href="#" class="dropdown-toggle cy3-color" data-toggle="dropdown">Help<b class="caret"></b></a>' +
         '<ul class="dropdown-menu">' +
         '<li><a href="troubleshooting.html">Troubleshooting</a></li>' +
+        '<li><a href="common_issues.html">Common Issues</a></li>' +
         '<li><a href="documentation_users.html">Getting Help</a></li>' +
         '</ul></li>' +
 
