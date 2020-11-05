@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Common Issues</title>
+
+    <meta name="description" content="Common issues and solutions for running Cytoscape">
+    <meta name="author" content="Keiichiro Ono">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/UAParser/ua-parser.0.7.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="white">
+        <div class="container centering">
+            <h1 class="belt">Common Issues</h1>
+
+            <h3 class="centering">
+                Here are some common problems encountered while running Cytoscape, and with instructions on how to solve
+                them.
+            </h3>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="white">
+        <div class="container left">
+            <h3 class="belt"><a href='#basic'>Basic Troubleshooting</a></h3>
+
+            <p>First, follow the steps outlined in our <a href="./troubleshooting.html">Troubleshooting page</a></p>
+
+            <p>If you’ve run the System Checker script on that page, please include the output from it in any bug
+                reports or help requests. It will contain important information about your configuration that can help
+                diagnose the problem.</p>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="white">
+        <div class="container left">
+            <h3 class="belt"><a href='#loginfo'>Finding Additional Log Info</a></h3>
+
+            <p>Sometimes, additional log info can be needed to diagnose Cytoscape problems. There are two sources of log
+                information that can be further analyzed.</p>
+
+            <h4>Console Output</h4>
+            <p> This is console output from running Cytoscape. You will need to open a terminal in your operating system
+                and copy any output you see produced.</p>
+            <ul>
+                <li><b>Windows</b>: Open a command line terminal (follow instructions here). Run cytoscape.bat, which is
+                    normally found here: <code>C:\Program Files\Cytoscape_v3.x.y\cytoscape.bat</code> </li>
+                <li><b>Mac</b>: Open a command line terminal (follow instructions here). Run cytoscape.sh, which is
+                    normally found here: <code>/Applications/Cytoscape_v3.8.0/cytoscape.sh</code></li>
+                <li><b>Linux</b>: Open a command line terminal. Run cytoscape.sh, which is normally found here:
+                    <code>~/Cytoscape_v3.x.y/cytoscape.sh</code></li>
+            </ul>
+            <h4>Framework Log</h4>
+            <p> This is a log file generated automatically by running Cytoscape. It is normally located in the following
+                places.</p>
+            <ul>
+                <li><b>Windows</b>: <code>C:\Users\YourUserName\CytoscapeConfiguration\3\framework-cytoscape.log</code>
+                </li>
+                <li><b>Mac or Linux</b>: <code>~\CytoscapeConfiguration\3\framework-cytoscape.log</code></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="white">
+        <div class="container left">
+            <h3 class="belt"><a href='#java_home'>Setting JAVA_HOME</a></h3>
+
+            <h4>Windows</h4>
+            <h5><b>Using Windows Settings</b></h5>
+            <ol>
+                <li>
+                    <p>Locate your Java installation directory</p>
+
+                    <p>If you didn't change the path during installation, it'll be something like
+                        <code>C:\Program Files\Java\jdk1.8.0_65</code></p>
+
+                    <p>You can also type <code>where java</code> at the command prompt.</p>
+                </li>
+                <li>
+                    <p>Do one of the following:</p>
+                    <ul>
+                        <li><b>Windows 7</b> Right click <code>My Computer</code> and select
+                            <code>Properties > Advanced </code></li>
+                        <li><b>Windows 8</b> Go to <code>Control Panel > System > Advanced System Settings</code></li>
+                        <li><b>Windows 10</b> Search for <code>Environment Variables</code> then select
+                            <code>Edit the system environment variables</code></li>
+                    </ul>
+                </li>
+                <li>Click the <code>Environment Variables button.</code></li>
+                <li>Under <code>System Variables</code>, click <code>New</code>.</li>
+                <li>In the <code>Variable Name</code> field, enter <code>JAVA_HOME</code></li>
+                <li>
+                    <p>In the <code>Variable Value</code> field, enter your JDK or JRE installation path.</p>
+                    <p>Example: <code>C:\Progra~1\Java\adoptopenjdk-11-hotspot-amd64</code>*</p>
+                    <p><i>*Note for Windows users on 64-bit systems:
+                            <ul>
+                                <li>Progra~1 = 'Program Files'</li>
+                                <li>Progra~2 = 'Program Files(x86)'</li>
+                            </ul>
+                        </i> </p>
+                </li>
+                <li>Click <code>OK</code> and <code>Apply Changes</code> as prompted</li>
+            </ol>
+            <p>You'll need to close and re-open any command windows that were open before you made these changes, as
+                there's no way to reload environment variables from an active command prompt. If the changes don't take
+                effect after reopening the command window, restart Windows.</p>
+            <h5><b>Using Windows Command Line</b></h5>
+            <p>If you would prefer to set the JAVA_HOME (or JRE_HOME) variable via the command line:</p>
+            <ol>
+                <li>Open Command Prompt (make sure you <code>Run as administrator</code> so you're able to add a system
+                    environment variable).</li>
+                <li>
+                    <p>Set the value of the environment variable to your JDK (or JRE) installation path as follows:</p>
+                    <p><code>setx -m JAVA_HOME "C:\Progra~1\Java\jdk1.8.0_XX"</code></p>
+                    <p>If the path contains spaces, use the shortened path name.</p>
+                </li>
+                <li>
+                    <p>Restart Command Prompt to reload the environment variables then use the following command to
+                        check the it's been added correctly. </p>
+                    <p><code>echo %JAVA_HOME%</code></p>
+                    <p>You should see the path to your JDK (or JRE) installation. </p>
+                </li>
+            </ol>
+            <h4>Mac or Linux</h4>
+            <ol>
+                <li>Open Terminal</li>
+                <li>Confirm you have JDK by typing <code>which java</code>. It should show something like
+                    <code>/usr/bin/java</code>.</li>
+                <li>Check you have the needed version of Java, by typing <code>java -version</code>.</li>
+                <li>
+                    <p><code>JAVA_HOME</code> is essentially the full path of the directory that contains a
+                        sub-directory <code>bin</code>, which contains the JVM. It generally looks like this:
+                        <code>/Library/Java/Home</code></p>
+                    <p>Set <code>JAVA_HOME </code> to this path using this command:
+                        <code>export JAVA_HOME=/Library/Java/Home</code></p>
+                </li>
+                <li>Use <code>echo $JAVA_HOME</code> to confirm the path</li>
+                <li>You should now be able to run your application</li>
+            </ol>
+            <p>This only sets <code>JAVA_HOME</code> for the current session. To persistently set it, follow these
+                steps:</p>
+            <ol>
+                <li>Open Terminal</li>
+                <li>Type <code>emacs .profile</code> to edit your profile.
+                <li>
+                    <p>Add this to the end of the .profile file:</p>
+                    <p><code>
+                            JAVA_HOME=/Library/Java/Home<br/>
+                            export JAVA_HOME;
+                    </code></p>
+                </li>
+                <li>Save and exit emacs; use the following key combinations and follow any prompts: <code>ctrl-x</code>,
+                    <code>ctrl-s</code>; <code>ctrl-x</code>, <code>ctrl-c</code></li>
+                <li>
+                    <p>Open a new Terminal window and type: <code>$JAVA_HOME/bin/java -version</code></p>
+                    <p>You should see something like the following: </p>
+                    <p><code>openjdk version "11.0.9" 2020-10-20<br/>
+                        OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.9+11)<br/>
+                        OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.9+11, mixed mode)
+                    </code></p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    </div>
+
+    <div class="white">
+        <div class="container left">
+            <h3 class="belt"><a href='#highdpi'>Scaling Cytoscape on a High DPI Monitor</a></h3>
+
+            <p>
+                Cytoscape may not scale well on High DPI monitors. If this is the case and you are running on a Linux
+                machine, you can add the following line to the <code>cytoscape.sh</code> file:
+            </p>
+            <p>
+                <code>export GDK_SCALE=2</code>
+            </p>
+            <p>This works on Ubuntu 18.04 with GNOME/Cinnamon. However, scaling is not respected if one starts the
+                application via the Cytoscape.desktop application shortcut, only if launched from the terminal.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="snow-white">
+        <div class="container">
+            <div class="small centering">
+                <br />
+                <br />
+                Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> is licensed under <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="js/platform_checker.js"></script>
+    <script src="js/setup_page.js"></script>
+</body>
+
+</html>
