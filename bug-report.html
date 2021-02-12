@@ -6,48 +6,119 @@
     <title>Report an Issue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+        integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
     <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <script type="text/javascript"
+        src="https://cytoscape.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/o2joag/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=45488c8f"></script>
+
+    <script type="text/javascript">
+
+        var urlVars = undefined;
+
+        function getUrlVars() {
+            if (urlVars == undefined) {
+                urlVars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                    urlVars[key] = value;
+                });
+            }
+            return urlVars;
+        }
+
+        function getIssueEnvironment() {
+            const cyVersion = getUrlVars()['cyversion'];
+            const os = getUrlVars()['os'];
+
+            return cyVersion || os
+                ? "Cytoscape Version: " + cyVersion + "\nOperating System: " + os
+                : "";
+        }
+
+        window.ATL_JQ_PAGE_PROPS = {
+            "triggerFunction": function (showCollectorDialog) {
+                //Requires that jQuery is available! 
+                jQuery("#myCustomTrigger").click(function (e) {
+                    e.preventDefault();
+                    showCollectorDialog();
+                });
+            },
+            // ==== we add the code below to set the field values ====
+            fieldValues: {
+                summary: "",
+                description: "",
+                environment: getIssueEnvironment()
+            }
+        };</script>
+
 </head>
 
-<body>
-    <div class="white">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    <div class="bug-report-panel">
-                        <h1>Report a Bug</h1>
-                        <p class="lead">
-                            Please use this form to report reproducible Cytoscape bugs. It is helpful if you can confirm that the bug is reproducible on another computer.
-                        </p>
-                        <p class="lead">
-                            For general questions about Cytoscape installation and usage, visit our 
-                            <a href="documentation_users.html">user documention page</a>.
-                        </p>
-                        <h2>
-                            Tips for writing a good bug report:
-                        </h2>
-                        <ul>
-                            <li>Add your platform information
-                                <ul>
-                                    <li>Cytoscape version</li>
-                                    <li>OS (Mac/Windows/Linux)</li>
-                                    <li>Java (JVM/JDK) version</li>
-                                </ul>
-                            </li>
-                            <li>Be specific - How can you reprocuce it?</li>
-                            <li>Optional: sample data to reproduce the bug</li>
-                        </ul>
+<!-- path args: ?cyversion=3.8.2&os=Windows_10_10.0 -->
 
-                        <h2>Ready? Click the button to report</h2>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-6">
-                    <iframe id="dummyFrame" class="dummy-frame" title="Dummy Frame" src="bug-report-internal.html"></iframe>
+<body>
+    <div class="narrow white">
+
+        <div class="container">
+
+
+
+
+            <h1 class="centering">Report a Bug</h1>
+
+            <p class="lead">
+                Use this form to report Cytoscape bugs. Please include enough information to allow someone else
+                to reproduce the bug. It is also helpful if you can confirm
+                that the bug is reproducible on another computer.
+            </p>
+            <p class="lead">
+                For general questions about Cytoscape installation and usage, visit our
+                <a href="documentation_users.html">user documention page</a>.
+            </p>
+
+          
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                   
+                        <h3>
+                            Bug Report Tips:
+                        </h3>
+                        <ul>
+                        <li>Add your platform information
+                            <ul>
+                                <li>Cytoscape version</li>
+                                <li>OS (Mac/Windows/Linux)</li>
+                                <li>Java (JVM/JDK) version</li>
+                            </ul>
+                        </li>
+                        <li>Be specific - How can you reprocuce it?</li>
+                        <li>Optional: sample data to reproduce the bug</li>
+                    </ul>
+                   
+
                 </div>
             </div>
+
+
+            <h2 class="centering">Ready? Click the button to report</h2>
+
+            <div class="col-xs-12 col-md-offset-4 col-md-4">
+                <div id="myCustomTrigger" class="nav centering">
+                    <h2>
+                        <button class="btn btn-warning btn-lg btn-block">
+                            Report a Bug
+                        </button>
+                    </h2>
+                </div>
+           </div>
+
         </div>
+
     </div>
     <footer></footer>
 
