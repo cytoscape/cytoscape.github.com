@@ -35,9 +35,8 @@
             const cyVersion = getUrlVars()['cyversion'];
             const os = getUrlVars()['os'];
 
-            return cyVersion || os
-                ? "Cytoscape Version: " + cyVersion + "\nOperating System: " + os
-                : "";
+            return "Cytoscape Version: " + (cyVersion ? cyVersion : "") + "\n\nOperating System: " + (os ? os: "") + "\n\nJava Version: ";
+               
         }
 
         window.ATL_JQ_PAGE_PROPS = {
@@ -51,7 +50,7 @@
             // ==== we add the code below to set the field values ====
             fieldValues: {
                 summary: "",
-                description: "",
+                description: "How to reproduce the bug:",
                 environment: getIssueEnvironment()
             }
         };</script>
@@ -62,12 +61,7 @@
 
 <body>
     <div class="narrow white">
-
         <div class="container">
-
-
-
-
             <h1 class="centering">Report a Bug</h1>
 
             <p class="lead">
@@ -78,13 +72,7 @@
                 <a href="documentation_users.html">user documention page</a>.
             </p>
 
-          
-
-           
-
-
             <h2 class="centering">Ready? Click the button to report</h2>
-
             <div class="col-xs-12 col-md-offset-4 col-md-4">
                 <div id="myCustomTrigger" class="nav centering">
                     <h2>
@@ -94,9 +82,7 @@
                     </h2>
                 </div>
            </div>
-
         </div>
-
     </div>
     <footer></footer>
 
