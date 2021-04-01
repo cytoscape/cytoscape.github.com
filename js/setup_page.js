@@ -72,6 +72,7 @@ $(document).ready(function() {
         '<li><a href="documentation_users.html">Links for Users</a></li>' +
         '<li><a href="documentation_developers.html">Links for Developers</a></li>' +
         '<li><a href="releasenotes.html">Release Notes</a></li>' +
+        '<li><a href="logos.html">Logos and merch</a></li>' +
         '</ul></li>' +
 
         '<li class="dropdown">' +
