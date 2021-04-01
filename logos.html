@@ -19,19 +19,6 @@
 
     <link href="css/main.bootstrap.css" rel="stylesheet">
 
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
-    <script src="js/fancyBox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
-
-    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script src="js/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script src="js/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
-
-    <link rel="stylesheet" href="js/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script src="js/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-
-    <script src="js/cytoscape.js-2.5.0/cytoscape.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +34,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-md-3 col-lg-4">
+                    <a class="thumbnail fancybox-button" rel="fancybox-button">
                         <img src="images/logo/Cytoscape_3.pdf">
+                    </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-4">
                     <a class="thumbnail fancybox-button" rel="fancybox-button">
@@ -55,9 +44,7 @@
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-4">
-                    <a class="thumbnail fancybox-button" rel="fancybox-button">
                         <img src="images/logo/cytoscape_logo_512.png">
-                    </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-lg-4">
                     <a class="thumbnail fancybox-button" rel="fancybox-button">
@@ -85,24 +72,6 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".fancybox").fancybox();
-
-            $(".fancybox-button").fancybox({
-                prevEffect: 'none',
-                nextEffect: 'none',
-                closeBtn: true,
-                helpers: {
-                    title: {
-                        type: 'inside'
-                    },
-                    buttons: {}
-                }
-            });
-        });
-    </script>
 
     <footer></footer>
 
