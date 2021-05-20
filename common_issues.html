@@ -36,6 +36,26 @@
 
     <div class="white">
         <div class="container left">
+            <h3 class="belt"><a href='#opencl'>Inability to start on Mac OS</a></h3>
+
+            <p>
+                Recent updates of Mac OS have caused the OpenCL based Cytoscape Apps to fail on some machines. If this is the case, you can disable OpenCL with the following method:
+            </p>
+            <p>
+                Download the <a href="disable-opencl.dummy">disable-opencl.dummy</a> file to your <code>CytoscapeConfiguration</code> directory. You can browse to this directory from the <i>Home</i> location on your Mac. After you have downloaded it, your folder should look similar to the screenshot below.
+            </p>
+            <img src="images/common_issues/disable-opencl.png" style="display: block; margin-left:auto; margin-right:auto;" />
+            <br/>
+            <br/>
+            <p>
+                Alternatively, if you are comfortable using terminals, you can create this file using the following command:<code>touch ~/CytoscapeConfiguration/disable-opencl.dummy</code>
+            </p>
+            <br/>
+        </div>
+    </div>
+    
+    <div class="white">
+        <div class="container left">
             <h3 class="belt"><a href='#basic'>Basic Troubleshooting</a></h3>
 
             <p>First, follow the steps outlined in our <a href="./troubleshooting.html">Troubleshooting page</a></p>
@@ -197,25 +217,7 @@
         </div>
     </div>
 
-    <div class="white">
-        <div class="container left">
-            <h3 class="belt"><a href='#opencl'>Inability to start on Mac OS</a></h3>
 
-            <p>
-                Recent updates of Mac OS have caused the OpenCL based Cytoscape Apps to fail on some machines. If this is the case, you can disable OpenCL with the following method:
-            </p>
-            <p>
-                Download the <a href="disable-opencl.dummy">disable-opencl.dummy</a> file to your <code>CytoscapeConfiguration</code> directory. You can browse to this directory from the <i>Home</i> location on your Mac. After you have downloaded it, your folder should look similar to the screenshot below.
-            </p>
-            <img src="images/common_issues/disable-opencl.png" style="display: block; margin-left:auto; margin-right:auto;" />
-            <br/>
-            <br/>
-            <p>
-                Alternatively, if you are comfortable using terminals, you can create this file using the following command:<code>touch ~/CytoscapeConfiguration/disable-opencl.dummy</code>
-            </p>
-            <br/>
-        </div>
-    </div>
     </div>
 
     <footer></footer>
