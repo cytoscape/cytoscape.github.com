@@ -87,7 +87,7 @@ $(document).ready(function() {
         '<li><a href="bug-report.html">Report a Bug</a></li>' +
 
         '<li class="dropdown">' +
-        '<a href="#" class="dropdown-toggle cy3-color" data-toggle="dropdown">Help<b class="caret"></b></a>' +
+        '<a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>' +
         '<ul class="dropdown-menu">' +
         '<li><a href="troubleshooting.html">Troubleshooting</a></li>' +
         '<li><a href="common_issues.html">Common Issues</a></li>' +
