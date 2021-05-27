@@ -440,3 +440,28 @@ iframe[id='dummyFrame'] {
     align-items: center !important;
     justify-content: center !important;
 }
+
+/** Temp warning */
+
+
+.warning-banner {
+    margin-top: 2em;
+    background: #FAFAFA;
+    padding: 0.4em;
+    color:#333333;
+}
+.warning-banner-title {
+    font-weight: 400;
+    font-size: 2em;
+    color: red;
+    padding-bottom: 0.5em; 
+}
+.warning-banner p {
+    font-weight: 500;
+    font-size: 1.2em;
+    color:#333333;
+}
+.warning-link {
+    color:red !important;
+
+}
