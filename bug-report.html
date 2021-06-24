@@ -34,8 +34,9 @@
         function getIssueEnvironment() {
             const cyVersion = getUrlVars()['cyversion'];
             const os = getUrlVars()['os'];
+            const javaversion = getUrlVars()['javaversion']
 
-            return "Cytoscape Version: " + (cyVersion ? cyVersion : "") + "\n\nOperating System: " + (os ? os: "") + "\n\nJava Version: ";
+            return "Cytoscape Version: " + (cyVersion ? cyVersion : "") + "\n\nOperating System: " + (os ? os: "") + "\n\nJava Version: " + (javaversion ? javaversion: "");
                
         }
 
