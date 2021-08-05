@@ -36,8 +36,8 @@
             const os = getUrlVars()['os'];
             const javaversion = getUrlVars()['javaversion']
 
-            return "Cytoscape Version: " + (cyVersion ? cyVersion : "") + "\n\nOperating System: " + (os ? os: "") + "\n\nJava Version: " + (javaversion ? javaversion: "");
-               
+            return "Cytoscape Version: " + (cyVersion ? cyVersion : "") + "\n\nOperating System: " + (os ? os : "") + "\n\nJava Version: " + (javaversion ? javaversion : "");
+
         }
 
         window.ATL_JQ_PAGE_PROPS = {
@@ -62,27 +62,35 @@
 <body>
     <div class="narrow white">
         <div class="container">
-            <h1 class="centering">Report a Bug</h1>
+            <h2 class="centering">Report a Bug</h2>
 
             <p class="lead">
-                <b>TELL US: 1)</b> How to reproduce the bug. <b>2)</b> What operating system you're using <b>3)</b> What Cytoscape version you're using. <b>4)</b> What Java Version you're using. Try to reproduce the bug yourself <b>before</b> you report it. Be sure to include any data we may need to reproduce the bug.
+                <b>TELL US: 1)</b> How to reproduce the bug. <b>2)</b> What operating system you're using <b>3)</b> What
+                Cytoscape version you're using. <b>4)</b> What Java Version you're using. Try to reproduce the bug
+                yourself <b>before</b> you report it. Be sure to include any data we may need to reproduce the bug.
             </p>
             <p class="lead">
                 For general questions about Cytoscape installation and usage, visit our
                 <a href="documentation_users.html">user documention page</a>.
             </p>
-
-            <h2 class="centering">Ready? Click the button to report</h2>
-            <div class="col-xs-12 col-md-offset-4 col-md-4">
-                <div id="myCustomTrigger" class="nav centering">
-                    <h2>
-                        <button class="btn btn-warning btn-lg btn-block">
-                            Report a Bug
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                    <div id="myCustomTrigger" class="nav centering">
+                        <button class="btn btn-warning btn-lg btn-block ml-auto">
+                            Click here to report a bug
                         </button>
-                    </h2>
+                    </div>
                 </div>
-           </div>
+            </div>
+
+            <p>
+                <br />
+                <b>NOTE:</b> Attaching files in the bug report does not work for <a
+                    href="https://manual.cytoscape.org/en/stable/CyBrowser.html" target="_blank">Cytoscape Web
+                    Browser</a>. To attach a file please use another browser.
+            </p>
         </div>
+
     </div>
     <footer></footer>
 
