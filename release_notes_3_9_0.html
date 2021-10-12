@@ -71,8 +71,7 @@
     <div id="new_features" class="white">
         <div class="container centering">
             <h1 class="centering">About Version 3.8.2</h1>
-            <ul>
-              <li>Network Renderer</li>
+              <h3>Network Renderer</h3>
               <ul>
 <li>The network view now supports native resolution on 4K Ultra-HD and Retina displays. ✔</li>
 <li>New visual property for haystack edges. A haystack edge is drawn as a straight line from the source node to the target node, randomly placed along some angle from each node’s centre. In this manner, many parallel haystack edges make a tight bundle, especially when semi-transparent. This makes haystack edges an effective way to visualise graphs with a high number of parallel edges.  ✔</li>
@@ -83,13 +82,13 @@
 <li>The network view now supports SVG graphics for node and annotation images.</li>
 <li>Network view rendering speed has been improved.</li>
               </ul>
-<li>Tables</li>
+<h3>Tables</h3>
               <ul>
 <li>There is now support for visual styles in the node and edge tables. Using a new Table tab in the Style Panel, it is now possible to set style values and style mappings on individual columns in the node and edge tables. This includes the ability to customize fonts, colors, row height and table grid lines. There is also support for charts such as bar charts and sparklines. ✔</li>
 <li>The node and edge tables have improved copy/paste support. It is now much easier to select a set of cells from the node or edge table and copy/paste to an external application. This removes the need to export the table to a file in order to insert the data into an application such as Excel.  ✔</li>
 <li>The equation builder has been completely redesigned. It now supports free-form editing of formulas with syntax highlighting, built-in documentation, and instant feedback when the formula has errors.  ✔</li>
 </ul>
-              <li>General</li>
+              <h3>General</h3>
               <ul>
 <li>The style selector pop-up in the Style Panel has been enhanced to allow easy searching for styles based on name, and to make it easier to copy, duplicate, and delete styles.  ✔</li>
 <li>Color palettes are now universally available in the color picker.  ✔</li>
@@ -97,20 +96,20 @@
 <li>Filters can now select or highlight nodes and edges.  ✔</li>
 <li>New auto page size option for network view PDF export. This allows the dimensions of the exported PDF document to automatically match the dimensions of the network view.</li>
 </ul>
-              <li>For Notebook Writers</li>
+              <h3>For Notebook Writers</h3>
               <ul>
 <li>There are several new commands for creating and editing network annotations.</li>
 <li>Support for Python (via py4cytoscape) and R (via RCy3) based Cytoscape workflows</li>
 <li>The Help menu now has a link to automation tutorials.</li>
 <li>Support for Google Colab and GenePattern Notebooks.</li>
 </ul>
-              <li>For App Developers</li>
+              <h3>For App Developers</h3>
               <ul>
 <li>All of the new table style visual properties are available as API. This includes the ability to set the order, visibility and width of columns through API.</li>
 <li>Several existing visual properties that were private and internal to the 2D renderer are now public API.</li>
 <li>There is a new OSGi service API for creating network thumbnail images. It is no longer necessary to create a RenderingEngine in order to generate a simple network image thumbnail.</li>
 <li>New Togglable Task Factories, which can be used to create menu items that have checkmarks when enabled.</li>
-          </ul></ul>
+          </ul>
         </div>
     </div>
 
