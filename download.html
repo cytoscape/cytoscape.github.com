@@ -28,6 +28,7 @@
     your browser</a> to improve your experience.
 </p>
 <![endif]-->
+<div class="defaultpage">
     <div class="narrow white">
         <div class="container centering">
             <h1 class="cy-latest-version">Download Cytoscape </h1>
@@ -183,7 +184,7 @@
 
 
     <footer></footer>
-
+</div>
 
 
 
@@ -226,7 +227,17 @@
 
     <script>
         $(function() {
-
+            // CyBrowser has problems downloading the cytoscape release files so if we detect
+            // the user is visiting this page with CyBrowser, direct them to open the cytoscape.org page
+            // in a web browser
+            if (navigator.userAgent){
+                if (navigator.userAgent.toLowerCase().indexOf('cybrowser') !== -1){
+                    console.log('We are running in cybrowser, direct the user to open cytoscape.org in a web browser');
+                    $('body').empty();
+                    $('body').append('<div class="narrow white"><div class="container centering"><h3>To download Cytoscape, enter or paste URL below in a web browser:</h3><h3>https://cytoscape.org</h3></div></div>');
+                    return;
+                }
+            }
             var BASE_URL = LATEST.url + 'Cytoscape_' + LATEST.version.split('.').join('_') + '_';
             var is64 = true;
 
@@ -248,7 +259,6 @@
                 architecture = cpu.architecture;
             }
             var fileName = '';
-
             if (osName.indexOf('Mac OS') !== -1) {
                 osString = osName;
                 fileName = 'macos.dmg';
