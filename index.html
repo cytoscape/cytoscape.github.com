@@ -70,14 +70,17 @@
                     </div>
                     <div class="row centering">
                         <div class="col-xs-12 warning-banner">
-                            <div class="warning-banner-title">An Important Note for Mac Users</div>
+                            <div class="warning-banner-title">Log4j Vulnerability for Cytoscape Users</div>
                             
                             <p>
-                                A recent update by Apple to Mac OS is causing Cytoscape to crash on startup
+                                We have screened all log4j dependencies in the core Cytoscape application, including core apps, as well 
+                                as the hundreds of Cytoscape apps in the App Store. The only vulnerability in the recent 3.9.0 Cytoscape 
+                                release is via user-directed import of sabotaged SBML files. We will release a new version of the SBML Reader 
+                                soon. In the meantime, please use caution when reading .sbml files into Cytoscape. 
                             </p>
                             <p>
-                                Click <a class="warning-link" href="https://cytoscape.org/common_issues.html#opencl">here</a> 
-                                for instructions on how to resolve this problem
+                                Click <a class="warning-link" href="https://cytoscape.org/common_issues.html#log4shell">here</a> 
+                                for more information.
                             </p>
                         </div>
                     </div>
