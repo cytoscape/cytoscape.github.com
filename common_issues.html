@@ -51,14 +51,17 @@
                 to read into Cytoscape.
             </p>
             <p>
+                We have also identified a small number of contributed apps among the hundreds in the Cytoscape App Store that 
+                contain the 2.x log4j vulnerability and are working with those authors to produce updates.
+            </p>
+            <p>
                 We will also be releasing a 3.9.1 version of Cytoscape with the newly updated SBML Reader app pre-installed. 
                 This version will include additional updates to components using 1.x versions of log4j for additional security.
             </p>
             <p>
-                Finally, we have verified that none of the apps in the Cytoscape App Store contain the 2.x log4j vulnerability. 
-                Conveniently, the apps using log4j will automatically adopt the latest version provided by the 3.9.1 release. 
-                Nevertheless, we are working with app authors to update all log4j dependency references in their projects to avoid 
-                even the appearance of vulnerability.
+                Conveniently, the apps using log4j via the ops4j pax package will automatically adopt the latest version provided 
+                by the 3.9.1 release. Nevertheless, we are working with app authors to update all log4j dependency references in 
+                their projects to avoid even the appearance of vulnerability.
             </p>
             <br/>
         </div>
