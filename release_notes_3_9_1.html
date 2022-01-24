@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cytoscape 3.9.1 Release Notes</title>
+
+    <meta name="description" content="Release Notes for Cytoscape">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <!-- For Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+</head>
+
+<body>
+    <div class="white belt">
+        <div class="container">
+            <h1 class="centering">Release Notes for Cytoscape 3.9.1</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <img src="images/screenshots/cy_3_8_0_desktop.png" class="image-fit">
+            </div>
+        </div>
+    </div>
+
+    <div class="narrow white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#new_features" data-scroll>
+                        New Features
+                    </a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#system_requirements" data-scroll>
+                        System Requirements
+                    </a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-primary btn-lg btn-block" href="#manual" data-scroll>
+                        Manual
+                    </a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p>
+                        <a class="btn btn-warning btn-lg btn-block" href="#known_issues" data-scroll>
+                        Known Issues
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="new_features" class="white">
+        <div class="container centering">
+            <h1 class="centering">About Version 3.9.1</h1>
+            <p class="lead light-text">
+                Cytoscape 3.9.1 is a Cytoscape Desktop BugFix release, addressing the following issues:
+                <ul>
+                    <li>Updated log4j dependencies in core to 2.17.1 via pax-logging (1.11.13) and Karaf (4.2.15)</li>
+                    <li>Updated log4j dependencies to 2.17.1 in SBMLReader core app</li>
+                    <li>Automation: updates to annotation and app-related commands</li>
+                    <li>Minor fixes to table equations</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div id="system_requirements" class="narrow white">
+        <div class="container">
+            <h1 class="centering">System Requirements</h1>
+
+           
+                    <p class="lead">
+                        No changes.
+                    </p>
+
+                </div>
+            </div>
+
+            <h3 class="warn centering">Java 11 is Required -- Automatically Installed</h3>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        For Windows and Mac users, the Cytoscape installer automatically downloads and installs Java 11 if it's not available on your workstation. For Linux, please use Java 11 as described below.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h3>Windows</h3>
+                    <ul>
+                        <li>Windows XP and newer (including Windows 7, 8 and 10). <strong>64 bit version is recommended</strong>.
+                        </li>
+                        <li>Cytoscape installer automatically downloads a suitable Java 11 if none is available on your workstation. You can manually download and install latest version of <a href="https://adoptopenjdk.net/">
+                        OpenJDK 11</a>. Oracle Java and other implementations are not tested.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Mac</h3>
+                    <ul>
+                        <li>Mac OS X 10.11 (El Capitan) and later</li>
+                        <li>Cytoscape installer automatically downloads a suitable Java 11 if none is available on your workstation. You can manually download and install latest version of <a href="https://adoptopenjdk.net/">OpenJDK 11</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3>Linux</h3>
+
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Tested on
+                            <a href="https://docs.google.com/spreadsheets/d/1aEGtWvxksnCgXbtfadjB1e59qrGUxq-Ei_w3AHX4lBo/">these
+                            distributions.</a>
+                        </li>
+                        <li>
+                            Latest version of Java is required (minimum Java 11.0.6).
+                        </li>
+
+                        <li>
+                            For Ubuntu, a simple way of installing the OpenJDK JVM is described
+                            <a href="https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot#x64_linux-jre">here</a>.
+                        </li>
+                        <li>Java 11 must be on the PATH (ahead of any other JVM) or referenced by JAVA_HOME environment variable.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="manual" class="narrow snow-white">
+        <h1 class="centering">User Manual</h1>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 centering">
+                    <a href="http://manual.cytoscape.org/">
+                        <h3>HTML Version</h3>
+                    </a>
+                </div>
+                <div class="col-md-6 centering">
+                    <a href="manual/Cytoscape3_8_0Manual.pdf">
+                        <h3>PDF version</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="belt light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h2>How to Report Bugs</h2>
+
+                    <p class="lead">
+                        Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you notice any problems, please report them from:
+                    </p>
+                    <blockquote>Help &rarr; Report a bug...</blockquote>
+
+                    <p class="lead">
+                        Or, you can directly report it from
+                        <a href="bug-report.html">Report a bug</a> link on the navigation bar.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Need Help?</h2>
+
+                    <p class="lead">
+                        We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+                    mailing list</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+    <script src="js/load_cyjs.js"></script>
+    <script src="js/setup_page.js"></script>
+
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic'
+        });
+    </script>
+
+</body>
+
+</html>
