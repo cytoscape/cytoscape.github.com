@@ -46,16 +46,14 @@
                 The typical pattern from this exploit is through HTTP requests to a web server. The CyREST component of 
                 Cytoscape does not use a vunlerable version of log4j. That's good news!
                 As a standalone, desktop application the only other
-                exposure is through user-directed actions, e.g., importing a file from online. The 3.9.0 version of Cytoscape
-                (and older versions) indirecly uses a vulnerable version of log4j, which is then provided to user-installed apps
-                as well. That's not good news...
+                exposure is through user-directed actions, e.g., importing a file from online. 
+                <b>please use caution with importing any type of network or data files into Cytoscape.</b>
             </p>
             <p>
-                We are working on a new 3.9.1 version of Cytoscape which will update the provided version of log4j to 2.16.0. 
-                In the meantime, <b>please use caution with importing any type of network or data files into Cytoscape.</b>
+                We have released a new 3.9.1 version of Cytoscape which updates the provided version of log4j to 2.17.1. 
             </p>
             <p>
-                We are also working with app authors to produce updated references in their project packages.
+                We have also worked with app authors to produce updated references in their project packages.
                 Conveniently, the apps using log4j via the ops4j pax package will automatically adopt the latest version provided 
                 by the 3.9.1 release. Nevertheless, we are working with app authors to update all log4j dependency references in 
                 their projects to avoid even the appearance of vulnerability.
