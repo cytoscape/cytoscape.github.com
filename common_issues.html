@@ -50,7 +50,9 @@
                 <b>Please use caution with importing any type of network or data files into Cytoscape.</b>
             </p>
             <p>
-                We have released a new 3.9.1 version of Cytoscape which updates the provided version of log4j to 2.17.1. 
+                We have released a new 3.9.1 version of Cytoscape which addresses all known log4j issues. 
+                In more detail, we updated log4j dependencies in Cytoscape to 2.17.1 via pax-logging (1.11.13).  
+                This update fixes the following vulnerabilities: CVE-2021-4104, CVE-2021-45046, CVE-2021-44228, and CVE-2021-44832.
             </p>
             <p>
                 We have also worked with app authors to produce updated references in their project packages.
