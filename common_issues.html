@@ -60,6 +60,23 @@
                 by the 3.9.1 release. Nevertheless, we are working with app authors to update all log4j dependency references in 
                 their projects to avoid even the appearance of vulnerability.
             </p>
+            <p>
+                After the release of Cytoscape 3.9.1, we identified another log4j component that uses an old version of Log4J 1.  
+                To our knowledge, this component is *not* vulnerable to any of the known log4j 1.x attacks since it includes it's 
+                own log4.properties file that does not use any of the vulnerable logging mechanisms.  Nevertheless, in an abundance 
+                of caution, we have created a version of this component that specifically strips out all of the vulnerable classes, 
+                including JMSSink.class (fixes CVE-2022-23302), JMSAppender.class (fixes CVE-2019-17571), SocketServer.class (fixes CVE-2019-17571), 
+                JDBCAppender.class (fixes CVE-2022-23305), SMTPAppender.class (for completeness), and all of the embedded Chainsaw classes 
+                (fixes CVE-2020-9493).  None of these classes were used for the indicated component, and based on our reading of the CVE's 
+                referenced above, the included log4j.properties file rendered these vulnerabilities moot.  However, the replacement component, 
+                with the noted classes removed is available for download at: 
+                [uk.ac.ebi.enfin.mi.cluster.micluster-1.6.jar](https://raw.githubusercontent.com/cytoscape/cytoscape.github.com/master/data/uk.ac.ebi.enfin.mi.cluster.micluster-1.6.jar).  Put this jar file in the directory 
+                /Applications/Cytoscape_v3.9.1/framework/system/cytoscape-temp/uk.ac.ebi.enfin.mi.cluster.micluster/1.6 on a Mac, 
+                \Program Files\Cytoscape_v3.9.1\framework\system\cytoscape-temp\uk.ac.ebi.enfin.mi.cluster.micluster\1.6 on a Windows machine, 
+                or /opt/Cytoscape_v3.9.1/framework/system/cytoscape-temp/uk.ac.ebi.enfin.mi.cluster.micluster/1.6/ on Linux.  Note that 
+                these are the default locations, and if you installed Cytoscape 3.9.1 in an alternative location, then you should 
+                substitute the appropriate path.
+            </p>
             <br/>
         </div>
     </div>
