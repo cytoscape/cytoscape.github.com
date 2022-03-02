@@ -465,3 +465,13 @@ iframe[id='dummyFrame'] {
     color:red !important;
 
 }
+/** IQuery widget */
+
+
+.i-Query {
+    width: 450px;
+    margin: auto;
+    border: 2px solid #337ab7;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0px 15px 10px 15px;
+}
