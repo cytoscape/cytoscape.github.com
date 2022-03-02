@@ -87,6 +87,59 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Begin IQuery widget -->
+        
+        <div class="container">
+            <div class="i-Query centering" style="margin-top: 80px">
+
+
+                <h3 style="color:#0088d2; text-align:center; padding: 0px 0px 0px 0px; margin-top: 10px">Analyze Your Genes With NDEx iQuery</h3>
+
+
+                <div class="form-group blue-border-focus" style="margin-bottom: 10px">
+                    <textarea style="padding-top: 5px; margin-top: 10px" class="form-control" id="geneSet_input" rows="2" placeholder="Type or paste your list of genes here..."></textarea>
+                </div>
+
+
+                <div class="row centering">
+                    <div class=" col-sm-8">
+                        <input type="submit" value="Run Analysis" style="float:left; margin-top: 10px; background-color: #337ab7; color: white" id="openGeneSetButton" class="button btn submit-button">
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="https://www.ndexbio.org" target="_blank"> <img style="border: 0px; margin: 0px; margin-top: 0px; float: right; height: 45px" src="https://home.ndexbio.org/img/poweredbyNDEx.png" title="Visit the NDEx Public Server"></a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById("geneSet_input").addEventListener("keyup", function() {
+                    var nameInput = document.getElementById('geneSet_input').value;
+                    if (nameInput != "") {
+                        document.getElementById('openGeneSetButton').removeAttribute("disabled");
+                    } else {
+                        document.getElementById('openGeneSetButton').setAttribute("disabled", null);
+                    }
+                });
+
+                document.getElementById('openGeneSetButton').disabled = true;
+                document.getElementById('openGeneSetButton').addEventListener('click', function(e) {
+                    var geneSet = document.getElementById("geneSet_input").value;
+                    geneSet = geneSet.replace(/\s/g, ",")
+                    console.log(geneSet)
+                    var baseUrl = 'https://www.ndexbio.org/iquery?genes=';
+                    console.log(baseUrl + encodeURIComponent(geneSet));
+                    window.open(baseUrl + encodeURIComponent(geneSet));
+                    e.preventDefault();
+                    return false;
+                });
+
+            </script>
+        </div>
+
+        <!-- End IQery widget -->
+        
     </div>
 
     <div class="top white">
