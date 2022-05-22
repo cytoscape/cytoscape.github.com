@@ -1,0 +1,31 @@
+ .cytoscape-badge {
+    color: white;
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 71% !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: baseline !important;
+ }
+ .cybadgekey {
+    background-color: #555;
+    text-shadow:.5px .75px #333;
+    padding-left: .4rem !important;
+    padding-right: .25rem !important;
+    padding-top: .20rem !important;
+    padding-bottom: .20rem !important;
+    border-top-left-radius: .17rem !important;
+    border-bottom-left-radius: .17rem !important;
+ }
+ .cybadgeval {
+    text-shadow:.5px .75px #555;
+    padding-left: .25rem !important;
+    padding-right: .4rem !important;
+    padding-top: .20rem !important;
+    padding-bottom: .20rem !important;
+    border-top-right-radius: .17rem !important;
+    border-bottom-right-radius: .17rem !important;
+ }
