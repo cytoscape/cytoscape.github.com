@@ -134,7 +134,20 @@ $(document).ready(function() {
         "_gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script');" +
         "ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';" +
         "var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>";
+    
+    // Hotjar Tracking Code for Cytoscape.org 
+    var hotjarTracking = '<script>' +
+        '(function(h,o,t,j,a,r){' +
+        'h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};' +
+        'h._hjSettings={hjid:3415751,hjsv:6};' +
+        'a=o.getElementsByTagName('head')[0];' +
+        'r=o.createElement('script');r.async=1;' +
+        'r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;' +
+        'a.appendChild(r);' +
+        '})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');' +
+        '</script>'
 
     $('footer').append(footerText);
     $('body').append(googleAnalytics);
+    $('head').append(hotjarTracking);
 });
