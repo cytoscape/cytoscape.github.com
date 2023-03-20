@@ -10,11 +10,5 @@ Note the most operations will be done on the *master* branch. For large or risky
  * Checkout *master* branch
  * Edit pages
  * Commit and push changes
- * Check at http://cytoscape.github.io/
- * Deploy to test web site first:
-   * ./deploy-test.sh
-   * This server is maintained by UCSD.  You need to ask them to deploy to this server.
- * If it looks OK, deploy to the production web server:
-   * ./deploy-vine1.sh
-   * You need credentials on 169.228.38.222 to deploy.
- * Push your changes to *master* branch.
+ * Check at https://cytoscape.org
+
