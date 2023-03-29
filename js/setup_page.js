@@ -118,22 +118,18 @@ $(document).ready(function() {
         '</div><div class="col-xs-12 col-md-4">' +
         '<gcse:searchbox-only newWindow="true"></gcse:searchbox-only>' +
         '</div></div>' +
-        '<script>' +
-        '(function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){' +
-        '    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),' +
-        '    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)' +
-        '})(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');' +
-        'ga(\'create\', \'UA-155159-2\', \'auto\');' +
-        'ga(\'send\', \'pageview\');' +
-        '</script></div>';
+        '</div>';
 
     '</div></div></div>';
 
-    var googleAnalytics = '<script type="text/javascript">' +
-        "var _gaq = _gaq|| []; _gaq.push(['_setAccount', 'UA-155159-2']);" +
-        "_gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script');" +
-        "ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';" +
-        "var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>";
+    var googleAnalytics = '<!-- Google tag (gtag.js) -->' +
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-VW6TVC8T9J'></script>" +
+        '<script>' +
+        'window.dataLayer = window.dataLayer || [];' +
+        'function gtag(){dataLayer.push(arguments);}' +
+        "gtag('js', new Date());" +
+        "gtag('config', 'G-VW6TVC8T9J');" +
+        '</script>;'
     
     // Hotjar Tracking Code for Cytoscape.org 
     var hotjarTracking = '<script>' +
@@ -148,6 +144,6 @@ $(document).ready(function() {
         '</script>'
 
     $('footer').append(footerText);
-    $('body').append(googleAnalytics);
+    $('head').append(googleAnalytics);
     $('head').append(hotjarTracking);
 });
