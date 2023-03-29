@@ -129,7 +129,7 @@ $(document).ready(function() {
         'function gtag(){dataLayer.push(arguments);}' +
         "gtag('js', new Date());" +
         "gtag('config', 'G-VW6TVC8T9J');" +
-        '</script>;'
+        '</script>';
     
     // Hotjar Tracking Code for Cytoscape.org 
     var hotjarTracking = '<script>' +
@@ -141,7 +141,7 @@ $(document).ready(function() {
         'r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;' +
         'a.appendChild(r);' +
         "})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');" +
-        '</script>'
+        '</script>';
 
     $('footer').append(footerText);
     $('head').append(googleAnalytics);
