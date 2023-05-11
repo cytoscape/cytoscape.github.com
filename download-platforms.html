@@ -36,11 +36,13 @@
                 <h2>Platform Specific Installers</h2>
 
                 <h4 style="color: red;">
-                    A Java 11 JVM will be automatically installed for Windows and Mac OS
+                    A Java 17 JVM will be automatically installed for Windows and Mac OS
                 </h4>
             </div>
             <div class="row centering">
-                <h3><a class="mac_download">Mac OS X</a></h3>
+                <h3><a class="mac_silicon_download">Mac OS Silicon (arm64)</a></h3>
+
+                <h3><a class="mac_intel_download">Mac OS Intel (amd64)</a></h3>
 
                 <h3><a class="win64_download">Windows 64bit</a></h3>
 
@@ -119,7 +121,8 @@
 
             latestVersion.append(LATEST.version);
 
-            $('.mac_download').attr('href', fileURL + 'macos.dmg');
+            $('.mac_silicon_download').attr('href', fileURL + 'macos_aarch64.dmg');
+            $('.mac_intel_download').attr('href', fileURL + 'macos_x64.dmg');
             $('.win32_download').attr('href', fileURL + 'windows_32bit.exe');
             $('.win64_download').attr('href', fileURL + 'windows_64bit.exe');
             $('.unix_download').attr('href', fileURL + 'unix.sh');
