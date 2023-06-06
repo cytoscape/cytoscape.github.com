@@ -204,8 +204,14 @@ loadScripts(document, 'script');</script>
  <a href="VisualStyle.html" title="interface in org.cytoscape.view.vizmap">VisualStyle</a>&nbsp;visualStyle)</span></div>
 <div class="block">Set a <a href="VisualStyle.html" title="interface in org.cytoscape.view.vizmap"><code>VisualStyle</code></a> directly to the target column view model.
  
- Note, if the target column is from a network node/edge table, then it will automatically
- be associated with the network's current VisualStyle instead of being directly associated.</div>
+ <p>Note: As of Cytoscape 3.10 the preferred way to create a visual style for use in the node or edge table
+is to create a visual style and associate it with a network style using the setAssociatedVisualStyle(...) method.
+The setVisualStyle(...) method should only be used by Apps to programmatically set styles on tables that are not 
+registered with the CyNetworkTableManager.
+</p>
+<p>Note: If the target column is from a network node/edge table, then it will automatically
+be associated with the network's current VisualStyle instead of being directly associated.</p>
+ </div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>visualStyle</code> - Visual Style to be set.  May be null.</dd>
