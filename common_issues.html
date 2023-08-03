@@ -41,15 +41,17 @@
             
             <b>Behavior</b>
             <p> 
-                Cytoscape 3.9.X fails to start if Java 11.0.8 is used.
-                Cytoscape 3.10.0 fails to start if Java 17.0.20 is used.
-
-                The error is due to changes in validation of zip files. <a href="https://support.oracle.com/knowledge/Middleware/2964305_1.html">See here</a> 
+                Cytoscape <b>3.9.x</b> fails to start if <b>Java 11.0.8</b> is used.<br/>
+                Cytoscape <b>3.10.0</b> fails to start if <b>Java 17.0.20</b> is used.
             </p>
             <p>
                 Users may see the following error in output (for command line invocation):</br>
                 <i>Caused by: java.util.zip.ZipException: Invalid CEN header (invalid zip64 extra data field size)</i>
             </p>
+            <p>
+                The error is due to changes in validation of zip files. <a href="https://support.oracle.com/knowledge/Middleware/2964305_1.html">See here</a> 
+            </p>
+            
 
             <b>Work around</b>
             <p>
