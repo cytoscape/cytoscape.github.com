@@ -33,6 +33,33 @@
         </div>
     </div>
     </div>
+
+        <div class="white">
+        <div class="container left">
+            <a name='zipvalidation'></a>
+            <h3 class="belt"><a href='#zipvalidation'>Inability to start Cytoscape - Invalid CEN header (Java 11.0.8 or Java 17.0.20)</a></h3>
+            
+            <b>Behavior</b>
+            <p> 
+                Cytoscape 3.9.X fails to start if Java 11.0.8 is used.
+                Cytoscape 3.10.0 fails to start if Java 17.0.20 is used.
+
+                The error is due to changes in validation of zip files. <a href="https://support.oracle.com/knowledge/Middleware/2964305_1.html">See here</a> 
+            </p>
+            <p>
+                Users may see the following error in output (for command line invocation):</br>
+                <i>Caused by: java.util.zip.ZipException: Invalid CEN header (invalid zip64 extra data field size)</i>
+            </p>
+
+            <b>Work around</b>
+            <p>
+                On Linux/Mac OS the work around is to run the following <code>export</code> command in the terminal before invoking <code>cytoscape.sh</code> 
+                <p/>
+                <code>export EXTRA_JAVA_OPTS="-Djdk.util.zip.disableZip64ExtraFieldValidation=true"</code>
+            </p>
+            
+        </div>
+    </div>
     
     <div class="white">
         <div class="container left">
