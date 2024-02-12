@@ -123,12 +123,12 @@ $(document).ready(function() {
     '</div></div></div>';
 
     var googleAnalytics = '<!-- Google tag (gtag.js) -->' +
-        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-TG1595ZC4G'></script>" +
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-VW6TVC8T9J'></script>" +
         '<script>' +
         'window.dataLayer = window.dataLayer || [];' +
         'function gtag(){dataLayer.push(arguments);}' +
         "gtag('js', new Date());" +
-        "gtag('config', 'G-TG1595ZC4G');" +
+        "gtag('config', 'G-VW6TVC8T9J');" +
         '</script>';
     
     // Hotjar Tracking Code for Cytoscape.org 
