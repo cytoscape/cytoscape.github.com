@@ -104,17 +104,19 @@ $(document).ready(function() {
     $('body').prepend(navContainer);
 
     // Footer
+    var currentYear = new Date().getFullYear().toString();
     var footerText = '<div class="container"><div class="row">' +
         '<div class="col-xs-12 col-md-8"><p class="text-muted text-left">' +
         'Funding for continued development and maintenance of Cytoscape is provided by the U.S. ' +
-        '<a href="http://www.nigms.nih.gov">National Institute of General Medical Sciences (NIGMS)</a> ' +
-        'under award number R01 GM070743.  ' +
+        '<a href="https://www.genome.gov/">National Human Genome Rearch Institute (NHGRI)</a> ' +
+        'under award number NIH NHGRI U24 HG012107<br/>(Previously: R01 HG009979; R01 GM070743)<br/> ' +
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
-        'number P41 GM103504.</p>' +
-        '<p class="text-muted text-center">&copy;2001-2018 <a href="http://www.cytoscapeconsortium.org/">' +
+        'number P41 GM103504.<br/>' +
+        'The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>' +
+        '<p class="text-muted text-center">&copy;2001-' + currentYear + ' <a href="http://www.cytoscapeconsortium.org/">' +
         'Cytoscape Consortium</a></p>' +
-
+        
         '</div><div class="col-xs-12 col-md-4">' +
         '<gcse:searchbox-only newWindow="true"></gcse:searchbox-only>' +
         '</div></div>' +
