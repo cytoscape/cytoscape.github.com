@@ -42,8 +42,8 @@
                         app developer community has upgraded a number of v2 plugins into v3 apps, and has contributed a steady stream of new apps (apps.cytoscape.org).
                     </p>
 
-                    <p>As of late 2016, our efforts have been rewarded, as Cytoscape has become more popular than ever –
-                        <a href="stat.html">17,000 downloads per month
+                    <p>As of late 2023, our efforts have been rewarded, as Cytoscape has become more popular than ever –
+                        <a href="stat.html">20,000 downloads per month
                         worldwide</a>.</p>
 
                     <p>This page explains our roadmap for future deliveries and activities. Feel free to contribute to this discussion our 
@@ -158,19 +158,19 @@
 
                         <tr>
                             <td>
-                                <h3>3.10</h3>
+                                <h3>3.11</h3>
                             </td>
-                            <td>TBD 2022
+                            <td>TBD 2025
                             </td>
                             <td>
                                 <ul>
                                     <li>Web and notebook interoperability</li>
-                                    <li>and...</li>
+                                    <li>Performance improvements and ...</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>Java 17 support</li>
+                                    <li>Java 21 support</li>
                                     <li>and...</li>
                                 </ul>
                             </td>
@@ -1032,6 +1032,263 @@
                                             <td>
                                                 <ul>
                                                     <li>About dialog updates</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.7.2</td>
+                                <td>9/5/2019</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Fixed CyNDEx-2 bug where JXBrowser component could not be downloaded</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.8.0</td>
+                                <td>4/17/2020</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Analysis</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Network Analyzer updated with improved interface and Automation support</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">UI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Updated user interface</li>
+                                                    <li>Toolbar customizations improved</li>
+                                                    <li>Panels can now be minimized, set to float, or docked to workspace</li>
+                                                    <li>Improved rendering performance with interactive experience for networks with 10,000 nodes and 3,000,000 edges</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Java 11 support</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.8.1</td>
+                                <td>9/24/2020</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">UI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Bug fixes for the renderer:
+                                                        <ul>
+                                                            <li>Edge tooltip not rendering</li>
+                                                            <li>Edge bend editing causing all edges to bend</li>
+                                                            <li>Network view double click not working</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Bug fixes to address memory leaks and race conditions in automation scripts</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.8.2</td>
+                                <td>10/29/2020</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Fixed memory issues when opening large sessions</li>
+                                                    <li>Fixed memory issues when exporting large networks</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Fixed bug with CyBrowser installation of yFiles and other Apps</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.9.0</td>
+                                <td>10/21/2021</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Support for native 4k Ultra-HD and Retina display</li>
+                                                    <li>Improved network rendering performance</li>
+                                                    <li>Haystack edge rendering improved</li>
+                                                    <li>New ability to rotate node labels and annotations</li>
+                                                    <li>Fit content now takes node labels into account</li>
+                                                    <li>New visual property for z-order</li>
+                                                    <li>Network view now supports SVG graphics for node and annotation images</li>
+                                                    <li>New features for Table Panel: cell styles, charts, and copy/paste</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">UI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Equation builder has been redesigned with free form editing field</li>
+                                                    <li>Color palettes are now universally available in the color picker</li>
+                                                    <li>Improved hotkey mapping</li>
+                                                    <li>Filters can now select or highlight nodes and edges</li>
+                                                    <li>New auto page size option for network view PDF export</li>
+                                                  
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Support for Jupyter Notebooks</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.9.1</td>
+                                <td>1/24/2022</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">UI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Minor fixes to table equations</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Updated log4j dependencies</li>
+                                                    <li>Automation: updates to annotation and app-related commands</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>U24 Award</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.10.0</td>
+                                <td>5/11/2023</td>
+                                <td>
+                                    <table>
+                                
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Edge label rotation allows edge labels to be aligned with the edge slope</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Architecture</td>
+                                            <td>
+                                                <ul>
+                                                    <li>String tunables have a "password" property that masks the text field</li>
+                                                    <li>New LEN() equation function returns the length of a list</li>
+                                                    <li>JavaFX version upgraded to 18.0.2</li>
+                                                    <li>The OpenCL app has been moved into core. OpenCL support is now part of the Cytoscape API as the ‘cycl-api’ bundle</li>
+                                                    <li>The TableVisualMappingManager has new API methods for working with table styles</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">UI</td>
+                                            <td>
+                                                <ul>
+                                                    <li>New selection lasso tool</li>
+                                                    <li>Table styles are now part of the Network Style and are applied to nodes and edge tables</li>
+                                                    <li>New App Store panel has replaced old "App Manager"</li>
+                                                    <li>Search bar is faster, more reliable, and includes new types of search queries</li>
+                                                    <li></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Java 17 support</li>
+                                                    <li>Automation: network view can now be exported using new commands</li>
+                                                    <li>The framework-cytoscape.log file no longer grows forever (entries > 30 days removed)</li>
+                                                    <li>Native build for Apple silicon processors (M1+)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.10.1</td>
+                                <td>8/31/2023</td>
+                                <td>
+                                    <table> 
+                                        <tr>
+                                            <td style="width: 100px; vertical-align: text-top">Other</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Better support for all versions Java 17</li>
+                                                    <li>Minor bug fixes</li>
+                                                
                                                 </ul>
                                             </td>
                                         </tr>
