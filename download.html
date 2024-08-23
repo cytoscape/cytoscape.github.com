@@ -282,7 +282,7 @@
                     fileName = 'macos_x64.dmg';
                 }
                 $('.javainstall').append(
-                    '<h3>Java 17 will be automatically installed if not already present. If you experience difficulty with this, manual installers for Java can be downloaded <a href="https://adoptium.net/"> here</a>.</h3> ');
+                    '<h3><a href="https://adoptium.net/temurin/releases/?package=jdk&version=17">Adoptium OpenJDK Java 17</a> will be automatically installed if not already present. If you experience difficulty with this, manual installers for OpenJDK Java can be downloaded <a href="https://adoptium.net/"> here</a>.</h3> ');
             } else if (osName.indexOf('Windows') !== -1 || cpu === 'amd64') {
                 // This is windows.
                 if (is64 || architecture === 'amd64') {
@@ -292,11 +292,11 @@
                     osString = osName + ' (32 bit)';
                     fileName = 'windows_32bit.exe';
                     $('.win32').append(
-                        '<h3>32bit version is not recommended.  Please use 64bit version if possible.</h3>'
+                        '<h3>32bit version does not exist.  Please use 64bit version</h3>'
                     );
                 }
                 $('.javainstall').append(
-                    '<h3>Java 17 will be automatically installed if not already present.  If you experience diffuculty with this, manual installers for Java can be downloaded <a href="https://adoptium.net/"> here</a>.</h3>');
+                    '<h3><a href="https://adoptium.net/temurin/releases/?package=jdk&version=17">Adoptium OpenJDK Java 17</a> will be automatically installed if not already present.  If you experience diffuculty with this, manual installers for OpenJDK Java can be downloaded <a href="https://adoptium.net/"> here</a>.</h3>');
             } else if (osName.indexOf('Linux') !== -1 || osName.indexOf('Ubuntu') !== -1) {
                 osString = osName;
                 fileName = 'unix.sh';
@@ -310,7 +310,7 @@
             if (osString === undefined) {
                 $('.download-primary').remove();
                 $('.download-main').append(
-                    '<h3>Could not detect your system.  Please choose from the following links:</h3>');
+                    '<h3>Could not detect your system.  Please choose from <a href="download-platforms.html">Other Platforms</a> or one of the links below</h3>');
             } else {
                 var downloadLink = BASE_URL + fileName;
 
