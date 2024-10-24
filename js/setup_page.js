@@ -10,7 +10,7 @@ $(document).ready(function() {
     ////////////////////////////////////
     // Modify this when releasing new version!
     ////////////////////////////////////
-    var CYTOSCAPE_LATEST_VERSION = '3.10.2';
+    var CYTOSCAPE_LATEST_VERSION = '3.10.3';
 
     $('.cy-latest-version').append(CYTOSCAPE_LATEST_VERSION);
 
