@@ -108,7 +108,7 @@ $(document).ready(function() {
     var footerText = '<div class="container"><div class="row">' +
         '<div class="col-xs-12 col-md-8"><p class="text-muted text-left">' +
         'Funding for continued development and maintenance of Cytoscape is provided by the U.S. ' +
-        '<a href="https://www.genome.gov/">National Human Genome Rearch Institute (NHGRI)</a> ' +
+        '<a href="https://www.genome.gov/">National Human Genome Research Institute (NHGRI)</a> ' +
         'under award number NIH NHGRI U24 HG012107<br/>(Previously: R01 HG009979; R01 GM070743)<br/> ' +
         'Cytoscape user support, education and new initiatives are supported by the ' +
         '<a href="http://nrnb.org">National Resource for Network Biology (NRNB)</a> under award ' +
