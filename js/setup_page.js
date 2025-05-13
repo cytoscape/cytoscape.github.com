@@ -29,7 +29,11 @@ $(document).ready(function() {
     $('.dropdown-toggle').dropdown();
 
     var navContainer = $('<div class="container"></div>');
-
+    const pageName = window.location.pathname.split('/').pop();
+    var cytoscape_web_menu = ''
+    if (pageName === 'indexweb.html'){
+        cytoscape_web_menu = '<li><a href="https://web.cytoscape.org">Cytoscape Web</a></li>'
+    }
     var responsiveNav =
         '<nav class="navbar navbar-default" role="navigation">' +
         '<div class="container">' +
@@ -57,7 +61,7 @@ $(document).ready(function() {
         '<li><a href="screenshots.html">Screenshots</a></li>' +
         '<li><a href="roadmap.html">Roadmap</a></li>' +
         '</ul></li>' +
-
+        cytoscape_web_menu +
         '<li><a href="download.html">Download</a></li>' +
 
         '<li><a href="http://apps.cytoscape.org/" target="_blank">Apps</a></li>' +
