@@ -30,10 +30,8 @@ $(document).ready(function() {
 
     var navContainer = $('<div class="container"></div>');
     const pageName = window.location.pathname.split('/').pop();
-    var cytoscape_web_menu = ''
-    if (pageName === 'indexweb.html'){
-        cytoscape_web_menu = '<li><a href="https://web.cytoscape.org">Cytoscape Web</a></li>'
-    }
+    var cytoscape_web_menu = '<li><a href="https://web.cytoscape.org">Cytoscape Web</a></li>'
+
     var responsiveNav =
         '<nav class="navbar navbar-default" role="navigation">' +
         '<div class="container">' +
