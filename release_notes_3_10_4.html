@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cytoscape 3.10.4 Release Notes</title>
+
+    <meta name="description" content="Release Notes for Cytoscape">
+    <meta name="author" content="Alex Pico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <link href="css/main.bootstrap.css" rel="stylesheet">
+
+    <!-- For Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+</head>
+
+<body>
+    <div class="white belt">
+        <div class="container">
+            <h1 class="centering">Release Notes for Cytoscape 3.10.4</h1>
+        </div>
+    </div>
+
+    <div id="new_features" class="white">
+        <div class="container">
+
+            <h3>Maintenance Release</h3>
+             <ul>
+                <li>Fixed a bug where opening a network in Cytoscape from Cytoscape Web incorrectly set the collection name to <b>?(SUID: ##)</b></li>
+                <li>Fixed a bug where styles were corrupted if <b>Show Tasks</b> was opened at any time before invoking close session</li>
+                <li>Fixed bug where moving a group of nodes fails after reloading in Cytoscape</li>
+                <li>The “Layout only selected nodes” control in the Layout Settings dialog is now a button labeled <b>Apply to Selected Nodes</b>, making the action more explicit and easier to use</li>
+             </ul>   
+        </div>
+    </div>
+
+    <div id="manual" class="narrow snow-white">
+        <h1 class="centering">User Manual</h1>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 centering">
+                    <a href="http://manual.cytoscape.org/">
+                        <h3>HTML Version</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+          
+    <div class="belt light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h2>How to Report Bugs</h2>
+
+                    <p class="lead">
+                        Your bug reports are very important to improve quality of future versions of Cytoscape 3. If you notice any problems, please report them from:
+                    </p>
+                    <blockquote>Help &rarr; Report a bug...</blockquote>
+
+                    <p class="lead">
+                        Or, you can directly report it from
+                        <a href="bug-report.html">Report a bug</a> link on the navigation bar.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Need Help?</h2>
+
+                    <p class="lead">
+                        We need your feedback to improve Cytoscape 3! Please send your questions and comments to our <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-helpdesk">
+                    mailing list</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+    <script src="js/setup_page.js"></script>
+
+    <script>
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic'
+        });
+    </script>
+
+</body>
+
+</html>
