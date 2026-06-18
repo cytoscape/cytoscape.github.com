@@ -737,18 +737,24 @@
 <script>
   // Staggered reveal on scroll
   const els = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach((e,i)=>{
-      if(e.isIntersecting){
-        const sib = [...e.target.parentElement.children].filter(c=>c.classList.contains('reveal'));
-        const idx = sib.indexOf(e.target);
-        e.target.style.transitionDelay = Math.min(idx,5)*70 + 'ms';
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
-  els.forEach(el=>io.observe(el));
+  if(!('IntersectionObserver' in window)){
+    // Fallback: no IntersectionObserver support, reveal everything immediately
+    els.forEach(el=>el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((e,i)=>{
+        if(e.isIntersecting){
+          const parent = e.target.parentElement;
+          const sib = parent ? [...parent.children].filter(c=>c.classList.contains('reveal')) : [e.target];
+          const idx = sib.indexOf(e.target);
+          e.target.style.transitionDelay = Math.min(idx,5)*70 + 'ms';
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(el=>io.observe(el));
+  }
 </script>
 
 </body>
