@@ -415,6 +415,22 @@ data-scroll {
     justify-content: center !important;
 }
 
+/* Stretch the search box to fill the 240px container so the input is wide enough
+   to show the full "enhanced by Google" branding image (the input ships with
+   size="10", which otherwise shrinks the field and clips the branding). */
+#___gcse_0 .gsc-control-searchbox-only,
+#___gcse_0 form.gsc-search-box,
+#___gcse_0 table.gsc-search-box,
+#___gcse_0 td.gsc-input,
+#___gcse_0 .gsc-input-box {
+    width: 100% !important;
+}
+
+#___gcse_0 input.gsc-input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
 iframe[id='dummyFrame'] {
     display: flex;
     align-items: center !important;

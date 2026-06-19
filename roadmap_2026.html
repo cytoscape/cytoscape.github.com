@@ -9,6 +9,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Shared site chrome (global nav + footer via setup_page.js) -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/main.bootstrap.css" rel="stylesheet">
+
 <style>
   :root{
     --paper:#FBF8F3;
@@ -77,7 +84,7 @@
   .brand{display:flex;align-items:center;gap:11px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;}
   .brand img{height:26px;width:auto;display:block;}
   .brand span{font-family:"Fraunces",serif;font-size:18px;}
-  .navlinks{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap;}
+  .navlinks{display:flex;gap:4px;margin-left:0;flex-wrap:wrap;}
   .navlinks a{
     color:var(--ink-soft);font-size:14px;font-weight:500;
     padding:7px 12px;border-radius:8px;
@@ -87,7 +94,7 @@
   /* ---------- Hero ---------- */
   .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);}
   .hero-net{position:absolute;inset:0;width:100%;height:100%;opacity:.5;z-index:0;}
-  .hero .wrap{position:relative;z-index:1;padding:74px 28px 64px;}
+  .hero .wrap{position:relative;z-index:1;padding:38px 28px 52px;}
   .eyebrow{
     font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.22em;
     text-transform:uppercase;color:var(--desk);font-weight:600;margin:0 0 18px;
@@ -122,7 +129,7 @@
   .heritage{font-size:13.5px;color:var(--ink-faint);margin:18px 0 0;max-width:62ch;}
 
   /* ---------- Sections ---------- */
-  section{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:80px;}
+  section{padding:46px 0;border-bottom:1px solid var(--line);scroll-margin-top:80px;}
   .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px;flex-wrap:wrap;}
   .sec-kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);}
   h2{
@@ -278,8 +285,35 @@
     .eco{grid-template-columns:1fr;}
     .navlinks{display:none;}
     .hero-tracks,.stat-strip{grid-template-columns:1fr;}
-    section{padding:48px 0;}
-    .hero .wrap{padding:54px 28px 48px;}
+    section{padding:34px 0;}
+    .hero .wrap{padding:28px 28px 40px;}
+  }
+
+  /* --- Keep the shared global site navbar (injected by setup_page.js) compact so it
+         fits on one row; this page's body font is larger/wider than the site default --- */
+  .navbar-default{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+  #cy-navbar{font-size:14px;}
+  @media (min-width:768px){
+    .navbar-default .navbar-header{float:left;}
+    .navbar-default .navbar-nav{float:left;margin:0;}
+    .navbar-default .navbar-nav > li{float:left;}
+  }
+  /* Match the home page search box width (240px) and keep the inner Google CSE
+     input from overflowing and covering the neighbouring nav items */
+  #cy-navbar #___gcse_0{width:240px !important;max-width:240px !important;overflow:hidden !important;justify-content:flex-start !important;}
+  #cy-navbar #___gcse_0 .gsc-control-cse,
+  #cy-navbar #___gcse_0 form.gsc-search-box{width:100% !important;max-width:100% !important;}
+  #cy-navbar #___gcse_0 table.gsc-search-box{width:100% !important;max-width:100% !important;table-layout:fixed !important;}
+  #cy-navbar #___gcse_0 td.gsc-input{width:auto !important;}
+  #cy-navbar #___gcse_0 .gsc-input-box{width:100% !important;}
+  #cy-navbar #___gcse_0 input.gsc-input{width:100% !important;max-width:100% !important;min-width:0 !important;box-sizing:border-box !important;text-indent:0 !important;}
+
+  /* Shared footer (injected by setup_page.js): let the funding text use the full
+     column width and widen the text column so it wraps onto fewer rows */
+  footer .container p{max-width:none !important;}
+  @media (min-width:992px){
+    footer .container .col-md-8{width:75% !important;}
+    footer .container .col-md-4{width:25% !important;}
   }
 </style>
 </head>
@@ -288,10 +322,6 @@
 <!-- ===================== NAV ===================== -->
 <nav class="topnav">
   <div class="wrap">
-    <div class="brand">
-      <img src="https://cytoscape.org/images/logo/cy3logoOrange.svg" alt="Cytoscape">
-      <span>Roadmap</span>
-    </div>
     <div class="navlinks">
       <a href="#board">At a glance</a>
       <a href="#desktop">Desktop</a>
@@ -376,7 +406,7 @@
         <p class="when">Targeted for the coming release cycle</p>
         <div class="card d"><span class="who d"><span class="dot d"></span>Desktop</span><p>Cytoscape <b>3.11</b> (Oct 2026) — Java 25 support and an upgraded REST framework for CyREST.</p></div>
         <div class="card both"><span class="who both"><span class="dot d"></span><span class="dot w"></span>Both</span><p>Web ↔ notebook interoperability and tighter <b>Open in Cytoscape</b> round-tripping.</p></div>
-        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Release <b>v1.0.9</b> (Aug 2026) — App API v1.0 and image export support.</p></div>
+        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Release <b>v1.1.0</b> (Aug 2026) — App API v1.0 and image export support.</p></div>
         <div class="card js"><span class="who js"><span class="dot js"></span>Cytoscape.js</span><p>Ongoing v3 API refinements and rendering performance, tracked in the GitHub milestones.</p></div>
       </div>
 
@@ -422,6 +452,7 @@
         <ul class="feat d">
           <li>Java 25 support</li>
           <li>Upgraded REST framework for CyREST</li>
+          <li>Service App support</li>
         </ul>
         <p style="font-size:13px;color:var(--ink-faint);margin-top:14px;">Current release: <span class="mono">3.10.4</span> (Sep 2025). A preliminary feature list is published ahead of each release and frozen ten days before — see <a href="#process">Process</a>.</p>
       </div>
@@ -483,13 +514,13 @@
         <h4>Where it's heading</h4>
         <div class="release-now w">
           <div class="lbl">Next feature release</div>
-          <div class="ver">v1.0.9</div>
+          <div class="ver">v1.1.0</div>
           <div class="date">Target: Aug 2026</div>
         </div>
-        <p style="font-size:13px;color:var(--ink-faint);margin:-6px 0 16px;">A bug-fix release, <span class="mono">v1.0.8</span>, will ship first, ahead of the v1.0.9 feature release.</p>
+        <p style="font-size:13px;color:var(--ink-faint);margin:-6px 0 16px;">A bug-fix release, <span class="mono">v1.0.8</span>, will ship first, ahead of the v1.1.0 feature release.</p>
         <div class="vision-card">
           <h3>App API v1.0 &amp; image support</h3>
-          <p>Version 1.0.9 targets the first stable release of the App API (v1.0) — the recommended way to build Web apps — alongside image export support. The new API will eventually deprecate the current raw-store approach.</p>
+          <p>Version 1.1.0 targets the first stable release of the App API (v1.0) — the recommended way to build Web apps — alongside image export support. The new API will eventually deprecate the current raw-store approach.</p>
         </div>
         <div class="callout" style="margin-top:6px;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--web)" stroke-width="2" stroke-linecap="round"><path d="M12 16v-5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg>
@@ -593,7 +624,7 @@
         </div>
         <div class="callout" style="margin-top:6px;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--js)" stroke-width="2" stroke-linecap="round"><path d="M12 16v-5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>Documentation, downloads, and source live at <em>js.cytoscape.org</em>. Cite the <em>Bioinformatics</em> papers (2016; 2023 update).</span>
+          <span>Documentation, downloads, and source live at <em>js.cytoscape.org</em>. Cite the <em>Bioinformatics</em> papers (<a href="https://academic.oup.com/bioinformatics/article/32/2/309/1744007" target="_blank">2016</a>; <a href="https://academic.oup.com/bioinformatics/article/39/1/btad031/6988031" target="_blank">2023 update</a>).</span>
         </div>
       </div>
     </div>
@@ -693,8 +724,14 @@
     <details class="reveal">
       <summary>Cytoscape Web — releases <span class="count">1.x</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
       <div class="details-body">
-        <div class="rel"><span class="rv">Live</span><span class="rd">web.cytoscape.org</span><span class="rn">Reference build with in-browser visualization, data-driven styling, NDEx-backed workspaces, CX2/CSV import, and Open-in-Cytoscape hand-off.</span></div>
-        <div class="rel"><span class="rv">1.0</span><span class="rd">2024–2025</span><span class="rn">First public release of Cytoscape Web; introduced and described in Nucleic Acids Research (2025). Releases are archived via Zenodo.</span></div>
+        <div class="rel"><span class="rv">1.0.7</span><span class="rd">2026-05</span><span class="rn">Expanded app-integration capabilities: a preview version of the App API, runtime app registration, and improved in-browser app support.</span></div>
+        <div class="rel"><span class="rv">1.0.6</span><span class="rd">2026-03</span><span class="rn">NDEx loading safeguards, numeric editing in layouts, color-palette reversal, and network-deletion navigation fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.5</span><span class="rd">2026-02-14</span><span class="rn">Major rework of the subnetwork (hierarchy) viewer with a new visibility-toggle approach, plus data-integrity fixes, performance optimizations, and internal codebase improvements.</span></div>
+        <div class="rel"><span class="rv">1.0.4</span><span class="rd">2025-09-12</span><span class="rn">Splash screen, browser back/forward fixes, a CX2 validator, ring-chart support, a new viewport-state store, and network property editor fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.3</span><span class="rd">2025-06-17</span><span class="rn">HiView UI-blocking fixes, undo support, a URL parameter for the selected network view, improved file drag &amp; drop, and selection/sharing fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.2</span><span class="rd">2025-05-13</span><span class="rn">Bug-fix release accompanying the <i>Nucleic Acids Research</i> paper: annotation rendering, CX2 import of network properties from URLs, column-type input fixes, and layout rename.</span></div>
+        <div class="rel"><span class="rv">1.0.1</span><span class="rd">2025-02-14</span><span class="rn">Early fixes: workspace-saving improvements, local-network visibility and imported-time columns, and workspace-loading timing fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.0</span><span class="rd">2025-01-30</span><span class="rn">First public release of Cytoscape Web; reference build at <span class="mono">web.cytoscape.org</span>. Introduced and described in <i>Nucleic Acids Research</i> (2025). Releases are archived via Zenodo.</span></div>
         <p class="older">As a continuously deployed browser application, Cytoscape Web does not follow the six-month Desktop cadence; the reference build at <span class="mono">web.cytoscape.org</span> always reflects the latest release.</p>
       </div>
     </details>
@@ -702,9 +739,10 @@
     <details class="reveal">
       <summary>Cytoscape.js — releases <span class="count">3.x</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
       <div class="details-body">
-        <div class="rel"><span class="rv">3.x</span><span class="rd">npm: cytoscape</span><span class="rn">Current major line. Hundreds of versions published, each archived via Zenodo, on a weekly patch and monthly feature cadence.</span></div>
-        <div class="rel"><span class="rv">3.0</span><span class="rd">2016+</span><span class="rn">Major update with API improvements and breaking changes informed by v2 feedback; continued enhancements summarised in the 2023 <i>Bioinformatics</i> update.</span></div>
-        <div class="rel"><span class="rv">1.0</span><span class="rd">2015</span><span class="rn">First stable release; introduced in <i>Bioinformatics</i> (Franz et al., 2016).</span></div>
+        <div class="rel"><span class="rv">3.34.0</span><span class="rd">2026-06-02</span><span class="rn">Latest release of the current <b>3.x</b> line. Published on npm (as <span class="mono">cytoscape</span>) on a weekly-patch / monthly-feature cadence, with every version archived via Zenodo.</span></div>
+        <div class="rel"><span class="rv">3.0.0</span><span class="rd">2017-04-11</span><span class="rn">Major update with API improvements and breaking changes informed by v2 feedback; the 3.x line's enhancements are summarised in the 2023 <i>Bioinformatics</i> update.</span></div>
+        <div class="rel"><span class="rv">2.x</span><span class="rd">2013–2016</span><span class="rn">First stable series on npm (earliest <b>2.0.3</b>, Nov 2013, through the <b>2.7</b> releases in 2016); introduced and described in <i>Bioinformatics</i> (Franz et al., 2016).</span></div>
+        <div class="rel"><span class="rv">Origin</span><span class="rd">2012</span><span class="rn">First published to npm in October 2012, beginning with the 2.0 pre-releases.</span></div>
         <p class="older">Future versions are planned openly in the GitHub issue tracker's milestones. The library follows its own rapid npm cadence, independent of the Desktop and Web schedules.</p>
       </div>
     </details>
@@ -714,25 +752,7 @@
 </main>
 
 <!-- ===================== FOOTER ===================== -->
-<footer>
-  <div class="wrap">
-    <div>
-      <div class="brand" style="margin-bottom:14px;">
-        <img src="https://cytoscape.org/images/logo/cy3logoOrange.svg" alt="Cytoscape">
-        <span style="font-family:'Fraunces',serif;font-size:18px;font-weight:600;">Cytoscape</span>
-      </div>
-      <p>This roadmap reflects current plans and is subject to change. We welcome input — join the discussion through the community and documentation pages.</p>
-    </div>
-    <div class="footlinks">
-      <a href="https://cytoscape.org/community.html">Community</a>
-      <a href="https://cytoscape.org/documentation_users.html">User docs</a>
-      <a href="https://apps.cytoscape.org">App Store</a>
-      <a href="https://web.cytoscape.org">Cytoscape Web</a>
-      <a href="https://js.cytoscape.org">Cytoscape.js</a>
-      <a href="https://github.com/cytoscape/cytoscape-automation/wiki">Automation wiki</a>
-    </div>
-  </div>
-</footer>
+<footer></footer>
 
 <script>
   // Staggered reveal on scroll
@@ -756,6 +776,9 @@
     els.forEach(el=>io.observe(el));
   }
 </script>
+
+<!-- Shared site header (global nav) + footer + analytics -->
+<script src="js/setup_page.js"></script>
 
 </body>
 </html>

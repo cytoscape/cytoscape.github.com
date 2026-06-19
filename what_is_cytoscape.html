@@ -42,13 +42,25 @@
                     <h1>What is Cytoscape?</h1>
 
                     <p class="lead">
-                        <strong><i>Cytoscape</i></strong> is an open source software platform for <strong><i>
-                    visualizing</i></strong> molecular interaction networks and biological pathways and
-                        <strong><i>integrating</i></strong> these networks with annotations, gene expression profiles and other state data. Although Cytoscape was originally designed for biological research, now it is a general platform for complex network
-                        analysis and visualization. &nbsp; Cytoscape <i>core</i> distribution provides a basic set of features for data integration, analysis, and visualization. &nbsp; Additional features are available as
-                        <strong><i>Apps</i></strong> (formerly called <i>Plugins</i>). &nbsp; Apps are available for network and molecular profiling analyses, new layouts, additional file format support, scripting, and connection with databases. &nbsp;
-                        They may be developed by anyone using the Cytoscape open API based on <a href="http://www.java.com/en/" target="_blank">Java&#8482;</a> technology and App community development is encouraged. Most of the Apps are freely available
-                        from <a href="http://apps.cytoscape.org/">Cytoscape App Store</a>.
+                        <strong><i>Cytoscape</i></strong> is an open source software platform for <strong><i>visualizing</i></strong>
+                        molecular interaction networks and biological pathways and <strong><i>integrating</i></strong> these networks
+                        with annotations, gene expression profiles and other state data. Although Cytoscape was originally designed
+                        for biological research, it is now a general platform for complex network analysis and visualization.
+                    </p>
+                    <p class="lead">
+                        Today Cytoscape is a family of complementary tools: <strong><i>Cytoscape Desktop</i></strong>, the
+                        full-featured application for in-depth analysis; <strong><i>Cytoscape Web</i></strong>, for network
+                        visualization and sharing directly in the browser; and <strong><i>Cytoscape.js</i></strong>, a JavaScript
+                        library for developers. These tools interoperate through standard formats and
+                        <a href="https://www.ndexbio.org/" target="_blank">NDEx</a>, the Network Data Exchange, for storing and
+                        sharing networks.
+                    </p>
+                    <p class="lead">
+                        Additional features are available as <strong><i>Apps</i></strong> (formerly called <i>Plugins</i>) &mdash;
+                        for network and molecular profiling analyses, new layouts, additional file format support, scripting, and
+                        connection with databases. They may be developed by anyone using the open Cytoscape API, and App community
+                        development is encouraged. Most of the Apps are freely available from the
+                        <a href="https://apps.cytoscape.org/">Cytoscape App Store</a>.
                     </p>
                 </div>
             </div>
@@ -75,21 +87,31 @@
     <div id="section-family" class="belt white cy3-intro">
         <div class="container">
             <div class="centering">
-                <h1>Cytoscape Family</h1>
+                <h1>The Cytoscape Ecosystem</h1>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <h2>Cytoscape 3</h2>
-
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
                     <p class="lead">
-                        <strong><i>Cytoscape 3</i> is the mainstream version of Cytoscape with modular architecture</strong>. It is designed for long-term maintainability and it replaced 2.x series. It is a Java desktop application designed for large-scale
-                        network analysis and visualization. New features, including new user interfaces, advanced visualization functions, headless (command-line) distribution, RESTful API, and multiple rendering engine support, will be released for this
-                        version. <strong>As of May 2016, transition from Cytoscape 2.x to 3.x is complete, and 2.x is no longer supported.</strong> If you really need to use Plugins only available for 2.x, you may use Cytoscape 2.8.3, but otherwise, please
-                        use the latest version of Cytoscape 3.x series.
-
+                        Cytoscape is no longer a single application &mdash; it is a family of complementary tools
+                        that share design concepts and interoperate, so you can use the appropriate tool for each
+                        task and move networks between them.
+                    </p>
+                    <ul class="lead">
+                        <li><strong>Cytoscape Desktop</strong> &mdash; the desktop Java application for large-scale
+                            network analysis and visualization, extended by Apps.</li>
+                        <li><strong>Cytoscape Web</strong> &mdash; a browser-based application for visualizing,
+                            styling, and sharing networks, with no installation required.</li>
+                        <li><strong>Cytoscape.js</strong> &mdash; an open source JavaScript library for embedding
+                            network visualization and analysis in web applications.</li>
+                    </ul>
+                    <p class="lead">
+                        These tools interoperate through standard exchange formats (such as
+                        <a href="https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/" target="_blank">CX2</a>)
+                        and through <a href="https://www.ndexbio.org/" target="_blank">NDEx</a>, the Network Data
+                        Exchange, where networks can be stored, published, and shared.
                     </p>
                     <p class="lead">
-                        Please read <a href="roadmap.html">roadmap page</a> for further information.
+                        Please read the <a href="roadmap.html">roadmap page</a> for further information.
                     </p>
                 </div>
             </div>
@@ -102,10 +124,64 @@
     </div>
 
     <div id="section-cy3-desktop" class="belt white image-wide">
-        <div class="container centering">
-            <h2>Cytoscape 3.5 Desktop</h2>
+        <div class="container">
+            <div class="centering">
+                <h2>Cytoscape Desktop</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        <strong>Cytoscape Desktop</strong> is the desktop edition of Cytoscape &mdash; a modular
+                        Java application designed for long-term maintainability and built for large-scale network
+                        analysis and visualization. It provides visual styling, filtering, layout algorithms, and
+                        image export. Functionality is extended by <strong>Apps</strong>, installable from the
+                        built-in <a href="https://apps.cytoscape.org/">App Store</a> browser. For programmatic and
+                        reproducible workflows, it offers automation through the
+                        <a href="https://apps.cytoscape.org/apps/cyrest" target="_blank">CyREST</a> RESTful API and
+                        Commands, usable from Python, R, and Jupyter notebooks. A
+                        <a href="https://apps.cytoscape.org/apps/cytoscapemcpserver" target="_blank">Model Context Protocol
+                        (<strong>MCP</strong>) app</a>, installable from the App Store, lets large language models
+                        (LLMs) use Cytoscape as a tool, enabling AI-assisted network analysis. The 3.10 series adds table visual styles, a lasso
+                        selection tool, edge-label rotation, and native Apple-Silicon support.
+                    </p>
+                </div>
+            </div>
             <img src="images/screenshots/cy3_5_0_desktop.png" style="width: 100%" />
             <div class="row narrow">
+                <a href="#section-cyweb" data-scroll>
+                    <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-cyweb" class="belt light-gray">
+        <div class="container">
+            <div class="centering">
+                <h2>Cytoscape Web</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <p class="lead">
+                        <a href="https://web.cytoscape.org" target="_blank"><strong>Cytoscape Web</strong></a>
+                        provides Cytoscape network visualization and analysis in the browser, with no installation
+                        required. Load networks from <a href="https://www.ndexbio.org/" target="_blank">NDEx</a>,
+                        the Network Data Exchange, or by importing tabular data, then explore them with data-driven
+                        visual styling and share them online with collaborators. Cytoscape Web exchanges networks
+                        with Cytoscape Desktop through the
+                        <a href="https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/" target="_blank">CX2</a>
+                        format. It is extensible through a <strong>native app interface</strong> that lets
+                        developers add functionality with apps written in the <strong>React</strong> framework, as
+                        well as
+                        <a href="https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service-App-in-Cytoscape-Web-(draft-v2)" target="_blank"><strong>Service Apps</strong></a>
+                        for server-side algorithms that can be implemented in <strong>any programming language</strong>.
+                        Cytoscape Web is built on Cytoscape.js. For details, see the <i>Nucleic Acids Research</i>
+                        paper,
+                        <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf365/8123447" target="_blank">"Cytoscape Web: bringing network biology to the browser."</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row narrow centering">
                 <a href="#section-cyjs" data-scroll>
                     <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h2>
                 </a>
@@ -121,12 +197,13 @@
                     <h2>Cytoscape.js</h2>
 
                     <p class="lead">
-                        <a href="https://cytoscape.github.com/cytoscape.js/index.html">Cytoscape.js</a> is a successor of
-                        <a href="http://cytoscapeweb.cytoscape.org">Cytoscape Web</a>. Cytoscape.js is a <strong>JavaScript
-                    library</strong> for network visualization and analysis, and is <strong>NOT a complete web
-                    application</strong>. Cytoscape 3 and cytoscape.js share design-level concepts, such as Visual Styles, but their code bases are completely independent to each other. It is designed to be a building block for complex data visualization
-                        web applications for the HTML5 era. The Cytoscape core developer team is trying to improve interoperability of Cytoscape 3 and Cytoscape.js. From Cytoscape 3.2, users can export network visualizations as interactive web application
-                        using Cytoscape.js.
+                        <a href="https://js.cytoscape.org/" target="_blank">Cytoscape.js</a> is an open source
+                        JavaScript <strong>library</strong> for network visualization and analysis &mdash; a
+                        building block for web applications, <strong>not a complete application</strong> on its own.
+                        It is the rendering engine used by
+                        <a href="https://web.cytoscape.org" target="_blank">Cytoscape Web</a>. Cytoscape.js shares
+                        design concepts such as Visual Styles with Cytoscape Desktop while keeping an independent
+                        codebase, and it is used to build data-visualization web applications.
                     </p>
 
                     <h3 class="warn">This background is rendered by Cytoscape.js</h3>
@@ -136,48 +213,42 @@
     </div>
 
     <div class="cyjs-back">
-        <div class="cyjs">
+        <div class="cyjs" style="margin-top: -350px; height: 400px;">
 
         </div>
 
         <div class="centering row narrow">
-            <a href="#section-cy2" data-scroll>
+            <a href="#section-which" data-scroll>
                 <h2><span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="color: white;"></span></h2>
             </a>
         </div>
     </div>
 
-    <div id="section-cy2" class="belt light-gray" id="js-section">
+    <div id="section-which" class="belt light-gray">
         <div class="container">
+            <a name="which_cytoscape"></a>
+            <div class="centering">
+                <h2>Which one is right for me?</h2>
+            </div>
             <div class="row">
-                <a name="which_cytoscape"></a>
-
-                <div class="col-xs-12 col-md-5">
-                    <h3>Cytoscape 2</h3>
-
-                    <p>
-                        <strong>Cytoscape 2.x</strong> is a legacy version of Cytoscape. This version is now desupported. New features will not be added by the core developers, and it may be hard to get answers to 2.x specific questions. Please do NOT
-                        use this version unless you really need to use plugins only for 2.x series.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-md-7">
-
-                    <h3>Which one is the right one for me?</h3>
-
-                    <ul class="list-unstyled">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <ul class="list-unstyled lead">
                         <li>
-                            <strong>Users, Casual Users, and Power Users:</strong> Use Cytoscape v3.x -- v2.x has been desupported. Use v2.x if you have used v2.x in the past and rely on a plugin not supported as a v3.x app in the App Store – keep checking
-                            the App Store for new arrivals.
+                            <strong>Users, casual users, power users, and Cytoscape App developers:</strong> Both
+                            <strong>Cytoscape Desktop</strong> and
+                            <a href="https://web.cytoscape.org" target="_blank"><strong>Cytoscape Web</strong></a>
+                            are complete applications that support community-developed Apps. Choose
+                            <strong>Cytoscape Desktop</strong> for in-depth analysis of very large networks and
+                            computationally intensive tasks; choose <strong>Cytoscape Web</strong> to visualize,
+                            style, and share networks in the browser with no installation &mdash; best suited to
+                            small and medium networks (up to ~100,000 elements), since a browser tab has limited
+                            memory and computational power.
                         </li>
                         <li>
-                            <strong>App Developers:</strong> Please port your 2.x Apps to 3.x series. We recommend to use 3.x for new plugins development, as 2.x is desupported. <a href="http://chianti.ucsd.edu/cytoscape-3.4.0/API/">3.x
-                        API</a> is stable enough to develop new Apps, but if you notice any design flaws or bugs,
-                            <a href="https://groups.google.com/forum/?fromgroups#!forum/cytoscape-discuss">
-                            please let us know</a>.
-                        </li>
-                        <li>
-                            <strong>Web Application Developers:</strong> You can use cytoscape.js as network data visualization engine for your web application. It is a pure JavaScript library and no plugin is required for the web browsers. In the long
-                            term, this library and other server-side applications replaces Java Web Start version of Cytoscape.
+                            <strong>Developers building their own applications:</strong> Use
+                            <a href="https://js.cytoscape.org/" target="_blank"><strong>Cytoscape.js</strong></a>
+                            &mdash; a JavaScript <strong>library</strong>, not a complete application &mdash; to
+                            embed network visualization and analysis directly in your own web applications.
                         </li>
                     </ul>
                 </div>
@@ -193,7 +264,7 @@
 
     <div id="section-features" class="narrow white">
         <div class="container centering">
-            <h1>Cytoscape 3 Core Features</h1>
+            <h1>Cytoscape Desktop Core Features</h1>
         </div>
     </div>
 
