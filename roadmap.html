@@ -1,1378 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Cytoscape Product Roadmap</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="The Cytoscape Consortium">
+<meta name="description" content="Cytoscape Product Roadmap — Desktop and Cytoscape Web">
+<title>Cytoscape Product Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <meta name="description" content="Cytoscape Product Roadmap">
-    <meta name="author" content="Barry Demchak">
+<!-- Shared site chrome (global nav + footer via setup_page.js) -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/main.bootstrap.css" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --paper:#FBF8F3;
+    --paper-2:#F4EFE6;
+    --ink:#1C1A17;
+    --ink-soft:#55504A;
+    --ink-faint:#8A8278;
+    --line:#E4DCCE;
+    --line-strong:#D2C7B4;
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    /* Desktop track */
+    --desk:#EA9123;
+    --desk-soft:#FCEFDA;
+    --desk-deep:#9A580C;
 
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    /* Web track */
+    --web:#1B6FD2;
+    --web-soft:#E0ECFB;
+    --web-deep:#0D4A93;
 
-    <link href="css/main.bootstrap.css" rel="stylesheet">
+    /* Cytoscape.js track */
+    --js:#8B3DC9;
+    --js-soft:#F1E5FA;
+    --js-deep:#5A2487;
 
+    --maxw:1080px;
+    --r:14px;
+    --shadow:0 1px 2px rgba(28,26,23,.04), 0 8px 28px -12px rgba(28,26,23,.18);
+    --shadow-lg:0 2px 6px rgba(28,26,23,.06), 0 26px 60px -28px rgba(28,26,23,.3);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    font-size:16.5px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  body::before{
+    /* grain + warmth */
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(221,84,19,.06), transparent 60%),
+      radial-gradient(1000px 600px at -5% 5%, rgba(14,124,139,.05), transparent 55%);
+  }
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;}
+
+  a{color:var(--desk-deep);text-decoration:none;}
+  a:hover{text-decoration:underline;text-underline-offset:3px;}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1;}
+
+  /* ---------- Sticky nav ---------- */
+  .topnav{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:saturate(140%) blur(10px);
+    background:rgba(251,248,243,.82);
+    border-bottom:1px solid var(--line);
+  }
+  .topnav .wrap{display:flex;align-items:center;gap:22px;height:62px;}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;}
+  .brand img{height:26px;width:auto;display:block;}
+  .brand span{font-family:"Fraunces",serif;font-size:18px;}
+  .navlinks{display:flex;gap:4px;margin-left:0;flex-wrap:wrap;}
+  .navlinks a{
+    color:var(--ink-soft);font-size:14px;font-weight:500;
+    padding:7px 12px;border-radius:8px;
+  }
+  .navlinks a:hover{background:var(--paper-2);color:var(--ink);text-decoration:none;}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);}
+  .hero-net{position:absolute;inset:0;width:100%;height:100%;opacity:.5;z-index:0;}
+  .hero .wrap{position:relative;z-index:1;padding:38px 28px 52px;}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--desk);font-weight:600;margin:0 0 18px;
+  }
+  h1{
+    font-family:"Fraunces",serif;font-weight:600;
+    font-size:clamp(40px,6.5vw,68px);line-height:1.02;letter-spacing:-.02em;
+    margin:0 0 22px;max-width:14ch;
+  }
+  h1 em{font-style:italic;color:var(--desk);}
+  .lede{font-size:19px;line-height:1.6;color:var(--ink-soft);max-width:62ch;margin:0 0 30px;}
+  .lede strong{color:var(--ink);font-weight:600;}
+  .hero-tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+  .track-pill{
+    display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;
+    background:#fff;border:1px solid var(--line-strong);box-shadow:var(--shadow);
+    font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;justify-self:start;
+    transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  a.track-pill:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-lg);}
+  .dot{width:11px;height:11px;border-radius:50%;flex:none;}
+  .dot.d{background:var(--desk);}
+  .dot.w{background:var(--web);}
+  .dot.js{background:var(--js);}
+  .stat-strip{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px;padding-top:26px;
+    border-top:1px solid var(--line);
+  }
+  .stat{padding-left:18px;}
+  .stat b{font-family:"Fraunces",serif;font-size:26px;font-weight:600;display:block;line-height:1;}
+  .stat span{font-size:13px;color:var(--ink-faint);}
+  .heritage{font-size:13.5px;color:var(--ink-faint);margin:18px 0 0;max-width:62ch;}
+
+  /* ---------- Sections ---------- */
+  section{padding:46px 0;border-bottom:1px solid var(--line);scroll-margin-top:80px;}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px;flex-wrap:wrap;}
+  .sec-kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);}
+  h2{
+    font-family:"Fraunces",serif;font-weight:600;font-size:clamp(28px,4vw,40px);
+    letter-spacing:-.02em;line-height:1.08;margin:6px 0 0;
+  }
+  .sec-intro{font-size:17px;color:var(--ink-soft);max-width:64ch;margin:16px 0 0;}
+  h3{font-family:"Fraunces",serif;font-weight:600;font-size:22px;letter-spacing:-.01em;margin:0 0 6px;}
+  h4{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-faint);font-weight:600;margin:0 0 12px;}
+
+  /* ---------- Now / Next / Later board ---------- */
+  .board{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
+  .col{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:22px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  }
+  .col-h{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+  .col-h .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);}
+  .col-h h3{font-size:20px;margin:0;}
+  .col > p.when{font-size:13px;color:var(--ink-faint);margin:0 0 16px;}
+  .card{
+    border:1px solid var(--line);border-radius:10px;padding:13px 14px;margin-bottom:11px;
+    background:var(--paper);position:relative;
+  }
+  .card:last-child{margin-bottom:0;}
+  .card .who{
+    display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;margin-bottom:5px;
+  }
+  .card.d{border-left:3px solid var(--desk);}
+  .card.w{border-left:3px solid var(--web);}
+  .card.js{border-left:3px solid var(--js);}
+  .card.both{border-left:3px solid;border-image:linear-gradient(var(--desk),var(--web)) 1;}
+  .who.d{color:var(--desk-deep);}
+  .who.w{color:var(--web-deep);}
+  .who.js{color:var(--js-deep);}
+  .who.both{color:var(--ink-soft);}
+  .card p{margin:0;font-size:14.5px;line-height:1.5;color:var(--ink);}
+
+  /* ---------- Product blocks ---------- */
+  .prod-head{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+  .prod-badge{
+    width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;
+  }
+  .prod-badge svg{width:24px;height:24px;}
+  .prod-badge.d{background:var(--desk-soft);color:var(--desk-deep);}
+  .prod-badge.w{background:var(--web-soft);color:var(--web-deep);}
+  .prod-badge.js{background:var(--js-soft);color:var(--js-deep);}
+  .prod-head .meta{font-size:13px;color:var(--ink-faint);}
+  .grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:start;}
+
+  .release-now{
+    border-radius:var(--r);padding:22px 24px;color:#fff;box-shadow:var(--shadow-lg);
+    margin-bottom:20px;
+  }
+  .release-now.d{background:linear-gradient(135deg,var(--desk),var(--desk-deep));}
+  .release-now.w{background:linear-gradient(135deg,var(--web),var(--web-deep));}
+  .release-now.js{background:linear-gradient(135deg,var(--js),var(--js-deep));}
+  .release-now .ver{font-family:"Fraunces",serif;font-size:34px;font-weight:600;line-height:1;}
+  .release-now .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.16em;opacity:.85;margin-bottom:8px;}
+  .release-now .date{font-family:"IBM Plex Mono",monospace;font-size:13px;opacity:.92;margin-top:6px;}
+
+  ul.feat{list-style:none;padding:0;margin:14px 0 0;}
+  ul.feat li{position:relative;padding:7px 0 7px 26px;border-bottom:1px dashed var(--line);font-size:15px;}
+  ul.feat li:last-child{border-bottom:0;}
+  ul.feat li::before{
+    content:"";position:absolute;left:4px;top:14px;width:8px;height:8px;border-radius:50%;
+  }
+  ul.feat.d li::before{background:var(--desk);}
+  ul.feat.w li::before{background:var(--web);}
+  ul.feat.js li::before{background:var(--js);}
+  .vision-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;
+    box-shadow:var(--shadow);margin-bottom:14px;
+  }
+  .vision-card h3{font-size:18px;margin-bottom:7px;}
+  .vision-card p{margin:0;font-size:15px;color:var(--ink-soft);}
+
+  .callout{
+    display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:12px;
+    background:var(--paper-2);border:1px solid var(--line);font-size:14.5px;color:var(--ink-soft);
+  }
+  .callout svg{flex:none;margin-top:2px;}
+
+  /* ---------- Parity table ---------- */
+  .parity{margin-top:30px;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow);}
+  table{border-collapse:collapse;width:100%;min-width:560px;}
+  thead th{
+    text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:600;padding:16px 18px;border-bottom:2px solid var(--line-strong);
+  }
+  thead th.center{text-align:center;}
+  tbody td{padding:13px 18px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:middle;}
+  tbody tr:last-child td{border-bottom:0;}
+  tbody td.center{text-align:center;}
+  .feat-name{font-weight:500;}
+  .pill-stat{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;}
+  .s-yes{background:#E7F3EC;color:#216B43;}
+  .s-part{background:#FBF0DC;color:#9A6B12;}
+  .s-no{background:#F0EDE8;color:#8A8278;}
+  .parity-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--ink-faint);}
+  .parity-legend span{display:inline-flex;align-items:center;gap:7px;}
+
+  /* ---------- Shared ecosystem ---------- */
+  .eco{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px;}
+  .eco-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;box-shadow:var(--shadow);}
+  .eco-card .ic{width:40px;height:40px;border-radius:10px;background:var(--paper-2);display:grid;place-items:center;margin-bottom:14px;color:var(--ink);}
+  .eco-card h3{font-size:19px;}
+  .eco-card p{margin:6px 0 0;font-size:15px;color:var(--ink-soft);}
+
+  /* ---------- Details / accordion ---------- */
+  details{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-top:16px;overflow:hidden;box-shadow:var(--shadow);}
+  summary{
+    cursor:pointer;list-style:none;padding:20px 24px;font-family:"Fraunces",serif;
+    font-size:20px;font-weight:600;display:flex;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .chev{margin-left:auto;transition:transform .25s ease;color:var(--ink-faint);}
+  details[open] summary .chev{transform:rotate(180deg);}
+  summary .count{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--ink-faint);background:var(--paper-2);padding:3px 9px;border-radius:999px;}
+  .details-body{padding:4px 24px 24px;}
+
+  .policy{padding:13px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:54px 1fr;gap:14px;}
+  .policy:first-child{border-top:0;}
+  .policy .pid{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--desk);font-size:13px;}
+  .policy p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+  /* release history */
+  .rel{display:grid;grid-template-columns:88px 96px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line);align-items:baseline;}
+  .rel:first-child{border-top:0;}
+  .rel .rv{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;}
+  .rel .rd{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-faint);}
+  .rel .rn{font-size:14.5px;color:var(--ink-soft);}
+  .rel .rn b{color:var(--ink);font-weight:600;}
+  .older{margin-top:18px;font-size:14px;color:var(--ink-faint);line-height:1.8;}
+  .older .mono{color:var(--ink-soft);}
+
+  /* ---------- Footer ---------- */
+  footer{padding:48px 0 64px;}
+  footer .wrap{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;}
+  footer p{font-size:14px;color:var(--ink-faint);max-width:46ch;margin:0;}
+  .footlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:860px){
+    .board{grid-template-columns:1fr;}
+    .grid2{grid-template-columns:1fr;gap:24px;}
+    .eco{grid-template-columns:1fr;}
+    .navlinks{display:none;}
+    .hero-tracks,.stat-strip{grid-template-columns:1fr;}
+    section{padding:34px 0;}
+    .hero .wrap{padding:28px 28px 40px;}
+  }
+
+  /* --- Keep the shared global site navbar (injected by setup_page.js) compact so it
+         fits on one row; this page's body font is larger/wider than the site default --- */
+  .navbar-default{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+  #cy-navbar{font-size:14px;}
+  @media (min-width:768px){
+    .navbar-default .navbar-header{float:left;}
+    .navbar-default .navbar-nav{float:left;margin:0;}
+    .navbar-default .navbar-nav > li{float:left;}
+  }
+  /* Match the home page search box width (240px) and keep the inner Google CSE
+     input from overflowing and covering the neighbouring nav items */
+  #cy-navbar #___gcse_0{width:240px !important;max-width:240px !important;overflow:hidden !important;justify-content:flex-start !important;}
+  #cy-navbar #___gcse_0 .gsc-control-cse,
+  #cy-navbar #___gcse_0 form.gsc-search-box{width:100% !important;max-width:100% !important;}
+  #cy-navbar #___gcse_0 table.gsc-search-box{width:100% !important;max-width:100% !important;table-layout:fixed !important;}
+  #cy-navbar #___gcse_0 td.gsc-input{width:auto !important;}
+  #cy-navbar #___gcse_0 .gsc-input-box{width:100% !important;}
+  #cy-navbar #___gcse_0 input.gsc-input{width:100% !important;max-width:100% !important;min-width:0 !important;box-sizing:border-box !important;text-indent:0 !important;}
+
+  /* Shared footer (injected by setup_page.js): let the funding text use the full
+     column width and widen the text column so it wraps onto fewer rows */
+  footer .container p{max-width:none !important;}
+  @media (min-width:992px){
+    footer .container .col-md-8{width:75% !important;}
+    footer .container .col-md-4{width:25% !important;}
+  }
+</style>
 </head>
-
 <body>
-    <div class="narrow white">
-        <div class="container centering">
-            <h1>Cytoscape Product Roadmap</h1>
 
-            <div class="row">
-                <img src="images/logo/cy3logoOrange.svg">
-            </div>
+<!-- ===================== NAV ===================== -->
+<nav class="topnav">
+  <div class="wrap">
+    <div class="navlinks">
+      <a href="#board">At a glance</a>
+      <a href="#desktop">Desktop</a>
+      <a href="#web">Cytoscape Web</a>
+      <a href="#cytoscapejs">Cytoscape.js</a>
+      <a href="#ecosystem">Shared ecosystem</a>
+      <a href="#process">Process</a>
+      <a href="#history">Release history</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <svg class="hero-net" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g stroke="#D2C7B4" stroke-width="1.1" opacity=".7">
+      <line x1="120" y1="80" x2="300" y2="160"/>
+      <line x1="300" y1="160" x2="200" y2="320"/>
+      <line x1="300" y1="160" x2="470" y2="120"/>
+      <line x1="470" y1="120" x2="640" y2="220"/>
+      <line x1="640" y1="220" x2="540" y2="360"/>
+      <line x1="640" y1="220" x2="820" y2="160"/>
+      <line x1="820" y1="160" x2="1000" y2="240"/>
+      <line x1="1000" y1="240" x2="1090" y2="100"/>
+      <line x1="820" y1="160" x2="900" y2="350"/>
+      <line x1="470" y1="120" x2="360" y2="40"/>
+      <line x1="200" y1="320" x2="540" y2="360"/>
+    </g>
+    <g>
+      <circle cx="120" cy="80" r="7" fill="#EA9123"/>
+      <circle cx="300" cy="160" r="10" fill="#EA9123"/>
+      <circle cx="200" cy="320" r="6" fill="#1B6FD2"/>
+      <circle cx="470" cy="120" r="9" fill="#EA9123"/>
+      <circle cx="360" cy="40" r="5" fill="#1B6FD2"/>
+      <circle cx="640" cy="220" r="11" fill="#1B6FD2"/>
+      <circle cx="540" cy="360" r="7" fill="#EA9123"/>
+      <circle cx="820" cy="160" r="10" fill="#1B6FD2"/>
+      <circle cx="1000" cy="240" r="8" fill="#EA9123"/>
+      <circle cx="1090" cy="100" r="6" fill="#1B6FD2"/>
+      <circle cx="900" cy="350" r="6" fill="#1B6FD2"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <h1>The road ahead for <em>Cytoscape</em></h1>
+    <p class="lede">Cytoscape spans three components. <strong>Cytoscape Desktop</strong> is the powerful, app-rich workhorse for in-depth network biology; <strong>Cytoscape Web</strong> brings analysis and collaboration into the browser; and <strong>Cytoscape.js</strong> is the open-source graph library that developers build interactive networks on. This page sets out where each is heading — and the shared ecosystem that connects them.</p>
+    <div class="hero-tracks">
+      <a class="track-pill" href="#desktop"><span class="dot d"></span>Cytoscape Desktop</a>
+      <a class="track-pill" href="#web"><span class="dot w"></span>Cytoscape Web</a>
+      <a class="track-pill" href="#cytoscapejs"><span class="dot js"></span>Cytoscape.js</a>
+    </div>
+    <div class="stat-strip">
+      <div class="stat"><b style="color:var(--desk)">v3.10.4</b><span>Cytoscape Desktop, current release</span></div>
+      <div class="stat"><b style="color:var(--web)">In-browser</b><span>Cytoscape Web, live now</span></div>
+      <div class="stat"><b style="color:var(--js)">On npm</b><span>Cytoscape.js, open-source library</span></div>
+    </div>
+    <p class="heritage">Cytoscape Desktop has been in continuous development since 2002, and is downloaded roughly 300,000 times a year.</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== BOARD ===================== -->
+<section id="board">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">01 — Overview</span>
+    </div>
+    <h2 class="reveal">At a glance</h2>
+    <p class="sec-intro reveal">A living view of where effort is going. Items move from <em>Later</em> toward <em>Now</em> as work matures; dates firm up as releases approach. Colour marks the track.</p>
+
+    <div class="board">
+      <div class="col reveal">
+        <div class="col-h"><span class="tag">Now</span><h3>Shipping</h3></div>
+        <p class="when">Released or in active development</p>
+        <div class="card d"><span class="who d"><span class="dot d"></span>Desktop</span><p>Cytoscape <b>3.10.4</b> — bug fixes for Web interoperability, layout settings, and session stability.</p></div>
+        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Cytoscape Web live at <b>web.cytoscape.org</b> — in-browser visualization, styling, and NDEx-backed workspaces.</p></div>
+        <div class="card js"><span class="who js"><span class="dot js"></span>Cytoscape.js</span><p>Mature graph library on npm — weekly patch and monthly feature releases keep turnaround fast.</p></div>
+      </div>
+
+      <div class="col reveal">
+        <div class="col-h"><span class="tag">Next</span><h3>Up next</h3></div>
+        <p class="when">Targeted for the coming release cycle</p>
+        <div class="card d"><span class="who d"><span class="dot d"></span>Desktop</span><p>Cytoscape <b>3.11</b> (Oct 2026) — Java 25 support and an upgraded REST framework for CyREST.</p></div>
+        <div class="card both"><span class="who both"><span class="dot d"></span><span class="dot w"></span>Both</span><p>Web ↔ notebook interoperability and tighter <b>Open in Cytoscape</b> round-tripping.</p></div>
+        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Release <b>v1.1.0</b> (Aug 2026) — App API v1.0 and image export support.</p></div>
+        <div class="card js"><span class="who js"><span class="dot js"></span>Cytoscape.js</span><p>Ongoing v3 API refinements and rendering performance, tracked in the GitHub milestones.</p></div>
+      </div>
+
+      <div class="col reveal">
+        <div class="col-h"><span class="tag">Later</span><h3>Exploring</h3></div>
+        <p class="when">Direction set, scope still forming</p>
+        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Expanding the Web App ecosystem; deprecate the raw Module Federation store once the new API lands.</p></div>
+        <div class="card both"><span class="who both"><span class="dot d"></span><span class="dot w"></span>Both</span><p>Deeper, near-costless NDEx integration as the natural home for networks and workspaces.</p></div>
+        <div class="card w"><span class="who w"><span class="dot w"></span>Web</span><p>Additional rendering engines (e.g. <b>Cell View</b>) and broader automation support in the browser.</p></div>
+        <div class="card js"><span class="who js"><span class="dot js"></span>Cytoscape.js</span><p>Growing first- and third-party extension ecosystem — layouts, UI, and integrations.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DESKTOP ===================== -->
+<section id="desktop">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">02 — Product track</span>
+    </div>
+    <h2 class="reveal">Cytoscape Desktop</h2>
+
+    <div class="prod-head reveal" style="margin-top:18px;">
+      <div class="prod-badge d">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div>
+        <h3 style="margin:0;">The full-featured workhorse</h3>
+        <div class="meta">Java desktop application · App Store ecosystem · 6-month release cadence</div>
+      </div>
+    </div>
+    <p class="sec-intro reveal" style="margin-top:0;">Desktop remains the deepest environment for network biology — mature apps, large-network capacity, and full automation. Near-term work modernizes the runtime and tightens the bridge to the browser.</p>
+
+    <div class="grid2" style="margin-top:34px;">
+      <div class="reveal">
+        <div class="release-now d">
+          <div class="lbl">Next release</div>
+          <div class="ver">3.11</div>
+          <div class="date">Target: Oct 2026</div>
         </div>
+        <h4>Planned themes &amp; features</h4>
+        <ul class="feat d">
+          <li>Java 25 support</li>
+          <li>Upgraded REST framework for CyREST</li>
+          <li>Service App support</li>
+        </ul>
+        <p style="font-size:13px;color:var(--ink-faint);margin-top:14px;">Current release: <span class="mono">3.10.4</span> (Sep 2025). A preliminary feature list is published ahead of each release and frozen ten days before — see <a href="#process">Process</a>.</p>
+      </div>
+
+      <div class="reveal">
+        <h4>Longer-term vision</h4>
+        <div class="vision-card">
+          <h3>Core &amp; Core Apps</h3>
+          <p>A lean Core handles reading, displaying, and writing networks; biology-aware <em>Core Apps</em> ship alongside it but update independently via the App Store — so features and fixes reach users without waiting for a full release.</p>
+        </div>
+        <div class="vision-card">
+          <h3>Cytoscape Automation</h3>
+          <p>A <em>Commands</em> interface for user-style actions and a <em>Functions</em> interface for programmatic network manipulation, both exposed over CyREST — making reproducible, scriptable workflows first-class.</p>
+        </div>
+        <div class="vision-card">
+          <h3>NDEx integration</h3>
+          <p>Loading and saving networks through NDEx as the default, with fast, near-costless sampling so exploration stays on-task and sharing is seamless.</p>
+        </div>
+        <div class="vision-card">
+          <h3>Large language models &amp; agentic AI</h3>
+          <p>A longer-term direction is to integrate Cytoscape Desktop with large language models and broaden support for agentic AI use cases. By publishing skill files tailored to different AI vendors, the project aims to let assistants and autonomous agents drive Cytoscape through its automation interfaces — turning plain-language goals into reproducible, auditable network analyses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WEB ===================== -->
+<section id="web">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">03 — Product track</span>
+    </div>
+    <h2 class="reveal">Cytoscape Web</h2>
+
+    <div class="prod-head reveal" style="margin-top:18px;">
+      <div class="prod-badge w">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+      </div>
+      <div>
+        <h3 style="margin:0;">Network biology in the browser</h3>
+        <div class="meta">Runs entirely client-side · React UI · NDEx-backed · live at web.cytoscape.org</div>
+      </div>
+    </div>
+    <p class="sec-intro reveal" style="margin-top:0;">Cytoscape Web brings visualization, data-driven styling, and collaborative workflows to any modern browser — no installation. It synchronizes an in-memory data store to the browser's IndexedDB and persists work through NDEx. As a newer tool it is still growing toward Desktop's depth, while pioneering capabilities of its own.</p>
+
+    <div class="grid2" style="margin-top:34px;">
+      <div class="reveal">
+        <h4>What's live now</h4>
+        <ul class="feat w">
+          <li>In-browser visualization with data-driven visual styles</li>
+          <li>NDEx integration for network &amp; workspace storage</li>
+          <li>Import of CX2 and CSV; export to common image formats</li>
+          <li><b>Open in Cytoscape</b> hand-off to Desktop (requires 3.10+)</li>
+          <li>Multiple rendering engines, including Cell View</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h4>Where it's heading</h4>
+        <div class="release-now w">
+          <div class="lbl">Next feature release</div>
+          <div class="ver">v1.1.0</div>
+          <div class="date">Target: Aug 2026</div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-faint);margin:-6px 0 16px;">A bug-fix release, <span class="mono">v1.0.8</span>, will ship first, ahead of the v1.1.0 feature release.</p>
+        <div class="vision-card">
+          <h3>App API v1.0 &amp; image support</h3>
+          <p>Version 1.1.0 targets the first stable release of the App API (v1.0) — the recommended way to build Web apps — alongside image export support. The new API will eventually deprecate the current raw-store approach.</p>
+        </div>
+        <div class="callout" style="margin-top:6px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--web)" stroke-width="2" stroke-linecap="round"><path d="M12 16v-5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg>
+          <span>Cytoscape Web is described in <a href="https://doi.org/10.1093/nar/gkaf365"><em>Cytoscape Web: bringing network biology to the browser</em></a>, Nucleic Acids Research (2025).</span>
+        </div>
+      </div>
     </div>
 
-    <div class="belt white">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-5">
-                    <h2>Introduction</h2>
-                    <p class="narrow">Cytoscape was initially released in 2002, and has undergone numerous development sprints. The most recent major sprint ended in 2014 with the release of Cytoscape v3, which refactored major internal data models and greatly improved
-                        support for third party plugin applications (via the App Store, semantic versioning disciplines, published APIs, and code management via OSGi).</p>
-
-                    <p>Since v3, we have focused on addressing outstanding bugs and upgrading a number of user-facing features, including visual styles (VizMapper), fast node filtering, network capacity, and overall speed and UI consistency. The Cytoscape
-                        app developer community has upgraded a number of v2 plugins into v3 apps, and has contributed a steady stream of new apps (apps.cytoscape.org).
-                    </p>
-
-                    <p>As of late 2023, our efforts have been rewarded, as Cytoscape has become more popular than ever –
-                        <a href="stat.html">20,000 downloads per month
-                        worldwide</a>.</p>
-
-                    <p>This page explains our roadmap for future deliveries and activities. Feel free to contribute to this discussion our 
-                        <a href="https://cytoscape.org/community.html">community</a> and 
-                        <a href="https://cytoscape.org/documentation_users.html">user documentation</a> pages.
-                    </p>
-
-                    <p class="narrow">Cytoscape is going down a number of roads simultaneously:
-                    </p>
-
-                    <ul>
-                        <li>Cytoscape Desktop</li>
-                        <li>Cytoscape Expansion to the Cloud</li>
-                        <li>Cytoscape Community Outreach</li>
-                    </ul>
-                    <p>This page describes the Cytoscape Desktop roadmap and inroads into the wider Cloud Ecosystem.</p>
-                </div>
-
-                <div class="col-xs-12 col-md-7">
-                    <h2>Vision: Cytoscape Automation</h2>
-
-                    <p class="narrow">Cytoscape has traditionally relied on the Cytoscape Apps mechanism for defining and delivering novel calculations and workflows, and the <a href="http://apps.cytoscape.org">Cytoscape App Store</a> has proven successful at collecting
-                        and disseminating them. We are developing Cytoscape Automation features to enable the Cytoscape community to economically create novel workflows using state of the art tools such as Python/Jupyter, R/RStudio and GenomeSpace while
-                        leveraging their feature rich libraries and web presence. </p>
-
-                    <p class="narrow">Cytoscape Automation will enable users to create workflows executed entirely within Cytoscape or by external tools, and whose results are reproducible. This will enable Cytoscape to scale to large collections of datasets and to larger
-                        more complex workflows than is practical via keyboard and mouse.</p>
-
-                    <p class="narrow">Cytoscape Automation will exist in two skins – the Commands interface and the Functions interface. Both will accomplish similar results, but will be focused on different usage styles. Commands will reprise user-initiated interactions
-                        (e.g., open session, import data, export image), whereas the Functions interface will enable programmers to manipulate and operate on networks as internal Cytoscape data. Commands and Functions will both available via a REST interface.</p>
-
-                    <p class="narrow">Under the Cytoscape Automation vision, all new and many existing apps will be upgraded to respond to REST calls. Additionally, most Cytoscape core functions will be exposed via REST calls. In the ideal, all Cytoscape functionality
-                        will become controlable from outside workflow systems.
-                    </p>
-
-                    <p class="narrow">For more information on Cytoscape Automation, consult the <a href="https://github.com/cytoscape/cytoscape-automation/wiki">Cytoscape Automation wiki.</a></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-md-5">
-                    <h2>Vision: Cytoscape Core and Core Apps</h2>
-
-                    <p class="narrow">Before v3.3, we viewed Cytoscape as consisting of the Cytoscape Core as augmented by the Cytoscape Apps. As of v3.3, we have created a middle ground: the Cytoscape Core Apps. The Core is the code that organizes, displays, reads, and
-                        writes networks but is agnostic as to network meaning or use – the Core does not contain biology-related functionality. Cytoscape Core Apps are installable modules that perform non-Core functions but are still integral to most
-                        Cytoscape usage (e.g., network biology).</p>
-
-                    <div class="centering">
-                        <img src="images/roadmap/core-picture.png">
-                        <h4>Fig. 1: Cytoscape Desktop</h4>
-                    </div>
-
-                    <p class="narrow">To date, a Cytoscape release has consisted of the Core + Core Apps (Fig. 1). Beginning in v3.3, the Core Apps are available individually in the App Store, though they are all installed with the Core when Cytoscape is installed. However,
-                        unlike previous Cytoscape versions, Core Apps are upgradable without releasing all of Cytoscape. (For example, bugs can be fixed or features can be added to the Network Merge at any time.) This enables the Cytoscape team to upgrade
-                        specific features much more quickly than in the past.</p>
-
-                    <p class="narrow">A close cousin to Core Apps is the App Store concept of Collections, which are bundles of apps that apply to a particular workflow. Installing a Collection causes the installation of all apps in the Collection. From time to time, we
-                        will add new Collections or add to existing Collections.</p>
-
-                    <p class="narrow">As Cytoscape use cases evolve, we expect to add Core Apps to the Cytoscape release, thereby packaging advanced functionality useful in common workflows. The criteria for promoting an app to a Core App is ultimately decided by the Cytoscape
-                        Core developers, but includes:</p>
-
-                    <ul>
-                        <li>Availability in the App Store and intensive evaluation of requirements, proper targeting and other feedback over a period of at least six months
-                        </li>
-                        <li>Assessment and agreement by Cytoscape Core developers</li>
-                        <li>Realistically maintainable by multiple developers</li>
-                        <li>Minimal (or no) biological domain-specific semantics</li>
-                    </ul>
-
-                    <p class="narrow">Additional criteria include:</p>
-                    <ul>
-                        <li>How much other apps or workflows depend on it</li>
-                        <li>Value in driving user behavior to achieve higher productivity</li>
-                        <li>Incremental size contributed to Cytoscape installer</li>
-                        <li>Specific maintenance plan (including maintainability by core developers)</li>
-                        <li>Open source and in Cytoscape github repository</li>
-                        <li>Expected size of interested user community</li>
-                        <li>Appeal as compared to existing alternatives</li>
-                        <li>Evaluation of usability and stability</li>
-                        <li>Existence of high quality documentation and tutorials</li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-12 col-md-7">
-                    <h2>Vision: Key Workflows</h2>
-
-                    <p class="narrow">A top priority for Cytoscape development is to enable efficient execution of new and existing key workflows, including:
-                    </p>
-
-                    <ul>
-                        <li>Cytoscape Main (core network analysis)</li>
-                        <li>Functional enrichment analysis</li>
-                        <li>Network analysis of proteomics data</li>
-                        <li>Pathway analysis of gene expression data</li>
-                    </ul>
-
-                    <p class="narrow">Functionality that implements the Core Apps feature is used to enable the user to customize Cytoscape quickly and easily to implement various workflows. Using a Collection (i.e., an app that represents multiple apps), the user can
-                        install all apps needed to execute the Functional Enrichment workflow.</p>
-                </div>
-
-                <div class="col-xs-12 col-md-7">
-                    <h2>Vision: Themes and Features</h2>
-
-                    <table class="table table-striped">
-                        <tr class="info">
-                            <td><b>Release</b></td>
-                            <td><b>Date</b></td>
-                            <td><b>Themes</b></td>
-                            <td><b>Features</b></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <h3>3.11</h3>
-                            </td>
-                            <td>TBD 2026
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Web and notebook interoperability</li>
-                                    <li>Performance improvements and ...</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Java 21 or 25 support</li>
-									<li>Support to open Cytoscape Desktop via URL link</li>
-                                    <li>and...</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>Policies and Practices</h2>
-
-                    <p>Consequently, we have the following policies, subject to periodic change:</p>
-
-                    <p style='margin-left:.5in'><b><u>P1:</u></b> Past releases of Cytoscape Desktop have been made roughly every 12 months, with minor releases for bug fixes and minor features occurring every 3-6 months. Beginning with v3.3, a new version of Cytoscape Desktop is
-                        released every six months (~April 15 and ~November 15), with updates of Core Apps to the App Store on an as-needed basis. </p>
-
-                    <p style='margin-left:.5in'><b><u>P2:</u></b> A high risk Core feature (which could substantially affect overall usability or which are impossible to definitively verify) must be built into the Core eight weeks before the Core is released, or the feature will
-                        be carried over to the next Core release. </p>
-
-                    <p style='margin-left:.5in'><b><u>P3:</u></b> Other features must be built into the Core five weeks before Core release. </p>
-
-                    <p style='margin-left:.5in'><b><u>P4:</u></b> Bug fixes may be performed (with proper review) up to ten days before Core release. </p>
-
-                    <p style='margin-left:.5in'><b><u>P5:</u></b> An external API must be frozen, documented, and with preliminary implementations eight weeks before the Core is released, or the API will be carried over to the next Core release. This includes CyREST functions, parameters
-                        and return results. A developer release will be created and made accessible on cytoscape.org. </p>
-
-                    <p style='margin-left:.5in'><b><u>P6:</u></b> Milestone builds are created and made available to the user and app developer community eight weeks, five weeks, and ten days before a Core release. If bugs need to be fixed, features need to be withdrawn before the
-                        release, or developers see a good reason, additional milestone builds are created.
-                    </p>
-
-                    <p style='margin-left:.5in'><b><u>P7:</u></b> Milestone builds (including nightly builds) are made available via a developer Download page on the Cytoscape web site.</p>
-
-                    <p style='margin-left:.5in'><b><u>P8:</u></b> Emerging API definitions (or references to definitions) are posted on the developer Download page, too.</p>
-
-                    <p style='margin-left:.5in'><b><u>P9:</u></b> A preliminary feature list is published five months prior to a Core release, and is updated periodically until ten days before a Core release, at which time it is frozen.</p>
-
-                    <p style='margin-left:.5in'><b><u>P10:</u></b> Notably, Cytoscape has expanded beyond its role as a desktop application by also exposing Cytoscape functionality to external control via automation features (also known as Cytoscape Automation). Feature and workflow
-                        testing is performed to a large degree through external scripting (e.g., PyUnit tests driven by Python). </p>
-
-                    <p style='margin-left:.5in'><b><u>P11:</u></b> Nominations for new Core Apps will be taken until eight weeks before Core release. Core developers can accept prospective Core Apps until five weeks before Core release. Core App nominations not accepted by the this
-                        time will be eligible for consideration for the next release.
-                    </p>
-
-                    <p>Note that Core Apps are considered to be part of the Cytoscape core, and are subject to the same Q/A process as core code. Particularly, the interaction of <b><u>P4</u></b> with Core Apps means that changes to Core Apps intended for
-                        immediate deployment must undergo review as if they were last minute changes to the core itself. Core Apps will be deployed to the App Store by core developers.</p>
-                </div>
-            </div>
-
-            <div class="row belt">
-                <div class="col-xs-12">
-
-                    <h2>Vision: Integration with Cytoscape Cyberinfrastructure</h2>
-
-                    <p class="narrow">As a member of the Cytoscape Cyberinfrastructure (CI), Cytoscape exchanges networks with a number of CI services, including NDEx and viewers based on cytoscape.js.</p>
-
-                    <p>One long term vision is to tightly integrate Cytoscape and NDEx so that users naturally load and store their networks using the NDEx service. This enables seamless sharing of networks between Cytoscape and other CI services (e.g.,
-                        Network Based Stratification), and with other users and publishers. Upon startup, Cytoscape will enumerate the NDEx networks best suited for the user’s use, including networks previously saved by the user and/or the user’s NDEx-based
-                        groups, networks pertinent to the user’s interest (e.g., by species, curation properties, etc), or other networks proposed by a recommendation engine. Cytoscape and NDEx will cooperate to make sampling of networks nearly costless
-                        so as to encourage exploration (e.g., by caching and displaying network layouts and statistics). Finally, once selected, Cytoscape and NDEx will cooperate to make network loads fast enough that users can remain on task. This vision
-                        will initially be realized by a new Core App that replaces the Welcome screen with a panel (a sibling of Network and Select panels) that presents NDEx networks and serves as a jumping off point for workflow execution.</p>
-
-                    <p>Cytoscape currently exports a network as a file that can be used as supplemental material for a journal article. A journal publisher’s online article viewer is free to display the network in an interactive viewer, which allows the
-                        user to zoom into the network and move nodes. In our vision, advanced viewers may perform lookups on selected nodes and show the results in windows, perform new layouts and network analysis/clustering, and export the network to
-                        NDEx for integration with Cytoscape and other services – the network would be furnished to the publisher via NDEx directly from Cytoscape instead as a file in supplementary data. Currently, Elsevier offers a <a href="https://www.elsevier.com/connect/new-tool-lets-you-view-and-visualize-complex-data-networks">simple
-                        viewer</a> that accepts a network file and allows zooming and node movement:</p>
-
-                    <ul>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S2405471216300333">http://www.sciencedirect.com/science/article/pii/S2405471216300333</a>
-                        </li>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S1874391916300215">http://www.sciencedirect.com/science/article/pii/S1874391916300215</a>
-                        </li>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S1874391916300112">http://www.sciencedirect.com/science/article/pii/S1874391916300112</a>
-                        </li>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S1874391916301944">http://www.sciencedirect.com/science/article/pii/S1874391916301944</a>
-                        </li>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000724">http://www.sciencedirect.com/science/article/pii/S2352340915000724</a>
-                        </li>
-                        <li><a href="http://www.sciencedirect.com/science/article/pii/S2352340915000840">http://www.sciencedirect.com/science/article/pii/S2352340915000840</a>
-                        </li>
-                    </ul>
-
-                    <p>The ScienceDirect app makes it very easy for a Cytoscape user to generate supplemental material containing a Cytoscape network, as shown in this movie:
-                    </p>
-
-                    <ul>
-                        <li>
-                            <a href="http://www.screencast.com/users/bdemchak/folders/Jing/media/1c1e23e9-02ed-495c-8767-baed14a24ac6">http://www.screencast.com/users/bdemchak/folders/Jing/media/1c1e23e9-02ed-495c-8767-baed14a24ac6</a>
-                        </li>
-                    </ul>
-                    <div class="col-xs-12 col-md-12">
-                        <h2>Release History</h2>
-
-                        <table class="table table-condensed table-striped table-responsive">
-                            <tr class="info">
-                                <td><b>Version</b></td>
-                                <td><b>Release Date</b></td>
-                                <td><b>Features</b></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <h3>U24 Award</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.10.4</td>
-                                <td>9/26/2025</td>
-                                <td>
-                                    <table> 
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fixed a bug where opening a network in Cytoscape from Cytoscape Web incorrectly set the collection name to <b>?(SUID: ##)</b></li>
-                                                    <li>Fixed a bug where styles were corrupted if <b>Show Tasks</b> was opened at any time before invoking close session</li>
-                                                    <li>Fixed bug where moving a group of nodes fails after reloading in Cytoscape</li>
-                                                    <li>The “Layout only selected nodes” control in the Layout Settings dialog is now a button labeled <b>Apply to Selected Nodes</b>, making the action more explicit and easier to use</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.10.3</td>
-                                <td>10/24/2024</td>
-                                <td>
-                                    <table> 
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improved Style Panel labels</li>
-                                                    <li>Require naming of root network</li>
-                                                    <li>Fix test failure</li>
-                                                    <li>Enforce column naming across networks</li>
-                                                    <li>Fix to Equation Builder dialog</li>
-                                                    <li>Make group collapse/expand more robust</li>
-                                                    <li>Fix LayoutSettingsDialog NPE (Linux)</li>
-                                                    <li>Update to latest version of JavaFX</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.10.2</td>
-                                <td>3/26/2024</td>
-                                <td>
-                                    <table> 
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Layout tools exposed in CyREST: rotate and scale</li>
-                                                    <li>SVG export with Japanese locale</li>
-                                                    <li>Lucene wildcard query enabled in search bar</li>
-                                                    <li>Minor bug fixes</li>
-                                                
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.10.1</td>
-                                <td>8/31/2023</td>
-                                <td>
-                                    <table> 
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Better support for all versions Java 17</li>
-                                                    <li>Minor bug fixes</li>
-                                                
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.10.0</td>
-                                <td>5/11/2023</td>
-                                <td>
-                                    <table>
-                                
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Edge label rotation allows edge labels to be aligned with the edge slope</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Architecture</td>
-                                            <td>
-                                                <ul>
-                                                    <li>String tunables have a "password" property that masks the text field</li>
-                                                    <li>New LEN() equation function returns the length of a list</li>
-                                                    <li>JavaFX version upgraded to 18.0.2</li>
-                                                    <li>The OpenCL app has been moved into core. OpenCL support is now part of the Cytoscape API as the ‘cycl-api’ bundle</li>
-                                                    <li>The TableVisualMappingManager has new API methods for working with table styles</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>New selection lasso tool</li>
-                                                    <li>Table styles are now part of the Network Style and are applied to nodes and edge tables</li>
-                                                    <li>New App Store panel has replaced old "App Manager"</li>
-                                                    <li>Search bar is faster, more reliable, and includes new types of search queries</li>
-                                                    <li></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Java 17 support</li>
-                                                    <li>Automation: network view can now be exported using new commands</li>
-                                                    <li>The framework-cytoscape.log file no longer grows forever (entries > 30 days removed)</li>
-                                                    <li>Native build for Apple silicon processors (M1+)</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>R01 Award (Renewal)</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.9.1</td>
-                                <td>1/24/2022</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Minor fixes to table equations</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Updated log4j dependencies</li>
-                                                    <li>Automation: updates to annotation and app-related commands</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.9.0</td>
-                                <td>10/21/2021</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for native 4k Ultra-HD and Retina display</li>
-                                                    <li>Improved network rendering performance</li>
-                                                    <li>Haystack edge rendering improved</li>
-                                                    <li>New ability to rotate node labels and annotations</li>
-                                                    <li>Fit content now takes node labels into account</li>
-                                                    <li>New visual property for z-order</li>
-                                                    <li>Network view now supports SVG graphics for node and annotation images</li>
-                                                    <li>New features for Table Panel: cell styles, charts, and copy/paste</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Equation builder has been redesigned with free form editing field</li>
-                                                    <li>Color palettes are now universally available in the color picker</li>
-                                                    <li>Improved hotkey mapping</li>
-                                                    <li>Filters can now select or highlight nodes and edges</li>
-                                                    <li>New auto page size option for network view PDF export</li>
-                                                  
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for Jupyter Notebooks</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>3.8.2</td>
-                                <td>10/29/2020</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fixed memory issues when opening large sessions</li>
-                                                    <li>Fixed memory issues when exporting large networks</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fixed bug with CyBrowser installation of yFiles and other Apps</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.8.1</td>
-                                <td>9/24/2020</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Bug fixes for the renderer:
-                                                        <ul>
-                                                            <li>Edge tooltip not rendering</li>
-                                                            <li>Edge bend editing causing all edges to bend</li>
-                                                            <li>Network view double click not working</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Bug fixes to address memory leaks and race conditions in automation scripts</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.8.0</td>
-                                <td>4/17/2020</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Analysis</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Network Analyzer updated with improved interface and Automation support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Updated user interface</li>
-                                                    <li>Toolbar customizations improved</li>
-                                                    <li>Panels can now be minimized, set to float, or docked to workspace</li>
-                                                    <li>Improved rendering performance with interactive experience for networks with 10,000 nodes and 3,000,000 edges</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Java 11 support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.7.2</td>
-                                <td>9/5/2019</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fixed CyNDEx-2 bug where JXBrowser component could not be downloaded</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.7.1</td>
-                                <td>1/10/2019</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fixed freezing bug when exporting Annotations</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>About dialog updates</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.7.0</td>
-                                <td>10/22/2018</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Installation</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Greatly decreased installer size</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Annotations</li>
-                                                    <li>Animated Tooltips</li>
-                                                    <li>Element selector toggles</li>
-                                                    <li>Splash Screen</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>BrewerColor palettes in styles</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Updated NDEx Integration</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.6.1</td>
-                                <td>3/26/2018</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Installation</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Automatic Java Installation</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for loading/saving NDEx networks</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.6</td>
-                                <td>11/15/2017</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Cytoscape Automation</li>
-                                                    <li>CyBrowser Integration</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>yFiles Update</li>
-                                                    <li>Copycat Layout</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Analysis</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Diffusion</li>
-                                                    <li>New Starter Networks</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Network Search Bar</li>
-                                                    <li>Starter Panel</li>
-                                                    <li>Drag & Drop sessions, networks & tables</li>
-                                                    <li>Customizable Toolbar</li>
-                                                    <li>Improved Selection Performance</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Unattended Installation</li>
-                                                    <li>Mac High Sierra Support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.5.1</td>
-                                <td>4/26/2017</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Bug fixes</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Malfunctioning slider control</li>
-                                                    <li>Misdirected link in toolbar help icon</li>
-                                                    <li>Search bar missed common words</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>3.5</td>
-                                <td>3/24/2017</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Symbol translation using BridgeDB</li>
-                                                    <li>Drag/drop for network and table files</li>
-                                                    <li>Restored BioMart functionality</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Sharing</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Integration with NDEx network sharing database</li>
-                                                    <li>Added web.cytoscape.org for network sharing</li>
-                                                    <li>Improved/optimized Export dialogs</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>CoSE Layout (for compound nodes)</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.4</td>
-                                <td>05/13/2016</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Modern window manager enables use of multiple monitors</li>
-                                                    <li>Web-based user manual with improved formatting</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Architecture</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for app collections</li>
-                                                    <li>Long running task API</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Sharing</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for interactive networks in Elsevier journals</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.3</td>
-                                <td>11/25/2015</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Network Analyzer is more than 1000x faster</li>
-                                                    <li>Filtering based on properties of adjacent nodes</li>
-                                                    <li>Improved/optimized network and table file importer</li>
-                                                    <li>GPU support for Prefuse layouts (100x faster)</li>
-                                                    <li>New GPU-based graph render (100K nodes in 1/40 second)</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improvements in Group settings & visualization</li>
-                                                    <li>Default network layout is now force directed</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Aesthetic and consistency improvements in many dialogs</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Architecture</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Core functions repackaged as apps for frequent improvement</li>
-                                                    <li>Automatic new version alerts for installed apps</li>
-                                                    <li>cyREST as core app delivered with Cytoscape</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.2.1</td>
-                                <td>02/11/2015</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Java 8 support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.2</td>
-                                <td>11/07/2014</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Refactored/optimized visual attribute mapper interface</li>
-                                                    <li>Faster startup, session load, and network merge</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Virtualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Ability to show nodes as dynamic charts</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Automation</td>
-                                            <td>
-                                                <ul>
-                                                    <li>RESTful interface enables “Cytoscape as a Service”</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Higher capacity for large graphs (both memory and draw speed)</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Sharing</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Export graph as a fully packaged web site ready for a web server
-                                                    </li>
-                                                    <li>CyNetShare web-based network viewer</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.1.1</td>
-                                <td>05/27/2014</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improved network and attribute imports for Excel, CSV, and TXT files
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.1</td>
-                                <td>02/13/2014</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fast PSICQUIC download and merging</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Workflow</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Fast filter execution - O(n) instead of O(kn)</li>
-                                                    <li>Welcome screen improvements w/<i>D. rerio</i> and <i>E. coli</i> presets
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.0.2</td>
-                                <td>07/30/2013</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Reorganized user interface</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>R01 Award (Initial)</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.0.1</td>
-                                <td>04/22/2013</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Reorganized user interface</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.0</td>
-                                <td>02/04/2013</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Architecture</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Completely re-designed API</li>
-                                                    <li>Clear separation between views and data models</li>
-                                                    <li>OSGi framework</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Attributes</td>
-                                            <td>
-                                                <ul>
-                                                    <li>New Data Table model for network-local data support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Edge Bundling</li>
-                                                    <li>Internal support for multiple views of a network model</li>
-                                                    <li>Pluggable rendering engines</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Plugins</td>
-                                            <td>
-                                                <ul>
-                                                    <li>New plugin architecture</li>
-                                                    <li>Ported plugins from 2.x</li>
-                                                    <li>Integration with new Cytoscape App Store</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Prototype headless mode (command-line Cytoscape application)</li>
-                                                    <li>Performance tuning for network visualization</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.8.3</td>
-                                <td>05/04/2012</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Better support for Mac platform without three button mouse</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Plugins</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Reorganized plugin categories</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.8.2</td>
-                                <td>08/26/2011</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>New Gradient editor in VizMapper</li>
-                                                    <li>Error log console for users</li>
-                                                    <li>Improved CytoPanels</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improved memory allocation</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.8.1</td>
-                                <td>02/18/2011</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improved viz support for node Groups</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Plugins</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Load plugins from local file</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Improved XGMML Reader</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Select All Attribute button added to Table Browser</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.8.0</td>
-                                <td>12/2/2010</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Plugin</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Incorporate Network Analyzer plugin into standard Cytoscape release
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Custom graphics applied to nodes</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Analysis</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Dynamic Filters</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Spreadsheet-like equations in the attribute browser for working with attributes
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Other</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Support for Java SE 6</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>2.7.0</td>
-                                <td>04/27/2010</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Data Structure</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Nested Networks</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">Visualization</td>
-                                            <td>
-                                                <ul>
-                                                    <li>New edge types</li>
-                                                    <li>Automatic label wrap</li>
-                                                    <li>Arrow color optionally locked to edge color</li>
-                                                    <li>Nested Network visualization</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">UI</td>
-                                            <td>
-                                                <ul>
-                                                    <li>Newlines and list editing in attribute browser</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 100px; vertical-align: text-top">I/O</td>
-                                            <td>
-                                                <ul>
-                                                    <li>BioPAX Level 3 Support</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.6.3</td>
-                                <td>06/25/2009</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.6.2</td>
-                                <td>02/24/2009</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.6.1</td>
-                                <td>09/17/2008</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.6.0</td>
-                                <td>05/15/2008</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.5.2</td>
-                                <td>02/01/2008</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.5.1</td>
-                                <td>08/31/2007</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.5.0</td>
-                                <td>07/23/2007</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.4.1</td>
-                                <td>04/25/2007</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.4.0</td>
-                                <td>01/16/2007</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.3.2</td>
-                                <td>09/01/2006</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.3.1</td>
-                                <td>07/19/2006</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.3</td>
-                                <td>06/23/2006</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.2</td>
-                                <td>12/06/2005</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.1</td>
-                                <td>05/25/2005</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.0</td>
-                                <td>07/22/2004</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1.1</td>
-                                <td>May 2003</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1.0</td>
-                                <td>Mar 2003</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>0.9</td>
-                                <td>Nov 2002</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>0.8</td>
-                                <td>Jul 2002</td>
-                                <td></td>
-                            </tr>
-                            <td>Release notes for all prior and subsequent releases can be found <a href="https://cytoscape.org/download_old_versions.html">here</a></td>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Parity table -->
+    <h4 style="margin-top:48px;">Desktop ↔ Web feature comparison</h4>
+    <p class="sec-intro reveal" style="margin-top:0;max-width:64ch;">The two tools are complementary. Desktop leads on analysis depth, apps, and sessions; Web leads on access, workspaces, and hierarchical/Cell views. This mirrors the official <a href="https://github.com/cytoscape/cytoscape-web/wiki/Cytoscape-Web-vs-Desktop-Feature-Comparison">Functionality Support Matrix</a> maintained in the Cytoscape Web wiki — capabilities evolve each release.</p>
+    <div class="parity reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Functionality</th>
+            <th class="center">Desktop</th>
+            <th class="center">Web</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat-name">Network Visualization</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+          <tr><td class="feat-name">Visual Styles</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+          <tr><td class="feat-name">Table Editing</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+          <tr><td class="feat-name">Undo / Redo</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+          <tr><td class="feat-name">Access to External Databases</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Import</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Export</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Layout</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Layout Tools</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Filters</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Element Selection</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Network Editing &amp; Operation</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Annotations</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">App interface <sup>1</sup></td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-part">Partial</span></td></tr>
+          <tr><td class="feat-name">Analysis Tools</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-no">—</span></td></tr>
+          <tr><td class="feat-name">Network Analyzer</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-no">—</span></td></tr>
+          <tr><td class="feat-name">App Store</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-no">—</span></td></tr>
+          <tr><td class="feat-name">Element Group</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-no">—</span></td></tr>
+          <tr><td class="feat-name">Session</td><td class="center"><span class="pill-stat s-yes">Full</span></td><td class="center"><span class="pill-stat s-no">—</span></td></tr>
+          <tr><td class="feat-name">Hierarchical Network &amp; Cell View</td><td class="center"><span class="pill-stat s-no">—</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+          <tr><td class="feat-name">Workspace</td><td class="center"><span class="pill-stat s-no">—</span></td><td class="center"><span class="pill-stat s-yes">Full</span></td></tr>
+        </tbody>
+      </table>
     </div>
+    <div class="parity-legend">
+      <span><span class="pill-stat s-yes">Full</span> fully supported</span>
+      <span><span class="pill-stat s-part">Partial</span> partially supported</span>
+      <span><span class="pill-stat s-no">—</span> not supported</span>
+    </div>
+    <p style="font-size:13px;color:var(--ink-faint);margin-top:12px;line-height:1.6;"><sup>1</sup> Both versions support external apps but use different app frameworks; the Cytoscape Web app interface is currently in public testing.</p>
+  </div>
+</section>
 
-    <footer></footer>
+<!-- ===================== CYTOSCAPE.JS ===================== -->
+<section id="cytoscapejs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">04 — Product track</span>
+    </div>
+    <h2 class="reveal">Cytoscape.js</h2>
 
-    <script src="js/setup_page.js"></script>
+    <div class="prod-head reveal" style="margin-top:18px;">
+      <div class="prod-badge js">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg>
+      </div>
+      <div>
+        <h3 style="margin:0;">The open-source graph library</h3>
+        <div class="meta">Pure JavaScript · runs in-browser or headless on Node.js · MIT licensed · <span class="mono">npm: cytoscape</span></div>
+      </div>
+    </div>
+    <p class="sec-intro reveal" style="margin-top:0;">Cytoscape.js is the developer-facing foundation of the platform — a dependency-free JavaScript library for modelling, analysing, and visualising networks. It can be embedded in web apps, websites, and servers, and underpins a wide range of third-party network viewers across research and industry.</p>
+
+    <div class="grid2" style="margin-top:34px;">
+      <div class="reveal">
+        <div class="release-now js">
+          <div class="lbl">Release cadence</div>
+          <div class="ver">v3.x</div>
+          <div class="date">Weekly patch · monthly feature</div>
+        </div>
+        <h4>What it offers</h4>
+        <ul class="feat js">
+          <li>Graph-theory model plus an optional interactive canvas renderer</li>
+          <li>One-line setup: <span class="mono">cytoscape({ elements, container })</span></li>
+          <li>Runs in all modern browsers, or headless under Node.js</li>
+          <li>Pure JS, no dependencies — works with npm, Webpack, ES modules, or plain script tags</li>
+          <li>Extensible via first- and third-party extensions (layouts, UI, integrations)</li>
+          <li>MIT-licensed core and first-party extensions</li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h4>Where it's heading</h4>
+        <div class="vision-card">
+          <h3>Stable, with steady momentum</h3>
+          <p>The version 3 API is mature; future work is planned openly through GitHub milestones. The weekly/monthly release rhythm gives contributors a fast feedback loop for both first- and third-party changes.</p>
+        </div>
+        <div class="vision-card">
+          <h3>Foundation for the web ecosystem</h3>
+          <p>As the rendering and analysis layer behind many browser-based network tools, ongoing performance and API refinement benefits the whole community — including tools that complement Cytoscape Web.</p>
+        </div>
+        <div class="callout" style="margin-top:6px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--js)" stroke-width="2" stroke-linecap="round"><path d="M12 16v-5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg>
+          <span>Documentation, downloads, and source live at <em>js.cytoscape.org</em>. Cite the <em>Bioinformatics</em> papers (<a href="https://academic.oup.com/bioinformatics/article/32/2/309/1744007" target="_blank">2016</a>; <a href="https://academic.oup.com/bioinformatics/article/39/1/btad031/6988031" target="_blank">2023 update</a>).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SHARED ECOSYSTEM ===================== -->
+<section id="ecosystem">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">05 — Cross-cutting</span>
+    </div>
+    <h2 class="reveal">Shared ecosystem</h2>
+    <p class="sec-intro reveal">Some work spans both products. These shared foundations are what make Desktop and Web feel like one platform rather than two tools.</p>
+
+    <div class="eco">
+      <div class="eco-card reveal">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>Automation &amp; interoperability</h3>
+        <p>CyREST plus the Python and R client libraries let users drive Cytoscape from Jupyter and RStudio, building reproducible, scriptable workflows that scale beyond keyboard and mouse.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+        <h3>NDEx network commons</h3>
+        <p>NDEx is becoming the shared home for networks and workspaces — the connective tissue that lets a network move freely between Web, Desktop, and the wider cyberinfrastructure.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21V12h6v9"/></svg></div>
+        <h3>App Store &amp; Collections</h3>
+        <p>The App Store remains the hub for community-built functionality, with Collections bundling the apps a given workflow needs. The new Web App API extends this model into the browser.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></div>
+        <h3>Community &amp; outreach</h3>
+        <p>Documentation, tutorials, and an active developer community keep the platform learnable and extensible. Contributions to the roadmap are welcome through the community channels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">06 — How we ship</span>
+    </div>
+    <h2 class="reveal">Release process &amp; policies</h2>
+    <p class="sec-intro reveal">Cytoscape Desktop ships on a predictable cadence with milestone builds and frozen APIs along the way. Cytoscape Web, as a browser app, releases continuously, and Cytoscape.js ships weekly patch and monthly feature releases via npm. The policies below govern the Desktop cycle.</p>
+
+    <details class="reveal">
+      <summary>Desktop release cadence &amp; policies <span class="count">P1–P11</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+      <div class="details-body">
+        <div class="policy"><div class="pid">P1</div><p>A new Desktop version ships roughly every six months (~April 15 and ~November 15), with Core App updates to the App Store as needed.</p></div>
+        <div class="policy"><div class="pid">P2</div><p>High-risk Core features must land eight weeks before release, or they carry over to the next cycle.</p></div>
+        <div class="policy"><div class="pid">P3</div><p>Other features must land in the Core five weeks before release.</p></div>
+        <div class="policy"><div class="pid">P4</div><p>Reviewed bug fixes may land up to ten days before release.</p></div>
+        <div class="policy"><div class="pid">P5</div><p>External APIs (including CyREST) are frozen, documented, and preliminarily implemented eight weeks before release; a developer release is published.</p></div>
+        <div class="policy"><div class="pid">P6</div><p>Milestone builds are made available eight weeks, five weeks, and ten days before release — plus extra builds when needed.</p></div>
+        <div class="policy"><div class="pid">P7</div><p>Milestone and nightly builds are published via the developer Download page.</p></div>
+        <div class="policy"><div class="pid">P8</div><p>Emerging API definitions (or links to them) are posted on the developer Download page.</p></div>
+        <div class="policy"><div class="pid">P9</div><p>A preliminary feature list is published five months out, updated periodically, and frozen ten days before release.</p></div>
+        <div class="policy"><div class="pid">P10</div><p>Functionality is exercised heavily through external scripting (e.g. Python-driven tests) via Cytoscape Automation.</p></div>
+        <div class="policy"><div class="pid">P11</div><p>New Core App nominations are accepted until eight weeks before release; Core developers may accept them until five weeks before. Core Apps follow the same Q/A process as Core code.</p></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ===================== HISTORY ===================== -->
+<section id="history">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-kicker">07 — Looking back</span>
+    </div>
+    <h2 class="reveal">Release history</h2>
+    <p class="sec-intro reveal">Two decades of releases, kept tucked away so the roadmap stays forward-looking. Expand a track to browse the record.</p>
+
+    <details class="reveal">
+      <summary>Cytoscape Desktop — recent releases <span class="count">3.x</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+      <div class="details-body">
+        <div class="rel"><span class="rv">3.10.4</span><span class="rd">2025-09-26</span><span class="rn">Fixed Web-to-Desktop collection naming; style corruption on session close; group-move after reload; <b>Apply to Selected Nodes</b> layout button.</span></div>
+        <div class="rel"><span class="rv">3.10.3</span><span class="rd">2024-10-24</span><span class="rn">Style Panel labels, root-network naming, column-naming enforcement, Equation Builder &amp; group expand/collapse fixes, JavaFX update.</span></div>
+        <div class="rel"><span class="rv">3.10.2</span><span class="rd">2024-03-26</span><span class="rn">Layout rotate/scale exposed in CyREST; SVG export under Japanese locale; Lucene wildcard search; minor fixes.</span></div>
+        <div class="rel"><span class="rv">3.10.1</span><span class="rd">2023-08-31</span><span class="rn">Broader Java 17 support; minor bug fixes.</span></div>
+        <div class="rel"><span class="rv">3.10.0</span><span class="rd">2023-05-11</span><span class="rn">Edge label rotation, lasso selection, table styles, new App Store panel, Apple-silicon native build, Java 17.</span></div>
+        <div class="rel"><span class="rv">3.9.0</span><span class="rd">2021-10-21</span><span class="rn">4K/Retina support, faster rendering, node-label rotation, SVG node images, Jupyter notebook support.</span></div>
+        <div class="rel"><span class="rv">3.8.0</span><span class="rd">2020-04-17</span><span class="rn">Refreshed UI, dockable/floating panels, interactive performance at 10K nodes / 3M edges, Java 11.</span></div>
+        <div class="rel"><span class="rv">3.7.0</span><span class="rd">2018-10-22</span><span class="rn">Much smaller installer, annotations, animated tooltips, Brewer color palettes, updated NDEx integration.</span></div>
+        <div class="rel"><span class="rv">3.6.0</span><span class="rd">2017-11-15</span><span class="rn">Cytoscape Automation, CyBrowser integration, customizable toolbar, network search bar.</span></div>
+        <div class="rel"><span class="rv">3.3.0</span><span class="rd">2015-11-25</span><span class="rn">Network Analyzer 1000× faster, GPU layouts/rendering, Core repackaged as upgradable apps, CyREST as a core app.</span></div>
+        <div class="rel"><span class="rv">3.0.0</span><span class="rd">2013-02-04</span><span class="rn">Redesigned API, OSGi framework, clean model/view separation, new App Store and plugin architecture.</span></div>
+        <p class="older"><b>Earlier milestones:</b>
+          <span class="mono">3.2 (2014)</span> · <span class="mono">3.1 (2014)</span> · <span class="mono">2.8 (2010)</span> · <span class="mono">2.7 (2010)</span> · <span class="mono">2.5 (2007)</span> · <span class="mono">2.0 (2004)</span> · <span class="mono">1.0 (2003)</span> · <span class="mono">0.8 (Jul 2002, first release)</span>. Full version-by-version notes are available on request.</p>
+      </div>
+    </details>
+
+    <details class="reveal">
+      <summary>Cytoscape Web — releases <span class="count">1.x</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+      <div class="details-body">
+        <div class="rel"><span class="rv">1.0.7</span><span class="rd">2026-05</span><span class="rn">Expanded app-integration capabilities: a preview version of the App API, runtime app registration, and improved in-browser app support.</span></div>
+        <div class="rel"><span class="rv">1.0.6</span><span class="rd">2026-03</span><span class="rn">NDEx loading safeguards, numeric editing in layouts, color-palette reversal, and network-deletion navigation fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.5</span><span class="rd">2026-02-14</span><span class="rn">Major rework of the subnetwork (hierarchy) viewer with a new visibility-toggle approach, plus data-integrity fixes, performance optimizations, and internal codebase improvements.</span></div>
+        <div class="rel"><span class="rv">1.0.4</span><span class="rd">2025-09-12</span><span class="rn">Splash screen, browser back/forward fixes, a CX2 validator, ring-chart support, a new viewport-state store, and network property editor fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.3</span><span class="rd">2025-06-17</span><span class="rn">HiView UI-blocking fixes, undo support, a URL parameter for the selected network view, improved file drag &amp; drop, and selection/sharing fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.2</span><span class="rd">2025-05-13</span><span class="rn">Bug-fix release accompanying the <i>Nucleic Acids Research</i> paper: annotation rendering, CX2 import of network properties from URLs, column-type input fixes, and layout rename.</span></div>
+        <div class="rel"><span class="rv">1.0.1</span><span class="rd">2025-02-14</span><span class="rn">Early fixes: workspace-saving improvements, local-network visibility and imported-time columns, and workspace-loading timing fixes.</span></div>
+        <div class="rel"><span class="rv">1.0.0</span><span class="rd">2025-01-30</span><span class="rn">First public release of Cytoscape Web; reference build at <span class="mono">web.cytoscape.org</span>. Introduced and described in <i>Nucleic Acids Research</i> (2025). Releases are archived via Zenodo.</span></div>
+        <p class="older">As a continuously deployed browser application, Cytoscape Web does not follow the six-month Desktop cadence; the reference build at <span class="mono">web.cytoscape.org</span> always reflects the latest release.</p>
+      </div>
+    </details>
+
+    <details class="reveal">
+      <summary>Cytoscape.js — releases <span class="count">3.x</span><span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+      <div class="details-body">
+        <div class="rel"><span class="rv">3.34.0</span><span class="rd">2026-06-02</span><span class="rn">Latest release of the current <b>3.x</b> line. Published on npm (as <span class="mono">cytoscape</span>) on a weekly-patch / monthly-feature cadence, with every version archived via Zenodo.</span></div>
+        <div class="rel"><span class="rv">3.0.0</span><span class="rd">2017-04-11</span><span class="rn">Major update with API improvements and breaking changes informed by v2 feedback; the 3.x line's enhancements are summarised in the 2023 <i>Bioinformatics</i> update.</span></div>
+        <div class="rel"><span class="rv">2.x</span><span class="rd">2013–2016</span><span class="rn">First stable series on npm (earliest <b>2.0.3</b>, Nov 2013, through the <b>2.7</b> releases in 2016); introduced and described in <i>Bioinformatics</i> (Franz et al., 2016).</span></div>
+        <div class="rel"><span class="rv">Origin</span><span class="rd">2012</span><span class="rn">First published to npm in October 2012, beginning with the 2.0 pre-releases.</span></div>
+        <p class="older">Future versions are planned openly in the GitHub issue tracker's milestones. The library follows its own rapid npm cadence, independent of the Desktop and Web schedules.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer></footer>
+
+<script>
+  // Staggered reveal on scroll
+  const els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    // Fallback: no IntersectionObserver support, reveal everything immediately
+    els.forEach(el=>el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((e,i)=>{
+        if(e.isIntersecting){
+          const parent = e.target.parentElement;
+          const sib = parent ? [...parent.children].filter(c=>c.classList.contains('reveal')) : [e.target];
+          const idx = sib.indexOf(e.target);
+          e.target.style.transitionDelay = Math.min(idx,5)*70 + 'ms';
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(el=>io.observe(el));
+  }
+</script>
+
+<!-- Shared site header (global nav) + footer + analytics -->
+<script src="js/setup_page.js"></script>
+
 </body>
-
 </html>
