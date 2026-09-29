@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cytoscape 3.10.4 Release Notes</title>
+    <title>Cytoscape 3.10.5 Release Notes</title>
 
     <meta name="description" content="Release Notes for Cytoscape">
     <meta name="author" content="Chris Churas">
@@ -24,7 +24,7 @@
 <body>
     <div class="white belt">
         <div class="container">
-            <h1 class="centering">Release Notes for Cytoscape 3.10.4</h1>
+            <h1 class="centering">Release Notes for Cytoscape 3.10.5</h1>
         </div>
     </div>
 
@@ -33,11 +33,20 @@
 
             <h3>Maintenance Release</h3>
              <ul>
-                <li>Fixed a bug where opening a network in Cytoscape from Cytoscape Web incorrectly set the collection name to <b>?(SUID: ##)</b></li>
-                <li>Fixed a bug where styles were corrupted if <b>Show Tasks</b> was opened at any time before invoking close session</li>
-                <li>Fixed bug where moving a group of nodes fails after reloading in Cytoscape</li>
-                <li>The “Layout only selected nodes” control in the Layout Settings dialog is now a button labeled <b>Apply to Selected Nodes</b>, making the action more explicit and easier to use</li>
-             </ul>   
+                <li>Improved layout behavior and performance:
+                    <ul>
+                        <li>Added “selected nodes only” preferred-layout support</li>
+                        <li>Parallelized selected layout calculations for Prefuse Force Directed and BioLayout FR where appropriate</li>
+                        <li>Preserved deterministic behavior when the deterministic layout option is enabled</li>
+                    </ul>
+                </li>
+                <li>Improved table copy/paste behavior so multi-cell clipboard operations preserve spreadsheet-style grid structure</li>
+                <li>Removed redundant “Copy Selected” table context-menu action in favor of normal Copy</li>
+                <li>Fixed global tables not appearing in the Unassigned Tables panel when added to <code>CyTableManager</code> but not set as current</li>
+                <li>Fixed task history window listener cleanup and debounce handling after dialog close</li>
+                <li>Fixed group/session load handling by listening for <code>SessionAboutToBeLoaded</code> instead of <code>SessionLoaded</code></li>
+                <li>Added app update notification bell behavior for App Store upgrades, with tests</li>
+            </ul>   
         </div>
     </div>
 
